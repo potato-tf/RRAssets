@@ -4068,7 +4068,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Giant_Heavyweapons_Aimless
-				ClassIcon heavy_accurate
+				ClassIcon heavy_accurate_lite
 				AddCond   { Name TF_COND_REPROGRAMMED }
 				Tag bot_hatch 
 				Attributes DisableDodge
@@ -4093,7 +4093,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Giant_Heavyweapons_Aimless
-				ClassIcon heavy_accurate
+				ClassIcon heavy_accurate_lite
 				Action Mobber
 				AddCond   { Name TF_COND_REPROGRAMMED }
 				Attributes DisableDodge

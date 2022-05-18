@@ -7041,7 +7041,7 @@ population
                     Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
 					Skill Easy
                     Attributes IgnoreFlag
                     Action Mobber
@@ -7056,7 +7056,7 @@ population
                     Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
 					Skill Easy
                     Attributes IgnoreFlag
                     Action Mobber
@@ -7071,7 +7071,7 @@ population
                     Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
 					Skill Easy
                     Attributes IgnoreFlag
                     Action Mobber
@@ -7086,7 +7086,7 @@ population
                     Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
 					Skill Easy
                     //Attributes IgnoreFlag
                     //Action Mobber
@@ -7221,7 +7221,7 @@ population
 				Name "SMG Sniper"
 				Class Sniper
 				WeaponRestrictions SecondaryOnly
-				ClassIcon sniper_smg
+				ClassIcon sniper_smg_tind
 				Skill Easy
                 Attributes IgnoreFlag
                 Action Mobber
@@ -7247,7 +7247,7 @@ population
 				Name "SMG Sniper"
 				Class Sniper
 				WeaponRestrictions SecondaryOnly
-				ClassIcon sniper_smg
+				ClassIcon sniper_smg_tind
 				Skill Easy
                 Attributes IgnoreFlag
                 Action Mobber
@@ -9768,7 +9768,7 @@ population
 					Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
                     //Attributes IgnoreFlag
                     //Action Mobber
                     CharacterAttributes
@@ -9786,7 +9786,7 @@ population
 					Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
                     Attributes IgnoreFlag
                     Action Mobber
                     CharacterAttributes
@@ -9804,7 +9804,7 @@ population
 					Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
                     Attributes IgnoreFlag
                     Action Mobber
                     CharacterAttributes
@@ -9822,7 +9822,7 @@ population
 					Name "SMG Sniper"
 					Class Sniper
 					WeaponRestrictions SecondaryOnly
-					ClassIcon sniper_smg
+					ClassIcon sniper_smg_tind
                     Attributes IgnoreFlag
                     Action Mobber
                     CharacterAttributes

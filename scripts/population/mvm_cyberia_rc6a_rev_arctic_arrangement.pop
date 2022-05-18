@@ -1563,7 +1563,7 @@ WaveSchedule
 				Attributes DisableDodge
 				Skill Hard
 				MaxVisionRange 1024
-				ClassIcon scout_pistol
+				ClassIcon scout_pistol_nys
 				Action Mobber [$SIGSEGV]
 				CharacterAttributes { "crit mod disabled hidden" 0 }
 			}
