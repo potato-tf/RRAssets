@@ -4064,7 +4064,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Class Pyro
 			Skill Expert
 			Health 3000
-			ClassIcon pyro_dragon_fury
+			ClassIcon pyro_dragon_fury_swordstone
 			Name "Giant Dragon's Fury Pyro"
 			Item "The Dragon's Fury"
 			AddCond   { Name TF_COND_REPROGRAMMED } 
