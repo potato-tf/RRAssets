@@ -2253,7 +2253,7 @@ swirl2_reverse_boogaloo
 			Item "War Head"
 			Item "Fists of Steel"
 			Attributes MiniBoss
-			ItemColor[$SIGSEGV]
+			ItemColor [$SIGSEGV]
 			{
 				ItemName "Fists of Steel"
 				Red 0
