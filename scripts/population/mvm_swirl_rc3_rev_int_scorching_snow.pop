@@ -9,40 +9,40 @@ swirl2_reverse_boogaloo
 	FlagEscortCountOffset 8
     CanBotsAttackWhileInSpawnRoom Yes
     RespawnWaveTime 3
-	RespawnWaveTimeBlue 5 [$SIGSEGV]
-	FixedRespawnWaveTimeBlue 1 [$SIGSEGV]
-	BotsRandomCrit 1 [$SIGSEGV]
+	RespawnWaveTimeBlue 5 
+	FixedRespawnWaveTimeBlue 1 
+	BotsRandomCrit 1 
     Advanced 1
-    BluHumanFlagCapture 1 [$SIGSEGV] //Can blu humans capture the flag
-	BluHumanFlagPickup 1 [$SIGSEGV] //Can blu humans pickup flags
-	BluHumanInfiniteAmmo 1 [$SIGSEGV] //Enable infinite ammo for blu humans (default: 1)
-    HumansMustJoinTeam blue [$SIGSEGV] //Set to blue to force players join the blu team
-    RedPlayersAreRobots 1 [$SIGSEGV] //If set, red players use robot models
-    ReverseWinConditions 1 [$SIGSEGV] //Player team wins if bots deliver the bomb. Half broken
-    AllowJoinTeamBlue 1 [$SIGSEGV]
-    SetCreditTeam 3	[$SIGSEGV]	
+    BluHumanFlagCapture 1  //Can blu humans capture the flag
+	BluHumanFlagPickup 1  //Can blu humans pickup flags
+	BluHumanInfiniteAmmo 1  //Enable infinite ammo for blu humans (default: 1)
+    HumansMustJoinTeam blue  //Set to blue to force players join the blu team
+    RedPlayersAreRobots 1  //If set, red players use robot models
+    ReverseWinConditions 1  //Player team wins if bots deliver the bomb. Half broken
+    AllowJoinTeamBlue 1 
+    SetCreditTeam 3		
 	RemoveBluVelocityLimit 1	
-	RobotLimit 26 [$SIGSEGV]
-	FlagCarrierMovementPenalty 1 [$SIGSEGV]
-	//AllowMultipleSappers 1 [$SIGSEGV]
-	SniperAllowHeadshots 1 [$SIGSEGV]	//sniper and amby don't work without this, use AimAt Body [$SIGSEGV] if you don't want your snipers headshotting
-	NoRomevisionCosmetics 1 [$SIGSEGV] //romevision is ugly, just like your mom
-	DisplayRobotDeathNotice 1 [$SIGSEGV]
-	BluPlayersAreRobots 1 [$SIGSEGV]
-	MedigunShieldDamage 1 [$SIGSEGV]
-	SendBotsToSpectatorImmediately 1 [$SIGSEGV]
+	RobotLimit 26 
+	FlagCarrierMovementPenalty 1 
+	//AllowMultipleSappers 1 
+	SniperAllowHeadshots 1 	//sniper and amby don't work without this, use AimAt Body  if you don't want your snipers headshotting
+	NoRomevisionCosmetics 1  //romevision is ugly, just like your mom
+	DisplayRobotDeathNotice 1 
+	BluPlayersAreRobots 1 
+	MedigunShieldDamage 1 
+	SendBotsToSpectatorImmediately 1 
 	//CustomUpgradesFile "mvm_upgrades_reverse_miko.txt" 
-	//BonusRatioHalf 1.1 [$SIGSEGV]
-	//BonusRatioFull 1.1 [$SIGSEGV]
-	TextPrintTime 0 [$SIGSEGV]
-	//NoMissionInfo 1 [$SIGSEGV] //unnecessary	
-    PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" [$SIGSEGV]	
+	//BonusRatioHalf 1.1 
+	//BonusRatioFull 1.1 
+	TextPrintTime 0 
+	//NoMissionInfo 1  //unnecessary	
+    PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" 	
 	PrecacheModel "models/hatch_shield.mdl"	 
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu_tools.mdl" [$SIGSEGV]	
-	PrecacheModel "models/props_owo/sign001.mdl" [$SIGSEGV]	
+	PrecacheModel "models\props_mvm\mvm_upgrade_blu_tools.mdl" 	
+	PrecacheModel "models/props_owo/sign001.mdl" 	
 	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
 	//PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl"
-	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" 
 	//PrecacheModel "models/props_mvm/reversemvm_redwall_640x300.mdl"  //doesn't show properly so i quit using those
     //PrecacheModel "models/props_mvm/reversemvm_redwall_696x337.mdl"  
     //PrecacheModel "models/props_mvm/reversemvm_redwall_512x320.mdl"  
@@ -69,7 +69,7 @@ swirl2_reverse_boogaloo
 		"Announcer.MVM_Tank_Alert_Near_Hatch" 	"misc/null.wav" 			  		 
 		"Announcer.MVM_Tank_Alert_Deploying"  	"misc/null.wav"	
 	}
-	//HandModelOverride [$SIGSEGV] // Overwrite first person arms models
+	//HandModelOverride  // Overwrite first person arms models
     //{
     //    Scout "models/weapons/c_models/c_scout_bot_arms.mdl"
 	//	Soldier "models/weapons/c_models/c_soldier_bot_arms.mdl"
@@ -82,15 +82,15 @@ swirl2_reverse_boogaloo
     //   Sniper "models/weapons/c_models/c_sniper_bot_arms.mdl"
     //}
 	//Testing restrictions, will be removed once the mission is submitted
-	//DisallowUpgrade "generate rage on heal" [$SIGSEGV] 
-	//DisallowUpgrade "critboost" [$SIGSEGV]
-	//DisallowUpgrade "ubercharge" [$SIGSEGV]
-	//DisallowUpgrade "explosive sniper shot" [$SIGSEGV]
+	//DisallowUpgrade "generate rage on heal"  
+	//DisallowUpgrade "critboost" 
+	//DisallowUpgrade "ubercharge" 
+	//DisallowUpgrade "explosive sniper shot" 
 	//removed because infinite ammo and metal
-	DisallowUpgrade "maxammo primary increased" [$SIGSEGV]
-	DisallowUpgrade "maxammo metal increased" [$SIGSEGV]
+	DisallowUpgrade "maxammo primary increased" 
+	DisallowUpgrade "maxammo metal increased" 
 	DisallowUpgrade "maxammo secondary increased"
-	DisallowUpgrade "metal regen" [$SIGSEGV]
+	DisallowUpgrade "metal regen" 
 	PlayerAttributes
 	{
 		Engineer
@@ -100,7 +100,7 @@ swirl2_reverse_boogaloo
 			"max health additive bonus" 150
 		}
 	}
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ClassName "tf_weapon_knife"
 		"provide on active" 1
@@ -1777,34 +1777,34 @@ swirl2_reverse_boogaloo
 			}
 		}
     }
-	SpawnTemplate [$SIGSEGV] "baseLogic"
-	SpawnTemplate [$SIGSEGV] "antirollout"
-	SpawnTemplate[$SIGSEGV] "robot_spawns"
-	SpawnTemplate[$SIGSEGV] "barriersdisable"
-	//SpawnTemplate[$SIGSEGV] "forcefield"
-	//SpawnTemplate[$SIGSEGV] "detectflag"
-	//SpawnTemplate[$SIGSEGV] "fuck_gates"
-	SpawnTemplate[$SIGSEGV] "hold_up"
-	SpawnTemplate[$SIGSEGV] "disable_hatch_forcefield"
-	SpawnTemplate[$SIGSEGV] "OwO"
-	SpawnTemplate[$SIGSEGV] "annotation_last"
-	SpawnTemplate[$SIGSEGV] "annotation_deploy"
-	SpawnTemplate[$SIGSEGV] "annotation_last_tank"
-	SpawnTemplate[$SIGSEGV] "annotation_gate"
-	SpawnTemplate[$SIGSEGV] "no_forcefield"
-	SpawnTemplate[$SIGSEGV] "better_relay"
-	//SpawnTemplate[$SIGSEGV] "no_holograms"
-	SpawnTemplate[$SIGSEGV] "visualize"
-	SpawnTemplate[$SIGSEGV] "dont_enter_pls"
-	SpawnTemplate[$SIGSEGV] "no_uber_can"
-	//SpawnTemplate[$SIGSEGV] "light_up_pls"
-	//SpawnTemplate[$SIGSEGV] "no_flank_allowed"
-	SpawnTemplate[$SIGSEGV] "jump"
-	SpawnTemplate[$SIGSEGV] "one_blocked_message"
-	SpawnTemplate[$SIGSEGV] "extra_spawns_blu"
-	//SpawnTemplate[$SIGSEGV] "no_bomb_spy"
+	SpawnTemplate  "baseLogic"
+	SpawnTemplate  "antirollout"
+	SpawnTemplate "robot_spawns"
+	SpawnTemplate "barriersdisable"
+	//SpawnTemplate "forcefield"
+	//SpawnTemplate "detectflag"
+	//SpawnTemplate "fuck_gates"
+	SpawnTemplate "hold_up"
+	SpawnTemplate "disable_hatch_forcefield"
+	SpawnTemplate "OwO"
+	SpawnTemplate "annotation_last"
+	SpawnTemplate "annotation_deploy"
+	SpawnTemplate "annotation_last_tank"
+	SpawnTemplate "annotation_gate"
+	SpawnTemplate "no_forcefield"
+	SpawnTemplate "better_relay"
+	//SpawnTemplate "no_holograms"
+	SpawnTemplate "visualize"
+	SpawnTemplate "dont_enter_pls"
+	SpawnTemplate "no_uber_can"
+	//SpawnTemplate "light_up_pls"
+	//SpawnTemplate "no_flank_allowed"
+	SpawnTemplate "jump"
+	SpawnTemplate "one_blocked_message"
+	SpawnTemplate "extra_spawns_blu"
+	//SpawnTemplate "no_bomb_spy"
 	//SpawnTemplate "capteleporter"
-	SpawnTemplate[$SIGSEGV] "teleporting"
+	SpawnTemplate "teleporting"
 	SpawnTemplate
 	{
 		Name "cabinet"
@@ -1873,74 +1873,74 @@ swirl2_reverse_boogaloo
 	}
 
 	//all of the BLU upgrade stations
-	//SpawnTemplate [$SIGSEGV] 
+	//SpawnTemplate  
 	//{
 	//	Name "station"
 	//	"origin" "1344 -896 137"
 	//	"angles" "0 0 0"
 	//}
-	//SpawnTemplate [$SIGSEGV] 
+	//SpawnTemplate  
 	//{
 	//	Name "station"
 	//	"origin" "1344 -896 137"
 	//	"angles" "0 270 0"
 	//}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "560.047 -942.517 89"
 		"angles" "0 90 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "1211 -128 265"
 		"angles" "0 0 0"
 	}
-	//SpawnTemplate [$SIGSEGV]
+	//SpawnTemplate 
 	//{
 	//	Name "station"
 	//	"origin" "-448 -512 201"
 	//	"angles" "0 0 0"
 	//}
-	//SpawnTemplate [$SIGSEGV]
+	//SpawnTemplate 
 	//{
 	//	Name "station"
 	//	"origin" "-1297.48 112.047 -119"
 	//	"angles" "0 270 0"
 	//}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1408 1172 65.2333"
 		"angles" "0 90 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1428 1216 585"
 		"angles" "0 180 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1408 1216 585"
 		"angles" "0 0 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1728 1172 64"
 		"angles" "0 90 0"
 	}
 	//spawn barriers
-	SpawnTemplate[$SIGSEGV] //upper left spawn
+	SpawnTemplate //upper left spawn
 	{
 		Name "barriers"
 		"origin" "1408 192 265"
 		"angles" "0 0 0"
 	}
-	SpawnTemplate[$SIGSEGV] //main spawn
+	SpawnTemplate //main spawn
 	{
 		Name "barriers"
 		"origin" "640 -320 89"
@@ -2054,7 +2054,7 @@ swirl2_reverse_boogaloo
 	}
 	
 
-	FlagResetTime [$SIGSEGV] //Overrides default bomb reset time
+	FlagResetTime  //Overrides default bomb reset time
 	{
 		Name "intel_35" //Name of flag entity on the map
 		ResetTime 70
@@ -2068,7 +2068,7 @@ swirl2_reverse_boogaloo
 			Name "Plutonium Gauntlet"
 			Item "The Tungsten Toque"
 			ClassIcon heavy_steelfist
-			ItemColor [$SIGSEGV]
+			ItemColor 
 			{
 				ItemName "Fists of Steel"
 				Red 0
@@ -2111,8 +2111,8 @@ swirl2_reverse_boogaloo
 			Class Pyro
 			Health 3000
 			Attributes MiniBoss
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Item "The Phlogistinator"
 			Name "Giant Phlogistinator Pyro"
 			Skill Expert
@@ -2143,8 +2143,8 @@ swirl2_reverse_boogaloo
 			Skill Expert
 			Item "The Lucky Shot"	
 			WeaponRestrictions PrimaryOnly
-			Action Mobber [$SIGSEGV]
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED }
+			Action Mobber 
+			AddCond  { Name TF_COND_REPROGRAMMED }
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -2160,7 +2160,7 @@ swirl2_reverse_boogaloo
 			Name "Giant Homing Soldier"
 			Skill Normal
 			ClassIcon soldier_homing_nys
-			HomingRockets [$SIGSEGV]
+			HomingRockets 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -2168,7 +2168,7 @@ swirl2_reverse_boogaloo
 				TurnPower 90 
 				MaxAimError 360 
 			}
-			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
+			RocketCustomParticle eyeboss_projectile 
 		}
 		T_TFBot_Giant_Samurai_Conch
 		{
@@ -2221,8 +2221,8 @@ swirl2_reverse_boogaloo
 			ClassIcon pyro_dragon_fury
 			Name "Giant Dragon's Fury Pyro"
 			Item "The Dragon's Fury"
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			CharacterAttributes
@@ -2245,15 +2245,15 @@ swirl2_reverse_boogaloo
 			Class Heavyweapons
 			Skill Expert
 			WeaponRestrictions MeleeOnly
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Name "Radioactive Punch"
 			ClassIcon heavy_chief
 			Health 5000
 			Item "War Head"
 			Item "Fists of Steel"
 			Attributes MiniBoss
-			ItemColor[$SIGSEGV]
+			ItemColor
 			{
 				ItemName "Fists of Steel"
 				Red 0
@@ -2287,8 +2287,8 @@ swirl2_reverse_boogaloo
 			ClassIcon soldier_buff_spammer
 			Health 3800
 			Skill Expert
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Attributes MiniBoss
             Attributes SpawnWithFullCharge
 			ItemAttributes
@@ -2319,8 +2319,8 @@ swirl2_reverse_boogaloo
 		{
 			Class Demoman
 			Skill Expert
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Name "SkullCutter Knight"
 			//Scale 1.4
 			//Health 650
@@ -2350,8 +2350,8 @@ swirl2_reverse_boogaloo
             Health 650
             Item "The Winger"
             WeaponRestrictions SecondaryOnly
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
             ClassIcon scout_winger_lite
 			ItemAttributes
 			{
@@ -2426,8 +2426,8 @@ swirl2_reverse_boogaloo
             ClassIcon scout_cola_nys
         	Skill Expert
 			AimTrackingInterval 0.1
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			ItemAttributes
 			{
 				ItemName TF_WEAPON_SCATTERGUN
@@ -2468,7 +2468,7 @@ swirl2_reverse_boogaloo
 			Name "Giant Homing Soldier"
 			ClassIcon soldier_homing_nys
 			Addcond {Name TF_COND_SODAPOPPER_HYPE}
-			HomingRockets [$SIGSEGV]
+			HomingRockets 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -2476,7 +2476,7 @@ swirl2_reverse_boogaloo
 				TurnPower 90 
 				MaxAimError 360 
 			}
-			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
+			RocketCustomParticle eyeboss_projectile 
 			ItemAttributes
 			{
 				ItemName TF_WEAPON_ROCKETLAUNCHER
@@ -2496,7 +2496,7 @@ swirl2_reverse_boogaloo
 			Target wave_init_upper_relay
 			Action Trigger
 		}
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{blue}In this mission, you will have some ally bots to help, they are indicated in support. Some can pick up the bomb, some cannot, {red}If all of them die, you lose!"
 			//Line "{white}------------------------------------------------------------------"
@@ -3550,8 +3550,8 @@ swirl2_reverse_boogaloo
 				TFBot
 				{ 
 					Class Heavyweapons
-					AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-					Action Mobber [$SIGSEGV]
+					AddCond  { Name TF_COND_REPROGRAMMED } 
+					Action Mobber 
 					Tag noflank
 					Skill Easy
 					AimTrackingInterval 1
@@ -3565,8 +3565,8 @@ swirl2_reverse_boogaloo
 				TFBot
 				{ 
 					Class Heavyweapons
-					AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-					Action FetchFlag [$SIGSEGV]
+					AddCond  { Name TF_COND_REPROGRAMMED } 
+					Action FetchFlag 
 					Tag noflank
 					Skill Easy
 					AimTrackingInterval 1
@@ -4249,8 +4249,8 @@ swirl2_reverse_boogaloo
 				AimTrackingInterval 1
 				Skill Easy
 				ClassIcon heavy_heater
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Attributes DisableDodge
 				ItemAttributes
 				{
@@ -4283,8 +4283,8 @@ swirl2_reverse_boogaloo
 				AimTrackingInterval 1
 				Skill Easy
 				ClassIcon heavy_heater
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Attributes DisableDodge
 				ItemAttributes
 				{
