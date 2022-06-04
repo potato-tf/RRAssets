@@ -36,39 +36,39 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
     StartingCurrency 1500
     CanBotsAttackWhileInSpawnRoom Yes
     RespawnWaveTime 3
-	RespawnWaveTimeBlue 5 [$SIGSEGV]
-	FixedRespawnWaveTimeBlue 1 [$SIGSEGV]
-	BotsRandomCrit 1 [$SIGSEGV]
+	RespawnWaveTimeBlue 5 
+	FixedRespawnWaveTimeBlue 1 
+	BotsRandomCrit 1 
     Advanced 1
-    BluHumanFlagCapture 1 [$SIGSEGV] //Can blu humans capture the flag
-	BluHumanFlagPickup 1 [$SIGSEGV] //Can blu humans pickup flags
-	BluHumanInfiniteAmmo 1 [$SIGSEGV] //Enable infinite ammo for blu humans (default: 1)
-    HumansMustJoinTeam blue [$SIGSEGV] //Set to blue to force players join the blu team
-    RedPlayersAreRobots 1 [$SIGSEGV] //If set, red players use robot models
-    ReverseWinConditions 1 [$SIGSEGV] //Player team wins if bots deliver the bomb. Half broken
-    AllowJoinTeamBlue 1 [$SIGSEGV]
-    SetCreditTeam 3	[$SIGSEGV]	
+    BluHumanFlagCapture 1  //Can blu humans capture the flag
+	BluHumanFlagPickup 1  //Can blu humans pickup flags
+	BluHumanInfiniteAmmo 1  //Enable infinite ammo for blu humans (default: 1)
+    HumansMustJoinTeam blue  //Set to blue to force players join the blu team
+    RedPlayersAreRobots 1  //If set, red players use robot models
+    ReverseWinConditions 1  //Player team wins if bots deliver the bomb. Half broken
+    AllowJoinTeamBlue 1 
+    SetCreditTeam 3		
 	RemoveBluVelocityLimit 1	
-	RobotLimit 26 [$SIGSEGV]
-	FlagCarrierMovementPenalty 1 [$SIGSEGV]
-	//AllowMultipleSappers 1 [$SIGSEGV]
-	SniperAllowHeadshots 1 [$SIGSEGV]	//sniper and amby don't work without this, use AimAt Body [$SIGSEGV] if you don't want your snipers headshotting
-	NoRomevisionCosmetics 1 [$SIGSEGV] //romevision is ugly, just like your mom
-	DisplayRobotDeathNotice 1 [$SIGSEGV]
-	BluPlayersAreRobots 1 [$SIGSEGV]
-	MedigunShieldDamage 1 [$SIGSEGV]
-	SendBotsToSpectatorImmediately 1 [$SIGSEGV]
+	RobotLimit 26 
+	FlagCarrierMovementPenalty 1 
+	//AllowMultipleSappers 1 
+	SniperAllowHeadshots 1 	//sniper and amby don't work without this, use AimAt Body  if you don't want your snipers headshotting
+	NoRomevisionCosmetics 1  //romevision is ugly, just like your mom
+	DisplayRobotDeathNotice 1 
+	BluPlayersAreRobots 1 
+	MedigunShieldDamage 1 
+	SendBotsToSpectatorImmediately 1 
 	//CustomUpgradesFile "mvm_upgrades_reverse_miko.txt" 
-	//BonusRatioHalf 1.1 [$SIGSEGV]
-	//BonusRatioFull 1.1 [$SIGSEGV]
-	TextPrintTime 0 [$SIGSEGV]
-	//NoMissionInfo 1 [$SIGSEGV] //unnecessary	
-    PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" [$SIGSEGV]		 
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu_tools.mdl" [$SIGSEGV]	
-	PrecacheModel "models/props_owo/sign001.mdl" [$SIGSEGV]	
+	//BonusRatioHalf 1.1 
+	//BonusRatioFull 1.1 
+	TextPrintTime 0 
+	//NoMissionInfo 1  //unnecessary	
+    PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" 		 
+	PrecacheModel "models\props_mvm\mvm_upgrade_blu_tools.mdl" 	
+	PrecacheModel "models/props_owo/sign001.mdl" 	
 	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
 	//PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl"
-	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" 
 	//PrecacheModel "models/props_mvm/reversemvm_redwall_640x300.mdl"  //doesn't show properly so i quit using those
     //PrecacheModel "models/props_mvm/reversemvm_redwall_696x337.mdl"  
     //PrecacheModel "models/props_mvm/reversemvm_redwall_512x320.mdl"  
@@ -80,7 +80,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	DisableSound "Announcer.MVM_Robots_Planted"	
 	DisableSound "Announcer.MVM_All_Dead"	
 	//CustomNavFile "mvm_swirl_rc1_fixed"
-	//HandModelOverride [$SIGSEGV] // Overwrite first person arms models
+	//HandModelOverride  // Overwrite first person arms models
     //{
     //    Scout "models/weapons/c_models/c_scout_bot_arms.mdl"
 	//	Soldier "models/weapons/c_models/c_soldier_bot_arms.mdl"
@@ -93,13 +93,13 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
     //   Sniper "models/weapons/c_models/c_sniper_bot_arms.mdl"
     //}
 	//Testing restrictions, will be removed once the mission is submitted
-	//DisallowUpgrade "generate rage on heal" [$SIGSEGV] 
-	//DisallowUpgrade "critboost" [$SIGSEGV]
-	//DisallowUpgrade "ubercharge" [$SIGSEGV]
-	//DisallowUpgrade "explosive sniper shot" [$SIGSEGV]
+	//DisallowUpgrade "generate rage on heal"  
+	//DisallowUpgrade "critboost" 
+	//DisallowUpgrade "ubercharge" 
+	//DisallowUpgrade "explosive sniper shot" 
 	//removed because infinite ammo and metal
-	DisallowUpgrade "maxammo primary increased" [$SIGSEGV]
-	DisallowUpgrade "maxammo metal increased" [$SIGSEGV]
+	DisallowUpgrade "maxammo primary increased" 
+	DisallowUpgrade "maxammo metal increased" 
 	DisallowUpgrade "maxammo secondary increased"
 	DisallowUpgrade "metal regen"
 	PlayerAttributes
@@ -111,7 +111,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			"max health additive bonus" 150
 		}
 	}
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ClassName "tf_weapon_knife"
 		"provide on active" 1
@@ -2914,34 +2914,34 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			}
 		}
     }
-	SpawnTemplate [$SIGSEGV] "baseLogic"
-	SpawnTemplate [$SIGSEGV] "antirollout"
-	SpawnTemplate[$SIGSEGV] "robot_spawns"
-	SpawnTemplate[$SIGSEGV] "barriersdisable"
-	//SpawnTemplate[$SIGSEGV] "forcefield"
-	//SpawnTemplate[$SIGSEGV] "detectflag"
-	SpawnTemplate[$SIGSEGV] "fuck_gates"
-	SpawnTemplate[$SIGSEGV] "hold_up"
-	SpawnTemplate[$SIGSEGV] "disable_hatch_forcefield"
-	SpawnTemplate[$SIGSEGV] "OwO"
-	SpawnTemplate[$SIGSEGV] "annotation_last"
-	SpawnTemplate[$SIGSEGV] "annotation_deploy"
-	SpawnTemplate[$SIGSEGV] "annotation_last_tank"
-	SpawnTemplate[$SIGSEGV] "annotation_gate"
-	SpawnTemplate[$SIGSEGV] "no_forcefield"
-	SpawnTemplate[$SIGSEGV] "better_relay"
-	SpawnTemplate[$SIGSEGV] "no_holograms"
-	SpawnTemplate[$SIGSEGV] "visualize"
-	SpawnTemplate[$SIGSEGV] "dont_enter_pls"
-	SpawnTemplate[$SIGSEGV] "no_uber_can"
-	//SpawnTemplate[$SIGSEGV] "light_up_pls"
-	//SpawnTemplate[$SIGSEGV] "no_flank_allowed"
-	SpawnTemplate[$SIGSEGV] "jump"
-	SpawnTemplate[$SIGSEGV] "one_blocked_message"
-	SpawnTemplate[$SIGSEGV] "extra_spawns_blu"
-	//SpawnTemplate[$SIGSEGV] "no_bomb_spy"
+	SpawnTemplate  "baseLogic"
+	SpawnTemplate  "antirollout"
+	SpawnTemplate "robot_spawns"
+	SpawnTemplate "barriersdisable"
+	//SpawnTemplate "forcefield"
+	//SpawnTemplate "detectflag"
+	SpawnTemplate "fuck_gates"
+	SpawnTemplate "hold_up"
+	SpawnTemplate "disable_hatch_forcefield"
+	SpawnTemplate "OwO"
+	SpawnTemplate "annotation_last"
+	SpawnTemplate "annotation_deploy"
+	SpawnTemplate "annotation_last_tank"
+	SpawnTemplate "annotation_gate"
+	SpawnTemplate "no_forcefield"
+	SpawnTemplate "better_relay"
+	SpawnTemplate "no_holograms"
+	SpawnTemplate "visualize"
+	SpawnTemplate "dont_enter_pls"
+	SpawnTemplate "no_uber_can"
+	//SpawnTemplate "light_up_pls"
+	//SpawnTemplate "no_flank_allowed"
+	SpawnTemplate "jump"
+	SpawnTemplate "one_blocked_message"
+	SpawnTemplate "extra_spawns_blu"
+	//SpawnTemplate "no_bomb_spy"
 	//SpawnTemplate "capteleporter"
-	SpawnTemplate[$SIGSEGV] "teleporting"
+	SpawnTemplate "teleporting"
 	SpawnTemplate
 	{
 		Name "cabinet"
@@ -3010,74 +3010,74 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	}
 
 	//all of the BLU upgrade stations
-	//SpawnTemplate [$SIGSEGV] 
+	//SpawnTemplate  
 	//{
 	//	Name "station"
 	//	"origin" "1344 -896 137"
 	//	"angles" "0 0 0"
 	//}
-	//SpawnTemplate [$SIGSEGV] 
+	//SpawnTemplate  
 	//{
 	//	Name "station"
 	//	"origin" "1344 -896 137"
 	//	"angles" "0 270 0"
 	//}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "560.047 -942.517 89"
 		"angles" "0 90 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "1211 -128 265"
 		"angles" "0 0 0"
 	}
-	//SpawnTemplate [$SIGSEGV]
+	//SpawnTemplate 
 	//{
 	//	Name "station"
 	//	"origin" "-448 -512 201"
 	//	"angles" "0 0 0"
 	//}
-	//SpawnTemplate [$SIGSEGV]
+	//SpawnTemplate 
 	//{
 	//	Name "station"
 	//	"origin" "-1297.48 112.047 -119"
 	//	"angles" "0 270 0"
 	//}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1408 1172 65.2333"
 		"angles" "0 90 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1428 1216 585"
 		"angles" "0 180 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1408 1216 585"
 		"angles" "0 0 0"
 	}
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "station"
 		"origin" "-1728 1172 64"
 		"angles" "0 90 0"
 	}
 	//spawn barriers
-	SpawnTemplate[$SIGSEGV] //upper left spawn
+	SpawnTemplate //upper left spawn
 	{
 		Name "barriers"
 		"origin" "1408 192 265"
 		"angles" "0 0 0"
 	}
-	SpawnTemplate[$SIGSEGV] //main spawn
+	SpawnTemplate //main spawn
 	{
 		Name "barriers"
 		"origin" "640 -320 89"
@@ -3207,7 +3207,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	}
 	
 
-	FlagResetTime [$SIGSEGV] //Overrides default bomb reset time
+	FlagResetTime  //Overrides default bomb reset time
 	{
 		Name "intel_35" //Name of flag entity on the map
 		ResetTime 70
@@ -3224,7 +3224,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Item "Bonk Helm"
 			Item "The Atomizer"
 			ClassIcon scout_bonk_nys
-			Action Mobber [$SIGSEGV]
+			Action Mobber 
 			Health 1600
 			Attributes MiniBoss
 			ItemAttributes
@@ -3246,7 +3246,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Name "Giant Homing Soldier"
 			Skill Normal
 			ClassIcon soldier_homing_nys
-			HomingRockets [$SIGSEGV]
+			HomingRockets 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -3254,7 +3254,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				TurnPower 90 
 				MaxAimError 360 
 			}
-			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
+			RocketCustomParticle eyeboss_projectile 
 		}
 		T_TFBot_Red_Plutonium_Gauntlet
 		{
@@ -3262,7 +3262,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Name "Plutonium Gauntlet"
 			Item "The Tungsten Toque"
 			ClassIcon heavy_steelfist
-			ItemColor[$SIGSEGV]
+			ItemColor
 			{
 				ItemName "Fists of Steel"
 				Red 0
@@ -3381,8 +3381,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 		T_TFBot_Red_Phlog_Pyro
 		{
 			Class Pyro
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Item "The Phlogistinator"
 			Name "Phlogistinator Pyro"
 			Skill Expert
@@ -3402,7 +3402,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Attributes IgnoreEnemies
 			Health	150
 			Attributes	SpawnWithFullCharge
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			AddCond  { Name TF_COND_REPROGRAMMED } 
 			ClassIcon	medic_kritz_red
 			Item	"The Kritzkrieg"
 			Item	"The Scrap Pack"
@@ -3423,8 +3423,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Class Soldier
 			Skill Expert
 			ClassIcon soldier_bazooka
-			UseBestWeapon 1 [$SIGSEGV] 
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			UseBestWeapon 1  
+			AddCond  { Name TF_COND_REPROGRAMMED } 
 			Attributes AlwaysCrit
 			Name "Bazooka Soldier"
 			Item "The Beggar's Bazooka"
@@ -3449,8 +3449,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Item "Big Chief"
 			Name "Hibernating Bear"
 			WeaponRestrictions MeleeOnly
-			Action Mobber[$SIGSEGV]
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			Action Mobber
+			AddCond  { Name TF_COND_REPROGRAMMED } 
 			ItemAttributes
 			{
 				ItemName "Warrior's Spirit"
@@ -3466,8 +3466,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Class Pyro
 			Health 3000
 			Attributes MiniBoss
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Item "The Phlogistinator"
 			Name "Giant Phlogistinator Pyro"
 			Skill Expert
@@ -3494,13 +3494,13 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Health 1500
 			Attributes MiniBoss
 			ClassIcon scout_cola_nys 
-			Action Mobber[$SIGSEGV]
+			Action Mobber
 			Name "Giant Crit-a-Cola Scout"
 			Item "The Soda Popper"
 			Item "Crit-a-Cola"
 			Item "Bonk Leadwear"
 			Item "The Caffeine Cooler"
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED }
+			AddCond  { Name TF_COND_REPROGRAMMED }
 			ItemAttributes
 			{
 				ItemName "The Caffeine Cooler"
@@ -3524,7 +3524,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Name "Giant Shortstop Scout"
 			Item "The Shortstop"
 			Skill Hard
-			Action Mobber [$SIGSEGV]
+			Action Mobber 
 			ItemAttributes
 			{
 				ItemName "The Shortstop"
@@ -3550,8 +3550,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Skill Expert
 			Item "The Lucky Shot"	
 			WeaponRestrictions PrimaryOnly
-			Action Mobber [$SIGSEGV]
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED }
+			Action Mobber 
+			AddCond  { Name TF_COND_REPROGRAMMED }
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -3568,8 +3568,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Scale 1.4
 			Health 600
 			Skill Expert
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Attributes HoldFireUntilFullReload
 			ItemAttributes
 			{
@@ -3596,7 +3596,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			WeaponRestrictions SecondaryOnly
 			Attributes MiniBoss
 			Attributes IgnoreEnemies
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			AddCond  { Name TF_COND_REPROGRAMMED } 
 			Tag bot_giant
 			Tag bot_squad_member
 			ItemAttributes
@@ -3652,8 +3652,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Health 3300
 			Attributes MiniBoss
 			WeaponRestrictions MeleeOnly 
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			ItemAttributes
 			{
 				ItemName "The Half-Zatoichi"
@@ -3677,8 +3677,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			ClassIcon pyro_dragon_fury
 			Name "Giant Dragon's Fury Pyro"
 			Item "The Dragon's Fury"
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			CharacterAttributes
@@ -3704,7 +3704,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Item "Natascha"
 			Skill Expert
 			Health 5000
-			Action Mobber [$SIGSEGV]
+			Action Mobber 
 			Attributes MiniBoss
 			ItemAttributes
 			{
@@ -3729,15 +3729,15 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Class Heavyweapons
 			Skill Expert
 			WeaponRestrictions MeleeOnly
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Name "Radioactive Punch"
 			ClassIcon heavy_chief
 			Health 5000
 			Item "War Head"
 			Item "Fists of Steel"
 			Attributes MiniBoss
-			ItemColor[$SIGSEGV]
+			ItemColor
 			{
 				ItemName "Fists of Steel"
 				Red 0
@@ -3774,8 +3774,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Item "The Chargin' Targe"
 			Item "The Eyelander"
 			UseBestWeapon 1
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action EscortFlag [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action EscortFlag 
 			Attributes MiniBoss
 			Attributes HoldFireUntilFullReload
 			ItemAttributes
@@ -3803,14 +3803,14 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"airblast vulnerability multiplier" 0.5
 				"override footstep sound set" 4
 			}
-			WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
+			WeaponSwitch   //Periodically switches weapon
             {
                 Delay 10
                 Cooldown 7 //Time between each weapon switch (Default: 10)
                 Repeats 0 
 				Type "Melee" 
 			}
-			WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
+			WeaponSwitch   //Periodically switches weapon
             {
                 Delay 6.5
                 Cooldown 7 //Time between each weapon switch (Default: 10)
@@ -3827,8 +3827,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Health 3800
 			Item "The Original"
 			Attributes AlwaysCrit
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Attributes MiniBoss
 			ItemAttributes
 			{
@@ -3846,7 +3846,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 			}
-			HomingRockets [$SIGSEGV]
+			HomingRockets 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -3854,7 +3854,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				TurnPower 90 
 				MaxAimError 360 
 			}
-			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
+			RocketCustomParticle eyeboss_projectile 
 		}
 		T_TFBot_Red_Giant_Soldier_Spammer_Buff
         {
@@ -3864,8 +3864,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			ClassIcon soldier_buff_spammer
 			Health 3800
 			Skill Expert
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Attributes MiniBoss
             Attributes SpawnWithFullCharge
 			ItemAttributes
@@ -3895,8 +3895,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 		{
 			Class Demoman
 			Skill Expert
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			Name "SkullCutter Knight"
 			//Scale 1.4
 			//Health 650
@@ -3926,8 +3926,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
             Health 650
             Item "The Winger"
             WeaponRestrictions SecondaryOnly
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
             ClassIcon scout_winger_lite
 			ItemAttributes
 			{
@@ -3962,8 +3962,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Skill Hard
 			Item "The Original"
 			Attributes AlwaysCrit
-			AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			Action Mobber [$SIGSEGV]
+			AddCond  { Name TF_COND_REPROGRAMMED } 
+			Action Mobber 
 			ItemAttributes
 			{
 				ItemName "The Original"
@@ -3986,7 +3986,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
             Target wave_init_lower_relay
             Action Trigger
         }
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{blue}In this mission, you will have some ally bots to help, they are indicated in support. Some can pick up the bomb, some cannot, {red}If all of them die, you lose!"
 			//Line "{white}------------------------------------------------------------------"
@@ -4233,7 +4233,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Red_Soldier
 				Skill Hard
 				Attributes DisableDodge
-				UseBestWeapon 0 [$SIGSEGV]
+				UseBestWeapon 0 
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -4348,8 +4348,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Class Heavyweapons
 				Skill Expert
 				AimTrackingInterval 1
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Attributes DisableDodge
 				ItemAttributes
 				{
@@ -4559,7 +4559,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Giant_Homing_Soldier
 				AlwaysGlow 1
-				//Action EscortFlag [$SIGSEGV]
+				//Action EscortFlag 
 				Attributes UseBossHealthBar
 				CharacterAttributes
 				{
@@ -4595,7 +4595,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Giant_Homing_Soldier
 				AlwaysGlow 1
-				//Action Mobber [$SIGSEGV]
+				//Action Mobber 
 				Attributes UseBossHealthBar
 				CharacterAttributes
 				{
@@ -4641,7 +4641,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Giant_Heavyweapons_Shotgun
 				AlwaysGlow 1
-				//Action Mobber [$SIGSEGV]
+				//Action Mobber 
 				//Skill Normal
 				Attributes UseBossHealthBar
 				CharacterAttributes
@@ -4704,7 +4704,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Target wave_init_upper_relay
 			Action Trigger
 		}
-		//Explanation [$SIGSEGV]
+		//Explanation 
 		//{
 		//	Line "------------------------------------------------------------------"
 		//	Line "This wave you will have to defend:"
@@ -4824,7 +4824,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				AimTrackingInterval 0.25
 				Attributes DisableDodge
-				UseBestWeapon 0 [$SIGSEGV]
+				UseBestWeapon 0 
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_SCATTERGUN"
@@ -4857,7 +4857,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				AimTrackingInterval 0.25
 				Attributes DisableDodge
-				UseBestWeapon 0 [$SIGSEGV]
+				UseBestWeapon 0 
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_SCATTERGUN"
@@ -4889,7 +4889,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				tag noflank
 				AimTrackingInterval 1
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+				AddCond  { Name TF_COND_REPROGRAMMED } 
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_FLAMETHROWER"
@@ -4980,7 +4980,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Scout
-				UseBestWeapon 0 [$SIGSEGV]
+				UseBestWeapon 0 
 				tag noflank
 				Attributes DisableDodge
 				Skill Expert
@@ -5074,7 +5074,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Scout
-				UseBestWeapon 0 [$SIGSEGV]
+				UseBestWeapon 0 
 				tag noflank
 				Attributes DisableDodge
 				Skill Expert
@@ -5148,8 +5148,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				tag noflank
 				AimTrackingInterval 1
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Attributes DisableDodge
 				 
 				ItemAttributes
@@ -5193,7 +5193,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Giant_Boxing_Heavy
 				tag nostuck
 				AlwaysGlow 1
-				//Action EscortFlag [$SIGSEGV]
+				//Action EscortFlag 
 				Attributes UseBossHealthBar
 				CharacterAttributes
 				{
@@ -5230,7 +5230,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Giant_DemoMan_PrinceTavish
 				tag nostuck
 				AlwaysGlow 1
-				//Action EscortFlag [$SIGSEGV]
+				//Action EscortFlag 
 				Attributes UseBossHealthBar
 				ItemAttributes
 				{
@@ -5277,7 +5277,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Giant_Soldier_Extended_Concheror
 				tag nostuck
 				AlwaysGlow 1
-				//Action Mobber [$SIGSEGV]
+				//Action Mobber 
 				Attributes UseBossHealthBar
 				CharacterAttributes
 				{
@@ -5826,7 +5826,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						tag nostuck
 						AlwaysGlow 1
 						//ClassIcon soldier_banner_trio
-						//Action EscortFlag [$SIGSEGV]
+						//Action EscortFlag 
 						CharacterAttributes
 						{
 							"health from healers reduced" 0.20
@@ -5869,7 +5869,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						tag nostuck
 						AlwaysGlow 1
 						//ClassIcon soldier_banner_trio
-						//Action Mobber [$SIGSEGV]
+						//Action Mobber 
 						CharacterAttributes
 						{
 							"health from healers reduced" 0.20
@@ -5923,7 +5923,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						tag nostuck
 						AlwaysGlow 1
 						//ClassIcon soldier_banner_trio
-						//Action Mobber [$SIGSEGV]
+						//Action Mobber 
 						CharacterAttributes
 						{
 							"health from healers reduced" 0.20
@@ -6083,7 +6083,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6150,7 +6150,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6205,7 +6205,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Scout
-				UseBestWeapon 0 [$SIGSEGV]
+				UseBestWeapon 0 
 				Attributes DisableDodge
 				Skill Hard
 				ItemAttributes
@@ -6219,7 +6219,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6264,7 +6264,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6294,14 +6294,14 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				TFBot
 				{
 					Template T_TFBot_Red_Bazooka_Soldier
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					CharacterAttributes
 					{
 						"airblast vulnerability multiplier" 0.01
 						 
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6336,7 +6336,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6365,7 +6365,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Scout
-				UseBestWeapon 0 [$SIGSEGV]
+				UseBestWeapon 0 
 				Attributes DisableDodge
 				Skill Expert
 				AimTrackingInterval 0.25
@@ -6380,7 +6380,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6420,7 +6420,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6461,7 +6461,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"airblast vulnerability multiplier" 0.01
 						 
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6543,7 +6543,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6581,7 +6581,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6617,7 +6617,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6653,7 +6653,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -6689,7 +6689,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7371,7 +7371,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"airblast vulnerability multiplier" 0.01
 						
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7415,7 +7415,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"airblast vulnerability multiplier" 0.01
 						
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7452,8 +7452,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				AimTrackingInterval 0.25
 				ClassIcon scout_pop
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Name "Soda Popper Scout"
 				Item "The Fed-Fightin' Fedora"
 				Item "The Bolt Boy"
@@ -7471,7 +7471,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7501,8 +7501,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Class Scout
 				Skill Expert
 				ClassIcon scout_pop
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Name "Soda Popper Scout"
 				Item "The Fed-Fightin' Fedora"
 				Item "The Bolt Boy"
@@ -7521,7 +7521,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7562,7 +7562,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					{
 						 
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7588,7 +7588,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7614,7 +7614,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7640,7 +7640,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7666,7 +7666,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7692,7 +7692,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7730,7 +7730,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"airblast vulnerability multiplier" 0.01
 						
 					}
-					InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7773,8 +7773,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Name "Brass Beast Heavy"
 				Skill Expert
 				ClassIcon heavy_brass_h
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Attributes DisableDodge
 				ItemAttributes
 				{
@@ -7807,8 +7807,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Class Scout
 				Skill Expert
 				ClassIcon scout_pop
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Name "Soda Popper Scout"
 				Item "The Fed-Fightin' Fedora"
 				Item "The Bolt Boy"
@@ -7827,7 +7827,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7862,7 +7862,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7896,7 +7896,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Hard
 				Attributes AlwaysCrit
 				Attributes DisableDodge
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7960,7 +7960,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"airblast vulnerability multiplier" 0.01
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7996,7 +7996,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					 
 				}
-				InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
