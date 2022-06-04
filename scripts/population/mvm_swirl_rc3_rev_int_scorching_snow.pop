@@ -2068,7 +2068,7 @@ swirl2_reverse_boogaloo
 			Name "Plutonium Gauntlet"
 			Item "The Tungsten Toque"
 			ClassIcon heavy_steelfist
-			ItemColor[$SIGSEGV]
+			ItemColor [$SIGSEGV]
 			{
 				ItemName "Fists of Steel"
 				Red 0
