@@ -1,0 +1,6 @@
+banned_missions
+{
+	"mvm_bigrock" "normal"
+	"mvm_bigrock" "advanced1"
+	"mvm_bigrock" "advanced2"
+}
