@@ -673,7 +673,6 @@ WaveSchedule
 		ClassName "TF_WEAPON_GRENADELAUNCHER"
 		"faster reload rate" 0.65
 		"cannot upgrade" 1
-		"is miniboss" 1
 		"fire rate bonus" 0.1
 		"health from packs decreased" 0.5
 		"clip size upgrade atomic" 7.0
@@ -684,7 +683,6 @@ WaveSchedule
 	{
 		ClassName "TF_WEAPON_SWORD"
 		"melee cleave attack" 1
-		"is miniboss" 1
 		"critboost on kill" 3
 		"max health additive penalty" 0
 		"override footstep sound set" 5
