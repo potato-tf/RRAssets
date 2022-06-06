@@ -996,7 +996,7 @@ WaveSchedule
                 "solid" "2"
                 "spawnflags" "0"
                 "targetname" "blu_upgrade_altspawn"
-                "origin" "-6152 -2807 78"
+                "origin" "-6152 -2827 78"
             }
             prop_dynamic
             {
@@ -1012,7 +1012,7 @@ WaveSchedule
             {
                 "StartDisabled" "0"
 	            "targetname" "blu_upgrade_altspawn_func"
-                "origin" "-6152 -2807 78"
+                "origin" "-6152 -2827 78"
 
                 "mins" "-89 -139 -92"
                 "maxs" "89 139 92"
