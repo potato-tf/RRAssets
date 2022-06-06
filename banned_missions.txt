@@ -1,9 +1,0 @@
-banned_missions
-{
-	"mvm_bigrock" "normal"
-	"mvm_bigrock" "advanced1"
-	"mvm_bigrock" "advanced2"
-	"mvm_rottenburg" "normal"
-	"mvm_rottenburg" "advanced1"
-	"mvm_rottenburg" "advanced2"
-}
