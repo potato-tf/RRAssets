@@ -10338,7 +10338,7 @@ WaveSchedule
             TotalCurrency 50
             TFBot
             {
-                Template T_TFBot_Giant_Heavyweapons_Brass
+                Template T_TFBot_Giant_Heavyweapons_Brass_Fix
                 Action Idle
                 ClassIcon random_lite
                 Attributes DisableDodge
@@ -10373,7 +10373,7 @@ WaveSchedule
             TotalCurrency 50
             TFBot
             {
-                Template T_TFBot_Giant_Heavyweapons_Brass
+                Template T_TFBot_Giant_Heavyweapons_Brass_Fix
                 Action Idle
                 ClassIcon random_lite
                 Attributes DisableDodge
