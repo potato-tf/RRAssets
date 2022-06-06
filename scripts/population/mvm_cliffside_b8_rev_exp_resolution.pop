@@ -13,7 +13,7 @@ WaveSchedule
 	RespawnWaveTimeBlue 			1
 	FixedRespawnWaveTimeBlue 		1
 	AddSentryBusterWhenDamageDealtExceeds 0
-	CustomUpgradesFile "mvm_upgrades_reverse.txt"
+//	CustomUpgradesFile "mvm_upgrades_reverse.txt"
 
 	RobotLimit 26 					 
 	ForceHoliday 2 					 
@@ -158,6 +158,11 @@ WaveSchedule
 		Node	"1218 7552 1300"
 		Node	"1243 9263 1300"
 	}
+	DisallowUpgrade	"maxammo primary increased" [$SIGSEGV]
+	DisallowUpgrade	"maxammo secondary increased" [$SIGSEGV]
+	DisallowUpgrade "maxammo metal increased" [$SIGSEGV]
+	DisallowUpgrade "maxammo grenades1 increased" [$SIGSEGV]
+	DisallowUpgrade "metal regen" [$SIGSEGV]
 	PlayerAttributes
 	{
 		Engineer
