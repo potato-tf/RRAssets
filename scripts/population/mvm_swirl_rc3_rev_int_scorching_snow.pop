@@ -4337,6 +4337,10 @@ swirl2_reverse_boogaloo
 				Tag noflank
 				//Attributes AlwaysCrit
 				ClassIcon heavy_steelfist_pusher
+				CharacterAttributes
+				{
+					"crit mod disabled" 0
+				}
 			}
 		}
 		WaveSpawn
