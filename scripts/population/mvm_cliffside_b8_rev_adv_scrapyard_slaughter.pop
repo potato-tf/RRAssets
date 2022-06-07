@@ -15,7 +15,7 @@ WaveSchedule
 	FixedRespawnWaveTimeBlue 		0
 	PlayerMiniBossMinRespawnTime    30
 	AddSentryBusterWhenDamageDealtExceeds 0
-	CustomUpgradesFile "mvm_upgrades_reverse.txt"
+//	CustomUpgradesFile "mvm_upgrades_reverse.txt"
 
 	RobotLimit 26 					 
 	ForceHoliday 2 					 
