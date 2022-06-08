@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "HUD/leaderboard_class_demoknight_grenade"
+	"$baseTexture" "hud/leaderboard_class_demoknight_grenade"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1
