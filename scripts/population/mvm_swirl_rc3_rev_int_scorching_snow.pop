@@ -28,6 +28,7 @@ swirl2_reverse_boogaloo
 	SniperAllowHeadshots 1 	//sniper and amby don't work without this, use AimAt Body  if you don't want your snipers headshotting
 	NoRomevisionCosmetics 1  //romevision is ugly, just like your mom
 	DisplayRobotDeathNotice 1 
+	BotsUsePlayerTeleporters 0
 	BluPlayersAreRobots 1 
 	MedigunShieldDamage 1 
 	SendBotsToSpectatorImmediately 1 
