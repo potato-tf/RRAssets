@@ -634,6 +634,36 @@ WaveSchedule
                 "maxs" "320 8 96"
 				"StartDisabled" "0"
 			}
+            func_forcefield
+			{		
+                "disablereceiveshadows" "0"
+                "origin" "-4216 1855 512"
+                "renderfx" "0"
+                "rendermode" "10"
+                "TeamNum" "2"
+                "targetname" "notankentrance"
+                "mins" "-24 -128 -142"
+                "maxs" "18 128 300"
+			}
+            func_forcefield
+			{		
+                "disablereceiveshadows" "0"
+                "origin" "-4559 1861 481"
+                "renderfx" "0"
+                "rendermode" "10"
+                "TeamNum" "2"
+                "targetname" "tankentrance_limit"
+                "mins" "-24 -128 -142"
+                "maxs" "18 128 300"
+			}
+			func_respawnroom
+			{
+		    	"targetname" "bluegate_resproom"
+				"mins" "-400 -120 -40"
+				"maxs" "400 200 216"
+				"origin" "-4434 2472 640"
+				"TeamNum" "3"
+			}
             prop_dynamic
             {
                 "angles" "0 180 0"
@@ -736,6 +766,26 @@ WaveSchedule
                 "model" "models/props_mvm/barrel_crate.mdl"
                 "origin" "-2801 2123 640"
 				"angles" "0 -65 0"
+                "targetname" "spawn_frameB"
+				fademindist 1000
+				fademaxdist 1100
+				"solid" "6"
+            }
+            prop_dynamic
+            {
+                "model" "models/props_mvm/barrel_crate.mdl"
+                "origin" "-3071 2691 640"
+				"angles" "0 -25 0"
+                "targetname" "spawn_frameB"
+				fademindist 1000
+				fademaxdist 1100
+				"solid" "6"
+            }
+            prop_dynamic
+            {
+                "model" "models/props_mvm/barrel_crate.mdl"
+                "origin" "-3071 2691 740"
+				"angles" "0 -25 0"
                 "targetname" "spawn_frameB"
 				fademindist 1000
 				fademaxdist 1100
@@ -4200,6 +4250,12 @@ WaveSchedule
 		    Name "tankboobs"
 			TotalCount 1
 			MaxActive 1
+			
+			FirstSpawnOutput
+			{
+			    Target notankentrance
+				Action Kill
+			}
 			
 			Support Limited
 			Tank
