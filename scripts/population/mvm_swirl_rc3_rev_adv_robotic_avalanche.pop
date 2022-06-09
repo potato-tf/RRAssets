@@ -57,6 +57,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	DisplayRobotDeathNotice 1 
 	BluPlayersAreRobots 1 
 	MedigunShieldDamage 1 
+	BotsUsePlayerTeleporters 0 
 	SendBotsToSpectatorImmediately 1 
 	//CustomUpgradesFile "mvm_upgrades_reverse_miko.txt" 
 	//BonusRatioHalf 1.1 
