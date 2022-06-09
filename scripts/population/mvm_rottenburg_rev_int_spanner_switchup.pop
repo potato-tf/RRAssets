@@ -82,14 +82,12 @@ WaveSchedule
 			}
 		}
 	}
-
-	ItemAttributes	// too powerful with infinite ammo
-	{
-		Itemname "The Short Circuit"
-		"fire rate penalty" 2
-		"cannot be upgraded" 1
-	}
-
+	// ItemAttributes	// too powerful with infinite ammo
+	// {
+	// Itemname "The Short Circuit"
+	// "fire rate penalty" 2
+	// "cannot be upgraded" 1
+	// }
 	PlayerAttributes	// Player attributes appied for the whole mission
 	{
 		"cancel falling damage" 1
@@ -129,8 +127,8 @@ WaveSchedule
 	NoRomevisionCosmetics 1
 	WaveStartCountdown 1
 	TextPrintTime 0
-	RobotLimit 26  
-	BotsUsePlayerTeleporters 0  
+	RobotLimit 26 [$SIGSEGV]
+	BotsUsePlayerTeleporters 0 [$SIGSEGV]
 	DisallowUpgrade "maxammo primary increased"	// players have infinite ammo
 	DisallowUpgrade "maxammo secondary increased"	// players have infinite ammo
 	DisallowUpgrade "maxammo metal increased"	// players have infinite ammo
@@ -2844,7 +2842,7 @@ WaveSchedule
 					{
 						Default	// shoot the tank
 						{
-							InterruptAction  
+							InterruptAction [$SIGSEGV]
 							{
 								Target tank_boss	// Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 								AimTarget tank_boss	// Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
