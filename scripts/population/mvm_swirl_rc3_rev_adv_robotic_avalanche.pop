@@ -51,7 +51,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	RemoveBluVelocityLimit 1	
 	RobotLimit 26 
 	FlagCarrierMovementPenalty 1 
-	//AllowMultipleSappers 1 
 	SniperAllowHeadshots 1 	//sniper and amby don't work without this, use AimAt Body  if you don't want your snipers headshotting
 	NoRomevisionCosmetics 1  //romevision is ugly, just like your mom
 	DisplayRobotDeathNotice 1 
@@ -59,46 +58,11 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	MedigunShieldDamage 1 
 	BotsUsePlayerTeleporters 0 
 	SendBotsToSpectatorImmediately 1 
-	//CustomUpgradesFile "mvm_upgrades_reverse_miko.txt" 
-	//BonusRatioHalf 1.1 
-	//BonusRatioFull 1.1 
-	TextPrintTime 0 
-	//NoMissionInfo 1  //unnecessary	
+	TextPrintTime 0 	
     PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" 		 
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu_tools.mdl" 	
 	PrecacheModel "models/props_owo/sign001.mdl" 	
-	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-	//PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl"
-	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" 
-	//PrecacheModel "models/props_mvm/reversemvm_redwall_640x300.mdl"  //doesn't show properly so i quit using those
-    //PrecacheModel "models/props_mvm/reversemvm_redwall_696x337.mdl"  
-    //PrecacheModel "models/props_mvm/reversemvm_redwall_512x320.mdl"  
-    //PrecacheModel "models/props_mvm/reversemvm_redwall_352x256.mdl" 
-	//doesn't work >:(
-	DisableSound "Announcer.MVM_Bomb_Alert_Entered"				   
-	DisableSound "Announcer.MVM_Bomb_Alert_Near_Hatch"			   
-	DisableSound "Announcer.MVM_Bomb_Alert_Deploying"
-	DisableSound "Announcer.MVM_Robots_Planted"	
-	DisableSound "Announcer.MVM_All_Dead"	
-	//CustomNavFile "mvm_swirl_rc1_fixed"
-	//HandModelOverride  // Overwrite first person arms models
-    //{
-    //    Scout "models/weapons/c_models/c_scout_bot_arms.mdl"
-	//	Soldier "models/weapons/c_models/c_soldier_bot_arms.mdl"
-	//	Pyro "models/weapons/c_models/c_pyro_bot_arms.mdl"
-	//	Demoman "models/weapons/c_models/c_demo_bot_arms.mdl"
-	//	Heavyweapons "models/weapons/c_models/c_heavy_bot_arms.mdl"
-	//	Engineer "models/weapons/c_models/c_engineer_bot_arms.mdl"
-	//	Medic "models/weapons/c_models/c_medic_bot_arms.mdl"
-	//	Spy "models/weapons/c_models/c_spy_bot_arms.mdl"
-    //   Sniper "models/weapons/c_models/c_sniper_bot_arms.mdl"
-    //}
-	//Testing restrictions, will be removed once the mission is submitted
-	//DisallowUpgrade "generate rage on heal"  
-	//DisallowUpgrade "critboost" 
-	//DisallowUpgrade "ubercharge" 
-	//DisallowUpgrade "explosive sniper shot" 
-	//removed because infinite ammo and metal
+	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"	
 	DisallowUpgrade "maxammo primary increased" 
 	DisallowUpgrade "maxammo metal increased" 
 	DisallowUpgrade "maxammo secondary increased"
@@ -151,8 +115,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"OnMapSpawn" "gate1_alarm*,Kill,,0,-1"
 				"OnMapSpawn" "gate2_alarm*,Kill,,0,-1"
 				"OnMapSpawn" "spawnbot_chief*,Kill,,0,-1" //bad respawnroom
-				//"OnMapSpawn" "spawnbot_ambush*,Kill,,0,-1" //doesn't work properly with players
-				//"OnMapSpawn" "spawnbot_flank,Kill,,0,-1" //spawn players at the beginning after a gate cap
 				"OnMapSpawn" "filter_gatebot*,Kill,,0,-1" //killing filters and func_nav_prerequisite to make players able to cap
 				"OnMapSpawn" "prereq_low_point*,Kill,,0,-1"
 				"OnMapSpawn" "prereq_up_point*,Kill,,0,-1"
@@ -164,38 +126,21 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"OnMapSpawn" "move_rope,Kill,,0,-1"
 				"OnMapSpawn" "keyframe_rope,Kill,,0,-1"
 				"OnMapSpawn" "cap_trigger*,AddOutput,OnCapTeam2 antistuck*:Disable:0:-1,0,-1"
-				"OnMapSpawn" "spawnbot*,Kill,,0,-1" //had enough of this crap so i removed all of it to remake the whole spawn logic because this map is fucking broken
+				"OnMapSpawn" "spawnbot*,Kill,,0,-1" 
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger spawn_blu_first:Enable:0:-1,0,-1"
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger spawn_blu_up:Disable:0:-1,0,-1"
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger spawn_blu_low:Disable:0:-1,0,-1"
 				"OnMapSpawn" "cap_trigger_up,AddOutput,OnCapTeam2 spawn_blu_up:Enable:0:-1,0,-1"
 				"OnMapSpawn" "cap_trigger_up,AddOutput,OnCapTeam2 spawn_blu_first:Disable:0:-1,0,-1"
-				//"OnMapSpawn" "cap_trigger_up,AddOutput,OnCapTeam2 spawn_blu_upper:Disable:0:-1,0,-1"
 				"OnMapSpawn" "cap_trigger_low,AddOutput,OnCapTeam2 spawn_blu_low:Enable:0:-1,0,-1"
 				"OnMapSpawn" "cap_trigger_low,AddOutput,OnCapTeam2 spawn_blu_first:Disable:0:-1,0,-1"
-				//"OnMapSpawn" "cap_trigger_up,AddOutput,OnCapTeam2 spawn_blu_upper:Disable:0:-1,0,-1"
 				"OnMapSpawn" "wave_reset_relay,AddOutput,OnTrigger spawnbot*:FireUser1:0:-1,0,-1"
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger no_flank_gate:Disable:0:-1,0,-1"
 				"OnMapSpawn" "cap_trigger_up,AddOutput,OnCapTeam2 no_flank_gate:Enable:0:-1,0,-1"
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger capturezone_blue:Disable:0:-1,0,-1"
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger fuckyougate*:Disable:0:-1,0,-1"
 				"OnMapSpawn" "fuckyougate*,Enable,,0,-1"
-			}
-			trigger_multiple //Forces thirdperson while deploying bomb
-			{
-				"targetname" "thirdperson"
-				"StartDisabled" "1"
-				"spawnflags" "3"
-				"origin" "1542.488770 739.029175 -143.968689"
-				"maxs" "50 50 50"
-				"mins" "-50 -50 -50"
-				"filtername" "filter_blue"
-				"OnStartTouch" "!activator,setforcedtauntcam,1,0.1,-1" //!activator is any entity currently inside of the trigger_multiple
-				"OnStartTouch" "!activator,SetHUDVisibility,0,0.1,-1"
-				"OnStartTouch" "!activator,DisableDamageForces,,0,-1" //doesn't work?
-				"OnEndTouch" "!activator,setforcedtauntcam,0,0,-1"
-				"OnEndTouch" "!activator,SetHUDVisibility,1,0,-1"
-				"OnEndTouch" "!activator,EnableDamageForces,,0,-1"
+				"OnMapSpawn" "func_capturezone,AddOutput,OnCapture kill_relay:Trigger:0:-1,0,-1"
 			}
 			logic_relay //trigger this to kill all players and buildings
 			{
@@ -224,12 +169,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"force_map_reset" "1"
 				"classname" "game_round_win"
 			}
-			//logic_relay
-			//{
-			//	"targetname" "red_tank_relay" //switches tank to red team
-			//	"OnTrigger" "tankbossred,Setteam,2,0.25,-1"
-			//	"OnTrigger" "tankbossred,AddCaptureDestroyPostfix,destroy_mvm_cactus_valley3,0,-1" //cool explodey effect, doesn't work :(
-			//}
 		}
 		station
 		{
@@ -3990,14 +3929,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 		Explanation 
 		{
 			Line "{blue}In this mission, you will have some ally bots to help, they are indicated in support. Some can pick up the bomb, some cannot, {red}If all of them die, you lose!"
-			//Line "{white}------------------------------------------------------------------"
-			//Line "{grey}Your VIPs this wave will be:"
-			//Line "{red}-1 Giant Demoknight"
-			//Line "{red}-2 Giant Homing Rocket Soldiers"
-			//Line "{red}-1 Giant Shotgun Heavy"
-			//Line "{red}Other Allies:"
-			//Line "{red}-2 Giant Bonk Scouts"
-			//Line "{white}------------------------------------------------------------------"
 			Line "{blue} INFO:"
 			Line "{blue}-You have infinite ammo and metal"
 			Line "{blue}-Players can capture gates"
@@ -7398,9 +7329,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			WaitBetweenSpawns 10
 		
 			TotalCurrency 100
-		
-			Squad
-			{	
+			
 				TFBot
 				{ 
 					Template T_TFBot_Red_Giant_Demo_Burst
@@ -7428,7 +7357,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						Duration 5 // How long should the ai be interrupted
 					}
 				}
-			}
 		}
 		WaveSpawn
 		{
@@ -7468,10 +7396,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					//"damage bonus" 0.65		// 35% damage reduction
 				}
 				Attributes AlwaysCrit
-				CharacterAttributes
-				{
-					 
-				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7518,10 +7442,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					//"damage bonus" 0.65		// 35% damage reduction
 				}
 				Attributes AlwaysCrit
-				CharacterAttributes
-				{
-					 
-				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7559,10 +7479,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
 					}
-					CharacterAttributes
-					{
-						 
-					}
 					InterruptAction  // Stop current bot ai and force the bot to move to a location
 					{
 						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7579,10 +7495,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					Template T_TFBot_Red_Soldier_Spammer
 					Attributes DisableDodge
-					CharacterAttributes
-					{
-						 
-					}
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -7605,10 +7517,17 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					Template T_TFBot_Red_Soldier_Spammer
 					Attributes DisableDodge
-					CharacterAttributes
+					ItemAttributes
 					{
-						 
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+						"crits_become_minicrits" 1
+						"crit mod disabled" 0
 					}
+				}
+				TFBot
+				{
+					Template T_TFBot_Red_Soldier_Spammer
+					Attributes DisableDodge
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -7631,62 +7550,17 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					Template T_TFBot_Red_Soldier_Spammer
 					Attributes DisableDodge
-					CharacterAttributes
-					{
-						 
-					}
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
 						"crits_become_minicrits" 1
 						"crit mod disabled" 0
-					}
-					InterruptAction  // Stop current bot ai and force the bot to move to a location
-					{
-						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
-						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
-						KillAimTarget 1 // Attack aim target (Default: 0)
-							
-						Delay 1 // Time before the first task starts. Must be above 0, or it will not execute (Default: 10)
-						Repeats 0 // How many times should bot do the task in total (Default: 0 - Infinite)
-						Cooldown 8 //Time between each task (Default: 10)
-						Duration 5 // How long should the ai be interrupted
-					}
-				}
-				TFBot
-				{
-					Template T_TFBot_Red_Soldier_Spammer
-					Attributes DisableDodge
-					CharacterAttributes
-					{
-						 
-					}
-					ItemAttributes
-					{
-						ItemName "TF_WEAPON_ROCKETLAUNCHER"
-						"crits_become_minicrits" 1
-						"crit mod disabled" 0
-					}
-					InterruptAction  // Stop current bot ai and force the bot to move to a location
-					{
-						Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
-						AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
-						KillAimTarget 1 // Attack aim target (Default: 0)
-							
-						Delay 1 // Time before the first task starts. Must be above 0, or it will not execute (Default: 10)
-						Repeats 0 // How many times should bot do the task in total (Default: 0 - Infinite)
-						Cooldown 8 //Time between each task (Default: 10)
-						Duration 5 // How long should the ai be interrupted
 					}
 				}
 				TFBot
 				{
 					Template T_TFBot_Red_Soldier_Spammer_Reload
 					Attributes DisableDodge
-					CharacterAttributes
-					{
-						 
-					}
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -7740,7 +7614,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						Delay 1 // Time before the first task starts. Must be above 0, or it will not execute (Default: 10)
 						Repeats 0 // How many times should bot do the task in total (Default: 0 - Infinite)
 						Cooldown 8 //Time between each task (Default: 10)
-						Duration 15 // How long should the ai be interrupted
+						Duration 10 // How long should the ai be interrupted
 					}
 				}
 				TFBot
@@ -7784,10 +7658,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					"crit mod disabled" 0
 					//"damage bonus" 1.7
 				}
-				CharacterAttributes
-				{
-					 
-				}
 			}
 		}
 		WaveSpawn
@@ -7824,10 +7694,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					//"damage bonus" 0.65		// 35% damage reduction
 				}
 				Attributes AlwaysCrit
-				CharacterAttributes
-				{
-					 
-				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -7862,17 +7728,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				{
 					"airblast vulnerability multiplier" 0.01
 					 
-				}
-				InterruptAction  // Stop current bot ai and force the bot to move to a location
-				{
-					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
-					AimTarget "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
-					KillAimTarget 1 // Attack aim target (Default: 0)
-						
-					Delay 1 // Time before the first task starts. Must be above 0, or it will not execute (Default: 10)
-					Repeats 0 // How many times should bot do the task in total (Default: 0 - Infinite)
-					Cooldown 8 //Time between each task (Default: 10)
-					Duration 15 // How long should the ai be interrupted
 				}
 			}
 		}
@@ -7993,10 +7848,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Red_Soldier
 				Attributes AlwaysCrit
-				CharacterAttributes
-				{
-					 
-				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
 					Target "tank_boss" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
@@ -8037,7 +7888,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				StartingPathTrackNode "path_tank_lower"
 				Model "models/bots/boss_bot/boss_tank_color.mdl"
 				SpawnTemplate "colortank"
-				//ClassIcon tank_vac_trio_lite
 				Health 115000
 				Speed 65
 				Skin 1
@@ -8051,8 +7901,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Target boss_deploy_relay
 					Action Trigger
 				}
-				//SpawnTemplate "VacTankFilters"
-				//SpawnTemplate "VacTankRandom"
 			}
 			
 		}
