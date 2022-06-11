@@ -1867,8 +1867,8 @@ WaveSchedule
 				"origin" "6285.507813 -1520.707642 455.665527"	
 				
 				"OnCapTeam2" "rocketfx2_relay,Trigger,,0,-1"
-				"OnCapTeam2" "door_red_large*,Open,,0,-1"
-				"OnCapTeam2" "door_red_large*,Lock,,0.01,-1"
+				"OnCapTeam2" "door_red_large*,Open,,0.01,-1"
+				"OnCapTeam2" "door_red_large*,Kill,,1,-1"
 				"OnCapTeam2" "rocketfx2_relay,Trigger,,0,-1"
 				"OnCapTeam2" "cap_master2,Kill,,3,-1"
 				"OnCapTeam2" "cap_point2,Kill,,3,-1"
