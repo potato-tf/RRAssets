@@ -2130,7 +2130,7 @@ swirl2_reverse_boogaloo
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"damage force reduction" 0.6
-				"airblast vulnerability multiplier" 0.01
+				"damage force reduction" 0
 				"override footstep sound set" 6
 			}
 		}
@@ -2393,7 +2393,7 @@ swirl2_reverse_boogaloo
 			}
 			CharacterAttributes
 			{
-				"airblast vulnerability multiplier" 0.01
+				"damage force reduction" 0
 			}
 		}
 		T_TFBot_Red_Giant_Burst_Conch
@@ -2549,7 +2549,7 @@ swirl2_reverse_boogaloo
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -2579,7 +2579,7 @@ swirl2_reverse_boogaloo
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -2684,7 +2684,7 @@ swirl2_reverse_boogaloo
 				Tag noflank
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -3051,7 +3051,7 @@ swirl2_reverse_boogaloo
 				} 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -3303,7 +3303,7 @@ swirl2_reverse_boogaloo
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						"cannot pick up intelligence" 1
 					}
 				}
@@ -3351,7 +3351,7 @@ swirl2_reverse_boogaloo
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						"cannot pick up intelligence" 1
 					}
 				}
@@ -3497,7 +3497,7 @@ swirl2_reverse_boogaloo
 				} 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -3527,7 +3527,7 @@ swirl2_reverse_boogaloo
 				} 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -3925,7 +3925,7 @@ swirl2_reverse_boogaloo
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						"cannot pick up intelligence" 1
 					}
 				}
@@ -3939,7 +3939,7 @@ swirl2_reverse_boogaloo
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						"cannot pick up intelligence" 1
 					}
 				}
@@ -3996,7 +3996,7 @@ swirl2_reverse_boogaloo
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4201,7 +4201,7 @@ swirl2_reverse_boogaloo
 				Attributes SpawnWithFullCharge
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4225,7 +4225,7 @@ swirl2_reverse_boogaloo
 				Attributes SpawnWithFullCharge
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4314,7 +4314,7 @@ swirl2_reverse_boogaloo
 				Template T_TFBot_Red_Phlog_Pyro_Giant 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4369,7 +4369,7 @@ swirl2_reverse_boogaloo
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4399,7 +4399,7 @@ swirl2_reverse_boogaloo
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4689,7 +4689,7 @@ swirl2_reverse_boogaloo
 				//Attributes AlwaysCrit
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4713,7 +4713,7 @@ swirl2_reverse_boogaloo
 				//Attributes AlwaysCrit
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4784,7 +4784,7 @@ swirl2_reverse_boogaloo
 				Template T_TFBot_Red_Giant_Scout_Spammer
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}
@@ -4809,7 +4809,7 @@ swirl2_reverse_boogaloo
 				Tag noflank
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 				}
 			}
 		}
@@ -4889,7 +4889,7 @@ swirl2_reverse_boogaloo
 						Tag noflank
 						CharacterAttributes
 						{
-							"airblast vulnerability multiplier" 0.01
+							"damage force reduction" 0
 							"cannot pick up intelligence" 1
 						}
 					}
@@ -4898,7 +4898,7 @@ swirl2_reverse_boogaloo
 					Template T_TFBot_Red_Giant_Medic_Regen
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						"cannot pick up intelligence" 1
 					}
 				}
@@ -4925,7 +4925,7 @@ swirl2_reverse_boogaloo
 				Attributes AlwaysCrit
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					"cannot pick up intelligence" 1
 				}
 			}

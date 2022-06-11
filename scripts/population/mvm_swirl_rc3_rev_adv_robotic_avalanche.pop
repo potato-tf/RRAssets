@@ -3355,7 +3355,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			CharacterAttributes
 			{
 				"bot medic uber health threshold"	151
-				"airblast vulnerability multiplier" 0.01
+				"damage force reduction" 0
 			}
 		}
 		T_TFBot_Red_Bazooka_Soldier
@@ -3377,7 +3377,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			}
 			CharacterAttributes
 			{
-				"airblast vulnerability multiplier" 0.01
+				"damage force reduction" 0
 			}
 		}
 		T_TFBot_Red_Hibernating_Bear
@@ -3398,7 +3398,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			}
 			CharacterAttributes
 			{
-				"airblast vulnerability multiplier" 0.01
+				"damage force reduction" 0
 			}
 		}
 		T_TFBot_Red_Phlog_Pyro_Giant 
@@ -3424,7 +3424,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"damage force reduction" 0.6
-				"airblast vulnerability multiplier" 0.01
+				"damage force reduction" 0
 				"override footstep sound set" 6
 			}
 		}
@@ -3997,7 +3997,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4025,7 +4025,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4053,7 +4053,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4081,7 +4081,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4112,7 +4112,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4142,7 +4142,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4174,7 +4174,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4197,7 +4197,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Red_Demoman_Knight
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4226,7 +4226,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4257,7 +4257,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				} 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4291,7 +4291,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4321,7 +4321,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4356,7 +4356,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Attributes DisableDodge
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4396,7 +4396,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4703,7 +4703,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4732,7 +4732,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				} 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4765,7 +4765,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4798,7 +4798,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4832,7 +4832,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Attributes DisableDodge
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4861,7 +4861,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4891,7 +4891,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4925,7 +4925,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4955,7 +4955,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -4985,7 +4985,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -5019,7 +5019,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -5049,7 +5049,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -5092,7 +5092,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -5346,7 +5346,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5375,7 +5375,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5404,7 +5404,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5433,7 +5433,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5462,7 +5462,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5494,7 +5494,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
@@ -5541,7 +5541,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5600,7 +5600,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5633,7 +5633,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5663,7 +5663,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					
 				}
 			}
@@ -5702,7 +5702,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Attributes DisableDodge
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 				}
 			}
 		}
@@ -6006,7 +6006,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Template T_TFBot_Red_Giant_Soldier_Spammer_Buff
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 					ItemAttributes
@@ -6073,7 +6073,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Template T_TFBot_Red_Giant_Soldier_Spammer_Buff
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 					ItemAttributes
@@ -6148,7 +6148,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6193,7 +6193,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6230,7 +6230,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Attributes DisableDodge
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						 
 					}
 					InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6265,7 +6265,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Red_Phlog_Pyro_Giant
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6309,7 +6309,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6349,7 +6349,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6390,7 +6390,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						 
 					}
 					InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6472,7 +6472,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6510,7 +6510,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				AimTrackingInterval 0.25
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6546,7 +6546,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				ClassIcon Heavy_warriorsspirit 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6582,7 +6582,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				ClassIcon Heavy_warriorsspirit 
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6618,7 +6618,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				//ClassIcon demoknight
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -6772,7 +6772,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 						 
 				}
 			}
@@ -6799,7 +6799,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 						 
 				}
 			}
@@ -6885,7 +6885,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 						 
 				}
 			}
@@ -6909,7 +6909,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				tag noflank
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 						 
 				}
 			}
@@ -6963,7 +6963,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 						 
 				}
 			}
@@ -7037,7 +7037,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 						 
 				}
 			}
@@ -7300,7 +7300,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 					InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -7342,7 +7342,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 					InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -7602,7 +7602,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					ClassIcon Soldier_burstfire_hyper_lite
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 					InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -7622,7 +7622,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Template T_TFBot_Red_Giant_Medic_Regen_Super
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
@@ -7726,7 +7726,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Attributes AlwaysCrit
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -7783,7 +7783,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Red_Giant_Heavyweapons
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				ItemAttributes 
@@ -7813,7 +7813,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Attributes AlwaysCrit
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
@@ -8004,7 +8004,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					tag noflank
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
@@ -8013,7 +8013,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Template T_TFBot_Red_Giant_Medic
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
@@ -8042,7 +8042,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					tag noflank
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
@@ -8051,7 +8051,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Template T_TFBot_Red_Giant_Medic
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
@@ -8138,7 +8138,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -8167,7 +8167,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				}
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -8192,7 +8192,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				tag noflank
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -8241,7 +8241,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				tag noflank
 				CharacterAttributes
 				{
-					"airblast vulnerability multiplier" 0.01
+					"damage force reduction" 0
 					 
 				}
 			}
@@ -8276,7 +8276,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					}
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
@@ -8285,7 +8285,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					Template T_TFBot_Red_Giant_Medic_Regen
 					CharacterAttributes
 					{
-						"airblast vulnerability multiplier" 0.01
+						"damage force reduction" 0
 						
 					}
 				}
