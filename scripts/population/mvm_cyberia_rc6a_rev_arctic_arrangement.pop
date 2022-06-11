@@ -2686,7 +2686,6 @@ WaveSchedule
 			TotalCurrency 300
 			WaitForAllDead "rWave5d1"
 			RandomChoice {
-				TFBot { Template T_TFBot_Red_Soldier_BurstFire ClassIcon red2_lite_giant }
 				TFBot { Template T_TFBot_Red_Giant_Heavyweapons AimTrackingInterval 1 ClassIcon red2_lite_giant}
 				TFBot { Template T_TFBot_Red_Giant_Demoman Attributes AlwaysCrit ClassIcon red2_lite_giant}
 				TFBot { Template T_TFBot_Red_Giant_Pyro Attributes AlwaysCrit ClassIcon red2_lite_giant}
