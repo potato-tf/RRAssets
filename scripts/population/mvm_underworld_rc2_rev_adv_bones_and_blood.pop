@@ -1,8 +1,9 @@
-//Reverse, attempt by StardustSpy
+//Reverse, attempt by StardustSpy https://steamcommunity.com/id/StardustSpy/
 //Doom mission, or just based on hell
-//Huge thanks to Jurrell for the custom nav file, he's a cool guy
+//Huge thanks to Jurrell for the custom nav file, he's a cool guy https://steamcommunity.com/id/Jurrell
 //Braindawg and Hell-met for advice 
 //Eve and Yaki made the Marauder related stuff
+//Eve's Profile: https://steamcommunity.com/id/EveLan
 //Lite for number timer + some icons
 #base robot_standard.pop
 #base robot_giant.pop
@@ -85,6 +86,7 @@ WaveSchedule
     //PlayerRobotsUsePlayerAnimation 1
     FixHuntsmanDamageBonus 1
     NoSkeletonSplit 1
+    NoBluHumanFootsteps 1
     BluHumanSpawnNoShoot 0 [$SIGSEGV] // BLU players cannot shoot while in spawn (default: 1)
 	BluHumanSpawnProtection 1 [$SIGSEGV] // BLU players are invincible in spawn (default: 1)
     
@@ -205,7 +207,14 @@ WaveSchedule
 		Name "Zombie Sniper"
 	}
 
+    //Scout 
 
+    ItemAttributes
+    {
+        Itemname "Bonk! atomic punch"
+        "effect cond override" 26
+        "special item description" "Replaced Bonk effect with battalion's backup effect."
+    }
     //Engineer
 
     ItemAttributes
@@ -216,7 +225,8 @@ WaveSchedule
     ItemAttributes
     {
         itemname "The Short Circuit" 
-        "fire rate penalty" 2
+        "fire rate penalty" 2.5
+        "cannot be upgraded" 1
     }
 
     //Medic
@@ -440,7 +450,7 @@ WaveSchedule
 			Increment 3
             PlayerUpgrade 1
 			Cost 300
-			Description "Provides a speed boost on kill for all melee weapons. 3 seconds per tick."
+			Description "Provides a speed boost on kill. 3 seconds per tick."
             AllowPlayerClass Scout
             AllowPlayerClass Soldier
             AllowPlayerClass Pyro
@@ -458,7 +468,7 @@ WaveSchedule
 			Increment 3
             PlayerUpgrade 1
 			Cost 150
-			Description "Provides a speed boost on kill for all melee weapons. 3 seconds per tick."
+			Description "Provides a speed boost on kill. 3 seconds per tick."
             AllowPlayerClass Engineer
 		}
         Revolver_Crit
@@ -4160,6 +4170,7 @@ WaveSchedule
 			Health 50000
 			Scale 1.9
 			Skill Expert
+            AlwaysGlow 1
 			WeaponRestrictions PrimaryOnly
 			Item "The Loose Cannon"
 			Attributes MiniBoss
@@ -4333,7 +4344,7 @@ WaveSchedule
                 "faster reload rate" -0.8
                 "rocket specialist" 1
                 "fire rate penalty" 2.5
-                "dmg pierces resists absorbs" 1
+                //"dmg pierces resists absorbs" 1
                 "is invisible" 1
             }
             ItemAttributes
@@ -8685,6 +8696,11 @@ WaveSchedule
             WaitBeforeStarting 15
             WaitBetweenSpawns 0
             TotalCurrency 50
+            DoneOutput
+            {
+                Target hatch_reveal_relay
+                Action Trigger
+            }
             Squad
             {
                 TFBot
@@ -8715,6 +8731,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Giant_Medic_Kritz
                     Tag nav_reverse_avoid
+                    Classicon medic_kritzkrieg_giant
                     Attributes DisableDodge
                     CharacterAttributes
                     {
@@ -8845,6 +8862,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Giant_Medic_Kritz
                     Tag nav_reverse_avoid
+                    Classicon medic_kritzkrieg_giant
                     Attributes DisableDodge
                     CharacterAttributes
                     {
@@ -8882,11 +8900,6 @@ WaveSchedule
             FirstSpawnOutput
             {
                 Target stage2_relay
-                Action Trigger
-            }
-            DoneOutput
-            {
-                Target hatch_reveal_relay
                 Action Trigger
             }
             RandomChoice
