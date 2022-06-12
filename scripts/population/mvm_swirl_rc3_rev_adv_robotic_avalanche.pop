@@ -5590,6 +5590,11 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				AimAt Body
 				Attributes DisableDodge
+				ItemAttributes
+				{
+					ItemName "The Huntsman"
+					"cannot headshot" 1
+				}
 				CharacterAttributes
 				{
 					"damage force reduction" 0
