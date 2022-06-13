@@ -56,6 +56,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	DisplayRobotDeathNotice 1 
 	BluPlayersAreRobots 1 
 	MedigunShieldDamage 1 
+	NoRedBotsRandomCrit 1
 	BotsUsePlayerTeleporters 0 
 	SendBotsToSpectatorImmediately 1 
 	TextPrintTime 0 	
@@ -294,11 +295,15 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
                 "rendermode" "10"
                 "TeamNum" "2"
                 "targetname" "spawnbarrierA1"
-				"parentname" "spawnbarrierA"
                 "mins" "-500 -100 -2100"
                 "maxs" "300 100 2100"
 				"StartDisabled" "0"
-			}		
+				"angles" "0 0 0"
+			}			
+		}
+		barriers_prop
+		{
+			NoFixup 1
 			prop_dynamic //prop for show
 			{
 				
@@ -310,7 +315,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"disableshadows" "1"
 				"origin" "0 0 0"	
 				"solid" "0"
-			}	
+			}
 		}
 		antirollout //prop to block a shortcut
 		{
@@ -2905,11 +2910,23 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	{
 		Name "barriers"
 		"origin" "1408 192 265"
+		"angles" "0 0 0"
+	}
+	SpawnTemplate //upper left spawn
+	{
+		Name "barriers_prop"
+		"origin" "1508 192 265"
 		"angles" "0 90 0"
 	}
 	SpawnTemplate //main spawn
 	{
 		Name "barriers"
+		"origin" "500 -320 89"
+		"angles" "0 0 0"
+	}
+	SpawnTemplate //main spawn
+	{
+		Name "barriers_prop"
 		"origin" "500 -320 89"
 		"angles" "0 90 0"
 	}
@@ -5590,11 +5607,6 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				AimAt Body
 				Attributes DisableDodge
-				ItemAttributes
-				{
-					ItemName "The Huntsman"
-					"cannot headshot" 1
-				}
 				CharacterAttributes
 				{
 					"damage force reduction" 0

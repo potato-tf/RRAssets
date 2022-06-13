@@ -12,6 +12,7 @@ swirl2_reverse_boogaloo
 	RespawnWaveTimeBlue 5 
 	FixedRespawnWaveTimeBlue 1 
 	BotsRandomCrit 1 
+	NoRedBotsRandomCrit 1
     Advanced 1
     BluHumanFlagCapture 1  //Can blu humans capture the flag
 	BluHumanFlagPickup 1  //Can blu humans pickup flags
@@ -344,11 +345,15 @@ swirl2_reverse_boogaloo
                 "rendermode" "10"
                 "TeamNum" "2"
                 "targetname" "spawnbarrierA1"
-				"parentname" "spawnbarrierA"
                 "mins" "-500 -100 -2100"
                 "maxs" "300 100 2100"
 				"StartDisabled" "0"
-			}		
+				"angles" "0 0 0"
+			}			
+		}
+		barriers_prop
+		{
+			NoFixup 1
 			prop_dynamic //prop for show
 			{
 				
@@ -359,8 +364,8 @@ swirl2_reverse_boogaloo
 				"model" "models/mvm/barrier/barrier_spawn_blue1.mdl"
 				"disableshadows" "1"
 				"origin" "0 0 0"	
-				"solid" "0"	
-			}	
+				"solid" "0"
+			}
 		}
 		antirollout //prop to block a shortcut
 		{
@@ -1829,11 +1834,23 @@ swirl2_reverse_boogaloo
 	{
 		Name "barriers"
 		"origin" "1408 192 265"
+		"angles" "0 0 0"
+	}
+	SpawnTemplate //upper left spawn
+	{
+		Name "barriers_prop"
+		"origin" "1508 192 265"
 		"angles" "0 90 0"
 	}
 	SpawnTemplate //main spawn
 	{
 		Name "barriers"
+		"origin" "500 -320 89"
+		"angles" "0 0 0"
+	}
+	SpawnTemplate //main spawn
+	{
+		Name "barriers_prop"
 		"origin" "500 -320 89"
 		"angles" "0 90 0"
 	}
