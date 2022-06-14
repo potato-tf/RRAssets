@@ -54,6 +54,11 @@ jobs:
         continue-on-error: true
         run: |
           echo . -type f -not \( -name "*.bsp" -or -name "*.mp3" -or -name "*.nav" -or -name "*.res" -or -name ".bz2" \)  -exec pbzip2 -n 1 -f -k -4 {} +
-          find /var/www/html/RRAssets/ -type f -not \( -name "*.bsp" -or -name "*.pop" -or -name "*.mp3" -or -name "*.nav" -or -name "*.res" -or -name "*.bz2" \) \( ! -regex '.*/\..*' \) -exec bzip2 -f -k {} +
+          find /var/www/html/RRAssets/ -type f -not \( -name "*.pop" -or -name "*.nav" -or -name "*.res" -or -name "*.bz2" \) \( ! -regex '.*/\..*' \) -exec bzip2 -f -k {} +
+      
+      - name: Install web assets (hydro)
+        continue-on-error: true
+        run: |
+          rsync -a -e "ssh -p 8833 -i ~/.ssh/tohydro" --delete --update --include="*/" --include="*.bz2" --exclude="*" /var/www/html/RRAssets/ potato@pnpl.tf:~/fastdl/
     
           
