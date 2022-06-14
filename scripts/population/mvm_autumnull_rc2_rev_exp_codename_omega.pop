@@ -9,8 +9,8 @@ WaveSchedule
 {
 	StartingCurrency	800
 	CanBotsAttackWhileInSpawnRoom	no
-	RespawnWaveTimeBlue 			1 [$SIGSEGV] 
-	FixedRespawnWaveTimeBlue 		1 [$SIGSEGV]
+	RespawnWaveTimeBlue 			7 [$SIGSEGV] 
+	FixedRespawnWaveTimeBlue 		0 [$SIGSEGV]
 	
 	ReverseWinConditions 1 [$SIGSEGV]				 
 	AllowJoinTeamBlue 1 [$SIGSEGV]	 				 
@@ -1417,6 +1417,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1610,6 +1611,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1797,6 +1799,7 @@ WaveSchedule
 				{
 				    "crit mod disabled" 0
 					"move speed bonus" 0.00001
+					"damage force reduction" 0
 					"no_jump" 1
 				    "no_duck" 1
 				}
@@ -1827,6 +1830,7 @@ WaveSchedule
 				{
 				    "crit mod disabled" 0
 					"move speed bonus" 0.00001
+					"damage force reduction" 0
 					"no_jump" 1
 				    "no_duck" 1
 				}
@@ -2178,6 +2182,7 @@ WaveSchedule
 			TFBot
 			{
 			    Template T_TFBot_Red_Pyro_Flaregun
+				ClassIcon pyro_flare_red
 				Attributes DisableDodge
 				CharacterAttributes
 				{
@@ -2302,7 +2307,7 @@ WaveSchedule
 				    "move speed bonus"	0.5 
 				    "health from packs decreased" 0.01 
 				    "voice pitch scale" 0
-                    "damage force reduction" 0.4
+                    "damage force reduction" 0
 				    "airblast vulnerability multiplier" 0.4
 				    "override footstep sound set" 3
 				    "increase buff duration"	9.0
@@ -2334,6 +2339,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2392,6 +2398,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2571,7 +2578,7 @@ WaveSchedule
 			Name "bsup1"
 			Where spawnbot
 			TotalCount 999
-			MaxActive 4
+			MaxActive 3
 			SpawnCount 1
 			RandomSpawn 1
 			Support Limited  
@@ -2913,6 +2920,7 @@ WaveSchedule
 			TFBot
 			{
 			    Template T_TFBot_Red_Pyro_Flaregun
+				ClassIcon pyro_flare_red
 				Attributes DisableDodge
 				Skill Normal
 				CharacterAttributes
@@ -3047,6 +3055,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -3155,6 +3164,7 @@ WaveSchedule
 				{
 				    "crit mod disabled" 0
 					"move speed bonus" 0.0001
+					"damage force reduction" 0
 					"no_jump" 1
 				    "no_duck" 1
 				}
@@ -3177,17 +3187,44 @@ WaveSchedule
 			WaitForAllDead c6
 			TFBot
 			{
-			    Template T_TFBot_Red_Giant_Soldier_SlowBarrage
-				Attributes DisableDodge
-				CharacterAttributes
-				{
-				    "crit mod disabled" 0
-				}
-				AddCond [$SIGSEGV]
-				{
-				    Name "TF_COND_INVULNERABLE"
-					Duration 1.7
-				}
+			    Class Soldier
+			    Name "Colonel Barrage"
+			    ClassIcon soldier_barrage
+			    Health 4000
+			    Tag bot_giant
+			    Skill Expert
+			    AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			    Attributes DisableDodge
+		        Action FetchFlag [$SIGSEGV]
+			    Attributes MiniBoss
+			    Attributes HoldFireUntilFullReload
+			    ItemAttributes
+			    {
+				    ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				    "clip size upgrade atomic" 26.0
+				    "faster reload rate" 0.22
+				    "fire rate bonus" 0.2
+				    "projectile spread angle penalty" 5
+			    }
+                AddCond [$SIGSEGV]
+			    {
+			        Name "TF_COND_INVULNERABLE"
+			        Duration 1.7
+			    }
+			    CharacterAttributes
+			    {
+				    "health regen"	40
+				    "move speed bonus"	0.5 
+				    "health from packs decreased" 0.01 
+				    "voice pitch scale" 0
+				    "damage bonus" 1.5
+				    "damage force reduction" 0
+				    "airblast vulnerability multiplier" 0.4
+				    "override footstep sound set" 3
+				    "airblast vertical vulnerability multiplier" 0.1			
+				    "Projectile speed increased" 0.4
+                    "crit mod disabled" 0
+			    }
 			}
 		}
 		WaveSpawn
@@ -3208,6 +3245,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -3228,17 +3266,44 @@ WaveSchedule
 			WaitForAllDead c9
 			TFBot
 			{
-			    Template T_TFBot_Red_Giant_Soldier_SlowBarrage
-				Attributes DisableDodge
-				CharacterAttributes
-				{
-				    "crit mod disabled" 0
-				}
-				AddCond [$SIGSEGV]
-				{
-				    Name "TF_COND_INVULNERABLE"
-					Duration 1.7
-				}
+			    Class Soldier
+			    Name "Colonel Barrage"
+			    ClassIcon soldier_barrage
+			    Health 4000
+			    Tag bot_giant
+			    Skill Expert
+			    AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			    Attributes DisableDodge
+		        Action FetchFlag [$SIGSEGV]
+			    Attributes MiniBoss
+			    Attributes HoldFireUntilFullReload
+			    ItemAttributes
+			    {
+				    ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				    "clip size upgrade atomic" 26.0
+				    "faster reload rate" 0.22
+				    "fire rate bonus" 0.2
+				    "projectile spread angle penalty" 5
+			    }
+                AddCond [$SIGSEGV]
+			    {
+			        Name "TF_COND_INVULNERABLE"
+			        Duration 1.7
+			    }
+			    CharacterAttributes
+			    {
+				    "health regen"	40
+				    "move speed bonus"	0.5 
+				    "health from packs decreased" 0.01 
+				    "voice pitch scale" 0
+				    "damage bonus" 1.5
+				    "damage force reduction" 0
+				    "airblast vulnerability multiplier" 0.4
+				    "override footstep sound set" 3
+				    "airblast vertical vulnerability multiplier" 0.1			
+				    "Projectile speed increased" 0.4
+                    "crit mod disabled" 0
+			    }
 			}
 		}
 		WaveSpawn
@@ -3259,6 +3324,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -3678,6 +3744,10 @@ WaveSchedule
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
 				}
+				CharacterAttributes
+			    {
+					"damage force reduction" 0
+			    }
 			}
 		}
 		WaveSpawn
@@ -3704,6 +3774,7 @@ WaveSchedule
 				CharacterAttributes
 			    {
 					"crit mod disabled" 0
+					"damage force reduction" 0
 			    }
 			}
 		}
@@ -3769,6 +3840,7 @@ WaveSchedule
 				CharacterAttributes
 			    {
 					"crit mod disabled" 0
+					"damage force reduction" 0
 			    }
 			}
 		}
@@ -3797,6 +3869,7 @@ WaveSchedule
 				CharacterAttributes
 			    {
 					"crit mod disabled" 0
+					"damage force reduction" 0
 			    }
 			}
 		}
@@ -3909,18 +3982,38 @@ WaveSchedule
 			}
 			TFBot
 			{
-			    Template T_TFBot_Red_Giant_Heavyweapons_HealOnKill
-				Health 4000
-				Attributes DisableDodge
-				Attributes UseBossHealthBar
-				AddCond [$SIGSEGV]
-				{
-				    Name "TF_COND_INVULNERABLE"
-					Duration 1.7
-				}
-				CharacterAttributes
+			    Class Heavyweapons
+			    Name "Giant Heavy"
+			    ClassIcon heavy_deflector_healonkill
+			    Skill Expert
+			    Health 4000
+                Attributes DisableDodge
+		        Attributes UseBossHealthBar
+			    AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			    Action FetchFlag [$SIGSEGV]
+			    MaxVisionRange 1200
+			    Attributes MiniBoss
+			    ItemAttributes
 			    {
-					"crit mod disabled" 0
+				    ItemName "Deflector"
+				    "damage bonus"	1.2
+				    "attack projectiles" 2
+				    "heal on kill" 5000
+			    }
+                AddCond [$SIGSEGV]
+			    {
+			        Name "TF_COND_INVULNERABLE"
+				    Duration 1.7
+			    }
+			    CharacterAttributes
+			    {
+				    "move speed bonus"	0.35
+				    "health from packs decreased" 0.01 
+				    "voice pitch scale" 0
+				    "damage force reduction" 0
+				    "airblast vulnerability multiplier" 0.3
+				    "override footstep sound set" 2
+                    "crit mod disabled" 0
 			    }
 			}
 		}
@@ -3951,6 +4044,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "move speed bonus" 0.00001
+					"damage force reduction" 0
 					"no_jump" 1
 				    "no_duck" 1
 					"Projectile speed increased" 1.1
@@ -3984,6 +4078,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "move speed bonus" 0.00001
+					"damage force reduction" 0
 					"no_jump" 1
 				    "no_duck" 1
 					"Projectile speed increased" 1.1
@@ -4394,6 +4489,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -4418,6 +4514,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -4443,6 +4540,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -4505,6 +4603,7 @@ WaveSchedule
 				    CharacterAttributes
 				    {
 				        "crit mod disabled" 0
+						"damage force reduction" 0
 				    }
 				    AddCond [$SIGSEGV]
 				    {
@@ -4533,6 +4632,7 @@ WaveSchedule
 				    {
 				        "crit mod disabled" 0
 						"bot medic uber health threshold"	1
+						"damage force reduction" 0
 				    }
 				    AddCond [$SIGSEGV]
 				    {
@@ -4683,6 +4783,7 @@ WaveSchedule
 				{
 				    "crit mod disabled" 0
 					"move speed bonus" 0.75
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -4809,7 +4910,7 @@ WaveSchedule
 			TFBot
 			{
 			    Class Sniper
-				Name "Guaridan Star Cosmil Railgunner"
+				Name "Guardian Star Cosmil Railgunner"
 				ClassIcon sniper_penetrator
 				Health 3400
 			    AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
@@ -4867,6 +4968,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -4893,6 +4995,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -4923,7 +5026,7 @@ WaveSchedule
 			    Attributes MiniBoss
 				Attributes AlwaysCrit
 				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			    Action Mobber [$SIGSEGV]
+			    Action FetchFlag [$SIGSEGV]
 				ItemAttributes
 			    {
 				    ItemName "TF_WEAPON_GRENADELAUNCHER"
@@ -4970,7 +5073,7 @@ WaveSchedule
 			    Attributes MiniBoss
 				Attributes AlwaysCrit
 				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-			    Action Mobber [$SIGSEGV]
+			    Action FetchFlag [$SIGSEGV]
 				ItemAttributes
 			    {
 				    ItemName "TF_WEAPON_GRENADELAUNCHER"
@@ -5505,6 +5608,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -5542,6 +5646,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -5581,6 +5686,7 @@ WaveSchedule
 				{
 				    "crit mod disabled" 0
 					"move speed bonus" 0.7
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -5619,6 +5725,7 @@ WaveSchedule
 				{
 				    "crit mod disabled" 0
 					"move speed bonus" 0.5
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -5657,6 +5764,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -5921,6 +6029,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -5999,6 +6108,7 @@ WaveSchedule
 				    CharacterAttributes
 				    {
 				        "crit mod disabled" 0
+						"damage force reduction" 0
 				    }
 				}
 				TFBot
@@ -6394,12 +6504,11 @@ WaveSchedule
             WaitBeforeStarting	6		
 			TFBot
 			{
-			    Template T_TFBot_Giant_Soldier_Spammer
-				Name "Fast Rapid Fire Soldier"
+			    Template T_TFBot_Giant_Soldier
+				Name "Giant Soldier"
 				Action Mobber [$SIGSEGV]
 				CharacterAttributes
 				{
-				    "move speed bonus" 1
 					"cannot be teleported" 1
 				}
 			}

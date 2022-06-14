@@ -488,6 +488,19 @@ WaveSchedule
 				"origin" "2912 -3458 -200"
 			}
 		}
+		rockvoid
+		{
+		    prop_dynamic
+			{
+			    "angles" "0 0 0"
+				"model" "models/props_mvm/mine_rocks03.mdl"
+				"modelscale" "1.0"
+				"rendercolor" "255 255 255"
+				"solid" 0
+				"targetname" "therock"
+				"origin" "2621 -2993 -127"
+			}
+		}
 		SmallTankTurretRed
 		{
             OnSpawnOutput
@@ -733,6 +746,7 @@ WaveSchedule
 	SpawnTemplate [$SIGSEGV] textualtimer
 	SpawnTemplate [$SIGSEGV] bot_spawns
 	SpawnTemplate [$SIGSEGV] rock
+	SpawnTemplate [$SIGSEGV] rockvoid
 	SpawnTemplate [$SIGSEGV] hatchunblocker
 	SpawnTemplate [$SIGSEGV] nosuicidezone
 	SpawnTemplate [$SIGSEGV] 
@@ -1101,6 +1115,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1174,6 +1189,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1193,6 +1209,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Red_Pyro_Flaregun
+				ClassIcon pyro_flare_red
 				Attributes DisableDodge 
 				CharacterAttributes
 				{
@@ -1593,6 +1610,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1618,6 +1636,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1642,6 +1661,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1888,6 +1908,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1951,6 +1972,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -1975,6 +1997,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2025,6 +2048,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2295,6 +2319,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2400,6 +2425,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2493,6 +2519,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2667,6 +2694,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -2976,6 +3004,10 @@ WaveSchedule
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
 				}
+				CharacterAttributes
+				{
+					"damage force reduction" 0
+				}
 			}
 		}
 		WaveSpawn
@@ -2990,6 +3022,7 @@ WaveSchedule
 			TFBot
 			{
 			    Template T_TFBot_Red_Pyro_Flaregun
+				ClassIcon pyro_flare_red
 				Attributes DisableDodge
 				CharacterAttributes
 				{
@@ -3018,6 +3051,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -3088,6 +3122,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -3136,6 +3171,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -3181,6 +3217,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -3233,6 +3270,10 @@ WaveSchedule
 				{
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
+				}
+				CharacterAttributes
+				{
+					"damage force reduction" 0
 				}
 			}
 		}
@@ -3528,6 +3569,7 @@ WaveSchedule
 				    CharacterAttributes
 				    {
 				        "crit mod disabled" 0
+						"damage force reduction" 0
 				    }
 				    AddCond [$SIGSEGV]
 				    {
@@ -3648,6 +3690,10 @@ WaveSchedule
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
 				}
+				CharacterAttributes
+				{
+				    "damage force reduction" 0
+				}
 			}
 		}
 		WaveSpawn
@@ -3697,6 +3743,10 @@ WaveSchedule
 				{
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
+				}
+				CharacterAttributes
+				{
+				    "damage force reduction" 0
 				}
 			}
 		}	
@@ -3760,6 +3810,7 @@ WaveSchedule
 				CharacterAttributes
 				{
 				    "crit mod disabled" 0
+					"damage force reduction" 0
 				}
 				AddCond [$SIGSEGV]
 				{
