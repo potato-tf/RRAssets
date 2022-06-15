@@ -10,7 +10,9 @@ WaveSchedule
 	RespawnWaveTimeBlue 			3
 	FixedRespawnWaveTimeBlue 		3   	
 	ReverseWinConditions 1  	 				 
-	AllowJoinTeamBlueMax 6  				 
+	AllowJoinTeamBlueMax 6  
+	NoRedBotsRandomCrit 1
+	ForceRedMoney 1
 	AllowJoinTeamBlue 1  	 				 
 	HumansMustJoinTeam Blue  	  	
 	SetCreditTeam 3
@@ -32,6 +34,11 @@ WaveSchedule
           "cannot pick up intelligence" 1
         }
 		"collect currency on kill" 1
+	}
+	ItemAttributes 
+	{
+		ItemName "The Short Circuit"
+		"fire rate penalty" 2.5
 	}
 	
 	Templates
