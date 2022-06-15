@@ -176,6 +176,7 @@ WaveSchedule
 		
 		ClassName "tf_weapon_sniperrifle"
 		ClassName "tf_weapon_sniperrifle_decap"
+		ClassName "tf_weapon_sniperrifle_classic"
 		ClassName "tf_weapon_compound_bow"
 		ClassName "tf_wearable_razorback"
 		ClassName "tf_weapon_jar"
@@ -586,29 +587,29 @@ WaveSchedule
 		"increase buff duration" 2
 		"override footstep sound set" 3
 	}
-	ItemAttributes [$SIGSEGV]  //no burn dmg bonus for backburner or phlog + fixed flames
+	ItemAttributes [$SIGSEGV]  //reduced dmg, no burn dmg bonus for backburner or phlog + fixed flames
 	{
 		ItemName "The Phlogistinator"
 		"lunchbox adds minicrits" 1
-		"damage bonus" 2
+		"damage bonus" 1.25
 	}	
-	ItemAttributes [$SIGSEGV] //no burn dmg bonus for backburner or phlog
+	ItemAttributes [$SIGSEGV] //reduced dmg, no burn dmg bonus for backburner or phlog
 	{
 		ItemName "The Backburner"
 		"lunchbox adds minicrits" 2
-		"damage bonus" 2
+		"damage bonus" 1.25
 	}	
 	ItemAttributes [$SIGSEGV] // Giant Flamethrower
 	{
 		ClassName "TF_WEAPON_FLAMETHROWER"
 		"lunchbox adds minicrits" 2
-		"damage bonus" 2
+		"damage bonus" 1.5
 		"weapon burn dmg increased" 2
 	}
 	ItemAttributes [$SIGSEGV]
 	{
 		ClassName "tf_weapon_rocketlauncher_fireball"
-		"damage bonus" 2
+		"damage bonus" 1.5
 		"weapon burn dmg increased" 2
 	}
 	ItemAttributes [$SIGSEGV] // Giant detonator/scorch/flare
