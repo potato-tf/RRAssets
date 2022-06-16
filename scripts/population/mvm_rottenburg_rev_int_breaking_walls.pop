@@ -59,6 +59,7 @@ WaveSchedule
 				"OnMapSpawn" "wave_finished_relay,AddOutput,OnTrigger spawnbarrier*:Enable:0:-1"
 				"OnMapSpawn" "item_ammopack*,Kill,,0,-1"
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger func_capturezone:Disable:0:-1,0,-1"
+				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger func_flagdetectionzone:Disable:0:-1,0,-1"
 				"OnMapSpawn" "tank_entrance_intact_prop*,Kill,,0,-1" 
 				"OnMapSpawn" "Tank_Tunnel_Door_In*,Kill,,0,-1" 
 			}
@@ -380,6 +381,7 @@ WaveSchedule
 				
 				"targetname" "unblockhatch"
 				"OnTrigger" "func_capturezone,Enable,,0,-1"
+				"OnTrigger" "func_flagdetectionzone,Enable,,0,-1"
 				"OnTrigger" "hatchopen,Show,,0,-1"
 				"OnTrigger" "thirdperson,Enable,,0,-1"
 			}		

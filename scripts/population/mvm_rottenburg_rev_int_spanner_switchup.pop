@@ -281,6 +281,7 @@ WaveSchedule
 				// OnMapSpawn "wave_start_relay*,AddOutput,OnTrigger ironman_mode_inte*:Enable:0:-1"
 				OnMapSpawn "wave_finished_relay,AddOutput,OnTrigger spawnbarrier*:Enable:0:-1"
 				OnMapSpawn "wave_start*,AddOutput,OnTrigger func_capturezone:Disable:0:-1,0,-1"
+				OnMapSpawn "wave_start*,AddOutput,OnTrigger func_flagdetectionzone:Disable:0:-1,0,-1"
 				OnMapSpawn "tankpath1_1,AddOutput,OnPass red_tank_relay:Trigger:0:-1"
 			}
 			NoFixup 1
@@ -299,6 +300,7 @@ WaveSchedule
 			{
 				targetname hatchguard_death_relay
 				OnTrigger func_capturezone,Enable,,0,-1
+				OnTrigger func_flagdetectionzone,Enable,,0,-1
 				OnTrigger bomb_antigrief_on,Trigger,,0,-1
 			}
 			NoFixup 1
@@ -853,11 +855,25 @@ WaveSchedule
 				origin "0 0 0"
 			}
 		}
+		rockvoid
+		{
+		    prop_dynamic
+			{
+			    "angles" "0 0 0"
+				"model" "models/props_mvm/mine_rocks03.mdl"
+				"modelscale" "1.0"
+				"rendercolor" "255 255 255"
+				"solid" 0
+				"targetname" "therock"
+				"origin" "2621 -2993 -127"
+			}
+		}
 	}
 	SpawnTemplate corelogic
 	SpawnTemplate annotations
 	SpawnTemplate spawnpoints
 	SpawnTemplate antigriefbomb
+	SpawnTemplate rockvoid
 
 	SpawnTemplate	// specify origin/angles here for templates we use multiple times
 	{
