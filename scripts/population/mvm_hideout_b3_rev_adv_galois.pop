@@ -3445,6 +3445,7 @@ WaveSchedule
 		WaveSpawn
 		{
 		    WaitBeforeStarting 2
+			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {5100ff} Whistler - Cheshyre {FFFFFF}" [$SIGSEGV]
 		    FirstSpawnOutput
 			{
 			    Target cheshyre_whistler
@@ -4342,6 +4343,7 @@ WaveSchedule
 		WaveSpawn
 		{
 		    WaitBeforeStarting 1
+			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {5100ff} The Pied Piper - Cheshyre {FFFFFF}" [$SIGSEGV]
 		    FirstSpawnOutput
 			{
 			    Target cheshyre_the_pied_piper
@@ -4942,6 +4944,7 @@ WaveSchedule
 		
 		WaveSpawn
 		{
+			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {391a1a} Brimstone - Locknar  {FFFFFF}" [$SIGSEGV]
 		    FirstSpawnOutput
 			{
 			    Target locknar_brimstone
