@@ -4649,7 +4649,7 @@ WaveSchedule
 				TFBot {
 					Class Scout
 					Name "⠀"
-					Health 10
+					Health 1
 					Scale 0.0001
 					Attributes SuppressFire
 					Action Mobber
