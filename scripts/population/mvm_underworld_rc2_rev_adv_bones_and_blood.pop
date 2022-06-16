@@ -67,6 +67,7 @@ WaveSchedule
 	HumansMustJoinTeam Blue  	
 	SetCreditTeam 3			
 	SniperAllowHeadshots 1 
+    BluHumanInfiniteAmmo 0
     FixedRespawnWaveTimeBlue 1
     RespawnWaveTimeBlue 1
 
@@ -182,9 +183,9 @@ WaveSchedule
     //DisallowUpgrade	"rocket specialist" 
     DisallowUpgrade "falling_impact_radius_stun"
    // DisallowUpgrade "uber duration bonus"
-    DisallowUpgrade    "maxammo primary increased"     [$SIGSEGV] //players have infinite ammo
-    DisallowUpgrade    "maxammo secondary increased"     [$SIGSEGV] //players have infinite ammo
-    DisallowUpgrade "maxammo metal increased"        [$SIGSEGV] //players have infinite ammo
+    //DisallowUpgrade    "maxammo primary increased"     [$SIGSEGV] //players have infinite ammo
+    //DisallowUpgrade    "maxammo secondary increased"     [$SIGSEGV] //players have infinite ammo
+    //DisallowUpgrade "maxammo metal increased"        [$SIGSEGV] //players have infinite ammo
     //DisallowedUpgrade "ubercharge"
     //DisallowedUpgrade "critboost"
     //DisallowUpgrade "clip size upgrade atomic"
@@ -217,18 +218,6 @@ WaveSchedule
     }
     //Engineer
 
-    ItemAttributes
-    {
-        Itemname "The Widowmaker"
-        "damage penalty" 0.80
-    }
-    ItemAttributes
-    {
-        itemname "The Short Circuit" 
-        "fire rate penalty" 2.5
-        "cannot be upgraded" 1
-    }
-
     //Medic
 
     //Spy
@@ -254,8 +243,9 @@ WaveSchedule
             Description "Enables all Pistol's and SMG's to permantly crit, aswell as the Third Degree, Flying Guillotine and the Righteous Bison."
             AllowedWeapons 
 			{
-				ItemName "TF_WEAPON_PISTOL"
-                ItemName "Upgradeable TF_WEAPON_PISTOL"
+				ClassName tf_weapon_pistol
+				ClassName tf_weapon_handgun_scout_secondary 
+				ClassName TF_WEAPON_PISTOL_SCOUT
                 ItemName "The C.A.P.P.E.R"
                 Itemname "TTG Max Pistol - Poker Night"
                 Itemname "TTG Max Pistol"
@@ -349,6 +339,40 @@ WaveSchedule
 			AllowedWeapons 
 			{
 				Slot "Melee"
+			}
+            DisallowedWeapons
+            {
+                Slot "secondary"
+                Slot "primary"
+                Classname "tf_weapon_knife"
+               Itemname "Nessie's Nine Iron"
+               Itemname "The Claidheamohmor"
+               Itemname "The Eyelander"
+               Itemname "Festive Eyelander"
+               Itemname "The Persian Persuader"
+               Itemname "The Scotsman's Skullcutter"
+               Itemname "The Horseless Headless Horseman's Headtaker"
+               Itemname "The Half-Zatoichi"
+            }
+        }
+        MeleeDMGIncreaseSword
+		{
+			Name "Extra Sword Damage"
+			Attribute "damage bonus HIDDEN"
+			Cap 1.2
+			Increment 0.2
+			Cost 400
+			Description "Gives sword weapons an additional +20% damage bonus" 
+			AllowedWeapons 
+			{
+               Itemname "Nessie's Nine Iron"
+               Itemname "The Claidheamohmor"
+               Itemname "The Eyelander"
+               Itemname "Festive Eyelander"
+               Itemname "The Persian Persuader"
+               Itemname "The Scotsman's Skullcutter"
+               Itemname "The Horseless Headless Horseman's Headtaker"
+               Itemname "The Half-Zatoichi"
 			}
             DisallowedWeapons
             {
@@ -546,14 +570,52 @@ WaveSchedule
                Itemname "tf_wearable" // booties, mantreads, etc
             }
 		}
+        AmmoRegen
+		{
+			Name "Ammo Regeneration"
+			Attribute "ammo regen"
+			Cap 0.05
+			Increment 0.05
+            PlayerUpgrade 1
+			Cost 300
+			Description "Provides Ammo regeneration that occurs every 5 seconds. +5% total ammo regenerated, stacks with max ammo upgrades."
+            AllowPlayerClass Scout
+            AllowPlayerClass Soldier
+            AllowPlayerClass Pyro
+            AllowPlayerClass Demoman
+            AllowPlayerClass Heavyweapons
+            AllowPlayerClass Medic
+            AllowPlayerClass Sniper
+            AllowPlayerClass Spy
+            AllowPlayerClass Engineer
+		}
+        ConstructionRateincreased
+        {
+            Name "Construction Rate Increased"
+            Attribute "Construction rate increased"
+            Cap 1.5
+            Increment 0.5
+            Cost 200
+            Description "Construction rate increased by 50%"
+            Allowplayerclass Engineer
+            AllowedWeapons
+            {
+                Slot "Melee"
+            }
+            DisallowedWeapons
+            {
+                Slot "Primary"
+                Slot "Secondary"
+            }
+        }
         Bow_Maseter
 		{
 			Name "Ancient Bow Modifier"
 			Attribute "arrow mastery" 
-			Cap 3
+			Cap 1
 			Increment 1
 			Cost 400
-			Description "Shoot 2 more arrows per shot, adds 2 more arrows per upgrade level"
+			Description "Shoot 2 more arrows per shot."
 			AllowedWeapons 
 			{
 				itemname "The Huntsman" 
@@ -1050,7 +1112,7 @@ WaveSchedule
                 "angles" "0 268 0"
                 "model" "models/props_medieval/fort_wall_short.mdl"
                 "modelscale" "2.2"
-                "solid" "6"
+                "solid" "0"
                 "spawnflags" "0"
                 "targetname" "wall_topleft"
                 "origin" "-852.528 -0.24737 222.799"
@@ -1133,6 +1195,36 @@ WaveSchedule
         //        "maxs" "4192 96 3680"
         //    }
         //}
+        Spawn_Abuse_Fix
+        {
+            OnSpawnOutput
+            {
+                Target "check_blu_relay"
+                Action "Trigger"
+            }
+            filter_tf_condition
+            {
+                "condition" "51"
+                "Negated" "0"
+                "targetname" "damage_penalty_check"
+
+                "OnPass" "!activator,$AddPlayerAttribute,dmg penalty vs players|0.5,0.1,-1"
+                "OnPass" "!activator,$AddPlayerAttribute,no crit boost|1,0.1,-1"
+                "OnPass" "!activator,$AddPlayerAttribute,mult dmg vs tanks|1.5,0.1,-1"
+
+                "OnFail" "!activator,$RemovePlayerAttribute,no crit boost,0.1,-1"
+                "OnFail" "!activator,$RemovePlayerAttribute,dmg penalty vs players,0.1,-1"
+                "OnFail" "!activator,$RemovePlayerAttribute,mult dmg vs tanks,0.1,-1"
+            }
+            logic_relay
+            {
+                "targetname" "check_blu_relay"
+                "spawnflags" "2"
+
+                "OnTrigger" "damage_penalty_check,TestActivator,,0,-1"    
+                "OnTrigger" "!self,Trigger,,0.05,-1" 
+            }
+        }
         forcefield_stage1_red // used only for marauder to prevent cheese
         {
             NoFixup 1
@@ -1395,6 +1487,8 @@ WaveSchedule
                 "OnTrigger" "barrier_hatch,Disable,,0.01,-1"
                 "OnTrigger" "skull,Disable,,0,-1"
                 "OnTrigger" "annotation_deploy,Show,,0.01,-1"
+                "OnTrigger" "func_flagdetection,Disable,,0,-1"
+                //"OnTrigger" "func_flagdetection,Enable,,0,-1"
             }
             prop_dynamic
             {
@@ -1791,7 +1885,7 @@ WaveSchedule
             NoFixup 1
             logic_auto
             {
-                "OnMapSpawn" "item_ammopack*,Kill,,0,-1"
+                //"OnMapSpawn" "item_ammopack*,Kill,,0,-1"
                 //"OnMapSpawn" "bot_respawnroom*,Kill,,0,-1"
                 "OnMapSpawn" "sentrynest_right3*,Kill,,0,-1"
                 "OnMapSpawn" "sentrynest_right4*,Kill,,0,-1"
@@ -2616,6 +2710,78 @@ WaveSchedule
                 "targetname" "annotation_lastwave"
             }
         }
+        antigriefbomb
+		{
+			NoFixup 1
+			logic_relay
+			{
+				"targetname" "bomb_antigrief_on"
+				"ontrigger" "hudhintloop,trigger,,0,-1"
+				"ontrigger" "bombpickup_relay,enable,,0,-1"
+				"ontrigger" "bombpickup_relay,trigger,,0.01,-1"
+			}
+			logic_relay
+			{
+				"targetname" "bomb_antigrief_off"
+				"ontrigger" "bombpickup_relay,disable,,0,-1"
+				"ontrigger" "bombpickup_relay,cancelpending,,0,-1"
+				"ontrigger" "bombpickup,disable,,0,-1"
+			}
+			logic_relay
+			{
+				"onspawn" "intel,addoutput,onpickup1 filter_isbot:testactivator::0:-1,0,-1"
+				"onspawn" "intel,addoutput,onpickup1 !activator:addoutput:targetname hasbomb:0:-1,0,-1"
+				"onspawn" "intel,addoutput,onpickup bombpickup_relay:trigger::0.01:-1,0,-1"
+				"onspawn" "intel,addoutput,onpickup bombpickup_relay:cancelpending::0:-1,0,-1"
+				"onspawn" "intel,addoutput,ondrop1 !activator:addoutput:targetname :0:-1,0,-1"
+				"onspawn" "intel,addoutput,ondrop bombpickup:disable::0:-1,0,-1"
+				"onspawn" "bombpickup,setparentattachment,siren,0,-1"
+				"onspawn" "hasbomb,addoutput,targetname ,0,-1"
+			}
+			logic_relay
+			{
+				"targetname" "bombpickup_relay"
+				"startdisabled" "1"
+				"ontrigger" "bombpickup,disable,,0,-1"
+				"ontrigger" "bombpickup,enable,,5,-1"
+			}
+			trigger_multiple
+			{
+				"targetname" "bombpickup"
+				"parentname" "intel"
+				"mins" "-8 -8 -8"
+				"maxs" "8 8 8"
+				"spawnflags" "1"
+				"startdisabled" "1"
+				"filtername" "filter_nobomb_notbot"
+				"onstarttouch" "intel,forcedrop,,0,-1"
+			}
+			$filter_sendprop
+			{
+				"targetname" "filter_isbot"
+				"$name" "m_bIsABot"
+				"$value" "1"
+				"onpass" "bombpickup_relay,cancelpending,,0.02,-1"
+			}
+			filter_activator_name
+			{
+				"targetname" "filter_nobomb"
+				"filtername" "hasbomb"
+				"negated" "1"
+			}
+			$filter_sendprop
+			{
+				"targetname" "filter_notbot"
+				"$name" "m_bIsABot"
+				"$value" "0"
+			}
+			filter_multi
+			{
+				"targetname" "filter_nobomb_notbot"
+				"filter01" "filter_nobomb"
+				"filter02" "filter_notbot"
+			}
+		}
         spawn_teleport_delay
         {
             NoFixup 1
@@ -3583,6 +3749,7 @@ WaveSchedule
     //SpawnTemplate bluspawn_push
     //SpawnTemplate blu_spawn_protect
     SpawnTemplate Push_cheese_redspawn
+    SpawnTemplate antigriefbomb
     SpawnTemplate deathpit_close
     SpawnTemplate kill_others
     //SpawnTemplate lockers
@@ -3600,6 +3767,13 @@ WaveSchedule
     //SpawnTemplate respawn_kills
     SpawnTemplate BLU_WIN
     SpawnTemplate teleport_sidespawn
+    SpawnTemplate Spawn_Abuse_Fix
+    PlayerSpawnTemplate [$SIGSEGV] //Spawn custom player template
+	{
+		Name Spawn_Abuse_Fix 
+		Origin "0 0 0" 
+		Bone "bip_spine_2" 
+	}
     //SpawnTemplate chem_breaker
 
     //spec_goto 664.8 3539.3 -121.1 -7.0 167.3 hatch: shield from capping
@@ -4831,7 +5005,7 @@ WaveSchedule
         Explanation
         {
             Line "{#6ed34d}Make your way toward the enemy base and deploy the bomb!"
-            Line "{yellow}You can shoot in spawn while invulnerable."
+            Line "{yellow}You can shoot in spawn while invincible, but you do -50% damage."
             Line "{blue}You have 9 minutes!"
         }
 
@@ -4871,7 +5045,18 @@ WaveSchedule
             WaitBeforeStarting 0
             WaitBetweenSpawns 15
             TotalCurrency 0
-            Support Limited
+            Support 1
+            FirstSpawnOutput                                                                                                                                                            
+			{
+				Target bomb_antigrief_on                    
+				Action Trigger                   
+			}
+
+			DoneOutput
+			{
+				Target bomb_antigrief_off                    
+				Action Trigger                   
+			}
             TFBot
             {
                 Class Soldier
@@ -6285,16 +6470,16 @@ WaveSchedule
             WaitForAllDead "HHH"
             Where spawnbot_redspawn1
             TotalCount 999
-            MaxActive 3
-            SpawnCount 3
+            MaxActive 6
+            SpawnCount 1
             WaitBeforeStarting 0
-            WaitBetweenSpawns 8
+            WaitBetweenSpawns 1
             TotalCurrency 50
             RandomChoice
             {
                 TFBot
                 {
-                    Template T_TFBot_Sniper_SMG	
+                    Template T_TFBot_Scout_Pistol
                     ClassIcon random_lite
                     Attributes DisableDodge
                     Action Mobber 	
@@ -6317,10 +6502,11 @@ WaveSchedule
 
                 TFBot
                 {
-                    Template T_TFBot_Pyro_Flaregun_FastFlares
+                    Class Soldier 
+                    WeaponRestrictions SecondaryOnly
                     ClassIcon random_lite
                     Attributes DisableDodge
-                    Action mobber 	
+                    Action Mobber 	
                     Tag tag_dmg_takeIT
                     CharacterAttributes
                     {
@@ -6340,7 +6526,7 @@ WaveSchedule
 
                 TFBot
                 {
-                    Template T_TFBot_Sniper_Huntsman
+                    Template T_TFBot_Pyro_Detonator
                     ClassIcon random_lite
                     Attributes DisableDodge
                     Tag tag_dmg_takeIT
@@ -6365,6 +6551,30 @@ WaveSchedule
                 {
                     Template T_TFBot_Pyro
                     Skill Easy
+                    ClassIcon random_lite
+                    Attributes DisableDodge
+                    Action Mobber
+                    Tag tag_dmg_takeIT
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "force distribute currency on death" 1
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }
+                }
+
+                TFBot
+                {
+                    Class Demoman
+                    Skill Normal 
                     ClassIcon random_lite
                     Attributes DisableDodge
                     Action Mobber
@@ -6447,6 +6657,17 @@ WaveSchedule
             WaitBetweenSpawns 5
             TotalCurrency 0
             Support 1
+            FirstSpawnOutput                                                                                                                                                            
+			{
+				Target bomb_antigrief_on                    
+				Action Trigger                   
+			}
+
+			DoneOutput
+			{
+				Target bomb_antigrief_off                    
+				Action Trigger                   
+			}
             TFBot
             {
                 Template T_TFBot_Pyro_Phlog
@@ -7291,38 +7512,17 @@ WaveSchedule
             WaitForAllDead "c1.1"
             Where spawnbot_redspawn1
             TotalCount 999
-            MaxActive 6
-            SpawnCount 6
+            MaxActive 9
+            SpawnCount 9
             WaitBeforeStarting 0
             WaitBetweenSpawns 0
             TotalCurrency 0
             RandomChoice
             {
-                TFBot
-                {
-                    Template T_TFBot_Scout_Melee_Fix
-                    ClassIcon random_lite
-                    Attributes DisableDodge
-                    Tag nav_reverse_avoid
-                    CharacterAttributes
-                    {
-                        "force distribute currency on death" 1
-                        "crit mod disabled" 0
-                    }	
-                    AddCond
-                    {
-                        Name "TF_COND_REPROGRAMMED"
-                    }	
-                    AddCond
-                    {
-                        Name "TF_COND_INVULNERABLE"
-                        Duration 1.5
-                    }
-                }
 
                 TFBot
                 {
-                    Template T_TFBot_Demoman_Knight
+                    Template T_TFBot_Soldier_Buff_Banner
                     ClassIcon random_lite
                     Tag tag_dmg_takeIT
                     Attributes DisableDodge
@@ -7344,7 +7544,30 @@ WaveSchedule
 
                 TFBot
                 {
-                    Template T_TFBot_Heavyweapons_Heavyweight_Champ
+                    Template T_TFBot_Heavyweapons_Shotgun
+                    ClassIcon random_lite
+                    Attributes DisableDodge
+                    Tag tag_dmg_takeIT
+                    CharacterAttributes
+                    {
+                        "force distribute currency on death" 1
+                        "crit mod disabled" 0
+                    }	
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }	
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }
+                }
+
+                TFBot
+                {
+                    Class Soldier 
+                    Skill Normal
                     ClassIcon random_lite
                     Attributes DisableDodge
                     Tag tag_dmg_takeIT
@@ -7424,6 +7647,17 @@ WaveSchedule
             WaitBetweenSpawns 15
             TotalCurrency 0
             Support 1
+            FirstSpawnOutput                                                                                                                                                            
+			{
+				Target bomb_antigrief_on                    
+				Action Trigger                   
+			}
+
+			DoneOutput
+			{
+				Target bomb_antigrief_off                    
+				Action Trigger                   
+			}
             TFBot
             {
                 Template T_TFBot_Scout_Melee_Fix
@@ -7882,32 +8116,57 @@ WaveSchedule
             WaitForAllSpawned "b1.1"
             Where spawnbot_right_stairs_stage2
             TotalCount 10
-            MaxActive 10
-            SpawnCount 5
+            MaxActive 5
+            SpawnCount 1
             WaitBeforeStarting 0
-            WaitBetweenSpawns 12
+            WaitBetweenSpawns 0.1
             TotalCurrency 100
-        
-            TFBot
+            RandomChoice
             {
-                Template T_TFBot_Scout_Bonk_Scattergun
-                Action FetchFlag 	
-                Attributes DisableDodge
-                Tag nav_reverse_avoid
-                CharacterAttributes
+                TFBot
                 {
-                    "crit mod disabled" 0
-                    "force distribute currency on death" 1
-                    "cannot pick up intelligence" 1
+                    Template T_TFBot_Scout_Bonk_Scattergun
+                    Action FetchFlag 	
+                    Attributes DisableDodge
+                    Tag nav_reverse_avoid
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "force distribute currency on death" 1
+                        "cannot pick up intelligence" 1
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }
                 }
-                AddCond
+
+                TFBot
                 {
-                    Name "TF_COND_REPROGRAMMED"
-                }
-                AddCond
-                {
-                    Name "TF_COND_INVULNERABLE"
-                    Duration 1.5
+                    Template T_TFBot_Scout_Bonk_Scattergun
+                    Action Mobber 	
+                    Attributes DisableDodge
+                    Tag nav_reverse_avoid
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "force distribute currency on death" 1
+                        "cannot pick up intelligence" 1
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }
                 }
             }
         }
@@ -8009,7 +8268,7 @@ WaveSchedule
             TFBot
             {
                 Template T_TFBot_Marauder_2
-                Health 9000
+                Health 6500
                 Attributes DisableDodge
                 Tag nav_reverse_avoid
                 Attributes UseBossHealthBar
@@ -8150,19 +8409,20 @@ WaveSchedule
         WaveSpawn
         {
             Name "last_ditch" // wave 3
-            WaitForAllDead "c1.2"
+            WaitForAllDead "c1"
             Where spawnbot_redspawn1
             TotalCount 999
             MaxActive 9
             SpawnCount 3
-            WaitBeforeStarting 10
-            WaitBetweenSpawns 2
+            WaitBeforeStarting 0
+            WaitBetweenSpawns 1
             TotalCurrency 100
             RandomChoice
             {
                 TFBot
                 {
-                    Template T_TFBot_Sniper_Shahansha
+                    Template T_TFBot_Heavyweapons_Shotgun
+                    Skill Hard
                     ClassIcon random_lite
                     Action Mobber	
                     Attributes DisableDodge
@@ -8185,7 +8445,8 @@ WaveSchedule
 
                 TFBot
                 {
-                    Template T_TFBot_Heavy_Warrior	
+                    Class Scout 
+                    Skill Normal 
                     ClassIcon random_lite
                     Attributes DisableDodge
                     Tag tag_dmg_takeIT
@@ -8208,34 +8469,12 @@ WaveSchedule
 
                 TFBot
                 {
-                    Template T_TFBot_Scout_Pistol	
+                    Template T_TFBot_Demoman
+                    Skill Normal 	
                     ClassIcon random_lite
                     Action Mobber	
                     Tag tag_dmg_takeIT
                     Attributes DisableDodge
-                    CharacterAttributes
-                    {
-                        "crit mod disabled" 0
-                        "force distribute currency on death" 1
-                    }
-                    AddCond
-                    {
-                        Name "TF_COND_REPROGRAMMED"
-                    }
-                    AddCond
-                    {
-                        Name "TF_COND_INVULNERABLE"
-                        Duration 1.5
-                    }
-                }
-
-                TFBot
-                {
-                    Template T_TFBot_Engineer_Pomson
-                    ClassIcon random_lite
-                    Action Mobber
-                    Attributes DisableDodge
-                    Tag tag_dmg_takeIT
                     CharacterAttributes
                     {
                         "crit mod disabled" 0
@@ -8313,6 +8552,17 @@ WaveSchedule
             WaitBetweenSpawns 90
             TotalCurrency 0
             Support 1
+            FirstSpawnOutput                                                                                                                                                            
+			{
+				Target bomb_antigrief_on                    
+				Action Trigger                   
+			}
+
+			DoneOutput
+			{
+				Target bomb_antigrief_off                    
+				Action Trigger                   
+			}
             TFBot
             {
                 Template T_TFBot_Scout_Melee_Fix
@@ -8470,6 +8720,7 @@ WaveSchedule
             Name "b1"
             WaitForAllDead "a2"
             Where spawnbot_commisinary_right_stage2
+            Where spawnbot_mid_house_stage2
             TotalCount 25
             MaxActive 10
             SpawnCount 5
@@ -8510,6 +8761,7 @@ WaveSchedule
             Name "b1.1"
             WaitForAllDead "a2"
             Where spawnbot_commisinary_right_stage2
+            Where spawnbot_mid_house_stage2
             TotalCount 4
             MaxActive 2
             SpawnCount 2
@@ -8655,6 +8907,8 @@ WaveSchedule
             Name "b2.2"
             WaitForAllDead "b1.1"
             Where spawnbot_commisinary_right_stage2
+            Where spawnbot_mid_house_stage2
+            Where spawnbot_split_hatch_path_stage2
             TotalCount 15
             MaxActive 10
             SpawnCount 5
@@ -8690,6 +8944,9 @@ WaveSchedule
             Name "b2"
             WaitForAllDead "b1.1"
             Where spawnbot_commisinary_right_stage2
+            Where spawnbot_mid_house_stage2
+            Where spawnbot_split_hatch_path_stage2
+            Where spawnbot_split_hatch_path_stage2
             TotalCount 4
             MaxActive 2
             SpawnCount 2
@@ -9086,17 +9343,17 @@ WaveSchedule
             WaitForAllDead "c1"
             Where spawnbot_redspawn1
             TotalCount 999
-            MaxActive 9
+            MaxActive 12
             SpawnCount 1
             WaitBeforeStarting 0
-            WaitBetweenSpawns 2
+            WaitBetweenSpawns 1
             TotalCurrency 0
             RandomChoice
             {
 
                 TFBot
                 {
-                    Template T_TFBot_Heavy_FistOfSteel
+                    Template T_TFBot_Soldier_Beggars
                     ClassIcon random_lite
                     Tag tag_dmg_takeIT
                     Action mobber 	
@@ -9119,7 +9376,7 @@ WaveSchedule
 
                 TFBot
                 {
-                    Template T_TFBot_Soldier_DirectHit
+                    Template T_TFBot_Heavy_IronFist_Airblast
                     ClassIcon random_lite
                     Action Mobber	
                     Attributes DisableDodge
@@ -9142,11 +9399,57 @@ WaveSchedule
 
                 TFBot
                 {
-                    Template T_TFBot_Heavyweapons_Stock_Fist
+                    Template T_TFBot_Heavyweapons_Fist
                     ClassIcon random_lite
                     Attributes DisableDodge
                     Action Mobber
                     Tag tag_dmg_takeIT
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "force distribute currency on death" 1
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }
+                }
+
+                TFBot
+                {
+                    Template T_TFBot_Scout_Shortstop
+                    ClassIcon random_lite
+                    Tag tag_dmg_takeIT
+                    Action mobber 	
+                    Attributes DisableDodge
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "force distribute currency on death" 1
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }
+                }
+
+                TFBot
+                {
+                    Template T_TFBot_Pyro_Dragon
+                    ClassIcon random_lite
+                    Tag tag_dmg_takeIT
+                    Action mobber 	
+                    Attributes DisableDodge
                     CharacterAttributes
                     {
                         "crit mod disabled" 0
@@ -9222,6 +9525,17 @@ WaveSchedule
             WaitBetweenSpawns 8
             TotalCurrency 100
             Support 1
+            FirstSpawnOutput                                                                                                                                                            
+			{
+				Target bomb_antigrief_on                    
+				Action Trigger                   
+			}
+
+			DoneOutput
+			{
+				Target bomb_antigrief_off                    
+				Action Trigger                   
+			}
             RandomChoice
             {
                 TFBot
@@ -9347,7 +9661,7 @@ WaveSchedule
             TotalCount 1
             MaxActive 1
             SpawnCount 1
-            WaitBeforeStarting 0
+            WaitBeforeStarting 5
             WaitBetweenSpawns 0
             TotalCurrency 100
             TFBot
@@ -9466,9 +9780,9 @@ WaveSchedule
             Where spawnbot_front_right_stage1
             TotalCount 15
             MaxActive 8
-            SpawnCount 1
+            SpawnCount 4
             WaitBeforeStarting 0
-            WaitBetweenSpawns 3.5
+            WaitBetweenSpawns 4
             TotalCurrency 100
             RandomChoice
             {
@@ -9670,39 +9984,54 @@ WaveSchedule
 
         WaveSpawn
         {
+            Name "b1.1"
+            WaitForAllSpawned "alldead"
+            Where spawnbot_commisinary_right_stage2
+            Where spawnbot_right_stairs_stage2
+            TotalCount 3
+            MaxActive 1
+            SpawnCount 1
+            WaitBeforeStarting 5
+            WaitBetweenSpawns 8
+            TotalCurrency 34
+            TFBot
+            {
+                Template T_TFBot_Giant_Heavyweapons_Deflector_Fix
+                Attributes DisableDodge
+                Action Mobber
+                CharacterAttributes
+                {
+                    "cannot pick up intelligence" 1
+                    "damage force reduction" 0
+                    "voice pitch scale" 0
+                    "increase buff duration" 9
+                    "crit mod disabled" 0
+                }
+                AddCond
+                {
+                    Name "TF_COND_REPROGRAMMED"
+                }
+                AddCond
+                {
+                    Name "TF_COND_INVULNERABLE"
+                    Duration 3
+                }
+            }
+        }
+
+        WaveSpawn
+        {
             Name "b1.2"
             WaitForAllSpawned "alldead"
             Where spawnbot_mid_house_stage2
             TotalCount 6
-            MaxActive 3
-            SpawnCount 3
+            MaxActive 2
+            SpawnCount 2
             WaitBeforeStarting 3
             WaitBetweenSpawns 3
-            TotalCurrency 100
+            TotalCurrency 66
             Squad 
             {
-                TFBot
-                {
-                    Template T_TFBot_Giant_Heavyweapons_Deflector_Fix
-                    Attributes DisableDodge
-                    Action Mobber
-                    CharacterAttributes
-                    {
-                        "cannot pick up intelligence" 1
-                        "damage force reduction" 0
-                        "voice pitch scale" 0
-                        "crit mod disabled" 0
-                    }
-                    AddCond
-                    {
-                        Name "TF_COND_REPROGRAMMED"
-                    }
-                    AddCond
-                    {
-                        Name "TF_COND_INVULNERABLE"
-                        Duration 1.5
-                    }
-                }
 
                 TFBot
                 {
@@ -9740,6 +10069,7 @@ WaveSchedule
                     Attributes DisableDodge
                     Classicon soldier_backup_spammer_giant
                     Action Mobber
+                    Tag bot_squad_member
                     Attributes SpawnWithFullCharge
                     CharacterAttributes
                     {
@@ -10111,7 +10441,7 @@ WaveSchedule
             WaitBeforeStarting 0
             WaitBetweenSpawns 8
             TotalCurrency 50
-            Support Limited
+            Support 1
             RandomChoice
             {
                 TFBot
@@ -10255,6 +10585,78 @@ WaveSchedule
 
                 TFBot
                 {
+                    Template T_TFBot_Soldier_Extended_Battalion
+                    ClassIcon random_lite
+                    Attributes DisableDodge
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "voice pitch scale" 0
+                        "force distribute currency on death" 1
+                        "damage force reduction" 0
+                    }
+                
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }	
+                }
+
+                TFBot
+                {
+                    Template T_TFBot_Soldier_Extended_Buff_Banner
+                    ClassIcon random_lite
+                    Attributes DisableDodge
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "voice pitch scale" 0
+                        "force distribute currency on death" 1
+                        "damage force reduction" 0
+                    }
+                
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }	
+                }
+
+                TFBot
+                {
+                    Template T_TFBot_Medic_Kritz
+                    ClassIcon random_lite
+                    Attributes DisableDodge
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "voice pitch scale" 0
+                        "force distribute currency on death" 1
+                        "damage force reduction" 0
+                    }
+                
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }	
+                }
+
+                TFBot
+                {
                     Template T_TFBot_Scout_Sandman_FullStun
                     ClassIcon random_lite
                     Attributes DisableDodge
@@ -10281,6 +10683,57 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Brass
                     ClassIcon random_lite
+                    Skill Hard
+                    Attributes DisableDodge
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "voice pitch scale" 0
+                        "force distribute currency on death" 1
+                        "damage force reduction" 0
+                    }
+                
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }	
+                }
+
+                TFBot
+                {
+                    Template T_TFBot_Demo_Burst_Fix
+                    ClassIcon random_lite
+                    Skill Normal
+                    Attributes DisableDodge
+                    CharacterAttributes
+                    {
+                        "crit mod disabled" 0
+                        "voice pitch scale" 0
+                        "force distribute currency on death" 1
+                        "damage force reduction" 0
+                    }
+                
+                    AddCond
+                    {
+                        Name "TF_COND_REPROGRAMMED"
+                    }
+                    AddCond
+                    {
+                        Name "TF_COND_INVULNERABLE"
+                        Duration 1.5
+                    }	
+                }
+
+                TFBot
+                {
+                    Template T_TFBot_Pyro_Dragon
+                    ClassIcon random_lite
+                    Skill Expert
                     Attributes DisableDodge
                     CharacterAttributes
                     {
