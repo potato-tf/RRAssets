@@ -14,77 +14,77 @@ WaveSchedule
 
 	StartingCurrency				1200
 	CanBotsAttackWhileInSpawnRoom 	Yes
-	RespawnWaveTimeBlue 			3 [$SIGSEGV]
-	FixedRespawnWaveTimeBlue 		1 [$SIGSEGV]
+	RespawnWaveTimeBlue 			3 
+	FixedRespawnWaveTimeBlue 		1 
 	AddSentryBusterWhenKillCountExceeds 40
 	AddSentryBusterWhenDamageDealtExceeds 7000
 	//Fixes
-	NoReanimators 1 [$SIGSEGV]							 
-	NoMvMDeathTune 1 [$SIGSEGV]	 					 
-	SniperAllowHeadshots 1 [$SIGSEGV]					 
-	SentryBusterFriendlyFire 0 [$SIGSEGV]	 			 
-	ImprovedAirblast 1 [$SIGSEGV]						 
-	NoSapUnownedBuildings 1 [$SIGSEGV]	 	
-	SendBotsToSpectatorImmediately 1 [$SIGSEGV]	
+	NoReanimators 1 							 
+	NoMvMDeathTune 1 	 					 
+	SniperAllowHeadshots 1 					 
+	SentryBusterFriendlyFire 0 	 			 
+	ImprovedAirblast 1 						 
+	NoSapUnownedBuildings 1 	 	
+	SendBotsToSpectatorImmediately 1 	
 	
 	//Global
-	RobotLimit 26 [$SIGSEGV]	 						 
-	ForceHoliday 2 [$SIGSEGV]	 						 
-	NoHolidayPickups 1 [$SIGSEGV]						 
-	BotPushaway 0 [$SIGSEGV]	 	
-	MaxTotalPlayers 6 [$SIGSEGV]
-	DisplayRobotDeathNotice 0 [$SIGSEGV]
-//	GrapplingHook 1 [$SIGSEGV]
-//	CustomUpgradesFile "mvm_upgrades_brain_reverse.txt" [$SIGSEGV]
-	WaveStartCountdown 0 [$SIGSEGV]
-	BluHumanInfiniteAmmo 1 [$SIGSEGV]
-	NoRomevisionCosmetics 1 [$SIGSEGV] //models/bots/tw2/boss_bot/twcarrier_addon.mdl
-	RemoveBluVelocityLimit 1 [$SIGSEGV]
+	RobotLimit 26 	 						 
+	ForceHoliday 2 	 						 
+	NoHolidayPickups 1 						 
+	BotPushaway 0 	 	
+	MaxTotalPlayers 6 
+	DisplayRobotDeathNotice 0 
+//	GrapplingHook 1 
+//	CustomUpgradesFile "mvm_upgrades_brain_reverse.txt" 
+	WaveStartCountdown 0 
+	BluHumanInfiniteAmmo 1 
+	NoRomevisionCosmetics 1  //models/bots/tw2/boss_bot/twcarrier_addon.mdl
+	RemoveBluVelocityLimit 1 
 	
 	//Players are robots
-	ReverseWinConditions 1 [$SIGSEGV]	 
-	BluHumanFlagCapture 1 [$SIGSEGV]	 				 
-	BluHumanFlagPickup 1 [$SIGSEGV]	 				 
-	AllowJoinTeamBlueMax 6 [$SIGSEGV]				 
-	AllowJoinTeamBlue 1 [$SIGSEGV]	 				 
-	HumansMustJoinTeam blue [$SIGSEGV]	 			 
-	BluPlayersAreRobots 1 [$SIGSEGV]	 	
-	SetCreditTeam 3	[$SIGSEGV]			
-	FlagCarrierMovementPenalty 1 [$SIGSEGV]
+	ReverseWinConditions 1 	 
+	BluHumanFlagCapture 1 	 				 
+	BluHumanFlagPickup 1 	 				 
+	AllowJoinTeamBlueMax 6 				 
+	AllowJoinTeamBlue 1 	 				 
+	HumansMustJoinTeam blue 	 			 
+	BluPlayersAreRobots 1 	 	
+	SetCreditTeam 3				
+	FlagCarrierMovementPenalty 1 
 	// BotTeleportUberDuration 1			 
     // BluHumanTeleportOnSpawn 1 			 
     // BluHumanBotTeleporter 0 			 
 	//Disable Sounds
-//	DisableSound "Announcer.MVM_Get_To_Upgrade"					  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Spy_Alert" 						  [$SIGSEGV]
-	DisableSound "Announcer.mvm_spybot_death"					  [$SIGSEGV]
-	DisableSound "Announcer.mvm_spybot_death_all"				  [$SIGSEGV]
-	DisableSound "Announcer.MVM_First_Wave_Start"				  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Wave_Start"						  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Wave_End"						  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Wave_Lose"						  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Final_Wave_Start"				  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Final_Wave_End"					  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Robots_Planted"					  [$SIGSEGV]
-	DisableSound "Announcer.MVM_All_Dead"						  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Bomb_Alert_Entered"				  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Bomb_Alert_Near_Hatch"			  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Bomb_Alert_Deploying"			  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Sentry_Buster_Alert"			  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Sentry_Buster_Alert_Another"	  [$SIGSEGV]
-	DisableSound "Announcer.MVM_General_Wave_Start"				  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Game_Over_Loss"					  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Planted"					  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Spawn"				  [$SIGSEGV] 
-	DisableSound "Announcer.MVM_Tank_Alert_Another"				  [$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Multiple"	 		  [$SIGSEGV]		 
-	DisableSound "Announcer.MVM_Tank_Alert_Halfway"	 			  [$SIGSEGV]			 
-	DisableSound "Announcer.MVM_Tank_Alert_Halfway_Multiple" 	  [$SIGSEGV]	 
-	DisableSound "Announcer.MVM_Tank_Alert_Near_Hatch" 			  [$SIGSEGV]		 
-	DisableSound "Announcer.MVM_Tank_Alert_Deploying" 			  [$SIGSEGV]
+//	DisableSound "Announcer.MVM_Get_To_Upgrade"					  
+	DisableSound "Announcer.MVM_Spy_Alert" 						  
+	DisableSound "Announcer.mvm_spybot_death"					  
+	DisableSound "Announcer.mvm_spybot_death_all"				  
+	DisableSound "Announcer.MVM_First_Wave_Start"				  
+	DisableSound "Announcer.MVM_Wave_Start"						  
+	DisableSound "Announcer.MVM_Wave_End"						  
+	DisableSound "Announcer.MVM_Wave_Lose"						  
+	DisableSound "Announcer.MVM_Final_Wave_Start"				  
+	DisableSound "Announcer.MVM_Final_Wave_End"					  
+	DisableSound "Announcer.MVM_Robots_Planted"					  
+	DisableSound "Announcer.MVM_All_Dead"						  
+	DisableSound "Announcer.MVM_Bomb_Alert_Entered"				  
+	DisableSound "Announcer.MVM_Bomb_Alert_Near_Hatch"			  
+	DisableSound "Announcer.MVM_Bomb_Alert_Deploying"			  
+	DisableSound "Announcer.MVM_Sentry_Buster_Alert"			  
+	DisableSound "Announcer.MVM_Sentry_Buster_Alert_Another"	  
+	DisableSound "Announcer.MVM_General_Wave_Start"				  
+	DisableSound "Announcer.MVM_Game_Over_Loss"					  
+	DisableSound "Announcer.MVM_Tank_Planted"					  
+	DisableSound "Announcer.MVM_Tank_Alert_Spawn"				   
+	DisableSound "Announcer.MVM_Tank_Alert_Another"				  
+	DisableSound "Announcer.MVM_Tank_Alert_Multiple"	 		  		 
+	DisableSound "Announcer.MVM_Tank_Alert_Halfway"	 			  			 
+	DisableSound "Announcer.MVM_Tank_Alert_Halfway_Multiple" 	  	 
+	DisableSound "Announcer.MVM_Tank_Alert_Near_Hatch" 			  		 
+	DisableSound "Announcer.MVM_Tank_Alert_Deploying" 			  
 	
 	//Precache		  
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl" [$SIGSEGV]		 					
+	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl" 		 					
 	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
 	PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
 	PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
@@ -96,8 +96,8 @@ WaveSchedule
 	PrecacheModel "models\props_mvm\hatch_shield.mdl"	
 	PrecacheModel "models\props_mvm\reversemvm_redwall_696x337.mdl"	
 	
-	PrecacheSound "combine_bank_alarm.mp3" [$SIGSEGV]
-	OverrideSounds [$SIGSEGV] 
+	PrecacheSound "combine_bank_alarm.mp3" 
+	OverrideSounds  
 	{
 		"MVM.GiantCommonExplodes"	"ambient\explosions\explode_3.wav"
 		"MVM.BombWarning"			"combine_bank_alarm.mp3"	 
@@ -106,24 +106,24 @@ WaveSchedule
 		"Announcer.mvm_spybot_death_all"	"empty.wav"		
 		"Announcer.MVM_All_Dead" "empty.wav"
 	}
-	ClassLimit [$SIGSEGV]
+	ClassLimit 
 	{
 		Heavyweapons 1
 		Medic 1
 		Engineer 1
 	}
-	DisallowUpgrade	"maxammo primary increased" [$SIGSEGV]
-	DisallowUpgrade	"maxammo secondary increased" [$SIGSEGV]
-	DisallowUpgrade "maxammo metal increased" [$SIGSEGV]
-	DisallowUpgrade "maxammo grenades1 increased" [$SIGSEGV]
-	DisallowUpgrade "metal regen" [$SIGSEGV]
-	DisallowUpgrade [$SIGSEGV] //too powerful
+	DisallowUpgrade	"maxammo primary increased" 
+	DisallowUpgrade	"maxammo secondary increased" 
+	DisallowUpgrade "maxammo metal increased" 
+	DisallowUpgrade "maxammo grenades1 increased" 
+	DisallowUpgrade "metal regen" 
+	DisallowUpgrade  //too powerful
 	{
 		Upgrade "generate rage on heal"
 		MaxLevel 1
 		ClassName "tf_weapon_medigun"
 	}
-	PlayerAttributes [$SIGSEGV] 
+	PlayerAttributes  
 	{
 		"health from healers increased" 2 //translates to 50% reduced bot healing
 		"vision opt in flags" 0
@@ -150,7 +150,7 @@ WaveSchedule
 		SentryGun {Level 1}
 	}
 
-	// ExtendedUpgrades [$SIGSEGV] //removed to simplify the mission as much as possible
+	// ExtendedUpgrades  //removed to simplify the mission as much as possible
 	// {
 		// pistolcrit
 		// {
@@ -226,35 +226,35 @@ WaveSchedule
 			// }
 		// }
 	// }
-	// ItemAttributes [$SIGSEGV] 
+	// ItemAttributes  
 	// { //passive disposable
 		// ItemName "The Gunslinger"
 		// "engy disposable sentries" 1
 		// "mvm sentry ammo" 99
 	// }
-	ItemAttributes [$SIGSEGV] 
+	ItemAttributes  
 	{ //DR fix
 		ItemName "The Dead Ringer"
 		"cloak_consume_on_feign_death_activate" 2
 	}	
-	// ItemAttributes [$SIGSEGV] 
+	// ItemAttributes  
 	// { //buff to stock invis/C&D
 		// ClassName "tf_weapon_invis"
 		// "max health additive bonus" 75
 	// }	
-	ItemAttributes [$SIGSEGV] 
+	ItemAttributes  
 	{ //YER no work
 		ClassName "tf_weapon_knife"
 		"mod_disguise_consumes_cloak" 0
 		"mult cloak meter consume rate" 1
 	}
-	ItemAttributes [$SIGSEGV] 
+	ItemAttributes  
 	{
 		ItemName "The Disciplinary Action" //whipping blu players is fucked
 		"melee range multiplier" 3
 		"melee bounds multiplier" 9
 	}
-	PointTemplates [$SIGSEGV] 
+	PointTemplates  
 	{
 		redwin
 		{
@@ -1410,108 +1410,108 @@ WaveSchedule
 			}
 		}
 	}
-	SpawnTemplate [$SIGSEGV] "redwin"  
+	SpawnTemplate  "redwin"  
 	
-	SpawnTemplate [$SIGSEGV] "redwin2"  
+	SpawnTemplate  "redwin2"  
 	
-	SpawnTemplate [$SIGSEGV] "antitele"  
+	SpawnTemplate  "antitele"  
 	
-	SpawnTemplate [$SIGSEGV] "ammokiller1"  
+	SpawnTemplate  "ammokiller1"  
 	
-	SpawnTemplate [$SIGSEGV] "nogatealarm"  
+	SpawnTemplate  "nogatealarm"  
 	
-	SpawnTemplate [$SIGSEGV] "annotation"
+	SpawnTemplate  "annotation"
 	
-	SpawnTemplate [$SIGSEGV] "bombresetfixendurance"  
+	SpawnTemplate  "bombresetfixendurance"  
 	
-	SpawnTemplate [$SIGSEGV] "bombresetfixendurance2" 
+	SpawnTemplate  "bombresetfixendurance2" 
 
-	SpawnTemplate [$SIGSEGV] "playercap"
+	SpawnTemplate  "playercap"
 	
-	SpawnTemplate [$SIGSEGV] "hatchunblocker"
+	SpawnTemplate  "hatchunblocker"
 	
-	SpawnTemplate [$SIGSEGV] "enableforwardsniperhints"
+	SpawnTemplate  "enableforwardsniperhints"
 	
-	SpawnTemplate [$SIGSEGV] "reversegatebot"
+	SpawnTemplate  "reversegatebot"
 	
-	SpawnTemplate [$SIGSEGV] "reversegatebot2"
+	SpawnTemplate  "reversegatebot2"
 	
-	SpawnTemplate [$SIGSEGV] "disablebarrier"
+	SpawnTemplate  "disablebarrier"
 	
-	SpawnTemplate [$SIGSEGV] "tankdozer_relay"
+	SpawnTemplate  "tankdozer_relay"
 	
 //--------------------------
 	
 	//SPAWN GATE
 	
 //--------------------------
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop1"
 		Origin "1201.650024 -1695.816895 -280.03253"
 		Angles "0 -90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop2"
 		Origin "1201.650024 -1695.816895 -100.03253"
 		Angles "0 -90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop1"
 		Origin "1701.650024 -1695.816895 -280.03253"
 		Angles "0 -90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop2"
 		Origin "1701.650024 -1695.816895 -100.03253"
 		Angles "0 -90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop1"
 		Origin "1537.793945 -1683.350098 -280"
 		Angles "0 -90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop2"
 		Origin "1537.793945 -1683.350098 -100"
 		Angles "0 -90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop1"
 		Origin "1377.793945 -1683.350098 -280"
 		Angles "0 -90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop2"
 		Origin "1377.793945 -1683.350098 -100"
 		Angles "0 -90 0"
 	}	
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop1"
 		Origin "753.191101 -1526.889282 122.031311"
 		Angles "0 -136 0"
 	}	
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop2"
 		Origin "623.191101 -1396.889282 122.031311"
 		Angles "0 -136 0"
 	}	
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stop1"
 		Origin "2521.925781 -1483.154175 -33.031311"
 		Angles "0 -18 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{
 		Name "stopinvis"
 		Origin "1583.191101 -1396.889282 992.031311"
@@ -1522,49 +1522,49 @@ WaveSchedule
 	//UPGRADE STATIONS
 	
 //--------------------------
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
 	{ //CARRIER
 		Name "shop"
 		"origin" "2211.710205 -3486.608154 -99.098686"
 		"angles" "0 135 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
  	{
 		Name "idiot"
 		"origin" "2146.644775 -3543.594727 -79.098686"
 		"angles" "0 131.289230 0.000000"
 	}	
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
  	{ //RIGHT SPAWN
 		Name "shop"
 		"origin" " 2825.014648 -2269.287842 -33.278595"
 		"angles" "0 90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
  	{
 		Name "idiot"
 		"origin" "2734.400635 -2259.087402 -23.031311"
 		"angles" "0 90 0.000000"
 	}	
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
  	{ //LEFT SPAWN
 		Name "shop"
 		"origin" "369.352661 -1891.981689 120.0313111"
 		"angles" "0 90 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
  	{
 		Name "idiot"
 		"origin" "281.985077 -1871.968750 127.031311"
 		"angles" "0 90 0"
 	}	
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
  	{ //FORWARD SPAWN
 		Name "shop"
 		"origin" "165.968750 1832.067139 -127.968689"
 		"angles" "0 -180 0"
 	}
-	SpawnTemplate [$SIGSEGV] 
+	SpawnTemplate  
  	{
 		Name "idiot"
 		"origin" "145.989761 1743.196655 -117.968689"
@@ -1575,7 +1575,7 @@ WaveSchedule
 	//SPAWN LOCATIONS
 	
 //--------------------------
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "gateAspawn"
 		TeamNum 2
@@ -1583,7 +1583,7 @@ WaveSchedule
 		Y 635.08911
 		Z -59.96868
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "runespawn"
 		TeamNum 2
@@ -1591,7 +1591,7 @@ WaveSchedule
 		Y 1508.223267
 		Z -118.968689
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "w5runespawn3"
 		TeamNum 2
@@ -1599,7 +1599,7 @@ WaveSchedule
 		Y 698.88824
 		Z -49
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "w5runespawn2"
 		TeamNum 2
@@ -1607,7 +1607,7 @@ WaveSchedule
 		Y 484.926147
 		Z -59
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "gateBspawn"
 		TeamNum 2
@@ -1615,7 +1615,7 @@ WaveSchedule
 		Y 1590.223267
 		Z -188.968689
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "frontrockspawn"
 		TeamNum 2
@@ -1623,7 +1623,7 @@ WaveSchedule
 		Y 1057.95825
 		Z -12
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "hatchspawn"
 		TeamNum 2
@@ -1631,7 +1631,7 @@ WaveSchedule
 		Y -268.957703
 		Z -299.256287
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "smallhatchspawn"
 		TeamNum 2
@@ -1639,7 +1639,7 @@ WaveSchedule
 		Y -1315
 		Z -216
 	}	
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "bighatchspawn"
 		TeamNum 2
@@ -1647,7 +1647,7 @@ WaveSchedule
 		Y -321.738159
 		Z -24.968689
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "engispawn"
 		TeamNum 2
@@ -1655,7 +1655,7 @@ WaveSchedule
 		Y -401.942322
 		Z -95
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "engispawn2"
 		TeamNum 2
@@ -1663,7 +1663,7 @@ WaveSchedule
 		Y -165
 		Z -106
 	}	
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "engispawn3"
 		TeamNum 2
@@ -1671,7 +1671,7 @@ WaveSchedule
 		Y 906.348511
 		Z -227.968689
 	}	
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "gatebotA"
 		TeamNum 2
@@ -1679,7 +1679,7 @@ WaveSchedule
 		Y 906.348511
 		Z -227.968689
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "backcapA"
 		TeamNum 2
@@ -1687,7 +1687,7 @@ WaveSchedule
 		Y -319
 		Z -58
 	}
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "backcapB"
 		TeamNum 2
@@ -1695,7 +1695,7 @@ WaveSchedule
 		Y 2405
 		Z -86
 	}	
-	ExtraSpawnPoint [$SIGSEGV] 
+	ExtraSpawnPoint  
  	{
 		Name "frontlinespawn"
 		TeamNum 2
@@ -1703,13 +1703,13 @@ WaveSchedule
 		Y -466.899872 
 		Z -246.953644
 	}
-	ExtraTankPath [$SIGSEGV]
+	ExtraTankPath 
 	{
 		Name "stickypath"
 		Node "-3781.749268 -200.303452 -403.416809"
 		Node "-4197.046387 -196.342316 -301.968689"
 	}
-	ExtraTankPath [$SIGSEGV]
+	ExtraTankPath 
 	{
 		Name "stickypath2"
 		Node "-2616.376465 1916.161377 -169.510284"
@@ -1755,7 +1755,7 @@ WaveSchedule
 			Target wave_finished_relay
 			Action Trigger
 		}
-		Explanation [$SIGSEGV] 
+		Explanation  
  	 	{
 			Line "{blue}Defend your giants and deploy the bomb!"
 			Line "{red}Losing all of your giant support will fail the wave"
@@ -1768,8 +1768,8 @@ WaveSchedule
 			Line "{0600A6}_____________________________"
 		}
 		
-		SpawnTemplate [$SIGSEGV] "progressblocker1"
-		SpawnTemplate [$SIGSEGV] "progressblocker2"
+		SpawnTemplate  "progressblocker1"
+		SpawnTemplate  "progressblocker2"
 		
 //--------------------------
 
@@ -1838,7 +1838,7 @@ WaveSchedule
 				TFBot {
 					Class Demoman
 					Skill Expert 
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					WeaponRestrictions SecondaryOnly
 					AddCond { Name TF_COND_REPROGRAMMED }
 					ItemAttributes {
@@ -1858,9 +1858,9 @@ WaveSchedule
 				TFBot { 
 					Class Soldier
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Skill Expert 
-					UseBestWeapon 1 [$SIGSEGV]
+					UseBestWeapon 1 
 					CharacterAttributes {"voice pitch scale" 0 "crit mod disabled" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
 				}
 			}
@@ -1884,7 +1884,7 @@ WaveSchedule
 			TFBot {
 				Template T_TFBot_Giant_Heavyweapons_Shotgun
 				AddCond { Name TF_COND_REPROGRAMMED }
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				ClassIcon heavy_shotgun_red
 				CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
 			}
@@ -1903,9 +1903,9 @@ WaveSchedule
 				Template T_TFBot_Heavyweapons_Fist 
 				Attributes AlwaysCrit 
 				Attributes DisableDodge
-				Action Mobber [$SIGSEGV]
-				StripItemSlot 0 [$SIGSEGV] [$SIGSEGV]
-				StripItemSlot 1 [$SIGSEGV] [$SIGSEGV]
+				Action Mobber 
+				StripItemSlot 0  
+				StripItemSlot 1  
 				AddCond { Name TF_COND_REPROGRAMMED } 
 				CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0}
 			}
@@ -1923,7 +1923,7 @@ WaveSchedule
 				Template T_TFBot_Giant_DemoMan_PrinceTavish 
 				Attributes AlwaysCrit 
 				Attributes DisableDodge
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				AddCond { Name TF_COND_REPROGRAMMED } 
 				CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0}
 			}
@@ -1945,14 +1945,14 @@ WaveSchedule
 					Item "The Frontier Justice"
 					Item "The Data Mining Light"
 					Attributes HoldFireUntilFullReload
-					StripItemSlot 1 [$SIGSEGV]
-					StripItemSlot 2 [$SIGSEGV]
-					StripItemSlot 3 [$SIGSEGV]
-					StripItemSlot 4 [$SIGSEGV]
+					StripItemSlot 1 
+					StripItemSlot 2 
+					StripItemSlot 3 
+					StripItemSlot 4 
 					ItemAttributes { ItemName "The Frontier Justice" "killstreak tier" 2 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0 "voice pitch scale" 0 "critboost on kill" 3 }
-					UseMeleeThreatPrioritization 1 [$SIGSEGV]
+					UseMeleeThreatPrioritization 1 
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					WeaponRestrictions PrimaryOnly
 				}
 				TFBot {
@@ -1963,13 +1963,13 @@ WaveSchedule
 					Item "The Frontier Justice"
 					Item "The Data Mining Light"
 					Attributes HoldFireUntilFullReload
-					StripItemSlot 1 [$SIGSEGV]
-					StripItemSlot 2 [$SIGSEGV]
-					StripItemSlot 3 [$SIGSEGV]
-					StripItemSlot 4 [$SIGSEGV]
+					StripItemSlot 1 
+					StripItemSlot 2 
+					StripItemSlot 3 
+					StripItemSlot 4 
 					ItemAttributes { ItemName "The Frontier Justice" "killstreak tier" 2 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0 "voice pitch scale" 0 "critboost on kill" 3 }
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					WeaponRestrictions PrimaryOnly
 				}
 				TFBot {
@@ -1980,13 +1980,13 @@ WaveSchedule
 					Item "The Frontier Justice"
 					Item "The Data Mining Light"
 					Attributes HoldFireUntilFullReload
-					StripItemSlot 1 [$SIGSEGV]
-					StripItemSlot 2 [$SIGSEGV]
-					StripItemSlot 3 [$SIGSEGV]
-					StripItemSlot 4 [$SIGSEGV]
+					StripItemSlot 1 
+					StripItemSlot 2 
+					StripItemSlot 3 
+					StripItemSlot 4 
 					ItemAttributes { ItemName "The Frontier Justice" "killstreak tier" 2 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0 "voice pitch scale" 0 "critboost on kill" 3 }
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					WeaponRestrictions PrimaryOnly
 				}
 				TFBot {
@@ -1997,13 +1997,13 @@ WaveSchedule
 					Item "The Frontier Justice"
 					Item "Golden Wrench"
 					Item "The Data Mining Light"
-					StripItemSlot 1 [$SIGSEGV]
-					StripItemSlot 3 [$SIGSEGV]
-					StripItemSlot 4 [$SIGSEGV]
+					StripItemSlot 1 
+					StripItemSlot 3 
+					StripItemSlot 4 
 					ItemAttributes { ItemName "The Frontier Justice" "killstreak tier" 2 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0 "voice pitch scale" 0 "critboost on kill" 3 }
 					Attributes HoldFireUntilFullReload
-					UseMeleeThreatPrioritization 1 [$SIGSEGV]
-					Action Sniper [$SIGSEGV]
+					UseMeleeThreatPrioritization 1 
+					Action Sniper 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					ItemAttributes { ItemName "The Frontier Justice" "killstreak tier" 2 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0 "voice pitch scale" 0 "critboost on kill" 3 }
 					ItemAttributes {
@@ -2037,7 +2037,7 @@ WaveSchedule
 			}
 			TFBot { 
 				Template T_TFBot_Giant_Soldier_Spammer  
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				AddCond { Name TF_COND_REPROGRAMMED } 
 				CharacterAttributes { 
 					"health from packs decreased" 0.01 
@@ -2060,20 +2060,20 @@ WaveSchedule
 					Class Soldier
 					ClassIcon red2_lite
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Skill Expert 
 					Attributes DisableDodge
-					UseBestWeapon 1 [$SIGSEGV]
+					UseBestWeapon 1 
 					CharacterAttributes {"voice pitch scale" 0 "crit mod disabled" 0 "health from packs decreased" 0.01 }
 				}				
 				TFBot { 
 					Class Soldier
 					ClassIcon red2_lite
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Skill Expert 
 					Attributes DisableDodge
-					UseBestWeapon 1 [$SIGSEGV]
+					UseBestWeapon 1 
 					CharacterAttributes {"voice pitch scale" 0 "crit mod disabled" 0 "health from packs decreased" 0.01 }
 				}
 				TFBot {
@@ -2081,7 +2081,7 @@ WaveSchedule
 					ClassIcon red2_lite
 					Skill Expert
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					CharacterAttributes {"voice pitch scale" 0 "crit mod disabled" 0 "health from packs decreased" 0.01 }
 				}
@@ -2090,7 +2090,7 @@ WaveSchedule
 					ClassIcon red2_lite
 					Skill Expert
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					CharacterAttributes {"voice pitch scale" 0 "crit mod disabled" 0 "health from packs decreased" 0.01 }
 				}
@@ -2133,7 +2133,7 @@ WaveSchedule
 			TFBot {
 				Class Scout
 				Skill Expert 
-				UseBestWeapon 1 [$SIGSEGV]
+				UseBestWeapon 1 
 				Attributes IgnoreFlag
 				Tag bot_gatebot
 				BehaviorModifiers Push
@@ -2168,9 +2168,9 @@ WaveSchedule
 				Item "MvM GateBot Light Pyro"
 				Skill Normal
 				Health 3000
-				StripItemSlot 2 [$SIGSEGV]
-				UseBestWeapon 1 [$SIGSEGV]
-				UseMeleeThreatPrioritization 1 [$SIGSEGV]
+				StripItemSlot 2 
+				UseBestWeapon 1 
+				UseMeleeThreatPrioritization 1 
 				Item "The Flare Gun"
 				Attributes MiniBoss
 				Attributes UseBossHealthBar
@@ -2198,9 +2198,9 @@ WaveSchedule
 				ClassIcon pyro_giant
 				Skill Normal
 				Health 3000
-				StripItemSlot 2 [$SIGSEGV]
-				UseBestWeapon 1 [$SIGSEGV]
-				UseMeleeThreatPrioritization 1 [$SIGSEGV]
+				StripItemSlot 2 
+				UseBestWeapon 1 
+				UseMeleeThreatPrioritization 1 
 				Item "The Flare Gun"
 				Attributes MiniBoss
 				Attributes UseBossHealthBar
@@ -2260,7 +2260,7 @@ WaveSchedule
 			Target wave_finished_relay
 			Action Trigger
 		}
-		Explanation [$SIGSEGV] 
+		Explanation  
  	 	{
 			Line "{0600A6}_____________________________"
 			Line "{green}Your support this wave:"
@@ -2270,8 +2270,8 @@ WaveSchedule
 			Line "{blue}- ∞ Pyro support"
 			Line "{0600A6}_____________________________"
 		}
-		SpawnTemplate [$SIGSEGV] "progressblocker1"
-		SpawnTemplate [$SIGSEGV] "progressblocker2"
+		SpawnTemplate  "progressblocker1"
+		SpawnTemplate  "progressblocker2"
 		
 //--------------------------
 
@@ -2330,13 +2330,13 @@ WaveSchedule
 					Name Engineer
 					Skill Expert
 					Health 275
-					ExtAttr BuildDispenserAsTeleporter [$SIGSEGV]
+					ExtAttr BuildDispenserAsTeleporter 
 					ClassIcon red2_lite
 					TeleportWhere "gateAspawn"
 					Item "Battery Canteens"
 					Item "The Jag"
 					Item "The Wrangler"
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {
 						"engineer sentry build rate multiplier" 6
@@ -2355,13 +2355,13 @@ WaveSchedule
 					Skill Expert
 					Health 275
 					TeleportWhere "gateAspawn"
-					ExtAttr BuildDispenserAsTeleporter [$SIGSEGV]
+					ExtAttr BuildDispenserAsTeleporter 
 					Attributes AlwaysFireWeapon
 					ClassIcon red2_lite
 					Item "Battery Canteens"
 					Item "The Jag"
-					StripItemSlot 0 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					StripItemSlot 0 
+					StripItemSlot 1 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {
 						"engineer sentry build rate multiplier" 6
@@ -2397,7 +2397,7 @@ WaveSchedule
 				Attributes AlwaysCrit
 				AimTrackingInterval 1
 				AddCond { Name TF_COND_REPROGRAMMED }
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				ClassIcon heavy_shotgun_red
 				CharacterAttributes { "voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
 			}
@@ -2417,11 +2417,11 @@ WaveSchedule
 			TFBot {
 				Template T_TFBot_Heavyweapons_Shotgun
 				ClassIcon heavy_shotgun_red_giant
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				Attributes DisableDodge
 				AddCond { Name TF_COND_REPROGRAMMED }
 				AimLeadProjectileSpeed 5500
-				UseMeleeThreatPrioritization 1 [$SIGSEGV]
+				UseMeleeThreatPrioritization 1 
 				CharacterAttributes { "voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
 			}
 		}						
@@ -2439,8 +2439,8 @@ WaveSchedule
 				Skill Expert 
 				Name "Hybrid Samurai"
 				Attributes HoldFireUntilFullReload
-				AimLeadProjectileSpeed 1216 [$SIGSEGV]
-				Action Sniper [$SIGSEGV]
+				AimLeadProjectileSpeed 1216 
+				Action Sniper 
 				ClassIcon demoknight_samurai
 				MaxVisionRange 1500
 				AddCond { Name TF_COND_REPROGRAMMED }
@@ -2484,8 +2484,8 @@ WaveSchedule
 				Skill Expert 
 				Name "Hybrid Samurai"
 				Attributes HoldFireUntilFullReload
-				AimLeadProjectileSpeed 1216 [$SIGSEGV]
-				Action Sniper [$SIGSEGV]
+				AimLeadProjectileSpeed 1216 
+				Action Sniper 
 				ClassIcon demoknight_samurai
 				MaxVisionRange 1500
 				AddCond { Name TF_COND_REPROGRAMMED }
@@ -2524,7 +2524,7 @@ WaveSchedule
 				Template T_TFBot_Giant_Boxing_Heavy
 				Health 5500
 				ClassIcon heavy_urgent
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				Item "Gloves of Running Urgently MvM"
 				AddCond { Name TF_COND_REPROGRAMMED }
 				CharacterAttributes {"voice pitch scale" 0 "gesture speed increase" 2 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
@@ -2591,14 +2591,14 @@ WaveSchedule
 			Squad {
 				TFBot { 
 					Template T_TFBot_Giant_Scout_Jumping_Sandman
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
 				}
 				TFBot { 
 					Template T_TFBot_Giant_Scout_Jumping_Sandman
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
@@ -2623,9 +2623,9 @@ WaveSchedule
 				Skill Hard
 				Name "Natascha Heavy"
 				Item "Natascha"
-				AimTrackingInterval 1 [$SIGSEGV]
+				AimTrackingInterval 1 
 				ClassIcon heavy_natascha_nys
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				AddCond { Name TF_COND_REPROGRAMMED }
 				CharacterAttributes {"crit mod disabled" 0 "voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 }
 			}
@@ -2641,7 +2641,7 @@ WaveSchedule
 			TFBot { 
 				Template T_TFBot_Heavyweapons_Shotgun
 				ClassIcon red2_lite
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				AddCond { Name TF_COND_REPROGRAMMED }
 				CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 "crit mod disabled" 0 }
 			}
@@ -2781,10 +2781,10 @@ WaveSchedule
 					Name "Thruster Pyro"
 					Item "The Thermal Thruster"
 					Item "The Backburner"
-					Action Mobber [$SIGSEGV]
-					UseBestWeapon 1 [$SIGSEGV]
-					UseMeleeThreatPrioritization 1 [$SIGSEGV]				
-					FireWeapon [$SIGSEGV] {
+					Action Mobber 
+					UseBestWeapon 1 
+					UseMeleeThreatPrioritization 1 				
+					FireWeapon  {
 						Delay 0
 						Cooldown 1
 						IfSeeTarget 1
@@ -2806,9 +2806,9 @@ WaveSchedule
 					Item "The Phlogistinator"
 					Item "The Gas Passer"
 					WeaponRestrictions SecondaryOnly
-					UseMeleeThreatPrioritization 1 [$SIGSEGV]
+					UseMeleeThreatPrioritization 1 
 					Attributes SpawnWithFullCharge
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					ItemAttributes {
 						ItemName "The Phlogistinator"
 						"deploy time increased" 0.01
@@ -2840,7 +2840,7 @@ WaveSchedule
 			Target wave_finished_relay
 			Action Trigger
 		}		
-		Explanation [$SIGSEGV] 
+		Explanation  
  	 	{
 			Line "{0600A6}_____________________________"
 			Line "{green}Your support this wave:"
@@ -2851,8 +2851,8 @@ WaveSchedule
 			Line "{0600A6}_____________________________"
 			Line "{red}Bots will attempt to re-capture the gate!"
 		}
-		SpawnTemplate [$SIGSEGV] "progressblocker1"
-		SpawnTemplate [$SIGSEGV] "progressblocker2"
+		SpawnTemplate  "progressblocker1"
+		SpawnTemplate  "progressblocker2"
 		
 //--------------------------
 
@@ -2911,13 +2911,13 @@ WaveSchedule
 					Name Engineer
 					Skill Expert
 					Health 275
-					ExtAttr BuildDispenserAsTeleporter [$SIGSEGV]
+					ExtAttr BuildDispenserAsTeleporter 
 					ClassIcon red2_lite
 					TeleportWhere "gateAspawn"
 					Item "Battery Canteens"
 					Item "The Jag"
 					Item "The Wrangler"
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {
 						"engineer sentry build rate multiplier" 6
@@ -2936,13 +2936,13 @@ WaveSchedule
 					Skill Expert
 					Health 275
 					TeleportWhere "gateAspawn"
-					ExtAttr BuildDispenserAsTeleporter [$SIGSEGV]
+					ExtAttr BuildDispenserAsTeleporter 
 					Attributes AlwaysFireWeapon
 					ClassIcon red2_lite
 					Item "Battery Canteens"
 					Item "The Jag"
-					StripItemSlot 0 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					StripItemSlot 0 
+					StripItemSlot 1 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {
 						"engineer sentry build rate multiplier" 6
@@ -2979,7 +2979,7 @@ WaveSchedule
 					Class Demoman 
 					Skill Hard
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0}
@@ -2987,8 +2987,8 @@ WaveSchedule
 				TFBot {
 					Class Demoman
 					Skill Expert 
-					Action Mobber [$SIGSEGV]
-					AimAt Feet [$SIGSEGV]
+					Action Mobber 
+					AimAt Feet 
 					Attributes DisableDodge
 					WeaponRestrictions SecondaryOnly
 					AddCond { Name TF_COND_REPROGRAMMED }
@@ -3009,8 +3009,8 @@ WaveSchedule
 				TFBot {
 					Class Demoman
 					Skill Expert 
-					Action Mobber [$SIGSEGV]
-					AimAt Feet [$SIGSEGV]
+					Action Mobber 
+					AimAt Feet 
 					WeaponRestrictions SecondaryOnly
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0}
@@ -3048,13 +3048,13 @@ WaveSchedule
 				Skill Expert
 				Health 3000
 				Attributes MiniBoss
-				Action Mobber [$SIGSEGV]
-				UseMeleeThreatPrioritization 1 [$SIGSEGV]
-				UseBestWeapon 1 [$SIGSEGV]
+				Action Mobber 
+				UseMeleeThreatPrioritization 1 
+				UseBestWeapon 1 
 				Item "The Flare Gun"
 				Item "The Dragon's Fury"
 				AddCond { Name TF_COND_REPROGRAMMED }
-				AimTrackingInterval 0.75 [$SIGSEGV]
+				AimTrackingInterval 0.75 
 				CharacterAttributes {
 					"move speed bonus"	0.5
 					"damage force reduction" 0
@@ -3090,7 +3090,7 @@ WaveSchedule
 				Item "The Equalizer"
 				Item "The Beggar's Bazooka"
 				Item "MvM GateBot Light Soldier"
-				Action Sniper [$SIGSEGV]
+				Action Sniper 
 				AddCond { Name TF_COND_REPROGRAMMED }
 				ItemAttributes {
 					ItemName "The Beggar's Bazooka"
@@ -3141,8 +3141,8 @@ WaveSchedule
 					Item "The U-clank-a"
 					Item "Fists of Steel"
 					ClassIcon heavy_deflector
-					AimTrackingInterval 1 [$SIGSEGV]
-					Action Sniper [$SIGSEGV]
+					AimTrackingInterval 1 
+					Action Sniper 
 					AddCond { Name TF_COND_REPROGRAMMED } 
 					ItemAttributes {
 						ItemName "Deflector"
@@ -3168,8 +3168,8 @@ WaveSchedule
 					Attributes DisableDodge
 					ClassIcon heavy_deflector
 					AimLeadProjectileSpeed 5000
-					Action Mobber [$SIGSEGV]
-					AimTrackingInterval 1 [$SIGSEGV]
+					Action Mobber 
+					AimTrackingInterval 1 
 					AddCond { Name TF_COND_REPROGRAMMED } 
 					ItemAttributes {
 						ItemName "Deflector"
@@ -3200,9 +3200,9 @@ WaveSchedule
 				Health 3000
 				Attributes MiniBoss
 				Attributes AlwaysCrit
-				Action Mobber [$SIGSEGV]
-				UseMeleeThreatPrioritization 1 [$SIGSEGV]
-				UseBestWeapon 1 [$SIGSEGV]
+				Action Mobber 
+				UseMeleeThreatPrioritization 1 
+				UseBestWeapon 1 
 				Item "The Flare Gun"
 				AddCond { Name TF_COND_REPROGRAMMED }
 				CharacterAttributes {
@@ -3233,9 +3233,9 @@ WaveSchedule
 			Squad {
 				TFBot { 
 					Template T_TFBot_Giant_Heavyweapons 
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes DisableDodge
-					UseMeleeThreatPrioritization 1 [$SIGSEGV]
+					UseMeleeThreatPrioritization 1 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1 "crit mod disabled" 0 }
 				}
@@ -3293,11 +3293,11 @@ WaveSchedule
 					Item "Deflector"
 					Item "Tough Guy's Toque"
 					Item "Fists Of Steel"
-					Action Sniper [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					Action Sniper 
+					StripItemSlot 1 
 					AimLeadProjectileSpeed 5000
-					UseMeleeThreatPrioritization 1 [$SIGSEGV]
-					AlwaysGlow 1 [$SIGSEGV]
+					UseMeleeThreatPrioritization 1 
+					AlwaysGlow 1 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					Attributes MiniBoss
 					ItemAttributes {
@@ -3345,14 +3345,14 @@ WaveSchedule
 				TFBot {
 					Class Pyro
 					Skill Expert 
-					UseBestWeapon 1 [$SIGSEGV]
-					Action Mobber [$SIGSEGV]
+					UseBestWeapon 1 
+					Action Mobber 
 					Attributes DisableDodge
 					AddCond { Name TF_COND_REPROGRAMMED }
 					Item "The Detonator"
 					Item "The Dragon's Fury"
 					ClassIcon red2_lite 
-					AimTrackingInterval 1 [$SIGSEGV]
+					AimTrackingInterval 1 
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0 "mult airblast refire time" 2 }	
 					ItemAttributes {
 						ItemName "The Detonator"
@@ -3362,10 +3362,10 @@ WaveSchedule
 				TFBot {
 					Class Soldier
 					Skill Expert 
-					UseBestWeapon 1 [$SIGSEGV]
+					UseBestWeapon 1 
 					RocketJump 2
 					ClassIcon red2_lite 
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0}	
 					AddCond { Name TF_COND_REPROGRAMMED }
@@ -3374,7 +3374,7 @@ WaveSchedule
 				}
 				TFBot {
 					Template T_TFBot_Soldier_Extended_Concheror
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					ClassIcon red2_lite 
 					AddCond { Name TF_COND_REPROGRAMMED }
@@ -3383,10 +3383,10 @@ WaveSchedule
 				TFBot {
 					Class Scout
 					Skill Expert 
-					UseBestWeapon 1 [$SIGSEGV]
+					UseBestWeapon 1 
 					ClassIcon red2_lite 
 					Attributes DisableDodge
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0}	
 					Item "Pretty Boy's Pocket Pistol"
@@ -3394,10 +3394,10 @@ WaveSchedule
 				TFBot {
 					Class Heavyweapons
 					Skill Expert 
-					AimTrackingInterval 1 [$SIGSEGV]
+					AimTrackingInterval 1 
 					ClassIcon red2_lite 
 					Attributes DisableDodge
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0}	
 				}
@@ -3405,7 +3405,7 @@ WaveSchedule
 					Class Demoman
 					Skill Expert 
 					ClassIcon red2_lite 
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					WeaponRestrictions SecondaryOnly
 					AddCond { Name TF_COND_REPROGRAMMED }
@@ -3428,7 +3428,7 @@ WaveSchedule
 					Skill Expert 
 					ClassIcon red2_lite 
 					Attributes DisableDodge
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Item "The Huntsman"
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {"voice pitch scale" 0 "health from packs decreased" 0.01 "force distribute currency on death" 1  "crit mod disabled" 0 }	
@@ -3444,13 +3444,13 @@ WaveSchedule
 			WaitForAllSpawned "rWave3b1"
 			WaitBetweenSpawnsAfterDeath 5
 			RandomChoice {
-				TFBot { Template T_TFBot_Demoman_Samurai Action Mobber [$SIGSEGV] AddCond { Name TF_COND_REPROGRAMMED } Item "The Mantreads" ClassIcon red2_lite}
+				TFBot { Template T_TFBot_Demoman_Samurai Action Mobber  AddCond { Name TF_COND_REPROGRAMMED } Item "The Mantreads" ClassIcon red2_lite}
 				TFBot { 
 					Template T_TFBot_Heavy_IronFist_Airblast
 					Attributes DisableDodge
-					Action Mobber [$SIGSEGV] 
-					StripItemSlot 0 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					Action Mobber  
+					StripItemSlot 0 
+					StripItemSlot 1 
 					AddCond { Name TF_COND_REPROGRAMMED } 
 					CharacterAttributes {"voice pitch scale" 0.7 "health from packs decreased" 0.01 "crit mod disabled" 0}
 					ClassIcon red2_lite
@@ -3458,9 +3458,9 @@ WaveSchedule
 				TFBot { 
 					Template T_TFBot_Heavy_IronFist_Airblast
 					Attributes DisableDodge
-					Action Mobber [$SIGSEGV] 
-					StripItemSlot 0 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					Action Mobber  
+					StripItemSlot 0 
+					StripItemSlot 1 
 					AddCond { Name TF_COND_REPROGRAMMED } 
 					CharacterAttributes {"voice pitch scale" 0.7 "health from packs decreased" 0.01 "crit mod disabled" 0}
 					ClassIcon red2_lite
@@ -3468,9 +3468,9 @@ WaveSchedule
 				TFBot { 
 					Template T_TFBot_Heavy_IronFist_Airblast
 					Attributes DisableDodge
-					Action Mobber [$SIGSEGV] 
-					StripItemSlot 0 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					Action Mobber  
+					StripItemSlot 0 
+					StripItemSlot 1 
 					AddCond { Name TF_COND_REPROGRAMMED } 
 					CharacterAttributes {"voice pitch scale" 0.7 "health from packs decreased" 0.01 "crit mod disabled" 0}
 					ClassIcon red2_lite
@@ -3491,12 +3491,12 @@ WaveSchedule
 					Name Engineer
 					Skill Expert
 					Health 275
-					ExtAttr BuildDispenserAsTeleporter [$SIGSEGV]
+					ExtAttr BuildDispenserAsTeleporter 
 					TeleportWhere "gateAspawn"
 					Item "Battery Canteens"
 					Item "The Jag"
 					Item "The Wrangler"
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {
 						"engineer sentry build rate multiplier" 6
@@ -3515,12 +3515,12 @@ WaveSchedule
 					Skill Expert
 					Health 275
 					TeleportWhere "gateAspawn"
-					ExtAttr BuildDispenserAsTeleporter [$SIGSEGV]
+					ExtAttr BuildDispenserAsTeleporter 
 					Attributes AlwaysFireWeapon
 					Item "Battery Canteens"
 					Item "The Jag"
-					StripItemSlot 0 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					StripItemSlot 0 
+					StripItemSlot 1 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes {
 						"engineer sentry build rate multiplier" 6
@@ -3560,7 +3560,7 @@ WaveSchedule
 					Attributes IgnoreFlag
 					Tag bot_gatebot
 					Tag nav_prefer_gate1_flank
-					AimTrackingInterval 0.5 [$SIGSEGV]
+					AimTrackingInterval 0.5 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "health from packs decreased" 0.01 "force distribute currency on death" 1 }	
 				}
@@ -3612,7 +3612,7 @@ WaveSchedule
 				Template T_TFBot_Giant_Soldier_Spammer
 				ClassIcon soldier_spammer_crit
 				Item "MvM GateBot Light Soldier"
-				AimTrackingInterval 1 [$SIGSEGV]
+				AimTrackingInterval 1 
 				BehaviorModifiers Push
 				Attributes IgnoreFlag
 				Attributes AlwaysCrit
@@ -3645,7 +3645,7 @@ WaveSchedule
 				TFBot { 
 					Class Scout
 					Skill Expert
-					UseBestWeapon 1 [$SIGSEGV]
+					UseBestWeapon 1 
 					Item "MvM GateBot Light Scout"
 					BehaviorModifiers Push
 					Attributes IgnoreFlag
@@ -3658,7 +3658,7 @@ WaveSchedule
 				TFBot { 
 					Class Scout
 					Skill Expert
-					UseBestWeapon 1 [$SIGSEGV]
+					UseBestWeapon 1 
 					Attributes AlwaysCrit
 					Item "MvM GateBot Light Scout"
 					BehaviorModifiers Push
@@ -3814,7 +3814,7 @@ WaveSchedule
 				TFBot {
 					Template T_TFBot_Heavyweapons_Shotgun
 					ClassIcon heavy 
-					NoBombUpgrades 1 [$SIGSEGV]
+					NoBombUpgrades 1 
 					BehaviorModifiers Push
 					Attributes IgnoreFlag
 					Tag bot_gatebot
@@ -3824,19 +3824,19 @@ WaveSchedule
 				TFBot {
 					Template T_TFBot_Heavyweapons_Shotgun
 					ClassIcon heavy 
-					NoBombUpgrades 1 [$SIGSEGV]
+					NoBombUpgrades 1 
 					BehaviorModifiers Push
 					Attributes IgnoreFlag
 					Tag bot_gatebot
 					Tag nav_prefer_gate1_flank
 					Item "MvM GateBot Light Heavy"
 				}
-				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 [$SIGSEGV]}
-				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 [$SIGSEGV]}
-				TFBot {Template T_TFBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 [$SIGSEGV]}
-				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 [$SIGSEGV]}
-				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 [$SIGSEGV]}
-				TFBot {Template T_TFBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 [$SIGSEGV]}
+				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 }
+				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 }
+				TFBot {Template T_TFBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 }
+				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 }
+				TFBot {Template T_TFGateBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 }
+				TFBot {Template T_TFBot_Heavyweapons_Shotgun ClassIcon heavy NoBombUpgrades 1 }
 			}
 		}
 		WaveSpawn {
@@ -3905,7 +3905,7 @@ WaveSchedule
 			Target wave_finished_relay
 			Action Trigger
 		}	
-		Explanation [$SIGSEGV] 
+		Explanation  
  	 	{
 			Line "{0600A6}_____________________________"
 			Line "{green}Your support this wave:"
@@ -3915,9 +3915,9 @@ WaveSchedule
 			Line "{blue}- ∞ Engineer support"
 			Line "{0600A6}_____________________________"
 		}
-		SpawnTemplate [$SIGSEGV] "progressblocker1"
-		SpawnTemplate [$SIGSEGV] "progressblocker2"
-		SpawnTemplate [$SIGSEGV] "powerupteleporter"
+		SpawnTemplate  "progressblocker1"
+		SpawnTemplate  "progressblocker2"
+		SpawnTemplate  "powerupteleporter"
 //--------------------------
 
 	//COUNTDOWN
@@ -3993,7 +3993,7 @@ WaveSchedule
 				Attributes AlwaysFireWeapon
 				ClassIcon red2_lite
 				Item "The Jag"
-				StripItemSlot 0 [$SIGSEGV]
+				StripItemSlot 0 
 				AddCond { Name TF_COND_REPROGRAMMED }
 				CharacterAttributes {
 					"engineer sentry build rate multiplier" 6
@@ -4032,7 +4032,7 @@ WaveSchedule
 				TFBot { 
 					Template T_TFBot_Soldier_Extended_Buff_Banner
 					ClassIcon soldier_banner_trio
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					Attributes HoldFireUntilFullReload
 					AddCond { Name TF_COND_REPROGRAMMED }
@@ -4045,7 +4045,7 @@ WaveSchedule
 				TFBot { 
 					Template T_TFBot_Soldier_Extended_Concheror
 					ClassIcon soldier_banner_trio
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					Attributes HoldFireUntilFullReload
 					AddCond { Name TF_COND_REPROGRAMMED }
@@ -4058,7 +4058,7 @@ WaveSchedule
 				TFBot { 
 					Template T_TFBot_Soldier_Extended_Battalion
 					ClassIcon soldier_banner_trio
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes DisableDodge
 					Attributes HoldFireUntilFullReload
 					AddCond { Name TF_COND_REPROGRAMMED }
@@ -4088,15 +4088,15 @@ WaveSchedule
 				TFBot { 
 					Class Engineer
 					Skill Expert 
-					Action Sniper [$SIGSEGV]
+					Action Sniper 
 					Health 3500
 					Name "Giant Widowmaker"
 					Attributes DisableDodge
 					Attributes MiniBoss
 					Attributes AlwaysCrit
-					StripItemSlot 3 [$SIGSEGV]
-					StripItemSlot 4 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					StripItemSlot 3 
+					StripItemSlot 4 
+					StripItemSlot 1 
 					ClassIcon engineer_widowmaker_nys
 					Item "The Widowmaker"
 					Item "Golden Wrench"
@@ -4132,16 +4132,16 @@ WaveSchedule
 				TFBot { 
 					Class Engineer
 					Skill Expert 
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Health 3500
 					Name "Giant Widowmaker"
 					Attributes DisableDodge
 					Attributes MiniBoss
 					Attributes AlwaysCrit
 					Attributes AlwaysFireWeapon
-					StripItemSlot 3 [$SIGSEGV]
-					StripItemSlot 4 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					StripItemSlot 3 
+					StripItemSlot 4 
+					StripItemSlot 1 
 					ClassIcon engineer_widowmaker_nys
 					Item "The Widowmaker"
 					Item "Golden Wrench"
@@ -4176,16 +4176,16 @@ WaveSchedule
 				TFBot { 
 					Class Engineer
 					Skill Expert 
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Health 3500
 					Name "Giant Widowmaker"
 					Attributes DisableDodge
 					Attributes MiniBoss
 					Attributes AlwaysCrit
 					Attributes AlwaysFireWeapon
-					StripItemSlot 3 [$SIGSEGV]
-					StripItemSlot 4 [$SIGSEGV]
-					StripItemSlot 1 [$SIGSEGV]
+					StripItemSlot 3 
+					StripItemSlot 4 
+					StripItemSlot 1 
 					ClassIcon engineer_widowmaker_nys
 					Item "The Widowmaker"
 					Item "Golden Wrench"
@@ -4233,7 +4233,7 @@ WaveSchedule
 				TFBot {
 					Template T_TFBot_Soldier_BurstFire
 					AddCond { Name TF_COND_REPROGRAMMED }
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					CharacterAttributes {
 						"force distribute currency on death" 1
 						"voice pitch scale" 0
@@ -4263,7 +4263,7 @@ WaveSchedule
 			TFBot { 
 				Template T_TFBot_Demo_Burst
 				Classicon demo_burst_red
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				Attributes AlwaysCrit
 				Attributes DisableDodge
 				AddCond { Name TF_COND_REPROGRAMMED }
@@ -4287,7 +4287,7 @@ WaveSchedule
 				Skill Expert 
 				Item "The Enforcer"
 				Item "Your Eternal Reward"
-				StripItemSlot 0 [$SIGSEGV]
+				StripItemSlot 0 
 				Attributes AlwaysCrit
 				AddCond { Name TF_COND_REPROGRAMMED }
 				AddCond { Name TF_COND_INVULNERABLE Duration 2 }
@@ -4326,7 +4326,7 @@ WaveSchedule
 					Item "Your Eternal Reward"
 					MaxVisionRange 100
 					Attributes AlwaysCrit	
-					FireWeapon [$SIGSEGV] {
+					FireWeapon  {
 						Delay 0
 						Cooldown 1
 						IfSeeTarget 1
@@ -4353,7 +4353,7 @@ WaveSchedule
 					Item "Your Eternal Reward"
 					MaxVisionRange 100
 					Attributes AlwaysCrit	
-					FireWeapon [$SIGSEGV] {
+					FireWeapon  {
 						Delay 0
 						Cooldown 1
 						IfSeeTarget 1
@@ -4380,7 +4380,7 @@ WaveSchedule
 					Item "Your Eternal Reward"
 					MaxVisionRange 100
 					Attributes AlwaysCrit	
-					FireWeapon [$SIGSEGV] {
+					FireWeapon  {
 						Delay 0
 						Cooldown 1
 						IfSeeTarget 1
@@ -4407,7 +4407,7 @@ WaveSchedule
 					Item "Your Eternal Reward"
 					MaxVisionRange 100
 					Attributes AlwaysCrit	
-					FireWeapon [$SIGSEGV] {
+					FireWeapon  {
 						Delay 0
 						Cooldown 1
 						IfSeeTarget 1
@@ -4434,7 +4434,7 @@ WaveSchedule
 					Item "Your Eternal Reward"
 					MaxVisionRange 100
 					Attributes AlwaysCrit	
-					FireWeapon [$SIGSEGV] {
+					FireWeapon  {
 						Delay 0
 						Cooldown 1
 						IfSeeTarget 1
@@ -4461,10 +4461,10 @@ WaveSchedule
 					Item "The Enforcer"
 					Item "Your Eternal Reward"
 					Item "The Dead Ringer"
-					Action Sniper [$SIGSEGV]
+					Action Sniper 
 					MaxVisionRange 1024
 					Attributes AlwaysCrit	
-					FireWeapon [$SIGSEGV] {
+					FireWeapon  {
 						Delay 2
 						Cooldown 1
 						IfSeeTarget 1
@@ -4501,7 +4501,7 @@ WaveSchedule
 			WaitForAllDead "rWave4b"
 			TFBot {
 				Template T_TFBot_Giant_Scout_Fast
-				Action Mobber [$SIGSEGV] 
+				Action Mobber  
 				Attributes AlwaysCrit
 				AddCond { Name TF_COND_REPROGRAMMED }
 				CharacterAttributes { "force distribute currency on death" 1 }
@@ -4518,7 +4518,7 @@ WaveSchedule
 			TotalCurrency 50
 			TFBot {
 				Template T_TFBot_Giant_Scout_Fast
-				Action Mobber [$SIGSEGV] 
+				Action Mobber  
 				AddCond { Name TF_COND_REPROGRAMMED }
 				CharacterAttributes { "force distribute currency on death" 1 }
 				ItemAttributes { ItemName "The Holy Mackerel" "crit vs non burning players" 1 }
@@ -4545,18 +4545,18 @@ WaveSchedule
 					Name "Chief Haste Heavy"
 					Health 30000
 					ClassIcon powerup_haste_lite
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					ForceRomeVision 1
 					MaxVisionRange 1024
 					Attributes DisableDodge
 					Attributes UseBossHealthBar
-					AimLeadProjectileSpeed 5100  [$SIGSEGV]
-					AlwaysGlow 1 [$SIGSEGV]
+					AimLeadProjectileSpeed 5100  
+					AlwaysGlow 1 
 					Item "Iron Curtain"
 					AddCond { Name TF_COND_REPROGRAMMED }
 					AddCond { Name TF_COND_RUNE_HASTE }
-					SpawnTemplate [$SIGSEGV] "powerupspawner"
-					FireInput [$SIGSEGV] 
+					SpawnTemplate  "powerupspawner"
+					FireInput  
 					{
 						Target "nodespawner" //Entity name to use
 						Action "ForceSpawn" //Input to fire
@@ -4583,35 +4583,35 @@ WaveSchedule
 					Template T_TFBot_Medic 
  	 	 	 	 	Skill Expert
 					AddCond { Name TF_COND_REPROGRAMMED }
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					CharacterAttributes { "mod weapon blocks healing" 1 "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Medic 
  	 	 	 	 	Skill Expert
 					AddCond { Name TF_COND_REPROGRAMMED }
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					CharacterAttributes { "mod weapon blocks healing" 1 "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Medic 
  	 	 	 	 	Skill Expert
 					AddCond { Name TF_COND_REPROGRAMMED }
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					CharacterAttributes { "mod weapon blocks healing" 1 "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Medic 
  	 	 	 	 	Skill Expert
 					AddCond { Name TF_COND_REPROGRAMMED }
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					CharacterAttributes { "mod weapon blocks healing" 1 "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Medic 
  	 	 	 	 	Skill Expert
 					AddCond { Name TF_COND_REPROGRAMMED }
-					StripItemSlot 0 [$SIGSEGV]
+					StripItemSlot 0 
 					CharacterAttributes { "mod weapon blocks healing" 1 "force distribute currency on death" 1 }
 				}
 			}
@@ -4679,7 +4679,7 @@ WaveSchedule
 				TeamNum 2
 				Name "tankbossred"
 				Classicon tank_sticky_red				
-				Model [$SIGSEGV] //Set custom model on tank. Will spit harmless errors on client console if the model does not have enough sequences
+				Model  //Set custom model on tank. Will spit harmless errors on client console if the model does not have enough sequences
 				{
 					Default "models/bots/boss_bot/boss_tankred.mdl"
 					Damage1 "models/bots/boss_bot/boss_tankred_damage1.mdl"
@@ -4716,65 +4716,65 @@ WaveSchedule
 			RandomChoice {
 				TFBot { //king
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 					AddCond { Name TF_COND_RUNE_KING }
 				}
 				TFBot { //haste
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 					AddCond { Name TF_COND_RUNE_HASTE }
 				}
 				TFBot { //strength
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 					AddCond { Name TF_COND_RUNE_STRENGTH }
 				}
 				TFBot { //knockout
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 					AddCond { Name TF_COND_RUNE_KNOCKOUT }
 				}
 				TFBot { //everything below this has no powerups
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 				}
 				TFBot {
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 				}
 				TFBot {
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 				}
 				TFBot {
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 				}
 				TFBot {
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 				}
 				TFBot {
 					Template T_TFBot_Giant_DemoMan_PrinceTavish
-					Action Mobber [$SIGSEGV] 
+					Action Mobber  
 					Attributes AlwaysCrit
 					AddCond { Name TF_COND_REPROGRAMMED }
 				}
@@ -4792,7 +4792,7 @@ WaveSchedule
 			TFBot {
 				Template T_TFBot_Soldier_Extended_Buff_Banner
 				ClassIcon red2_lite
-				Action Mobber [$SIGSEGV] 
+				Action Mobber  
 				AddCond { Name TF_COND_REPROGRAMMED }
 			}
 		}
@@ -4854,7 +4854,7 @@ WaveSchedule
 				MaxVisionRange 250 
 				Health 65000
 				Scale 1.75
-				WeaponResist [$SIGSEGV] //Multiplies damage received from weapons listed below
+				WeaponResist  //Multiplies damage received from weapons listed below
 				{
 					"TF_WEAPON_MINIGUN" 2
 				}
@@ -4895,7 +4895,7 @@ WaveSchedule
 		}		
 	}
 	Wave {
-		Explanation [$SIGSEGV] 
+		Explanation  
  	 	{
 			Line "{0600A6}_____________________________"
 			Line "{green}Your support this wave:"
@@ -4917,8 +4917,8 @@ WaveSchedule
 			Action Trigger
 		}
 		
-		SpawnTemplate [$SIGSEGV] "progressblocker1"
-		SpawnTemplate [$SIGSEGV] "progressblocker2"
+		SpawnTemplate  "progressblocker1"
+		SpawnTemplate  "progressblocker2"
 //--------------------------
 
 	//RED WAVESPAWNS
@@ -4951,7 +4951,7 @@ WaveSchedule
 				// AddCond { Name TF_COND_RUNE_PRECISION } 
 				// AddCond { Name TF_COND_STEALTHED_USER_BUFF_FADING } 
 				// AddCond { Name TF_COND_REPROGRAMMED } 
-				// FireWeapon [$SIGSEGV] {
+				// FireWeapon  {
                     // Delay 0
 					// Cooldown 0
 					// Type "Reload"
@@ -4976,11 +4976,11 @@ WaveSchedule
 				Action Trigger
 			}
 			RandomChoice {
-				TFBot { Class Soldier Action Mobber [$SIGSEGV] UseBestWeapon 1 [$SIGSEGV] ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED }}
-				TFBot { Class Demoman Action Mobber [$SIGSEGV] ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED } }
-				TFBot { Class Pyro Action Mobber [$SIGSEGV] UseBestWeapon 1 [$SIGSEGV] ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit AddCond { Name TF_COND_REPROGRAMMED } }
-				TFBot { Class Heavy Action Mobber [$SIGSEGV] ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED } }
-				TFBot { Class Scout Action Mobber [$SIGSEGV] UseBestWeapon 1 [$SIGSEGV] ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED } }
+				TFBot { Class Soldier Action Mobber  UseBestWeapon 1  ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED }}
+				TFBot { Class Demoman Action Mobber  ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED } }
+				TFBot { Class Pyro Action Mobber  UseBestWeapon 1  ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit AddCond { Name TF_COND_REPROGRAMMED } }
+				TFBot { Class Heavy Action Mobber  ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED } }
+				TFBot { Class Scout Action Mobber  UseBestWeapon 1  ClassIcon red2_lite CharacterAttributes { "force distribute currency on death" 1 } Attributes AlwaysCrit Skill Expert AddCond { Name TF_COND_REPROGRAMMED } }
 			}
 		}
 		WaveSpawn {
@@ -4999,7 +4999,7 @@ WaveSchedule
 			RandomChoice {
 				TFBot {
 					Template T_TFBot_Giant_Soldier_RocketShotgun
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					AddCond { Name TF_COND_RUNE_VAMPIRE }
 					CharacterAttributes { "force distribute currency on death" 1 }
@@ -5007,49 +5007,49 @@ WaveSchedule
 				TFBot {
 					Template T_TFBot_Giant_Soldier_Spammer
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Giant_Soldier_Spammer
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Giant_Soldier_Spammer
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Giant_Soldier_Spammer
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Giant_Soldier_Spammer
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Giant_Soldier_Spammer
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "force distribute currency on death" 1 }
 				}
 				TFBot {
 					Template T_TFBot_Giant_Soldier_Spammer
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "force distribute currency on death" 1 }
 				}
@@ -5070,7 +5070,7 @@ WaveSchedule
 					ClassIcon heavy_champ_red 
  	 	 	 	 	Skill Expert
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_RUNE_KNOCKOUT }
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "voice pitch scale" 0 }
@@ -5080,7 +5080,7 @@ WaveSchedule
 					ClassIcon heavy_champ_red 
  	 	 	 	 	Skill Expert
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "voice pitch scale" 0 }
 				}
@@ -5089,7 +5089,7 @@ WaveSchedule
 					ClassIcon heavy_champ_red 
  	 	 	 	 	Skill Expert
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "voice pitch scale" 0 }
 				}
@@ -5098,7 +5098,7 @@ WaveSchedule
 					ClassIcon heavy_champ_red 
  	 	 	 	 	Skill Expert
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "voice pitch scale" 0 }
 				}
@@ -5107,7 +5107,7 @@ WaveSchedule
 					ClassIcon heavy_champ_red 
  	 	 	 	 	Skill Expert
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "voice pitch scale" 0 }
 				}
@@ -5116,7 +5116,7 @@ WaveSchedule
 					ClassIcon heavy_champ_red 
  	 	 	 	 	Skill Expert
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "voice pitch scale" 0 }
 				}
@@ -5125,7 +5125,7 @@ WaveSchedule
 					ClassIcon heavy_champ_red 
  	 	 	 	 	Skill Expert
 					Attributes AlwaysCrit
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					AddCond { Name TF_COND_REPROGRAMMED }
 					CharacterAttributes { "voice pitch scale" 0 }
 				}
@@ -5161,7 +5161,7 @@ WaveSchedule
 				Attributes MiniBoss
 				Attributes UseBossHealthBar
 				Attributes AlwaysCrit
-				RocketCustomParticle "flare_glow" [$SIGSEGV]
+				RocketCustomParticle "flare_glow" 
 				AddCond { Name TF_COND_REPROGRAMMED }
 				AddCond { Name TF_COND_RUNE_SUPERNOVA }
 				AddCond { Name TF_COND_RADIUSHEAL Duration 10 } //amputator visual effect
@@ -5176,7 +5176,7 @@ WaveSchedule
 				AddCond { Name TF_COND_RADIUSHEAL Duration 10 IfHealthBelow 15000 }
 				AddCond { Name TF_COND_TEAM_GLOWS Duration 10 IfHealthBelow 15000 }
 				AddCond { Name TF_COND_RUNE_REFLECT IfHealthBelow 3000 }
-				HomingRockets [$SIGSEGV] {
+				HomingRockets  {
 					IgnoreDisguisedSpies 0
 					IgnoreStealthedSpies 1
 					RocketSpeed 0.75
@@ -5219,7 +5219,7 @@ WaveSchedule
 					"voice pitch scale" 0
 					"gesture speed increase" 0.75
 				}
-				FireWeapon [$SIGSEGV] {
+				FireWeapon  {
 					Delay 0
 					Cooldown 2
 					IfSeeTarget 1
@@ -5253,17 +5253,17 @@ WaveSchedule
 				Class Heavy
 				WeaponRestrictions MeleeOnly
  	 	 	 	Name "⠀" 
-				Skin 4 [$SIGSEGV] 
+				Skin 4  
  	 	 	 	ClassIcon heavy_giant 
  	 	 	 	Skill Normal
 				Attributes AlwaysFireWeapon
 				Attributes SuppressFire
 				CharacterAttributes { "health drain" -300 "voice pitch scale" 0 "move speed bonus" 0.001}
- 	 		 	Action Mobber [$SIGSEGV]
+ 	 		 	Action Mobber 
 				AddCond { Name TF_COND_STEALTHED_USER_BUFF_FADING }
 				AddCond { Name TF_COND_REPROGRAMMED }
 				AddCond { Name TF_COND_RUNE_HASTE } 
-				DamageAppliesCond [$SIGSEGV] { Name TF_COND_RUNE_HASTE } 
+				DamageAppliesCond  { Name TF_COND_RUNE_HASTE } 
 			}
 		}	
 		WaveSpawn {
@@ -5283,17 +5283,17 @@ WaveSchedule
 				Class Heavy
 				WeaponRestrictions MeleeOnly
  	 	 	 	Name "⠀" 
-				Skin 3 [$SIGSEGV] 
+				Skin 3  
  	 	 	 	ClassIcon heavy_giant
  	 	 	 	Skill Normal
 				Attributes AlwaysFireWeapon
 				Attributes SuppressFire
 				CharacterAttributes { "health drain" -300 "voice pitch scale" 0 "move speed bonus" 0.001}
- 	 		 	Action Mobber [$SIGSEGV]
+ 	 		 	Action Mobber 
 				AddCond { Name TF_COND_STEALTHED_USER_BUFF_FADING }
 				AddCond { Name TF_COND_REPROGRAMMED }
 				AddCond { Name TF_COND_RUNE_STRENGTH } 
-				DamageAppliesCond [$SIGSEGV] { Name TF_COND_RUNE_STRENGTH } 
+				DamageAppliesCond  { Name TF_COND_RUNE_STRENGTH } 
 			}
 		}	
 		WaveSpawn {
@@ -5308,17 +5308,17 @@ WaveSchedule
 				Class Heavy
 				WeaponRestrictions MeleeOnly
  	 	 	 	Name "⠀" 
-				Skin 3 [$SIGSEGV] 
+				Skin 3  
  	 	 	 	ClassIcon heavy_giant
  	 	 	 	Skill Normal
 				Attributes AlwaysFireWeapon
 				Attributes SuppressFire
 				CharacterAttributes { "health drain" -300 "voice pitch scale" 0 "move speed bonus" 0.001}
- 	 		 	Action Mobber [$SIGSEGV]
+ 	 		 	Action Mobber 
 				AddCond { Name TF_COND_STEALTHED_USER_BUFF_FADING }
 				AddCond { Name TF_COND_REPROGRAMMED }
 				AddCond { Name TF_COND_RUNE_KING }
-				DamageAppliesCond [$SIGSEGV] { Name TF_COND_RUNE_KING } 
+				DamageAppliesCond  { Name TF_COND_RUNE_KING } 
 			}
 		}
 		WaveSpawn {
@@ -5339,7 +5339,7 @@ WaveSchedule
 			}
 			TFBot {	
 				Template T_TFBot_Giant_Heavyweapons 
-				BehaviorModifiers Push [$SIGSEGV] 
+				BehaviorModifiers Push  
 				CharacterAttributes {"cannot pick up intelligence" 1 } 
 			}
 		}		
@@ -5353,8 +5353,8 @@ WaveSchedule
 			Where spawnbot_main1
 			WaitForAllDead "bWave5a1"
 			RandomChoice {
-				TFBot {	Template T_TFBot_Giant_Heavyweapons Item "Fists of Steel" Action Mobber [$SIGSEGV] CharacterAttributes {"cannot pick up intelligence" 1 } }
-				TFBot {	Template T_TFBot_Giant_Heavyweapons_Shotgun Item "Fists of Steel" Attributes AlwaysCrit Action Mobber [$SIGSEGV] CharacterAttributes {"cannot pick up intelligence" 1 }  }
+				TFBot {	Template T_TFBot_Giant_Heavyweapons Item "Fists of Steel" Action Mobber  CharacterAttributes {"cannot pick up intelligence" 1 } }
+				TFBot {	Template T_TFBot_Giant_Heavyweapons_Shotgun Item "Fists of Steel" Attributes AlwaysCrit Action Mobber  CharacterAttributes {"cannot pick up intelligence" 1 }  }
 			}
 		}			
 		WaveSpawn {
