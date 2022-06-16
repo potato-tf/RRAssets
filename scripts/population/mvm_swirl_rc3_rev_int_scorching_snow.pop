@@ -46,6 +46,8 @@ swirl2_reverse_boogaloo
 	//PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl"
 	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" 
 	PrecacheModel "models/mvm/barrier/barrier_spawn_blue1.mdl"
+	PrecacheModel "models/props_mvm/hatch_shield.mdl"
+	
 	//PrecacheModel "models/props_mvm/reversemvm_redwall_640x300.mdl"  //doesn't show properly so i quit using those
     //PrecacheModel "models/props_mvm/reversemvm_redwall_696x337.mdl"  
     //PrecacheModel "models/props_mvm/reversemvm_redwall_512x320.mdl"  
@@ -793,7 +795,7 @@ swirl2_reverse_boogaloo
 				"fadescale" "1"
 				"MaxAnimTime" "10"
 				"MinAnimTime" "5"
-				"model" "models/hatch_shield.mdl"
+				"model" "models/props_mvm/hatch_shield.mdl"
 				"modelscale" "1.0"
 				"renderfx" "0"
 				"renderamt" "255"
