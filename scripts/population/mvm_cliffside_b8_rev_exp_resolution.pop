@@ -5075,7 +5075,7 @@ WaveSchedule
 				Name    "blimpbossred" 
 				Speed    75
 				Scale 1.5 [$SIGSEGV]
-				Classicon blimp_red_lite
+				Classicon blimp2_red_lite
 				Skin 6
 				TeamNum 2
 				MaxTurnRate 10      
