@@ -59,13 +59,13 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 	NoRedBotsRandomCrit 1
 	BotsUsePlayerTeleporters 0 
 	SendBotsToSpectatorImmediately 1 
+	//CustomNavFile "mvm_swirl_rc3_fixed"
 	TextPrintTime 0 	
     PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" 		 
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu_tools.mdl" 	
 	PrecacheModel "models/props_owo/sign001.mdl" 	
 	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"	
 	PrecacheModel "models/mvm/barrier/barrier_spawn_blue1.mdl"
-	PrecacheModel "models/props_mvm/hatch_shield.mdl"
 	DisallowUpgrade "maxammo primary increased" 
 	DisallowUpgrade "maxammo metal increased" 
 	DisallowUpgrade "maxammo secondary increased"
@@ -318,32 +318,22 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"solid" "0"
 			}
 		}
-		antirollout //prop to block a shortcut
+		antirollout //props to block a shortcut
 		{
-			entity
+			NoFixup 1
+			prop_dynamic
 			{
-				"id" "6"
-				"classname" "prop_dynamic"
-				"angles" "0 0 0"
-				"fademindist" "-1"
-				"fadescale" "1"
-				"MaxAnimTime" "10"
-				"MinAnimTime" "5"
 				"model" "models/props_mvm/wood_boards_2bridges.mdl"
-				"modelscale" "1.0"
-				"renderamt" "255"
-				"rendercolor" "255 255 255"
-				"skin" "0"
-				"solid" "2"
-				"targetname" "shortcut_barrier"
+				"angles" "0 0 0"
 				"origin" "-896 1609 321.143"
-				editor
-				{
-					"color" "220 30 220"
-					"visgroupshown" "1"
-					"visgroupautoshown" "1"
-					"logicalpos" "[0 0]"
-				}
+				"solid" "0"
+			}
+			func_forcefield
+			{
+				"origin" "-896 1559 321.143"
+				"mins" "-100 -50 -100"
+				"maxs" "100 50 100"
+				"TeamNum" "2"
 			}
 		}
 		robot_spawns //holograms that indicate red spawns
@@ -832,7 +822,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				"fadescale" "1"
 				"MaxAnimTime" "10"
 				"MinAnimTime" "5"
-				"model" "models/props_mvm/hatch_shield.mdl"
+				"model" "models/hatch_shield.mdl"
 				"modelscale" "1.0"
 				"renderfx" "0"
 				"renderamt" "255"
@@ -2549,30 +2539,20 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{
 				"origin" "-1920 1536 585"
 				"targetname" "no_flank_gate"
+				"tags" "scout"
 				"team" "-2"
 				"mins" "-200 -200 -200"
 				"maxs" "200 200 200"
-				"tags" "noflank"
 				"StartDisabled" "0"
 			}
 			func_nav_avoid
 			{
-				"origin" "-896 2107 413"
+				"origin" "-896 1807 413"
 				"targetname" "no_stuck"
+				"tags" "scout"
 				"team" "-2"
-				"mins" "-100 -100 -100"
-				"maxs" "100 100 100"
-				"tags" "noflank"
-				"StartDisabled" "0"
-			}
-			func_nav_avoid
-			{
-				"origin" "-896 2107 413"
-				"targetname" "no_stuck"
-				"team" "-3"
-				"mins" "-100 -600 -100"
-				"maxs" "100 100 100"
-				"tags" "nostuck"
+				"mins" "-500 -500 -100"
+				"maxs" "500 500 200"
 				"StartDisabled" "0"
 			}
 		}
@@ -3445,8 +3425,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Attributes MiniBoss
 			Attributes IgnoreEnemies
 			AddCond  { Name TF_COND_REPROGRAMMED } 
-			Tag bot_giant
-			Tag bot_squad_member
+			tag bot_giant
+			tag bot_squad_member
 			ItemAttributes
 			{
 				ItemName "The Overdose"
@@ -3897,6 +3877,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Giant_Soldier
+				tag noflank
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -3925,6 +3906,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Giant_Soldier
+				tag noflank
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -3953,6 +3935,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Heavyweapons_Fist
+				tag noflank
 				ItemAttributes
 				{
 					ItemName "Fists of Steel"
@@ -3981,6 +3964,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Heavyweapons_Fist
+				tag noflank
 				ItemAttributes
 				{
 					ItemName "Fists of Steel"
@@ -4009,6 +3993,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Heavyweapons_Shotgun
+				tag noflank
 				Skill Expert
 				AimTrackingInterval 1
 				Attributes DisableDodge
@@ -4041,7 +4026,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Giant_Demo_RapidFire
-				tag bot_low_gate
+				tag noflank
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_GRENADELAUNCHER"
@@ -4073,6 +4058,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Red_Soldier
 				Skill Hard
 				Attributes DisableDodge
+				tag noflank
 				UseBestWeapon 0 
 				ItemAttributes
 				{
@@ -4103,6 +4089,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Demoman_Knight
+				tag noflank
 				CharacterAttributes
 				{
 					"damage force reduction" 0
@@ -4126,6 +4113,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Giant_Soldier
+				tag noflank
 				ItemAttributes
 				{
 					ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -4155,6 +4143,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Giant_Scout
+				tag noflank
 				Attributes DisableDodge
 				ItemAttributes
 				{
@@ -4187,6 +4176,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Class Heavyweapons
 				Skill Expert
+				tag noflank
 				AimTrackingInterval 1
 				AddCond  { Name TF_COND_REPROGRAMMED } 
 				Action Mobber 
@@ -4220,6 +4210,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Heavyweapons_Shotgun
+				tag noflank
 				Skill Expert
 				AimTrackingInterval 0.25
 				ItemAttributes
@@ -4257,6 +4248,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Heavyweapons_Shotgun
+				tag noflank
 				Attributes AlwaysCrit
 				Skill Expert
 				AimTrackingInterval 1
@@ -4292,6 +4284,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Scout_Shortstop
+				tag noflank
 				Skill Expert
 				AimTrackingInterval 1
 				 
@@ -4330,6 +4323,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_Bonk_Scattergun
+				tag noflank
 				CharacterAttributes
 				{
 					"collect currency on kill" 1
@@ -4363,6 +4357,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_DemoMan_PrinceTavish
+				tag noflank
 				AlwaysGlow 1
 				Attributes UseBossHealthBar
 				CharacterAttributes
@@ -4398,6 +4393,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_Homing_Soldier
+				tag noflank
 				AlwaysGlow 1
 				//Action EscortFlag 
 				Attributes UseBossHealthBar
@@ -4434,6 +4430,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_Homing_Soldier
+				tag noflank
 				AlwaysGlow 1
 				//Action Mobber 
 				Attributes UseBossHealthBar
@@ -4480,6 +4477,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_Heavyweapons_Shotgun
+				tag noflank
 				AlwaysGlow 1
 				//Action Mobber 
 				//Skill Normal
@@ -4519,6 +4517,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					TFBot
 					{ 
 						Template T_TFBot_Scout_Melee
+						tag noflank
 						Health 1
 						//Name "Bomb Deliverer"
 						CharacterAttributes
@@ -4694,6 +4693,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Red_Scout
 				tag noflank
+				Action FetchFlag
 				Skill Expert
 				AimTrackingInterval 0.25
 				Attributes DisableDodge
@@ -4727,6 +4727,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Class Pyro
 				Skill Expert
+				Action FetchFlag
 				tag noflank
 				AimTrackingInterval 1
 				AddCond  { Name TF_COND_REPROGRAMMED } 
@@ -5031,7 +5032,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_Boxing_Heavy
-				tag nostuck
+				tag noflank
 				AlwaysGlow 1
 				//Action EscortFlag 
 				Attributes UseBossHealthBar
@@ -5068,7 +5069,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_DemoMan_PrinceTavish
-				tag nostuck
+				tag noflank
 				AlwaysGlow 1
 				//Action EscortFlag 
 				Attributes UseBossHealthBar
@@ -5115,7 +5116,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_Soldier_Extended_Concheror
-				tag nostuck
+				tag noflank
 				AlwaysGlow 1
 				//Action Mobber 
 				Attributes UseBossHealthBar
@@ -5156,7 +5157,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 						TFBot
 						{ 
 							Template T_TFBot_Scout_Melee
-							tag nostuck
+							tag noflank
 							Health 1
 							//Name "Bomb Deliverer"
 							CharacterAttributes
@@ -5663,7 +5664,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					TFBot
 					{
 						Template T_TFBot_Chief_Battalion
-						tag nostuck
+						tag noflank
 						AlwaysGlow 1
 						//ClassIcon soldier_banner_trio
 						//Action EscortFlag 
@@ -5706,7 +5707,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					TFBot
 					{
 						Template T_TFBot_Chief_Buff
-						tag nostuck
+						tag noflank
 						AlwaysGlow 1
 						//ClassIcon soldier_banner_trio
 						//Action Mobber 
@@ -5760,7 +5761,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					TFBot
 					{
 						Template T_TFBot_Chief_Conch
-						tag nostuck
+						tag noflank
 						AlwaysGlow 1
 						//ClassIcon soldier_banner_trio
 						//Action Mobber 
@@ -5827,7 +5828,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					TFBot
 					{ 
 						Template T_TFBot_Scout_Melee
-						tag nostuck
+						tag noflank
 						Health 1
 						//Name "Bomb Deliverer"
 						CharacterAttributes
@@ -6994,7 +6995,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Giant_Heavyweapons_BrassBeast
 				Attributes UseBossHealthBar
 				ClassIcon heavy_brass_nys
-				tag nostuck
+				tag noflank
 				Name "Giant Brass Beast Heavy"
 				AlwaysGlow 1
 				CharacterAttributes
@@ -7032,7 +7033,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Giant_Demo_Burst
 				Attributes UseBossHealthBar
-				tag nostuck
+				tag noflank
 				AlwaysGlow 1
 				CharacterAttributes
 				{
@@ -7077,7 +7078,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Giant_Soldier_Spammer
-				tag nostuck
+				tag noflank
 				Attributes UseBossHealthBar
 				AlwaysGlow 1
 				CharacterAttributes
@@ -7115,7 +7116,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					TFBot
 					{ 
 						Template T_TFBot_Scout_Melee
-						tag nostuck
+						tag noflank
 						Health 1
 						//Name "Bomb Deliverer"
 						CharacterAttributes
@@ -8283,7 +8284,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Skill Expert
 				AlwaysGlow 1
 				WeaponRestrictions MeleeOnly
-				tag nostuck
+				tag noflank
 				Name "Captain Punch"
 				ClassIcon Heavy_chief
 				Health 15000
@@ -8336,7 +8337,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				AlwaysGlow 1
 				WeaponRestrictions PrimaryOnly
 				Name "Sergeant Crits"
-				tag nostuck
+				tag noflank
 				ClassIcon soldier_sergeant_crits
 				Health 17000
 				Scale 1.9
@@ -8403,7 +8404,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Name "Major Bomber"
 				AlwaysGlow 1
 				ClassIcon demo_bomber
-				tag nostuck
+				tag noflank
 				Skill Normal
 				Health 17000
 				Item "Prince Tavish's Crown"
@@ -8459,7 +8460,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 					TFBot
 					{ 
 						Template T_TFBot_Scout_Melee
-						tag nostuck
+						tag noflank
 						Health 1
 						//Name "Bomb Deliverer"
 						CharacterAttributes

@@ -46,8 +46,6 @@ swirl2_reverse_boogaloo
 	//PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl"
 	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" 
 	PrecacheModel "models/mvm/barrier/barrier_spawn_blue1.mdl"
-	PrecacheModel "models/props_mvm/hatch_shield.mdl"
-	
 	//PrecacheModel "models/props_mvm/reversemvm_redwall_640x300.mdl"  //doesn't show properly so i quit using those
     //PrecacheModel "models/props_mvm/reversemvm_redwall_696x337.mdl"  
     //PrecacheModel "models/props_mvm/reversemvm_redwall_512x320.mdl"  
@@ -58,7 +56,7 @@ swirl2_reverse_boogaloo
 	DisableSound "Announcer.MVM_Bomb_Alert_Deploying"
 	DisableSound "Announcer.MVM_Robots_Planted"	
 	DisableSound "Announcer.MVM_All_Dead"	
-	//CustomNavFile "mvm_swirl_rc1_fixed"
+	//CustomNavFile "mvm_swirl_rc3_fixed"
 	OverrideSounds //doesn't work >:(
 	{
 		"Announcer.MVM_All_Dead" 	"misc/null.wav"
@@ -173,6 +171,7 @@ swirl2_reverse_boogaloo
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger capturezone_blue:Disable:0:-1,0,-1"
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger fuckyougate*:Disable:0:-1,0,-1"
 				"OnMapSpawn" "fuckyougate*,Enable,,0,-1"
+				"OnMapSpawn" "func_capturezone,AddOutput,OnCapture kill_relay:Trigger:0:-1,0,-1"
 			}
 			trigger_multiple //Forces thirdperson while deploying bomb
 			{
@@ -369,32 +368,22 @@ swirl2_reverse_boogaloo
 				"solid" "0"
 			}
 		}
-		antirollout //prop to block a shortcut
+		antirollout //props to block a shortcut
 		{
-			entity
+			NoFixup 1
+			prop_dynamic
 			{
-				"id" "6"
-				"classname" "prop_dynamic"
-				"angles" "0 0 0"
-				"fademindist" "-1"
-				"fadescale" "1"
-				"MaxAnimTime" "10"
-				"MinAnimTime" "5"
 				"model" "models/props_mvm/wood_boards_2bridges.mdl"
-				"modelscale" "1.0"
-				"renderamt" "255"
-				"rendercolor" "255 255 255"
-				"skin" "0"
-				"solid" "2"
-				"targetname" "shortcut_barrier"
+				"angles" "0 0 0"
 				"origin" "-896 1609 321.143"
-				editor
-				{
-					"color" "220 30 220"
-					"visgroupshown" "1"
-					"visgroupautoshown" "1"
-					"logicalpos" "[0 0]"
-				}
+				"solid" "0"
+			}
+			func_forcefield
+			{
+				"origin" "-896 1559 321.143"
+				"mins" "-100 -50 -100"
+				"maxs" "100 50 100"
+				"TeamNum" "2"
 			}
 		}
 		robot_spawns //holograms that indicate red spawns
@@ -795,7 +784,7 @@ swirl2_reverse_boogaloo
 				"fadescale" "1"
 				"MaxAnimTime" "10"
 				"MinAnimTime" "5"
-				"model" "models/props_mvm/hatch_shield.mdl"
+				"model" "models/hatch_shield.mdl"
 				"modelscale" "1.0"
 				"renderfx" "0"
 				"renderamt" "255"
@@ -1488,16 +1477,6 @@ swirl2_reverse_boogaloo
 				"mins" "-100 -100 -100"
 				"maxs" "100 100 100"
 				"tags" "noflank"
-				"StartDisabled" "0"
-			}
-			func_nav_avoid
-			{
-				"origin" "-896 2107 413"
-				"targetname" "no_stuck"
-				"team" "-3"
-				"mins" "-100 -600 -100"
-				"maxs" "100 100 100"
-				"tags" "nostuck"
 				"StartDisabled" "0"
 			}
 		}
@@ -2707,7 +2686,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Samurai_Conch
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 			}
 		}
 		WaveSpawn
@@ -2739,7 +2718,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Soldier
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 				Attributes UseBossHealthBar
 				ItemAttributes
 				{
@@ -2778,7 +2757,7 @@ swirl2_reverse_boogaloo
 						TFBot
 						{ 
 							Template T_TFBot_Scout_Melee
-							tag nostuck
+							tag noflank
 							Health 1
 							//Name "Bomb Deliverer"
 							CharacterAttributes
@@ -3157,7 +3136,7 @@ swirl2_reverse_boogaloo
 						TFBot
 						{ 
 							Template T_TFBot_Scout_Melee
-							tag nostuck
+							tag noflank
 							Health 1
 							//Name "Bomb Deliverer"
 							CharacterAttributes
@@ -3550,7 +3529,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Heavyweapons_Shotgun
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 				Attributes UseBossHealthBar
 				ItemAttributes
 				{
@@ -3597,7 +3576,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Frost_Knight
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 				Attributes UseBossHealthBar
 				ItemAttributes
 				{
@@ -3636,7 +3615,7 @@ swirl2_reverse_boogaloo
 						TFBot
 						{ 
 							Template T_TFBot_Scout_Melee
-							tag nostuck
+							tag noflank
 							Health 1
 							//Name "Bomb Deliverer"
 							CharacterAttributes
@@ -3995,7 +3974,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Samurai_Conch
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 				Attributes UseBossHealthBar
 			}
 		}
@@ -4028,7 +4007,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Soldier_Extended_Buff_Banner
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 				Attributes UseBossHealthBar
 				ItemAttributes
 				{
@@ -4067,7 +4046,7 @@ swirl2_reverse_boogaloo
 						TFBot
 						{ 
 							Template T_TFBot_Scout_Melee
-							tag nostuck
+							tag noflank
 							Health 1
 							//Name "Bomb Deliverer"
 							CharacterAttributes
@@ -4464,7 +4443,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Heavyweapons_Shotgun
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 				Skill Normal
 				Attributes UseBossHealthBar
 				ItemAttributes
@@ -4512,7 +4491,7 @@ swirl2_reverse_boogaloo
 			{ 
 				Template T_TFBot_Giant_Soldier_Homing_Rapid
 				AlwaysGlow 1
-				tag nostuck
+				tag noflank
 				Attributes UseBossHealthBar
 				ItemAttributes
 				{
@@ -4551,7 +4530,7 @@ swirl2_reverse_boogaloo
 						TFBot
 						{ 
 							Template T_TFBot_Scout_Melee
-							tag nostuck
+							tag noflank
 							Health 1
 							//Name "Bomb Deliverer"
 							CharacterAttributes
@@ -4923,7 +4902,7 @@ swirl2_reverse_boogaloo
 						Template T_TFBot_Giant_Heavyweapons_Shotgun
 						AlwaysGlow 1
 						//Attributes AlwaysCrit
-						Tag nostuck
+						tag noflank
 						Attributes UseBossHealthBar
 						ItemAttributes
 						{
@@ -4960,7 +4939,7 @@ swirl2_reverse_boogaloo
 					{ 
 						Template T_TFBot_Giant_Frost_Knight
 						AlwaysGlow 1
-						Tag nostuck
+						tag noflank
 						Attributes UseBossHealthBar
 						ItemAttributes
 						{
@@ -5007,7 +4986,7 @@ swirl2_reverse_boogaloo
 					{ 
 						Template T_TFBot_Giant_Soldier_Spammer_Reload
 						AlwaysGlow 1
-						Tag nostuck
+						tag noflank
 						Attributes UseBossHealthBar
 						ItemAttributes
 						{
@@ -5046,7 +5025,7 @@ swirl2_reverse_boogaloo
 						TFBot
 						{ 
 							Template T_TFBot_Scout_Melee
-							tag nostuck
+							tag noflank
 							Health 1
 							//Name "Bomb Deliverer"
 							CharacterAttributes
