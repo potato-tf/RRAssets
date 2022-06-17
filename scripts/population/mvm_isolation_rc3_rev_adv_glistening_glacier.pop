@@ -1146,6 +1146,28 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				"rendercolor" "255 255 255"
 				"origin" "2304 -3456 -160"
 			}
+			prop_dynamic // I tried
+			{
+				"targetname" "i_tried"
+				"angles" "0 0 0"
+				"disableshadows" "1"
+				"solid" "0"
+				"model" "models/props_2fort/corrugated_metal006.mdl"
+				"modelscale" "2.2"
+				"rendercolor" "255 255 255"
+				"origin" "3460 -1568 44"
+			}
+			prop_dynamic // I tried
+			{
+				"targetname" "i_tried"
+				"angles" "0 0 90"
+				"disableshadows" "1"
+				"solid" "0"
+				"model" "models/props_2fort/corrugated_metal004.mdl"
+				"modelscale" "2.5"
+				"rendercolor" "255 255 255"
+				"origin" "3460 -1844 -72"
+			}
 			prop_dynamic // Robot Hologram Stair_main
             {
 				"DefaultAnim" "idle"
@@ -1578,6 +1600,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				"damage" "99999"
 				"StartDisabled" "1"
 				"spawnflags" "64"
+				"filtername" "filter_bluteam" // Without this, it actually kills the titan
 			}
 			logic_auto
 			{
@@ -2142,7 +2165,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
                 "maxs" "300 100 2100"
 				"origin" "1151.30 -227.10 -192.15"
 			}
-			trigger_hurt // rebuild this
+			trigger_hurt
             {
                 "damage" "0"
                 "damagecap" "0"
@@ -3570,6 +3593,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				"damage bonus" 1.5
 				"fire rate bonus" 0.6
 				"arrow mastery" 1
+				"mult crit dmg" 0.33
 			}
 			CharacterAttributes
       		{
@@ -4587,6 +4611,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             		{
 						"cannot pick up intelligence" 1
                 		"crit mod disabled" 0
+						"mult crit dmg" 0.33
             		}
 				}
 				TFBot
@@ -4603,6 +4628,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             		{
 						"cannot pick up intelligence" 1
                 		"crit mod disabled" 0
+						"mult crit dmg" 0.33
             		}
 				}
 				TFBot
@@ -4619,6 +4645,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             		{
 						"cannot pick up intelligence" 1
                 		"crit mod disabled" 0
+						"mult crit dmg" 0.33
             		}
 				}
 				TFBot
@@ -4635,6 +4662,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             		{
 						"cannot pick up intelligence" 1
                 		"crit mod disabled" 0
+						"mult crit dmg" 0.33
             		}
 				}
 			}
@@ -5687,6 +5715,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             	{
 					"cannot pick up intelligence" 1
                 	"crit mod disabled" 0
+					"mult crit dmg" 0.33
             	}
 			}
 		}
@@ -6969,6 +6998,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 					"mod projectile heat aim time" 1.5
                		"Projectile speed increased" 0.5
 					"damage bonus" 0.5
+					"mult crit dmg" 0.33
 				}
 			}
 		}
@@ -7324,6 +7354,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             	{
 					"cannot pick up intelligence" 1
                 	"crit mod disabled" 0
+					"mult crit dmg" 0.33
             	}
 			}
 		}
@@ -8218,6 +8249,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             		{
 						"cannot pick up intelligence" 1
                 		"crit mod disabled" 0
+						"mult crit dmg" 0.33
             		}
 				}
 			}
@@ -9049,6 +9081,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		WaveSpawn // You win!
 		{
 			WaitForAllDead h3_1
+			WaitBeforeStarting 2 // Precaution
 			FirstSpawnOutput
 			{
 				Target "boss_deploy_relay"
