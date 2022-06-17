@@ -26,7 +26,7 @@ WaveSchedule
 			Attributes MiniBoss
 			CharacterAttributes
 			{
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"airblast vulnerability multiplier" 0.7
@@ -50,7 +50,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 			}
@@ -71,7 +71,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.6
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.6
 				"override footstep sound set" 6
 			}
@@ -100,7 +100,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.5
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.5
 				"override footstep sound set" 4
 			}
@@ -121,7 +121,7 @@ WaveSchedule
 			{
 				ItemName "TF_WEAPON_GRENADELAUNCHER"
 				"fire rate bonus" 0.5
-				"damage force reduction" 0.5
+				"damage force reduction" 0.01
 			}
 
 			CharacterAttributes
@@ -155,7 +155,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
@@ -183,7 +183,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.6
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.6
 				"heal rate bonus" 200 // only works on mediguns that have this attribute ie quickfix
 			}
@@ -215,7 +215,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
@@ -247,7 +247,7 @@ WaveSchedule
 				"move speed bonus"	0.7
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"attack projectiles" 1	// force ability to shoot down projectiles
 				"override footstep sound set" 2
@@ -276,7 +276,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
@@ -303,7 +303,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
@@ -334,7 +334,7 @@ WaveSchedule
 				"move speed bonus"	0.35
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
@@ -369,7 +369,7 @@ WaveSchedule
 				"move speed bonus"	0.4
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"airblast vertical vulnerability multiplier" 0.1
 				"rage giving scale"	0.9
@@ -397,7 +397,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
@@ -421,7 +421,7 @@ WaveSchedule
 				"move speed bonus"	2
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.7
 				"override footstep sound set" 5
 			}
@@ -460,7 +460,7 @@ WaveSchedule
 				"move speed bonus"	1.1
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.7
 				"override footstep sound set" 5
 			}
@@ -495,7 +495,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				//"move speed bonus"	1.5
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.7
 				"override footstep sound set" 5
 				"head scale" 1.5
@@ -527,7 +527,7 @@ WaveSchedule
 				"move speed bonus" 0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0 
-				"damage force reduction" 0.5
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.5
 				"override footstep sound set" 4
 			}
@@ -554,7 +554,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"airblast vulnerability multiplier" 0.7
@@ -582,7 +582,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"airblast vulnerability multiplier" 0.7
@@ -605,7 +605,7 @@ WaveSchedule
 			Attributes MiniBoss
 			CharacterAttributes
 			{
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"airblast vulnerability multiplier" 0.7
@@ -638,7 +638,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 			}
@@ -667,7 +667,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.6
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.6
 				"override footstep sound set" 6
 			}
@@ -696,7 +696,7 @@ WaveSchedule
 				"move speed bonus"	0.35
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.6
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.6
 				"override footstep sound set" 6
 			}
@@ -725,7 +725,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.6
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.6
 				"override footstep sound set" 6
 			}
@@ -756,7 +756,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
@@ -788,7 +788,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 4
 			}
@@ -826,7 +826,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 4
 			}
@@ -854,7 +854,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"Projectile speed increased" 0.65
@@ -885,7 +885,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 			}
@@ -909,7 +909,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"increase buff duration"	9.0
@@ -934,7 +934,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"increase buff duration"	9.0
@@ -959,7 +959,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"increase buff duration"	9.0
@@ -996,7 +996,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"Projectile speed increased" 0.9
@@ -1026,7 +1026,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.6
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.6
 				"heal rate bonus" 200
 				"health regen"	40
@@ -1051,7 +1051,7 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"move speed bonus" 2
-				"damage force reduction" 0.5
+				"damage force reduction" 0.01
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"airblast vulnerability multiplier" 0.5
@@ -1085,7 +1085,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"Projectile speed increased" 0.9
@@ -1119,7 +1119,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"damage bonus" 1.5
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"airblast vertical vulnerability multiplier" 0.1			
@@ -1154,7 +1154,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"health regen"	250
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1190,7 +1190,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"health regen"	500
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1222,7 +1222,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"health regen"	500
-				"damage force reduction" 0.3
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1260,7 +1260,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1299,7 +1299,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"damage bonus" 1.5
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1338,7 +1338,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"override footstep sound set" 3
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"airblast vertical vulnerability multiplier" 0.1
 			}
@@ -1376,7 +1376,7 @@ WaveSchedule
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"override footstep sound set" 3
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"airblast vertical vulnerability multiplier" 0.1
 				"rage giving scale"	0.15
@@ -1419,7 +1419,7 @@ WaveSchedule
 				"move speed bonus"	0.4
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1460,7 +1460,7 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"move speed bonus"	0.35
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
 				"airblast vulnerability multiplier" 0.4
@@ -1495,7 +1495,7 @@ WaveSchedule
 				"move speed bonus"	8
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 3.0
 				"override footstep sound set" 5
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1531,7 +1531,7 @@ WaveSchedule
 				"move speed bonus"	0.32
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.7
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 4
 				"airblast vertical vulnerability multiplier" 0.1
@@ -1559,7 +1559,7 @@ WaveSchedule
 				"move speed bonus"	0.5 
 				"health from packs decreased" 0.01 
 				"voice pitch scale" 0
-				"damage force reduction" 0.4
+				"damage force reduction" 0.01
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
 				"increase buff duration"	9.0
