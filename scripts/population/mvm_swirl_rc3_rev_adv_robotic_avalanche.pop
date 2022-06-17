@@ -2539,7 +2539,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{
 				"origin" "-1920 1536 585"
 				"targetname" "no_flank_gate"
-				"tags" "scout"
+				"tags" "noflank"
 				"team" "-2"
 				"mins" "-200 -200 -200"
 				"maxs" "200 200 200"
@@ -2549,7 +2549,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{
 				"origin" "-896 1807 413"
 				"targetname" "no_stuck"
-				"tags" "scout"
+				"tags" "noflank"
 				"team" "-2"
 				"mins" "-500 -500 -100"
 				"maxs" "500 500 200"
