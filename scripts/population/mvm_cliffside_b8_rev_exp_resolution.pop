@@ -57,10 +57,10 @@ WaveSchedule
 	PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
 	PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"	
 	PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimpred.mdl"	//This is the older blimp model using it because why not.
-	PrecacheModel "models/bots/boss_bot/boss_blimpred_damage1.mdl"	
-	PrecacheModel "models/bots/boss_bot/boss_blimpred_damage2.mdl"	
-	PrecacheModel "models/bots/boss_bot/boss_blimpred_damage3.mdl"	 
+	// PrecacheModel "models/bots/boss_bot/boss_blimpred.mdl"	//This is the older blimp model using it because why not.
+	// PrecacheModel "models/bots/boss_bot/boss_blimpred_damage1.mdl"	
+	// PrecacheModel "models/bots/boss_bot/boss_blimpred_damage2.mdl"	
+	// PrecacheModel "models/bots/boss_bot/boss_blimpred_damage3.mdl"	 
 	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"		 
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
@@ -5081,10 +5081,10 @@ WaveSchedule
 				MaxTurnRate 10      
 				Model
 				{
-					Default "models\bots\boss_bot\boss_blimpred.mdl"
-					Damage1 "models\bots\boss_bot\boss_blimpred_damage1.mdl"
-					Damage2 "models\bots\boss_bot\boss_blimpred_damage2.mdl"	
-					Damage3 "models\bots\boss_bot\boss_blimpred_damage3.mdl"
+					Default "models/bots/boss_bot/boss_blimp.mdl"
+					Damage1 "models/bots/boss_bot/boss_blimp_damage1.mdl"
+					Damage2 "models/bots/boss_bot/boss_blimp_damage2.mdl"
+					Damage3 "models/bots/boss_bot/boss_blimp_damage3.mdl"
 				}
 				Gravity 0
 				DisableTracks 1
