@@ -46,7 +46,7 @@ WaveSchedule
 	PrecacheModel "models\bots\soldier\bot_soldier_gibby.mdl"
 	PrecacheModel "models\bots\heavy\bot_heavy_gibby.mdl"
 	DisableSound "music.mvm_start_last_wave"
-	PrecacheSound "Howl_Hush_Antibirth.mp3"		 		
+	PrecacheSound "Howl_Hush_Antibirth.mp3"		
 
 	PointTemplates  
     {
@@ -248,7 +248,7 @@ WaveSchedule
             }
             training_annotation
             {
-                "display_text" "The Hatch shield is down!"
+                "display_text" "Deploy The Bomb!"
                 "lifetime" "5"
                 "origin" "-0.6 -1927 350"
                 "targetname" "annotation_deploy"
@@ -2104,7 +2104,6 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
-			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 			
 		//SpawnTemplate
@@ -2663,26 +2662,14 @@ SpawnTemplate
 				}
 			}
 		}
-
-        WaveSpawn // Dummy
-        {
-            WaitForAllDead "HATCH_HOLD_DEMO"
-            Name "done"
-        }
-
-        WaveSpawn // Dummy
-        {
-            WaitForAllDead "W1_Demo_VIP"
-            Name "done"
-        }
 		
         WaveSpawn // Dummy
         {
-            WaitForAllSpawned "D"
+            WaitForAllDead "C"
             Name "done"
         }
 
-        WaveSpawn // Will open the hatch when 3 Gdemo and Large Demo are killed
+        WaveSpawn
         {
             WaitForAllDead "done"
             Name "relay"
@@ -2835,7 +2822,6 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
-			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 
 				//SpawnTemplate
@@ -3355,11 +3341,11 @@ SpawnTemplate
 
         WaveSpawn // Dummy
         {
-            WaitForAllDead "RedBanner2nd"
+            WaitForAllDead "C"
             Name "done"
         }
 
-        WaveSpawn // Will open the hatch when 2 Gbanners die
+        WaveSpawn
         {
             WaitForAllDead "done"
             Name "relay"
@@ -3673,7 +3659,6 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
-			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 
 		Wavespawn // 4 Groups of 5 Blackbox soldiers
@@ -4207,11 +4192,11 @@ SpawnTemplate
 
         WaveSpawn // Dummy
         {
-            WaitForAllSpawned "Gun_Nut_VIP"
+            WaitForAllDead "C"
             Name "done"
         }
 
-        WaveSpawn // Will open the hatch when VIP spawns
+        WaveSpawn 
         {
             WaitForAllDead "done"
             Name "relay"
@@ -4373,7 +4358,6 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
-			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 
 				//SpawnTemplate
@@ -4804,11 +4788,11 @@ SpawnTemplate
 		
         WaveSpawn // Dummy
         {
-            WaitForAllSpawned "E"
+            WaitForAllDead "C"
             Name "done"
         }
 
-        WaveSpawn // Will open the hatch when all of E is spawned
+        WaveSpawn
         {
             WaitForAllDead "done"
             Name "relay"
@@ -5242,7 +5226,6 @@ SpawnTemplate
 		Explanation    //Dispayed once the wave is initialized
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
-			Line "{blue}The Hatch barrier is now permanently disabled!"
 			Line "{red}The Giant Spam Adept cannot be stopped. Deploy the bomb while he is distracted!"
 		}
 
