@@ -37,6 +37,7 @@ WaveSchedule
 	BluHumanFlagCapture 1  	 				 
 	BluHumanFlagPickup 1
 	BotsRandomCrit 0
+    PrecacheModel "models\props_mvm\hatch_shield.mdl" [$SIGSEGV]
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"
 	RespawnWaveTimeBlue 1  
 	FixedRespawnWaveTimeBlue 1  	
@@ -208,6 +209,51 @@ WaveSchedule
 				"StartDisabled" "0"
 			}			
 		}
+        forcefield_hatch
+        {
+            NoFixup 1
+            func_forcefield
+            {
+                "targetname" "barrier_hatch"
+                "origin" "-0.6 -1927 350"
+                "TeamNum" "2" // blu
+                "renderamt" "255"
+                "rendercolor" "255 255 255"
+                "renderfx" "0"
+                "rendermode" "0"
+                "disablereceiveshadows" "0"
+
+                "mins" "-148 -148 -101"
+                "maxs" "148 148 101"
+            }
+            logic_relay
+            {
+                "targetname" "hatch_reveal_relay"
+                "OnTrigger" "barrier_hatch,Disable,,0.01,-1"
+                "OnTrigger" "skull,Disable,,0,-1"
+                "OnTrigger" "annotation_deploy,Show,,0.01,-1"
+                "OnTrigger" "func_flagdetection,Disable,,0,-1"
+                //"OnTrigger" "func_flagdetection,Enable,,0,-1"
+            }
+            prop_dynamic
+            {
+                "angles" "0 0 0"
+                "model" "models\props_mvm\hatch_shield.mdl"
+	            "modelscale" "1"
+                "skin" "0"
+                "solid" "6"
+                "spawnflags" "0"
+                "targetname" "skull"
+                "origin" "-0.6 -1927 350"
+            }
+            training_annotation
+            {
+                "display_text" "The Hatch shield is down!"
+                "lifetime" "5"
+                "origin" "-0.6 -1927 350"
+                "targetname" "annotation_deploy"
+            }
+        }
 		station //all-in-one upgrade station template
 		{
 			func_upgradestation
@@ -1404,6 +1450,8 @@ WaveSchedule
 	SpawnTemplate   "corelogic"
 
 	SpawnTemplate "spawnIndicators"
+	
+    SpawnTemplate forcefield_hatch
 		
 	//SpawnTemplate "midspawnblocker1"
 
@@ -2056,6 +2104,7 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
+			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 			
 		//SpawnTemplate
@@ -2553,6 +2602,7 @@ SpawnTemplate
 
 		Wavespawn // 1 Giant Demoman
 		{
+			Name "W1_Demo_VIP"
 			Where "RedVIP"
 			TotalCount 1
 			MaxActive 1
@@ -2578,6 +2628,7 @@ SpawnTemplate
 
 		Wavespawn // 1 Giant Demoman
 		{
+			Name "HATCH_HOLD_DEMO"
 			Where "HATCHHOLD"
 			TotalCount 1
 			SpawnCount 1
@@ -2613,6 +2664,34 @@ SpawnTemplate
 			}
 		}
 
+        WaveSpawn // Dummy
+        {
+            WaitForAllDead "HATCH_HOLD_DEMO"
+            Name "done"
+        }
+
+        WaveSpawn // Dummy
+        {
+            WaitForAllDead "W1_Demo_VIP"
+            Name "done"
+        }
+		
+        WaveSpawn // Dummy
+        {
+            WaitForAllSpawned "D"
+            Name "done"
+        }
+
+        WaveSpawn // Will open the hatch when 3 Gdemo and Large Demo are killed
+        {
+            WaitForAllDead "done"
+            Name "relay"
+            FirstSpawnOutput
+            {
+                Target hatch_reveal_relay
+                Action Trigger
+            }
+        }
 
 		Wavespawn // SentryIcon
 		{
@@ -2756,6 +2835,7 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
+			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 
 				//SpawnTemplate
@@ -3113,6 +3193,7 @@ SpawnTemplate
 
 		Wavespawn // 1 Giant soldier
 		{
+			Name "RedBanner2nd"
 			Where "RedVIP"
 			TotalCount 1
 			MaxActive 1
@@ -3271,6 +3352,23 @@ SpawnTemplate
 				}
 			}
 		}
+
+        WaveSpawn // Dummy
+        {
+            WaitForAllDead "RedBanner2nd"
+            Name "done"
+        }
+
+        WaveSpawn // Will open the hatch when 2 Gbanners die
+        {
+            WaitForAllDead "done"
+            Name "relay"
+            FirstSpawnOutput
+            {
+                Target hatch_reveal_relay
+                Action Trigger
+            }
+        }
 
 		Wavespawn // 2 unload demomen
 		{
@@ -3575,6 +3673,7 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
+			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 
 		Wavespawn // 4 Groups of 5 Blackbox soldiers
@@ -4082,6 +4181,7 @@ SpawnTemplate
 
 		Wavespawn // 1 Giant FAN Scout
 		{
+			Name "Gun_Nut_VIP"
 			Where "RedVIP"
 			TotalCount 1
 			MaxActive 1
@@ -4105,6 +4205,22 @@ SpawnTemplate
 			}
 		}
 
+        WaveSpawn // Dummy
+        {
+            WaitForAllSpawned "Gun_Nut_VIP"
+            Name "done"
+        }
+
+        WaveSpawn // Will open the hatch when VIP spawns
+        {
+            WaitForAllDead "done"
+            Name "relay"
+            FirstSpawnOutput
+            {
+                Target hatch_reveal_relay
+                Action Trigger
+            }
+        }
 		Wavespawn // 1 Giant Demoman
 		{
 			Where "HATCHHOLD"
@@ -4257,6 +4373,7 @@ SpawnTemplate
 		Explanation   
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
+			Line "{Red}The Hatch is protected by a force field, destroy the majority of the wave to disable it!"
 		}
 
 				//SpawnTemplate
@@ -4684,6 +4801,23 @@ SpawnTemplate
 				}
 			}
 		}
+		
+        WaveSpawn // Dummy
+        {
+            WaitForAllSpawned "E"
+            Name "done"
+        }
+
+        WaveSpawn // Will open the hatch when all of E is spawned
+        {
+            WaitForAllDead "done"
+            Name "relay"
+            FirstSpawnOutput
+            {
+                Target hatch_reveal_relay
+                Action Trigger
+            }
+        }
 
 		Wavespawn // 4 Shortstop scouts
 		{
@@ -5108,7 +5242,8 @@ SpawnTemplate
 		Explanation    //Dispayed once the wave is initialized
 		{
 			Line "{blue}Deploy the bomb within the time limit to win."
-			Line "{red}Spam Adept cannot be stopped. Try deploying the bomb instead."
+			Line "{blue}The Hatch barrier is now permanently disabled!"
+			Line "{red}The Giant Spam Adept cannot be stopped. Deploy the bomb while he is distracted!"
 		}
 
 		Wavespawn // 2 Giant Blackbox soldiers
@@ -5631,6 +5766,23 @@ SpawnTemplate
 				ClassIcon sentry_gun_lvl3_red_lite
 			}
 		}
+		
+        WaveSpawn // Dummy
+        {
+            WaitForAllSpawned "VIP"
+            Name "done"
+        }
+
+        WaveSpawn // Will open the hatch when all of E is spawned
+        {
+            WaitForAllDead "done"
+            Name "relay"
+            FirstSpawnOutput
+            {
+                Target hatch_reveal_relay
+                Action Trigger
+            }
+        }
 
 		Wavespawn // 4 Groups of 4 Heavyweight Champs
 		{
