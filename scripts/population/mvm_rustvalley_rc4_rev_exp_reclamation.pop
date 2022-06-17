@@ -4820,7 +4820,7 @@ WaveSchedule
 				Name "Tankdozer"
 				Health 45000
 				Skin 1
-				Speed 60
+				Speed 65
 				StartingPathTrackNode path_tank_cliff_1
 				
 				OnKilledOutput {
