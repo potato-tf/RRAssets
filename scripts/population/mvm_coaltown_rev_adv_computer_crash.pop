@@ -5767,15 +5767,9 @@ SpawnTemplate
 			}
 		}
 		
-        WaveSpawn // Dummy
-        {
-            WaitForAllSpawned "VIP"
-            Name "done"
-        }
 
-        WaveSpawn // Will open the hatch when all of E is spawned
+        WaveSpawn // Opens at wave start
         {
-            WaitForAllDead "done"
             Name "relay"
             FirstSpawnOutput
             {
@@ -6439,6 +6433,7 @@ SpawnTemplate
 			TotalCurrency 0
 			FirstSpawnWarningSound "Howl_Hush_Antibirth.mp3"
 			RandomSpawn 1
+			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {5100ff} Howl - Mudeth {FFFFFF}" [$SIGSEGV]
 			TFBot
 			{
 				Template T_TFBot_Giant_Soldier
