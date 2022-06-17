@@ -4667,7 +4667,7 @@ WaveSchedule
 				Action Trigger
 			}
 			LastSpawnOutput {
-				Target willfield_hatch
+				Target prop_forcefield_hatch
 				Action Kill
 			}
 			Tank
