@@ -519,7 +519,7 @@ WaveSchedule
 			OnSpawnOutput {
 				Target cap_a_trigtimer
 				Action AddOutput
-				Param "OnCapTeam2 blocker1:KillHierarchy:0:-1"
+				Param "OnCapTeam2 blocker1*:KillHierarchy:0:-1"
 			}
 		}				
 		progressblocker1 //forcefield
@@ -657,7 +657,7 @@ WaveSchedule
 			OnSpawnOutput {
 				Target cap_b_trigtimer
 				Action AddOutput
-				Param "OnCapTeam2 blocker2:KillHierarchy:0:-1"
+				Param "OnCapTeam2 blocker2*:KillHierarchy:0:-1"
 			}
 		}	
 		progressblocker2 //forcefield
