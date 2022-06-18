@@ -7,6 +7,7 @@ population
 	CanBotsAttackWhileInSpawnRoom	yes
     ReverseWinConditions 1  
     SetCreditTeam 3  
+	NoBluHumanFootsteps 1 [$SIGSEGV]
     BluHumanFlagCapture 0   //Can blu humans capture the flag
 	BluHumanFlagPickup 0   //Can blu humans pickup flags
     BluHumanInfiniteAmmo 0   //Enable infinite ammo for blu humans (default: 1)

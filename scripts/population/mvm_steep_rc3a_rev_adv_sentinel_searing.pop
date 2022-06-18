@@ -7,6 +7,7 @@ population
 	CanBotsAttackWhileInSpawnRoom	yes
     ReverseWinConditions 1  
     SetCreditTeam 3  
+	NoBluHumanFootsteps 1 [$SIGSEGV]
     BluHumanFlagCapture 0   //Can blu humans capture the flag
 	BluHumanFlagPickup 0   //Can blu humans pickup flags
     BluHumanInfiniteAmmo 0   //Enable infinite ammo for blu humans (default: 1)
@@ -88,6 +89,18 @@ population
                 "rendermode" "10"
                 "TeamNum" "2"
                 "targetname" "prewavespawnblockers2"
+			}
+			func_nobuild
+			{
+				"mins" "-16 -176 -1148" //Trigger bounds, relative to origin
+				"maxs" "16 176 1660"
+                "origin" "3728 560 707.42"
+			}
+			func_nobuild
+			{
+				"mins" "-384 -32 -800" //Trigger bounds, relative to origin
+				"maxs" "384 32 1312"
+                "origin" "3456 -736 736"
 			}
             logic_relay //Entity classname
 			{
@@ -709,6 +722,44 @@ population
                 "tags" "bot_giant"
                 "targetname" "filter_giant"
                 "origin" "-2612.84 -588 64.366"
+            }
+			filter_tf_bot_has_tag
+            {
+                "Negated" "0"
+                "require_all_tags" "1"
+                "tags" "cheesymedfix"
+                "targetname" "filter_gmed"
+                "origin" "-2612.84 -588 64.366"
+            }
+			trigger_hurt
+            {
+                "damage" "100000"
+                "damagecap" "20"
+                "damagemodel" "0"
+                "damagetype" "0"
+                "filtername" "filter_gmed*"
+                "nodmgforce" "0"
+                "spawnflags" "1"
+                "StartDisabled" "1"
+                "targetname" "trigger_hurt_preventgmedsoftlock"
+                "origin" "-2028 -1772.5 282.5"
+                "mins" "-2072 -1875 -620" //Trigger bounds, relative to origin
+				"maxs" "2072 1875 620"
+            }
+			trigger_hurt
+            {
+                "damage" "100000"
+                "damagecap" "20"
+                "damagemodel" "0"
+                "damagetype" "0"
+                "filtername" "filter_gmed*"
+                "nodmgforce" "0"
+                "spawnflags" "1"
+                "StartDisabled" "1"
+                "targetname" "trigger_hurt_preventgmedsoftlock"
+                "origin" "174 -1920 282"
+                "mins" "-130 -112 -620" //Trigger bounds, relative to origin
+				"maxs" "130 112 620"
             }
             filter_tf_bot_has_tag
             {
@@ -5837,16 +5888,21 @@ population
 			ClassIcon medic_giant
 			Skill Expert
             Tag bot_giant
+			Tag cheesymedfix
 			Health 4500
+			//Attributes DisableDodge
 			Attributes SpawnWithFullCharge
 			Item "The Quick-Fix"
             //Item "Titanium Tyrolean"
-			WeaponRestrictions SecondaryOnly
+			//WeaponRestrictions SecondaryOnly
 			Attributes MiniBoss
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
 				"damage penalty" 0.1
+				"provide on active" 1
+				"move speed bonus" 0.01
+				//"health drain" -150
 			}
 			CharacterAttributes
 			{
@@ -9121,6 +9177,41 @@ population
                         Name "TF_COND_REPROGRAMMED"
                     }
 				}
+			}
+		}
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			Support 1
+			WaitBeforeStarting 10
+			WaitBetweenSpawns 60000
+			TotalCurrency 0		
+			
+			FirstSpawnOutput
+			{
+				Target trigger_hurt_preventgmedsoftlock*
+				Action enable
+			}
+		}
+		WaveSpawn
+		{
+			Where spawnbot
+			WaitForAllDead 7a
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			Support 1
+			WaitBeforeStarting 1
+			WaitBetweenSpawns 60000
+			TotalCurrency 0		
+			
+			FirstSpawnOutput
+			{
+				Target trigger_hurt_preventgmedsoftlock*
+				Action disable
 			}
 		}
 		WaveSpawn
