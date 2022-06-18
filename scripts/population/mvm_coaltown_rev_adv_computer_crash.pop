@@ -2034,7 +2034,7 @@ SpawnTemplate
 
 	ItemAttributes  
 	{
-		ItemName "bonk atomic punch"
+		ItemName "Bonk! Atomic Punch"
 		"cannot pick up intelligence" 1
 	}
 
@@ -2753,7 +2753,10 @@ SpawnTemplate
 			Support 1
 			TFBot
 			{
-				Template T_TFBot_Scout_Melee
+				Class Scout
+				Skill Expert
+				WeaponRestrictions SecondaryOnly
+				Name "Pistol Scout"
 				Action EscortFlag
 				Tag special_main_right
 				CharacterAttributes
