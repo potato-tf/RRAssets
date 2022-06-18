@@ -25,7 +25,6 @@ swirl2_reverse_boogaloo
 	RemoveBluVelocityLimit 1	
 	RobotLimit 26 
 	FlagCarrierMovementPenalty 1 
-	//AllowMultipleSappers 1 
 	SniperAllowHeadshots 1 	//sniper and amby don't work without this, use AimAt Body  if you don't want your snipers headshotting
 	NoRomevisionCosmetics 1  //romevision is ugly, just like your mom
 	DisplayRobotDeathNotice 1 
@@ -33,63 +32,20 @@ swirl2_reverse_boogaloo
 	BluPlayersAreRobots 1 
 	MedigunShieldDamage 1 
 	SendBotsToSpectatorImmediately 1 
-	//CustomUpgradesFile "mvm_upgrades_reverse_miko.txt" 
-	//BonusRatioHalf 1.1 
-	//BonusRatioFull 1.1 
 	TextPrintTime 0 
 	//NoMissionInfo 1  //unnecessary	
     PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" 	
-	PrecacheModel "models/hatch_shield.mdl"	 
+	PrecacheModel "models/props_mvm/hatch_shield.mdl"	 
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu_tools.mdl" 	
 	PrecacheModel "models/props_owo/sign001.mdl" 	
 	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-	//PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl"
-	PrecacheModel "models/props_tumb/mvm/tank_shield.mdl" 
 	PrecacheModel "models/mvm/barrier/barrier_spawn_blue1.mdl"
-	PrecacheModel "models/props_mvm/hatch_shield.mdl"
-	//PrecacheModel "models/props_mvm/reversemvm_redwall_640x300.mdl"  //doesn't show properly so i quit using those
-    //PrecacheModel "models/props_mvm/reversemvm_redwall_696x337.mdl"  
-    //PrecacheModel "models/props_mvm/reversemvm_redwall_512x320.mdl"  
-    //PrecacheModel "models/props_mvm/reversemvm_redwall_352x256.mdl" 
 	//doesn't work >:(
 	DisableSound "Announcer.MVM_Bomb_Alert_Entered"				   
 	DisableSound "Announcer.MVM_Bomb_Alert_Near_Hatch"			   
 	DisableSound "Announcer.MVM_Bomb_Alert_Deploying"
 	DisableSound "Announcer.MVM_Robots_Planted"	
 	DisableSound "Announcer.MVM_All_Dead"	
-	//CustomNavFile "mvm_swirl_rc3_fixed"
-	OverrideSounds //doesn't work >:(
-	{
-		"Announcer.MVM_All_Dead" 	"misc/null.wav"
-		"Announcer.MVM_Bomb_Alert_Deploying" 	"misc/null.wav"
-		"Announcer.MVM_Robots_Planted" 	"misc/null.wav"
-		"Announcer.MVM_Bomb_Alert_Entered"		"misc/null.wav"
-		"Announcer.MVM_Tank_Planted" 	"misc/null.wav"	
-		"Announcer.MVM_Tank_Alert_Spawn" 	"misc/null.wav"		
-		"Announcer.MVM_Tank_Alert_Another" 	"misc/null.wav"		
-		"Announcer.MVM_Tank_Alert_Multiple"		"misc/null.wav" 		  		 
-		"Announcer.MVM_Tank_Alert_Halfway"		"misc/null.wav" 			  			 
-		"Announcer.MVM_Tank_Alert_Halfway_Multiple" 	"misc/null.wav"		
-		"Announcer.MVM_Tank_Alert_Near_Hatch" 	"misc/null.wav" 			  		 
-		"Announcer.MVM_Tank_Alert_Deploying"  	"misc/null.wav"	
-	}
-	//HandModelOverride  // Overwrite first person arms models
-    //{
-    //    Scout "models/weapons/c_models/c_scout_bot_arms.mdl"
-	//	Soldier "models/weapons/c_models/c_soldier_bot_arms.mdl"
-	//	Pyro "models/weapons/c_models/c_pyro_bot_arms.mdl"
-	//	Demoman "models/weapons/c_models/c_demo_bot_arms.mdl"
-	//	Heavyweapons "models/weapons/c_models/c_heavy_bot_arms.mdl"
-	//	Engineer "models/weapons/c_models/c_engineer_bot_arms.mdl"
-	//	Medic "models/weapons/c_models/c_medic_bot_arms.mdl"
-	//	Spy "models/weapons/c_models/c_spy_bot_arms.mdl"
-    //   Sniper "models/weapons/c_models/c_sniper_bot_arms.mdl"
-    //}
-	//Testing restrictions, will be removed once the mission is submitted
-	//DisallowUpgrade "generate rage on heal"  
-	//DisallowUpgrade "critboost" 
-	//DisallowUpgrade "ubercharge" 
-	//DisallowUpgrade "explosive sniper shot" 
 	//removed because infinite ammo and metal
 	DisallowUpgrade "maxammo primary increased" 
 	DisallowUpgrade "maxammo metal increased" 
@@ -143,8 +99,6 @@ swirl2_reverse_boogaloo
 				"OnMapSpawn" "gate1_alarm*,Kill,,0,-1"
 				"OnMapSpawn" "gate2_alarm*,Kill,,0,-1"
 				"OnMapSpawn" "spawnbot_chief*,Kill,,0,-1" //bad respawnroom
-				//"OnMapSpawn" "spawnbot_ambush*,Kill,,0,-1" //doesn't work properly with players
-				//"OnMapSpawn" "spawnbot_flank,Kill,,0,-1" //spawn players at the beginning after a gate cap
 				"OnMapSpawn" "filter_gatebot*,Kill,,0,-1" //killing filters and func_nav_prerequisite to make players able to cap
 				"OnMapSpawn" "prereq_low_point*,Kill,,0,-1"
 				"OnMapSpawn" "prereq_up_point*,Kill,,0,-1"
@@ -174,22 +128,6 @@ swirl2_reverse_boogaloo
 				"OnMapSpawn" "fuckyougate*,Enable,,0,-1"
 				"OnMapSpawn" "func_capturezone,AddOutput,OnCapture kill_relay:Trigger:0:-1,0,-1"
 			}
-			trigger_multiple //Forces thirdperson while deploying bomb
-			{
-				"targetname" "thirdperson"
-				"StartDisabled" "1"
-				"spawnflags" "3"
-				"origin" "1542.488770 739.029175 -143.968689"
-				"maxs" "50 50 50"
-				"mins" "-50 -50 -50"
-				"filtername" "filter_blue"
-				"OnStartTouch" "!activator,setforcedtauntcam,1,0.1,-1" //!activator is any entity currently inside of the trigger_multiple
-				"OnStartTouch" "!activator,SetHUDVisibility,0,0.1,-1"
-				"OnStartTouch" "!activator,DisableDamageForces,,0,-1" //doesn't work?
-				"OnEndTouch" "!activator,setforcedtauntcam,0,0,-1"
-				"OnEndTouch" "!activator,SetHUDVisibility,1,0,-1"
-				"OnEndTouch" "!activator,EnableDamageForces,,0,-1"
-			}
 			logic_relay //trigger this to kill all players and buildings
 			{
 				"targetname" "kill_relay"
@@ -217,12 +155,6 @@ swirl2_reverse_boogaloo
 				"force_map_reset" "1"
 				"classname" "game_round_win"
 			}
-			//logic_relay
-			//{
-			//	"targetname" "red_tank_relay" //switches tank to red team
-			//	"OnTrigger" "tankbossred,Setteam,2,0.25,-1"
-			//	"OnTrigger" "tankbossred,AddCaptureDestroyPostfix,destroy_mvm_cactus_valley3,0,-1" //cool explodey effect, doesn't work :(
-			//}
 		}
 		station
 		{
@@ -623,32 +555,6 @@ swirl2_reverse_boogaloo
 					"logicalpos" "[0 8500]"
 				}
 			}
-			//entity
-			//{
-			//	"id" "209"
-			//	"classname" "prop_dynamic"
-			//	"angles" "0 0 0"
-			//	"fademindist" "-1"
-			//	"fadescale" "1"
-			//	"MaxAnimTime" "10"
-			//	"MinAnimTime" "5"
-			//	"model" "models/props_mvm/robot_spawnpoint.mdl"
-			//	"modelscale" "1.0"
-			//	"renderamt" "255"
-			//	"rendercolor" "255 255 255"
-			//	"skin" "0"
-			//	"solid" "0"
-			//	"targetname" "spawn_final_flank"
-			//	"DefaultAnim" "idle"
-			//	"origin" "-3584 192 649"
-			//	editor
-			//	{
-			//		"color" "220 30 220"
-			//		"visgroupshown" "1"
-			//		"visgroupautoshown" "1"
-			//		"logicalpos" "[0 8500]"
-			//	}
-			//}
 			entity
 			{
 				"id" "8"
@@ -2935,6 +2841,7 @@ swirl2_reverse_boogaloo
 			TFBot
 			{ 
 				Template T_TFBot_Red_Giant_Boxing_Heavy
+				Name "Giant Punchie"
 				ItemAttributes
 				{
 					ItemName "Killing Gloves of Boxing"
