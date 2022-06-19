@@ -42,12 +42,14 @@ WaveSchedule
     AllowMultipleSappers 1
     MaxSpectators 10
     MedigunShieldDamage 1
+    NoBluHumanFootsteps 1
     RedPlayersAreRobots 1
     //MedievalMode 1
     BotsRandomCrit 1 // allows BLU team to random crit.
     BluHumanInfiniteAmmo 0
     RemoveBluVelocityLimit 1
     BluPlayersAreRobots 0
+    SniperHideLasers 1
 
     FixHuntsmanDamageBonus 1
 
@@ -56,7 +58,6 @@ WaveSchedule
     BluHumanFlagPickup 1 // see above
 
     //Precache Models/Sounds
-    PrecacheModel "models\props_mvm\hatch_shield.mdl" [$SIGSEGV]
     PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
     PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
     PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
@@ -73,25 +74,25 @@ WaveSchedule
     DisallowUpgrade "share consumable with patient"
     // TL Reworked Upgrades 1.0
 
-    DisallowUpgrade      //Advanced syntax
+    DisallowUpgrade    [$SIGSEGV] //Advanced syntax
     {
         Upgrade    "damage bonus" // Damage Bonus TL
         MaxLevel 2 // Maximum allowed level
         ItemName "The Team Leader" // Apply upgrade restrictions only to those items if specified
     }
-    DisallowUpgrade     
+    DisallowUpgrade    [$SIGSEGV]
     {
         Upgrade    "faster reload rate" // Reload Speed TL
         MaxLevel 1
         ItemName "The Team Leader"
     }
-    DisallowUpgrade     
+    DisallowUpgrade    [$SIGSEGV]
     {
         Upgrade    "rocket specialist" // Rocket Specialist TL
         MaxLevel -1
         ItemName "The Team Leader"
     }
-    DisallowUpgrade     
+    DisallowUpgrade    [$SIGSEGV]
     {
         Upgrade    "heal on kill" // HoK TL
         MaxLevel -1
@@ -235,6 +236,7 @@ WaveSchedule
             "hidden maxhealth non buffed" 450
             "no resupply" 1
             "mod rage on hit penalty" 1.75
+            "switch from wep deploy time decreased" 2
             "mult dmg vs tanks" 2.25
             "cannot pick up intelligence" 1
             "health from packs increased" 2.5
@@ -392,7 +394,7 @@ WaveSchedule
             }
             training_annotation
             {
-                "display_text" "You can now advance!"
+                "display_text" "You can now cap the gate!"
                 "lifetime" "3"
                 "origin" "-4500 -1090 0"
                 "targetname" "annotation_stage_one"
@@ -997,7 +999,7 @@ WaveSchedule
                 "solid" "2"
                 "spawnflags" "0"
                 "targetname" "blu_upgrade_altspawn"
-                "origin" "-6152 -2827 78"
+                "origin" "-6152 -2887 98"
             }
             prop_dynamic
             {
@@ -1013,7 +1015,7 @@ WaveSchedule
             {
                 "StartDisabled" "0"
 	            "targetname" "blu_upgrade_altspawn_func"
-                "origin" "-6152 -2827 78"
+                "origin" "-6152 -2887 98"
 
                 "mins" "-89 -139 -92"
                 "maxs" "89 139 92"
@@ -4745,6 +4747,7 @@ WaveSchedule
                 StartingPathTrackNode "tank_path_last_1" // thanks to Valve coding, you need to give a tank path the name in the extratankpath syntax, copy that name here then add "_1" at the end. Why is beyond me
                 Health 40000 // change health value accordingly, though a map this big should have a high health tanks like how most Bigrock mission's do
                 Speed 75
+                SolidToBrushes 1
                 ClassIcon tank_red
                 Teamnum 2 // makes the tank's team red
                 Model   //Set custom model on tank. Will spit harmless errors on client console if the model does not have enough sequences
@@ -6072,6 +6075,11 @@ WaveSchedule
             Action Trigger
         }
 
+        Explanation
+        {
+            Line "{blue}There is no bomb this wave."
+        }
+
         WaveSpawn
         {
             Name "support_blu2"
@@ -6604,6 +6612,7 @@ WaveSchedule
                 StartingPathTrackNode "tank_path_last_1" // thanks to Valve coding, you need to give a tank path the name in the extratankpath syntax, copy that name here then add "_1" at the end. Why is beyond me
                 Health 60000 // change health value accordingly, though a map this big should have a high health tanks like how most Bigrock mission's do
                 Speed 75
+                SolidToBrushes 1
                 ClassIcon tank_red
                 Teamnum 2 // makes the tank's team red
                 Model   //Set custom model on tank. Will spit harmless errors on client console if the model does not have enough sequences
