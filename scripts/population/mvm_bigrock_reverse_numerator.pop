@@ -65,7 +65,7 @@ WaveSchedule
 	
 	PrecacheModel "models/bots/boss_bot/tank_red_drill.mdl"				[$SIGSEGV]
 	PrecacheModel "models\props_frontline\tank_turret.mdl"				[$SIGSEGV]
-	PrecacheModel "models\buildables\skirmy1.mdl"						[$SIGSEGV]
+	PrecacheModel "models/buildables/skirmy1.mdl"						[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry1_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry2_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry3_uber.mdl"					[$SIGSEGV]
