@@ -3761,20 +3761,39 @@ WaveSchedule
 			WaitBetweenSpawns 0
 			TFBot
 			{
-			    Template T_TFBot_Red_Giant_Heavyweapons_HealOnKill
+			    Class Heavyweapons
+			    Name "Giant HOK Deflector Heavy"
+			    ClassIcon heavy_deflector_healonkill
+			    Skill Expert
 				AlwaysGlow 1
-				Health 4000
+			    Health 4000
+			    AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			    Action Mobber [$SIGSEGV]
+			    MaxVisionRange 1200
+			    Attributes MiniBoss
 				Attributes DisableDodge
 				Attributes UseBossHealthBar
-				AddCond [$SIGSEGV]
+			    ItemAttributes
+			    {
+				    ItemName "TF_WEAPON_MINIGUN"
+				    "damage bonus"	1.2
+				    "attack projectiles" 2
+				    "heal on kill" 5000
+			    }
+			    AddCond [$SIGSEGV]
 				{
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
 				}
-				CharacterAttributes
+			    CharacterAttributes
 			    {
-					"crit mod disabled" 0
-					"damage force reduction" 0
+				    "move speed bonus"	0.35
+				    "health from packs decreased" 0.01 
+				    "voice pitch scale" 0
+				    "airblast vulnerability multiplier" 0.3
+				    "override footstep sound set" 2
+				    "crit mod disabled" 0
+			        "damage force reduction" 0
 			    }
 			}
 		}
@@ -3827,20 +3846,39 @@ WaveSchedule
 			WaitForAllDead redblimp
 			TFBot
 			{
-			    Template T_TFBot_Red_Giant_Heavyweapons_HealOnKill
+			    Class Heavyweapons
+			    Name "Giant HOK Deflector Heavy"
+			    ClassIcon heavy_deflector_healonkill
+			    Skill Expert
 				AlwaysGlow 1
-				Health 4000
+			    Health 4000
+			    AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			    Action Mobber [$SIGSEGV]
+			    MaxVisionRange 1200
+			    Attributes MiniBoss
 				Attributes DisableDodge
 				Attributes UseBossHealthBar
-				AddCond [$SIGSEGV]
+			    ItemAttributes
+			    {
+				    ItemName "TF_WEAPON_MINIGUN"
+				    "damage bonus"	1.2
+				    "attack projectiles" 2
+				    "heal on kill" 5000
+			    }
+			    AddCond [$SIGSEGV]
 				{
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
 				}
-				CharacterAttributes
+			    CharacterAttributes
 			    {
-					"crit mod disabled" 0
-					"damage force reduction" 0
+				    "move speed bonus"	0.35
+				    "health from packs decreased" 0.01 
+				    "voice pitch scale" 0
+				    "airblast vulnerability multiplier" 0.3
+				    "override footstep sound set" 2
+				    "crit mod disabled" 0
+			        "damage force reduction" 0
 			    }
 			}
 		}
@@ -3856,20 +3894,39 @@ WaveSchedule
 			WaitForAllDead redblimp
 			TFBot
 			{
-			    Template T_TFBot_Red_Giant_Heavyweapons_HealOnKill
+			    Class Heavyweapons
+			    Name "Giant HOK Deflector Heavy"
+			    ClassIcon heavy_deflector_healonkill
+			    Skill Expert
 				AlwaysGlow 1
-				Health 4000
+			    Health 4000
+			    AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
+			    Action Mobber [$SIGSEGV]
+			    MaxVisionRange 1200
+			    Attributes MiniBoss
 				Attributes DisableDodge
 				Attributes UseBossHealthBar
-				AddCond [$SIGSEGV]
+			    ItemAttributes
+			    {
+				    ItemName "TF_WEAPON_MINIGUN"
+				    "damage bonus"	1.2
+				    "attack projectiles" 2
+				    "heal on kill" 5000
+			    }
+			    AddCond [$SIGSEGV]
 				{
 				    Name "TF_COND_INVULNERABLE"
 					Duration 1.7
 				}
-				CharacterAttributes
+			    CharacterAttributes
 			    {
-					"crit mod disabled" 0
-					"damage force reduction" 0
+				    "move speed bonus"	0.35
+				    "health from packs decreased" 0.01 
+				    "voice pitch scale" 0
+				    "airblast vulnerability multiplier" 0.3
+				    "override footstep sound set" 2
+				    "crit mod disabled" 0
+			        "damage force reduction" 0
 			    }
 			}
 		}
@@ -3983,7 +4040,7 @@ WaveSchedule
 			TFBot
 			{
 			    Class Heavyweapons
-			    Name "Giant Heavy"
+			    Name "Giant HOK Deflector Heavy"
 			    ClassIcon heavy_deflector_healonkill
 			    Skill Expert
 			    Health 4000
@@ -3995,7 +4052,7 @@ WaveSchedule
 			    Attributes MiniBoss
 			    ItemAttributes
 			    {
-				    ItemName "Deflector"
+				    ItemName "TF_WEAPON_MINIGUN"
 				    "damage bonus"	1.2
 				    "attack projectiles" 2
 				    "heal on kill" 5000
