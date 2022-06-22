@@ -1075,6 +1075,19 @@ WaveSchedule
 				"maxs" "2000 2000 2000"
 				
 			}
+
+			trigger_teleport //spies teleport to afk players in blu spawn for some reason, teleport any reds that manage to get in back to red spawn if this happens
+			{
+				"targetname" "spytele"
+				"filtername" "filter_red"
+				"spawnflags" "1"
+				"StartDisabled" "0"
+				"target" "bighatchspawn"
+				"origin" "1489.683472 -2599.624756 4.725704"
+				"mins" "-2000 -2000 -2000"
+				"maxs" "2000 2000 2000"
+				
+			}
 			// trigger_teleport
 			// {
 				// "targetname" "spawntele"
@@ -1348,15 +1361,6 @@ WaveSchedule
 		tankdozer_relay
 		{
 			NoFixup 1
-			logic_auto
-			{
-				"OnMapSpawn" "Tankdozer*,AddOutput,OnHealthBelow80Percent:SetSpeed:50:0:-1,0,-1"
-				"OnMapSpawn" "Tankdozer*,AddOutput,OnHealthBelow60Percent:SetSpeed:45:0:-1,0,-1"
-				"OnMapSpawn" "Tankdozer*,AddOutput,OnHealthBelow40Percent:SetSpeed:35:0:-1,0,-1"
-				"OnMapSpawn" "Tankdozer*,AddOutput,OnHealthBelow20Percent:SetSpeed:25:0:-1,0,-1"
-				"OnMapSpawn" "path_tank_46,AddOutput,OnPass:tankbossred*:SetHealth:0:0:-1,0,-1"
-			//	"OnMapSpawn" "tankdozer_spawn_relay,AddOutput,OnTrigger killdozer_brush:SetParent:Tankdozer2:0.05:-1,0,-1"
-			}
 			ambient_generic
             {
                "targetname" "ambience"
