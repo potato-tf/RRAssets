@@ -1186,7 +1186,7 @@ WaveSchedule
 			Class Demoman
 			Name "Unload Demoman"
 			Skill Hard
-			ClassIcon demo_unload
+			ClassIcon demo_scatter_red
 			Health 650
 			Attributes HoldFireUntilFullReload
 			Scale 1.4
@@ -1216,7 +1216,7 @@ WaveSchedule
 			Class Demoman
 			Name "Pipe Fountain Demoman"
 			Skill Expert
-			ClassIcon demo_unload
+			ClassIcon demo_scatter_red
 			Health 650
 			Attributes HoldFireUntilFullReload
 			Scale 1.4
@@ -2735,7 +2735,7 @@ WaveSchedule
 			Class Demoman
 			Name "Giant Unload Demoman"
 			Skill Expert
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 3300
 			Attributes HoldFireUntilFullReload
 			Attributes MiniBoss
@@ -2768,7 +2768,7 @@ WaveSchedule
 			Class Demoman
 			Name "Giant Pipe Fountain Demoman"
 			Skill Expert
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 3300
 			Attributes MiniBoss
 			WeaponRestrictions PrimaryOnly
@@ -2934,7 +2934,7 @@ WaveSchedule
 			Class Demoman
 			Name "The Pill Master"
 			Skill Expert
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 55000
 			Scale 1.9
 			Attributes UseBossHealthBar
@@ -3567,7 +3567,7 @@ WaveSchedule
 		{
 			Class Demoman
 			Name "Gate Giant Unload Demoman"
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 3650
 
 			EventChangeAttributes
