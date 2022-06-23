@@ -3479,7 +3479,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		T_TFBot_Red_Persian_Knight
 		{
 			Class Demoman
-            ClassIcon demo_persian_nys
+            ClassIcon demoknight_persian_nys
             Name "Persian Demoknight"
             Skill Expert
             Health 200

@@ -3397,7 +3397,7 @@ WaveSchedule
                 ClassIcon demoknight
                 Name "Persian Demoknight"
                 Skill Hard
-                ClassIcon demo_persian_nys
+                ClassIcon demoknight_persian_nys
                 Item "Sultan's Ceremonial"	
                 Item "Ali Baba's Wee Booties"
                 Item "The Persian Persuader"
