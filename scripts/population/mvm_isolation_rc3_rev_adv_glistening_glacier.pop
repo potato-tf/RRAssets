@@ -3477,7 +3477,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		T_TFBot_Red_Persian_Knight
 		{
 			Class Demoman
-            ClassIcon demo_persian
+            ClassIcon demo_persian_nys
             Name "Persian Demoknight"
             Skill Expert
             Health 200
@@ -3649,7 +3649,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		T_TFBot_Red_Giant_Kritzkrieg_Medic
 		{
 			Class Medic
-			ClassIcon medic_kritzkrieg
+			ClassIcon medic_kritz_red
             Name "Giant Kritzkrieg Medic"
             WeaponRestrictions SecondaryOnly
             Skill Expert
@@ -4015,7 +4015,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			TFBot
 			{
 				Class Scout
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 				Name "Bat Scout"
 				Skill Hard
 				WeaponRestrictions MeleeOnly
@@ -5283,7 +5283,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			TFBot
 			{
 				Class Scout
-				ClassIcon scout_pop
+				ClassIcon scout_popper2
 				Name "Soda Popper Scout"
 				Skill Normal
 				Item "The Soda Popper"
@@ -9020,7 +9020,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			FirstSpawnWarningSound "ambient_mp3/alarms/doomsday_lift_alarm.mp3"
 			Tank
 			{
-				ClassIcon blimp2_red_sticky_lite
+				ClassIcon blimp2_sticky_red_lite
 				Name "redstickyblimp"
 				Health 33333
 				Speed 75

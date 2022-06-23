@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "hud/leaderboard_class_medic_shield_qf"
+	"$basetexture" "hud/leaderboard_class_soldier_heal2"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

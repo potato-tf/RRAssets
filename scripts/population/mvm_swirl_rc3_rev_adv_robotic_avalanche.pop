@@ -2645,7 +2645,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Health 3800
 			Item "Tyrant's Helm"
 			Item "The Buff Banner"
-			ClassIcon soldier_buff_lite
+			ClassIcon soldier_buff
 			Attributes MiniBoss
 			Attributes UseBossHealthBar
 			Attributes HoldFireUntilFullReload
@@ -2671,7 +2671,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Health 3800
 			Item "Soldier Samurai Hat"
 			Skill Expert
-			ClassIcon soldier_conch_lite
+			ClassIcon soldier_conch
 			Attributes MiniBoss
 			Attributes UseBossHealthBar
 			Attributes HoldFireUntilFullReload
@@ -2699,7 +2699,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Item "The Grenadier's Softcap"
 			Item "The Battalion's Backup"
 			Skill Expert
-			ClassIcon soldier_backup_lite
+			ClassIcon soldier_backup
 			Attributes MiniBoss
 			Attributes HoldFireUntilFullReload
 			Attributes SpawnWithFullCharge
@@ -2747,7 +2747,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Name "Phlogistinator Pyro"
 			Skill Expert
 			Attributes SpawnWithFullCharge
-			ClassIcon pyro_phlog_ver2
+			ClassIcon pyro_phlog
 			ItemAttributes
 			{
 				ItemName "The Phlogistinator"
@@ -2804,7 +2804,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 		{
 			Class Heavyweapons
 			Skill Expert
-			ClassIcon heavy_warriorsspirit
+			ClassIcon heavy_warrior_red
 			Item "Warrior's Spirit"
 			Item "Big Chief"
 			Name "Hibernating Bear"
@@ -2832,7 +2832,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Name "Giant Phlogistinator Pyro"
 			Skill Expert
 			Attributes SpawnWithFullCharge
-			ClassIcon pyro_phlog_ver2
+			ClassIcon pyro_phlog
 			ItemAttributes
 			{
 				ItemName "The Phlogistinator"
@@ -5979,7 +5979,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Red_Hibernating_Bear
 				Attributes AlwaysCrit
-				ClassIcon Heavy_warriorsspirit 
+				ClassIcon heavy_warrior_red 
 				CharacterAttributes
 				{
 					"damage force reduction" 0
@@ -6015,7 +6015,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Template T_TFBot_Red_Hibernating_Bear
 				Attributes AlwaysCrit
-				ClassIcon Heavy_warriorsspirit 
+				ClassIcon heavy_warrior_red 
 				CharacterAttributes
 				{
 					"damage force reduction" 0
@@ -6816,7 +6816,8 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Class Scout
 				Skill Expert
 				AimTrackingInterval 0.25
-				ClassIcon scout_pop
+				ClassIcon scout_popper2
+				ClassIcon scout_popper2
 				AddCond  { Name TF_COND_REPROGRAMMED } 
 				Action Mobber 
 				Name "Soda Popper Scout"
@@ -6861,7 +6862,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Class Scout
 				Skill Expert
-				ClassIcon scout_pop
+				ClassIcon scout_popper2
 				AddCond  { Name TF_COND_REPROGRAMMED } 
 				Action Mobber 
 				Name "Soda Popper Scout"
@@ -7072,7 +7073,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Item "The Brass Beast"
 				Name "Brass Beast Heavy"
 				Skill Expert
-				ClassIcon heavy_brass_h
+				ClassIcon heavy_brass_nys
 				AddCond  { Name TF_COND_REPROGRAMMED } 
 				Action Mobber 
 				Attributes DisableDodge
@@ -7101,7 +7102,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			{ 
 				Class Scout
 				Skill Expert
-				ClassIcon scout_pop
+				ClassIcon scout_popper2
 				AddCond  { Name TF_COND_REPROGRAMMED } 
 				Action Mobber 
 				Name "Soda Popper Scout"

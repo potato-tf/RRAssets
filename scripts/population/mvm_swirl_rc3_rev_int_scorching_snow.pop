@@ -1913,7 +1913,7 @@ swirl2_reverse_boogaloo
 			Name "Giant Phlogistinator Pyro"
 			Skill Expert
 			Attributes SpawnWithFullCharge
-			ClassIcon pyro_phlog_ver2
+			ClassIcon pyro_phlog
 			ItemAttributes
 			{
 				ItemName "The Phlogistinator"

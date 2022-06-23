@@ -2100,7 +2100,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	340
 				Skill	Normal
 				Name	"timer"
@@ -2949,7 +2949,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	340
 				Skill	Normal
 				Name	"timer"
@@ -3805,7 +3805,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	340
 				Skill	Normal
 				Name	"timer"
@@ -4634,7 +4634,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	340
 				Skill	Normal
 				Name	"timer"
@@ -5433,7 +5433,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	340	
 				Skill	Normal
 				Name	"timer"

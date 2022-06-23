@@ -2089,7 +2089,7 @@ WaveSchedule
 			    Class engineer
 				AlwaysGlow 1
 			    Name "Robot Ranger"
-			    ClassIcon engineer_justice_nys
+			    ClassIcon engineer_frontier_justice_nys
 			    Skill expert
 			    Health 2500
 			    Item "the frontier justice"
@@ -3001,7 +3001,7 @@ WaveSchedule
 			    Class engineer
 				AlwaysGlow 1
 			    Name "Robot Ranger"
-			    ClassIcon engineer_justice_nys
+			    ClassIcon engineer_frontier_justice_nys
 			    Skill expert
 			    Health 2500
 			    Item "the frontier justice"
@@ -3348,7 +3348,7 @@ WaveSchedule
 			TFBot
 			{
 			    Template T_TFBot_Red_Scout_Melee
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 				Attributes AlwaysCrit
 				Attributes DisableDodge
 				CharacterAttributes
@@ -3410,7 +3410,7 @@ WaveSchedule
 			{
 			    Template T_TFBot_Red_Heavyweapons_Shotgun
 				Name "I am inside your walls"
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 				Attributes DisableDodge
 				CharacterAttributes
 				{
@@ -4012,7 +4012,7 @@ WaveSchedule
 			    Template T_TFBot_Red_Soldier
 				WeaponRestrictions PrimaryOnly
 				Name "Direct Hit Soldier"
-				ClassIcon soldier_directhit
+				ClassIcon soldier_directhit_lite
 				Attributes DisableDodge
 				Item "the direct hit"
 				AddCond [$SIGSEGV]
@@ -4091,7 +4091,7 @@ WaveSchedule
 				Name "Guardian Artillery Barrage"
 				Attributes DisableDodge
 				Attributes AlwaysCrit
-			    ClassIcon soldier_rocketrain
+			    ClassIcon soldier_rocketrain_enhanced
 				AimOffset "0 0 1000"
 				ItemAttributes
 			    {
@@ -4125,7 +4125,7 @@ WaveSchedule
 				Name "Guardian Artillery Barrage"
 				Attributes DisableDodge
 				Attributes AlwaysCrit
-			    ClassIcon soldier_rocketrain
+			    ClassIcon soldier_rocketrain_enhanced
 				AimOffset "0 0 1000"
 				ItemAttributes
 			    {
@@ -4159,7 +4159,7 @@ WaveSchedule
 			    Template T_TFBot_Red_Soldier
 				WeaponRestrictions PrimaryOnly
 				Name "Direct Hit Soldier"
-				ClassIcon soldier_directhit
+				ClassIcon soldier_directhit_lite
 				Item "the direct hit"
 				Attributes DisableDodge
 				AddCond [$SIGSEGV]
@@ -4214,7 +4214,7 @@ WaveSchedule
 			{
 			    Class engineer
 			    Name "Robot Ranger"
-			    ClassIcon engineer_justice_nys
+			    ClassIcon engineer_frontier_justice_nys
 			    Skill expert
 			    Health 2500
 			    Item "the frontier justice"

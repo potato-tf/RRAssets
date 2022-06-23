@@ -2310,7 +2310,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	400
 				Skill	Normal
 				Name	"timer"
@@ -2940,7 +2940,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	400
 				Skill	Normal
 				Name	"timer"
@@ -3587,7 +3587,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	400
 				Skill	Normal
 				Name	"timer"
@@ -4343,7 +4343,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	400
 				Skill	Normal
 				Name	"timer"
@@ -4618,7 +4618,7 @@ WaveSchedule
 			WaitBetweenSpawns	5
                         TFBot
 			{
-                        ClassIcon scout_bat_nys
+                        ClassIcon scout_bat
                                 Name "Giant Bat Scout"
 				Template	T_TFBot_Giant_Scout
 			        WeaponRestrictions MeleeOnly
@@ -5165,7 +5165,7 @@ WaveSchedule
 			}
 			TFBot //Timer Bot
 			{
-                        ClassIcon vex_mvm_timer
+                        ClassIcon timer_lite
 				Health	400
 				Skill	Normal
 				Name	"timer"

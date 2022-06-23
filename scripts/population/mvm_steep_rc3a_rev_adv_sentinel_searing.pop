@@ -5654,7 +5654,7 @@ population
             Class HeavyWeapons
             Skill Easy
             Item "The Brass Beast"
-            ClassIcon heavy_brassbeast
+            ClassIcon heavy_brass_nys
             CharacterAttributes
             {
                 "crit mod disabled" 0
@@ -5665,7 +5665,7 @@ population
             Class HeavyWeapons
             Skill Hard
             Item "The Brass Beast"
-            ClassIcon heavy_brassbeast
+            ClassIcon heavy_brass_nys
             Attributes AlwaysCrit
         }
         T_TFBot_Soldier_Extended_Buff_Banner_Directhit

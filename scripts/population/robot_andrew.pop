@@ -239,7 +239,7 @@ WaveSchedule
 		}
                 T_TFBot_Scout_Soda_Popper_Andrew
 		{	
-                	ClassIcon scout_pop
+                	ClassIcon scout_popper2
 			Name	"Soda Popper Scout"
 			Class Scout
                         Skill Expert
