@@ -3020,7 +3020,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Demoman_Loads_of_Bombs
-				ClassIcon demo_unload_red
+				ClassIcon demo_scatter_red
 				Attributes DisableDodge
 				Skill Hard
 				AddCond   { Name TF_COND_REPROGRAMMED } 
@@ -3095,7 +3095,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Demoman_Loads_of_Bombs
-				ClassIcon demo_unload_red
+				ClassIcon demo_scatter_red
 				Attributes DisableDodge
 				Skill Hard
 				AddCond   { Name TF_COND_REPROGRAMMED } 
@@ -3121,7 +3121,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Demoman_Loads_of_Bombs
-				ClassIcon demo_unload_red
+				ClassIcon demo_scatter_red
 				Attributes DisableDodge
 				SKill Hard
 				AddCond   { Name TF_COND_REPROGRAMMED } 
@@ -3220,7 +3220,7 @@ SpawnTemplate
 			{
 				Template T_TFBot_Demoman_Loads_of_Bombs
 				Attributes DisableDodge
-				ClassIcon demo_unload_red
+				ClassIcon demo_scatter_red
 				Skill Hard
 				AddCond   { Name TF_COND_REPROGRAMMED } 
 				Action Mobber  
@@ -3267,7 +3267,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Demoman_Loads_of_Bombs
-				ClassIcon demo_unload_red
+				ClassIcon demo_scatter_red
 				Attributes DisableDodge
 				Skill Hard
 				AddCond   { Name TF_COND_REPROGRAMMED } 
@@ -3371,7 +3371,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Giant_Demoman_Loads_of_Bombs
-				ClassIcon demo_unload_red_Giant
+				ClassIcon demo_scatter_red_Giant
 				Tag bot_hatch
 				AddCond   { Name TF_COND_REPROGRAMMED } 
 				Action Mobber  
@@ -3438,7 +3438,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Demoman_Bombs_Everywhere
-				ClassIcon demo_unload_red
+				ClassIcon demo_scatter_red
 				Scale 1.5
 				Skill Expert
 				AddCond  {
@@ -5245,7 +5245,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Giant_Demoman_Loads_of_Bombs
-				ClassIcon demo_unload_red_giant
+				ClassIcon demo_scatter_red_giant
 				Attributes DisableDodge
 				AddCond   { Name TF_COND_REPROGRAMMED } 
 				Action Mobber  
@@ -5436,7 +5436,7 @@ SpawnTemplate
 			TFBot
 			{
 				Template T_TFBot_Giant_Demoman_Loads_of_Bombs
-				ClassIcon demo_unload_red_giant
+				ClassIcon demo_scatter_red_giant
 				AddCond   { Name TF_COND_REPROGRAMMED } 
 				Action Mobber
 				Attributes DisableDodge
@@ -6417,7 +6417,7 @@ SpawnTemplate
 			SpawnCount 1
 			WaitBeforeStarting 0
 			TotalCurrency 0
-			FirstSpawnWarningSound "Howl_Hush_Antibirth.mp3"
+			FirstSpawnWarningSound "#Howl_Hush_Antibirth.mp3"
 			RandomSpawn 1
 			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {5100ff} Howl - Mudeth {FFFFFF}" [$SIGSEGV]
 			TFBot

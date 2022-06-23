@@ -7633,7 +7633,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Giant_Medic_Regen
-				ClassIcon medic_shield_qf
+				ClassIcon medic_shield_red
 				Attributes ProjectileShield
 				Attributes DisableDodge
 				UseCustomModel "models/player/soldier.mdl"

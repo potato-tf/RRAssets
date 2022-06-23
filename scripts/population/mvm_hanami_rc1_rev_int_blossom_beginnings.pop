@@ -73,7 +73,7 @@ WaveSchedule
 			Action Mobber   
 			Item "The Soda Popper"
 			Name "Soda Popper Scout"
-			ClassIcon scout_popper
+			ClassIcon scout_popper2
 			CharacterAttributes { "crit mod disabled hidden" 0 }
 		}
 		T_TFBot_Red_Soldier_Equalizer

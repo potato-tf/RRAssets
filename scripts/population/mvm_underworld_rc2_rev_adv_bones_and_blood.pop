@@ -5611,7 +5611,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5634,7 +5634,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5657,7 +5657,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5680,7 +5680,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5703,7 +5703,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5726,7 +5726,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5749,7 +5749,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5772,7 +5772,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5795,7 +5795,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5818,7 +5818,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5841,7 +5841,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5864,7 +5864,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5887,7 +5887,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5910,7 +5910,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -5934,7 +5934,7 @@ WaveSchedule
                     Template T_TFBot_Heavy_Warrior
                     Action Mobber 
                     Name "Bear Grylls"
-                    Classicon heavy_warrior_tind_red
+                    Classicon heavy_warrior_red
                     Attributes DisableDodge
                     Tag nav_reverse_avoid
                     CharacterAttributes
@@ -7684,7 +7684,7 @@ WaveSchedule
                 Template T_TFBot_Giant_Demo_RapidFire
                 AimLeadProjectileSpeed 1
                 Tag nav_reverse_avoid
-                ClassIcon demo_rapid_giant
+                ClassIcon demo_spammer_giant
                 Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
                 Item "Glengarry Bonnet"
                 Attributes DisableDodge
@@ -7733,7 +7733,7 @@ WaveSchedule
                 AimLeadProjectileSpeed 1
                 Attributes DisableDodge
                 Tag nav_reverse_avoid
-                ClassIcon demo_rapid_giant
+                ClassIcon demo_spammer_giant
                 Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
                 Item "Glengarry Bonnet"
                 ItemAttributes
@@ -7897,7 +7897,7 @@ WaveSchedule
                 AimLeadProjectileSpeed 1
                 Attributes DisableDodge
                 Tag nav_reverse_avoid
-                ClassIcon demo_rapid_giant
+                ClassIcon demo_spammer_giant
                 Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
                 Item "Glengarry Bonnet"
                 ItemAttributes
@@ -8988,7 +8988,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Giant_Medic_Kritz
                     Tag nav_reverse_avoid
-                    Classicon medic_kritzkrieg_giant
+                    Classicon medic_kritz_red_giant
                     Attributes DisableDodge
                     CharacterAttributes
                     {
@@ -9119,7 +9119,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Giant_Medic_Kritz
                     Tag nav_reverse_avoid
-                    Classicon medic_kritzkrieg_giant
+                    Classicon medic_kritz_red_giant
                     Attributes DisableDodge
                     CharacterAttributes
                     {

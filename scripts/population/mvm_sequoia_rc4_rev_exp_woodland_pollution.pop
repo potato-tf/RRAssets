@@ -1914,7 +1914,7 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFGateBot_Scout_Reverse
-                    ClassIcon scout_bat_nys
+                    ClassIcon scout_bat
                     WeaponRestrictions MeleeOnly
                 }
             }
@@ -3397,7 +3397,7 @@ WaveSchedule
                 ClassIcon demoknight
                 Name "Persian Demoknight"
                 Skill Hard
-                ClassIcon demo_persian
+                ClassIcon demo_persian_nys
                 Item "Sultan's Ceremonial"	
                 Item "Ali Baba's Wee Booties"
                 Item "The Persian Persuader"
@@ -5742,7 +5742,7 @@ WaveSchedule
             TFBot
             {
                 Class Scout
-                ClassIcon scout_bat_nys
+                ClassIcon scout_bat
                 Attributes AlwaysCrit
                 WeaponRestrictions MeleeOnly
                 Attributes DisableDodge

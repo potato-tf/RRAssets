@@ -106,7 +106,7 @@ WaveSchedule
 		T_TFBot_Scout_Melee
 		{
 			Class Scout
-			ClassIcon scout_bat_nys
+			ClassIcon scout_bat
 			Skill Expert // increased to improve ability to hit with melee
 			WeaponRestrictions MeleeOnly
 			Item "EOTL_demopants"
@@ -939,7 +939,7 @@ WaveSchedule
 		{
 			Class Scout
 			Name "Giant Scout"
-			ClassIcon scout_bat_nys
+			ClassIcon scout_bat
 			Skill Expert
 			Health 1200
 			WeaponRestrictions MeleeOnly

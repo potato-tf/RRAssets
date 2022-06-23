@@ -49,7 +49,13 @@ WaveSchedule
 	
 //	Precache all custom models and sounds
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl" [$SIGSEGV]	
-	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl" [$SIGSEGV]
+    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl" [$SIGSEGV]
 	PrecacheModel "models\props_skybox\fogbox_cyberia.mdl" [$SIGSEGV]
 	//arms
 	// PrecacheModel "models\weapons\c_models\c_scout_bot_arms.mdl"	 [$SIGSEGV]	 

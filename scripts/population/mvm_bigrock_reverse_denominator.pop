@@ -70,8 +70,19 @@ WaveSchedule
 	
 	PrecacheModel "models\bots\demo\red_sentry_buster_v2.mdl"										[$SIGSEGV]
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"										[$SIGSEGV]
-	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"										[$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"											[$SIGSEGV]
+    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"										[$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl"											[$SIGSEGV]
 	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"										[$SIGSEGV]
 	PrecacheModel "models\weapons\c_models\c_chains_of_command\c_chains_of_command.mdl"			[$SIGSEGV]
 	PrecacheModel "models\workshop\weapons\c_models\c_winger_distol\c_winger_distol.mdl"		[$SIGSEGV]

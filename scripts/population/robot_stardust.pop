@@ -192,7 +192,7 @@ WaveSchedule
     {
       Name "Bat Scout"
       Class Scout
-      ClassIcon scout_bat_nys
+      ClassIcon scout_bat
       Scale 1
       Health 125
       WeaponRestrictions MeleeOnly
@@ -203,7 +203,7 @@ WaveSchedule
     {
       Name "Super Shotgun Scout"
       Class Scout
-      ClassIcon scout_popper 
+      ClassIcon scout_popper2 
       Scale 1.2
       Health 650
 
@@ -233,7 +233,7 @@ WaveSchedule
     {
       Name "Soda Popper Scout"
       Class Scout
-      ClassIcon scout_popper
+      ClassIcon scout_popper2
 
       Skill Hard  
       MaxVisionRange 600
@@ -2953,7 +2953,7 @@ WaveSchedule
     {
       Name "Bear Heavy"
       Class Heavyweapons
-      ClassIcon heavy_warrior
+      ClassIcon heavy_warrior_red
       Skill Hard 
       Health 400 
       Scale 1.2

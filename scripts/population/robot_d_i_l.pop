@@ -349,7 +349,7 @@ WaveSchedule
 			Class Scout
 			Skill Hard
 			Health 150
-			ClassIcon scout_pistol
+			ClassIcon scout_pistol_nys
 			Name "Pistol Scout"
 			WeaponRestrictions SecondaryOnly
 			MaxVisionRange 2000
@@ -396,7 +396,7 @@ WaveSchedule
 			Skill Hard
 			Health 375
 			Scale 1.25
-			ClassIcon scout_pistol
+			ClassIcon scout_pistol_nys
 			Name "Advanced Pistol Scout"
 			WeaponRestrictions SecondaryOnly
 			MaxVisionRange 2250
@@ -470,7 +470,7 @@ WaveSchedule
 			Skill Hard
 			Health 1100
 			Scale 1.5
-			ClassIcon scout_pistol
+			ClassIcon scout_pistol_nys
 			Name "Pistol Scout Champion"
 			ClassIcon scout_shortstop
 			WeaponRestrictions SecondaryOnly
@@ -1186,7 +1186,7 @@ WaveSchedule
 			Class Demoman
 			Name "Unload Demoman"
 			Skill Hard
-			ClassIcon demo_unload
+			ClassIcon demo_scatter_red
 			Health 650
 			Attributes HoldFireUntilFullReload
 			Scale 1.4
@@ -1216,7 +1216,7 @@ WaveSchedule
 			Class Demoman
 			Name "Pipe Fountain Demoman"
 			Skill Expert
-			ClassIcon demo_unload
+			ClassIcon demo_scatter_red
 			Health 650
 			Attributes HoldFireUntilFullReload
 			Scale 1.4
@@ -1402,7 +1402,7 @@ WaveSchedule
 			Class HeavyWeapons
 			Name "Accurate Heavy"
 			Health 300
-			ClassIcon heavy_accurate
+			ClassIcon heavy_accurate_lite
 			Skill Hard
 			MaxVisionRange 2000
 			Item "Heavy Artillery Officer's Cap"
@@ -1810,7 +1810,7 @@ WaveSchedule
 			Skill Expert
 			Health 1600
 			Attributes Miniboss
-			ClassIcon scout_pistol_giant
+			ClassIcon scout_pistol_nys_giant
 			Name "Giant Pistol Scout"
 			WeaponRestrictions SecondaryOnly
 			MaxVisionRange 2200
@@ -2735,7 +2735,7 @@ WaveSchedule
 			Class Demoman
 			Name "Giant Unload Demoman"
 			Skill Expert
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 3300
 			Attributes HoldFireUntilFullReload
 			Attributes MiniBoss
@@ -2768,7 +2768,7 @@ WaveSchedule
 			Class Demoman
 			Name "Giant Pipe Fountain Demoman"
 			Skill Expert
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 3300
 			Attributes MiniBoss
 			WeaponRestrictions PrimaryOnly
@@ -2934,7 +2934,7 @@ WaveSchedule
 			Class Demoman
 			Name "The Pill Master"
 			Skill Expert
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 55000
 			Scale 1.9
 			Attributes UseBossHealthBar
@@ -3567,7 +3567,7 @@ WaveSchedule
 		{
 			Class Demoman
 			Name "Gate Giant Unload Demoman"
-			ClassIcon demo_unload_giant
+			ClassIcon demo_scatter_red_giant
 			Health 3650
 
 			EventChangeAttributes
