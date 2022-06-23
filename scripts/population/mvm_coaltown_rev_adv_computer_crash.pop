@@ -6417,7 +6417,7 @@ SpawnTemplate
 			SpawnCount 1
 			WaitBeforeStarting 0
 			TotalCurrency 0
-			FirstSpawnWarningSound "Howl_Hush_Antibirth.mp3"
+			FirstSpawnWarningSound "#Howl_Hush_Antibirth.mp3"
 			RandomSpawn 1
 			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {5100ff} Howl - Mudeth {FFFFFF}" [$SIGSEGV]
 			TFBot

@@ -41,6 +41,13 @@ WaveSchedule
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu"
 	PrecacheModel "models\props_mvm\robot_spawnpoint.mdl"
 	PrecacheModel "models/props_frontline/tank_cart.mdl"
+	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
 	DisableSound "Announcer.MVM_Game_Over_Loss" 	[$SIGSEGV]
 	DisableSound "Announcer.MVM_Wave_Lose" 			[$SIGSEGV]
 	DisableSound "music.mvm_lost_wave" 				[$SIGSEGV]

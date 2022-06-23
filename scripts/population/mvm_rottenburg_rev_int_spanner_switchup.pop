@@ -140,7 +140,13 @@ WaveSchedule
 	BotPushaway 0	// helpful for tele's but clumps squads into a ball
 	// Precache all custom models and sounds
 	PrecacheModel models\props_mvm\mvm_upgrade_blu.mdl
-	PrecacheModel models\bots\boss_bot\boss_tankred.mdl
+    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
+    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
+	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
 	// Disable Sounds
 	DisableSound music.mvm_end_last_wave
 	DisableSound music.mvm_end_mid_wave

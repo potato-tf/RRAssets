@@ -37,7 +37,12 @@ WaveSchedule
 	PrecacheModel "models\props_mvm\robot_spawnpoint.mdl"
 	PrecacheModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
 	PrecacheModel "models\props_mvm\reversemvm_redwall.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"	[$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl"	[$SIGSEGV]
 	
 	PlayerAttributes   
 	{
@@ -1053,7 +1058,7 @@ WaveSchedule
 			logic_relay
 			{
 			    "targetname" "endebolada"
-				"OnTrigger" "w6_music,StopSound,,0,-1"
+				"OnTrigger" "w6_music,Volume,0.01,0,-1"
 			}
 		}
 	}
