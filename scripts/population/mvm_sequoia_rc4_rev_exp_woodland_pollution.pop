@@ -71,7 +71,7 @@ WaveSchedule
 
     DisallowUpgrade "critboost"  
     DisallowUpgrade "ubercharge"  
-    DisallowUpgrade "share consumable with patient"
+    DisallowUpgrade "canteen specialist"
     // TL Reworked Upgrades 1.0
 
     DisallowUpgrade    [$SIGSEGV] //Advanced syntax
@@ -151,8 +151,8 @@ WaveSchedule
         {
             Name "Ammo Regen"
             Attribute "ammo regen"
-            Cap 0.20
-            Increment 0.20
+            Cap 0.15
+            Increment 0.15
             Cost 250
             Description "Player regenerates 15% of total ammunition per point"
             Playerupgrade 1
@@ -238,7 +238,7 @@ WaveSchedule
             "mod rage on hit penalty" 1.75
             "switch from wep deploy time decreased" 2
             "mult dmg vs tanks" 2.25
-            "cannot pick up intelligence" 1
+            //"cannot pick up intelligence" 1
             "health from packs increased" 2.5
             "paintkit_proto_def_index" 210
             "healing received bonus" 0.2
@@ -513,6 +513,7 @@ WaveSchedule
             logic_auto
             {
                 "OnMapSpawn" "pop_interface,Kill,,0,-1"
+                "OnMapSpawn" "func_respawnroom*,Kill,,0,-1"
                 "OnMapSpawn" "wave_start*,AddOutput,OnTrigger func_flagdetectionzone:Disable:0:-1,0,-1" //disables the hatch alarm on wave start
                 "OnMapSpawn" "gate1_relay,RemoveOutput, pop_interface:PauseBotSpawning:0:-1,0,-1"
                 "OnMapSpawn" "gate1_relay,AddOutput,OnTrigger cover_doorway2:Disable:0:-1"
@@ -1914,7 +1915,7 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFGateBot_Scout_Reverse
-                    ClassIcon scout_bat
+                    ClassIcon scout_bat_nys
                     WeaponRestrictions MeleeOnly
                 }
             }
@@ -3397,7 +3398,7 @@ WaveSchedule
                 ClassIcon demoknight
                 Name "Persian Demoknight"
                 Skill Hard
-                ClassIcon demoknight_persian_nys
+                ClassIcon demo_persian
                 Item "Sultan's Ceremonial"	
                 Item "Ali Baba's Wee Booties"
                 Item "The Persian Persuader"
@@ -5742,7 +5743,7 @@ WaveSchedule
             TFBot
             {
                 Class Scout
-                ClassIcon scout_bat
+                ClassIcon scout_bat_nys
                 Attributes AlwaysCrit
                 WeaponRestrictions MeleeOnly
                 Attributes DisableDodge
@@ -6152,17 +6153,18 @@ WaveSchedule
             TotalCurrency 100
             TFBot
             {
-                Template T_TFBot_Giant_Soldier_Spammer
-                Name "Giant Backup Rapid Fire"
-                ClassIcon soldier_backup_spammer_giant
+                //Template T_TFBot_Giant_Soldier_Spammer
+                Template T_TFBot_Giant_Soldier_Extended_Battalion
+                //Name "Giant Backup Soldier"
+                //ClassIcon soldier_backup_spammer_giant
                 Attributes SpawnWithFullCharge
-                Item "The Battalion's Backup"
+                //Item "The Battalion's Backup"
                 CharacterAttributes
                 {
                     "move speed bonus"	0.5
                     "airblast vulnerability multiplier" 0.4
                     "override footstep sound set" 3
-                    "increase buff duration"	9.0
+                    //"increase buff duration"	9.0
                     "voice pitch scale" 0
                     "increase buff duration"	9.0
                     "damage force reduction" 0
@@ -6185,11 +6187,11 @@ WaveSchedule
         {
             Name "a1.2"
             Where spawnbot_behindrock_next2spawn_front
-            TotalCount 20
+            TotalCount 12
             MaxActive 6
             SpawnCount 3
             WaitBeforeStarting 2
-            WaitBetweenSpawns 8
+            WaitBetweenSpawns 9
             TotalCurrency 25
             Squad
             {
@@ -6244,11 +6246,11 @@ WaveSchedule
         {
             Name "a1.25"
             Where spawnbot_behindrock_next2spawn_front
-            TotalCount 20
+            TotalCount 12
             MaxActive 6
             SpawnCount 3
             WaitBeforeStarting 2
-            WaitBetweenSpawns 8
+            WaitBetweenSpawns 9
             TotalCurrency 25
             Squad
             {
@@ -6345,17 +6347,17 @@ WaveSchedule
         }
         WaveSpawn // Dummy
         {
-            WaitForAllDead "a1.2"
+            WaitForAllSpawned "a1.2"
             Name "done1"
         }
         WaveSpawn // Dummy
         {
-            WaitForAllDead "a1.25"
+            WaitForAllSpawned "a1.25"
             Name "done1"
         }
         WaveSpawn // Dummy
         {
-            WaitForAllDead "a1.3"
+            WaitForAllSpawned "a1.3"
             Name "done1"
         }
 
@@ -6443,7 +6445,7 @@ WaveSchedule
                 }
                 TFBot
                 {
-                    Template T_TFBot_Giant_Medic_Regen
+                    Template T_TFBot_Giant_Medic
                     Attributes DisableDodge
                     Skill Expert
                     CharacterAttributes
@@ -6504,12 +6506,12 @@ WaveSchedule
         {
             Name "a3.1"
             SpawnCount 8
-            TotalCount 32
+            TotalCount 28
             MaxActive 12
             TotalCurrency 100
             WaitForAllDead "a2.2" 
-            WaitBeforeStarting 24
-            WaitBetweenSpawns 9
+            WaitBeforeStarting 9
+            WaitBetweenSpawns 6
             where spawnbot_bigbuilding_redside
             TFBot
             {
@@ -6543,7 +6545,7 @@ WaveSchedule
             where spawnbot_bigbuilding_redside
             TotalCurrency 100
             WaitForAllDead "a2.2"
-            WaitBeforeStarting 13
+            WaitBeforeStarting 7
             Squad
             {
                 TFBot
@@ -6572,7 +6574,7 @@ WaveSchedule
                 }
                 TFBot
                 {
-                    Template T_TFBot_Giant_Medic_Regen
+                    Template T_TFBot_Giant_Medic
                     Attributes DisableDodge
                     CharacterAttributes
                     {
@@ -6642,7 +6644,7 @@ WaveSchedule
         WaveSpawn
         {
             Name "a3.tanksupport"
-            TotalCount 54
+            TotalCount 40
             SpawnCount 1
             MaxActive 12
             where spawnbot_hatchupper
@@ -6685,9 +6687,9 @@ WaveSchedule
         WaveSpawn
         {
             Name "a3.tanksupport2"
-            TotalCount 44
+            TotalCount 36
             SpawnCount 2
-            MaxActive 18
+            MaxActive 16
             where spawnbot_hatchlower
             WaitForAllDead "a3.2"
             WaitBeforeStarting 6.5
@@ -6715,6 +6717,42 @@ WaveSchedule
                 Action Mobber
             }
         }
+        WaveSpawn
+        {
+            Name "a3.tanksupportGiant"
+            TotalCount 4
+            MaxActive 2
+            SpawnCount 1
+            Where spawnbot_hatchupper
+            WaitForAllSpawned "a3.tank"
+            WaitBeforeStarting 4
+            WaitBetweenSpawns 18
+            TFBot
+            {
+                Template T_TFBot_Giant_Soldier_Spammer
+                Attributes AlwaysCrit
+                Attributes DisableDodge
+                CharacterAttributes
+                {
+                    "crit mod disabled" 0 
+                    "voice pitch scale" 0
+                    "damage force reduction" 0
+                    "crit mod disabled" 0 
+                    "airblast vulnerability multiplier" 0
+                    "force distribute currency on death" 1
+                }
+                AddCond
+                {
+                    Name "TF_COND_REPROGRAMMED" 
+                }
+                AddCond
+                {
+                    Name "TF_COND_INVULNERABLE" 
+                    Duration 1
+                }
+                Action Mobber
+            }
+        }
         WaveSpawn // Dummy
         {
             WaitForAllDead "a3.tank"
@@ -6722,12 +6760,17 @@ WaveSchedule
         }
         WaveSpawn // Dummy
         {
-            WaitForAllDead "a3.2"
+            WaitForAllDead "a3.tanksupportGiant"
             Name "done2"
         }
         WaveSpawn // Dummy
         {
-            WaitForAllDead "a3.1"
+            WaitForAllSpawned "a3.2"
+            Name "done2"
+        }
+        WaveSpawn // Dummy
+        {
+            WaitForAllSpawned "a3.1"
             Name "done2"
         }
 
