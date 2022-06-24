@@ -99,7 +99,8 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 	DisableSound "Announcer.MVM_Tank_Alert_Near_Hatch"
 	DisableSound "Announcer.MVM_Tank_Alert_Deploying"
 
-	// PrecacheSounds	
+	// PrecacheSounds
+	//PrecacheSound "sound/tokamak_spin.wav"
 	PrecacheSound "sound/tokamak_wind_up.wav"
 	PrecacheSound "sound/tokamak_wind_down.wav"
 	PrecacheSound "you_will_be_perfect.mp3"
@@ -517,6 +518,8 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			"custom item model" "models/workshop/weapons/c_models/c_tokamak/c_tomislav.mdl"
 			"custom wind up sound" "=60|tokamak_wind_up.wav"
             "custom wind down sound" "=60|tokamak_wind_down.wav"
+			//"custom minigun spin sound" "tokamak_spin.wav" // WHY?!?!?!
+			//"custom weapon fire sound" "tokamak_shoot.wav"
 			"fire rate penalty"	2.5
             "override projectile type"	13
             "energy weapon penetration"	0
@@ -528,6 +531,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			"crits_become_minicrits" 1
 			"mult dmg vs tanks" 2
 			"projectile penetration heavy" -6
+			//"minigun no spin sounds" 0
 			"custom kill icon" "firedeath"
 		}
 		"Bio Breaker" // APPROVED!
@@ -828,8 +832,9 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		Node "1292 1224 584"
 		Node "1136 732 584"
 		Node "1036 -120 648"
-		Node "1248 -2944 548"
-		Node "1784 -4200 448"
+		Node "1144 -1528 248"
+		Node "1248 -2944 248"
+		Node "1784 -4200 248"
 	}
 	ExtraTankPath // Blimp Path B
 	{
@@ -840,8 +845,9 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		Node "128 2264 592"
 		Node "1204 1104 584"
 		Node "1036 -120 648"
-		Node "1248 -2944 548"
-		Node "1784 -4200 448"
+		Node "1144 -1528 248"
+		Node "1248 -2944 248"
+		Node "1784 -4200 248"
 	}
 
     //PointTemplates and stuff
@@ -881,6 +887,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				//"OnMapSpawn" "spawnbot_giant_house,Kill,,0,-1"
 				//"OnMapSpawn" "spawnbot_mission_sentrybuster,Kill,,0,-1"  
 				
+				//"OnMapSpawn" "wave_start*,AddOutput,OnTrigger func_flagdetectionzone:Disable:0:-1,0,-1" //disables the hatch alarm on wave start
 				"OnMapSpawn" "wave_start_relay*,AddOutput,OnTrigger spawnbarrier*:Disable:0:-1"
 				"OnMapSpawn" "wave_finished_relay,AddOutput,OnTrigger spawnbarrier*:Enable:0:-1"
                 "OnMapSpawn" "wave_start_relay*,AddOutput,OnTrigger capturezone_blue:Disable:0:-1,0:-1"
@@ -1358,7 +1365,17 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				"spawnflags" "0"
 				"origin" "-2472 1488 -8"
 			}
-
+			prop_dynamic // PEBBELS!
+			{
+				"targetname" "PEBBELS!"
+				"angles" "0 270 -9"
+				"DisableBoneFollowers" "0"
+				"disableshadows" "1"
+				"solid" "0"
+				"model" "models/workshop/player/items/all_class/dec19_pebbles_the_penguin/dec19_pebbles_the_penguin_spy.mdl"
+				"modelscale" "1"
+				"origin" "3136 -4047 -112"
+			}
 			// Nuke Thingy // A+Drew liked it :)
 			ambient_generic // Alert sound
 			{
@@ -3517,7 +3534,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				ItemName "TF_WEAPON_SHOTGUN_HWG"
 				"fire rate bonus" 0.2
 				"bullets per shot bonus" 2
-				"damage penalty" 0.75
+				"damage penalty" 0.5
 				"faster reload rate" 0.6
                 "Spread Penalty" 1.2
                 "clip size bonus" 1.5
@@ -6712,7 +6729,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_directhit_lite //soldier_dh_nys
+					ClassIcon soldier_dh_nys
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -6730,7 +6747,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_directhit_lite //soldier_dh_nys
+					ClassIcon soldier_dh_nys
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -6748,7 +6765,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_directhit_lite //soldier_dh_nys
+					ClassIcon soldier_dh_nys
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -6766,7 +6783,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_directhit_lite //soldier_dh_nys
+					ClassIcon soldier_dh_nys
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -8879,7 +8896,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			TFBot
 			{
 				Class Soldier
-				ClassIcon soldier_directhit_lite //soldier_dh_nys
+				ClassIcon soldier_dh_nys
 				Name "Direct Hit Soldier"
 				Skill Expert
 				AimAt Feet [$SIGSEGV] // Vtubers simps be like
@@ -9051,11 +9068,19 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			Name music_thingy
 			WaitForAllSpawned h2_1
 			//WaitBeforeStarting 10
+			FirstSpawnMessage "{2EFF00}â™« Now Playing â™« {FFFFFF} : {5100ff} Portal 2 - You Will Be Perfect {FFFFFF}"  
 			FirstSpawnOutput
 			{
 				Target "start_music"
 				Action Trigger
 			}
+		}
+		WaveSpawn // music i guess
+		{
+			Name music_thingy
+			WaitForAllSpawned h2_1
+			WaitBeforeStarting 172
+			FirstSpawnMessage "{2EFF00}â™« Now Playing â™« {FFFFFF} : {5100ff} Portal 2 - The Part Where He Kills You {FFFFFF}"  
 		}
 		WaveSpawn // Hello I'm a titan :)
 		{
