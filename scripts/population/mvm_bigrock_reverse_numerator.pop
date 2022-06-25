@@ -31,6 +31,7 @@ WaveSchedule
 	BonusRatioHalf 2					[$SIGSEGV]
 	CustomNavFile mvm_bigrock_reverse	[$SIGSEGV]
 	DisplayRobotDeathNotice 1 			[$SIGSEGV]
+	EngineerPushRange 1				    [$SIGSEGV]
 	FixSetCustomModelInput 1			[$SIGSEGV]
 	HumansMustJoinTeam blue 			[$SIGSEGV]
 	ImprovedAirblast 1					[$SIGSEGV]
@@ -51,7 +52,7 @@ WaveSchedule
 	SentryBusterFriendlyFire 0 			[$SIGSEGV]
 	StandableHeads 1 					[$SIGSEGV]
 	SetCreditTeam 3 					[$SIGSEGV]
-	SandmanStun 1 						[$SIGSEGV] 
+	//SandmanStun 1 					[$SIGSEGV] 
 	SniperAllowHeadshots 1 				[$SIGSEGV]
 	TextPrintTime 0 					[$SIGSEGV] 
 	UpgradeStationKeepWeapons 1 		[$SIGSEGV]
@@ -65,7 +66,7 @@ WaveSchedule
 	
 	PrecacheModel "models/bots/boss_bot/tank_red_drill.mdl"				[$SIGSEGV]
 	PrecacheModel "models\props_frontline\tank_turret.mdl"				[$SIGSEGV]
-	PrecacheModel "models/buildables/skirmy1.mdl"						[$SIGSEGV]
+	PrecacheModel "models\buildables\skirmy1.mdl"						[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry1_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry2_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry3_uber.mdl"					[$SIGSEGV]
@@ -73,19 +74,8 @@ WaveSchedule
 	PrecacheModel "models\bots\demo\red_sentry_buster_v2.mdl"									[$SIGSEGV]
 	PrecacheModel "models\bots\soldier\goliatron2022_v3.mdl"									[$SIGSEGV]
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"										[$SIGSEGV]
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"										[$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl"											[$SIGSEGV]
+	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"										[$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"											[$SIGSEGV]
 	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"										[$SIGSEGV]
 	PrecacheModel "models\weapons\w_models\w_atomball.mdl"										[$SIGSEGV]
 	PrecacheModel "models\weapons\w_models\w_atomball_blu.mdl"									[$SIGSEGV]
@@ -917,6 +907,7 @@ WaveSchedule
 	{
 		Name "The B.A.S.E. Jumper (Soldier)"
 		OriginalItemName "The B.A.S.E. Jumper"
+		"parachute redeploy" 1
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -1168,7 +1159,7 @@ WaveSchedule
 		"grenade no bounce" 1
 		//"damage bonus" 1.25
 		"Set DamageType Ignite" 1
-		"dmg bonus vs buildings" 8
+		"dmg bonus vs buildings" 12
 		"mult dmg vs giants" 4
 		"mult dmg vs tanks" 8
 		"mult dmg vs npc" 8
@@ -1423,6 +1414,7 @@ WaveSchedule
 				"model" "models/bots/demo/bot_sentry_buster.mdl"
 				"disablebonefollowers" "1"
 				"startdisabled" "1"
+				"skin" 1
 				"onanimationbegun" "!parent,$getprop$m_flModelScale,fakebustermodel|$setprop$m_flModelScale|1,0,-1"
 			}
 			logic_relay
@@ -1700,6 +1692,21 @@ WaveSchedule
 		"custom weapon fire sound" "=80|denominator/de_shot1.wav"
 		"custom impact sound" "=65|denominator/hs.wav" 
 		"custom item model" "models\workshop\weapons\c_models\c_winger_distol\c_winger_distol.mdl"
+	}
+
+	CustomWeapon [$SIGSEGV]
+	{
+		Name "Rocket Sentry"
+		OriginalItemName "Upgradeable TF_WEAPON_WRENCH"
+		"special item description" "Enhanced rockets on level 3 sentry; weak lvl 1-2 sentry"
+		"paintkit_proto_def_index" 226
+        "set_item_texture_wear" 0
+		"rocket specialist" 4
+		"mult firerocket rate" 0.25
+		"engy sentry fire rate increased" 5
+		"engy sentry radius increased" 1.5
+		"rocket jump damage reduction" 0
+		"building color rgb" 255
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -2011,6 +2018,7 @@ WaveSchedule
 			Secondary "The Winger"
 			Secondary "Pretty Boy's Pocket Pistol"
 			Secondary "Budgie Booster"
+			Melee "Rocket Sentry"
 			Melee "PDQ"
 			//Melee "Golden Wrench"
 		}
@@ -4290,6 +4298,16 @@ WaveSchedule
 				"origin" "-1611.31 4748.55 169.35"
 				"targetname" "redwin_relay"
 				"OnTrigger" "bots_win_red,RoundWin,,0,-1"
+			}
+		}
+
+		LoadoutFixer
+		{
+			OnSpawnOutput
+			{
+				Target "!activator"
+				Action "$Regenerate"
+				Delay 0
 			}
 		}
 		
@@ -6904,6 +6922,11 @@ WaveSchedule
 
 	}
 	
+	PlayerSpawnTemplate
+	{
+		Name "LoadoutFixer"
+	}
+	
 	SpawnTemplate "suicidetank" [$SIGSEGV]
 
 	SpawnTemplate "boost" [$SIGSEGV]
@@ -7198,7 +7221,7 @@ WaveSchedule
 		{
 			Line "{DE4BDE}All giant player weapons are powered up!"
 			Line "{yellow}Your team must not exceed {green}15 minutes {yellow}per wave."
-			Line "{red}If your weapon is jammed, please touch the upgrade station."
+			//Line "{red}If your weapon is jammed, please touch the upgrade station."
 		}
 		
 		SpawnTemplate "BaseSentry1" [$SIGSEGV]
@@ -7562,10 +7585,12 @@ WaveSchedule
 				Attributes DisableDodge
 				Attributes IgnoreFlag
 				//Attributes AlwaysCrit
-				Item "The Concheror"
+				//Item "The Concheror"
 				BehaviorModifiers Push
 				CharacterAttributes
 				{
+					"damage causes airblast" 1
+					"apply look velocity on damage" 111
 					"damage force reduction" 0
 					"voice pitch scale" 0
 					"crit mod disabled" 0
@@ -7573,7 +7598,7 @@ WaveSchedule
 					"health from packs increased" 0.25
 					"force distribute currency on death" 1
 					"deploy time decreased" 0.25
-					"mod rage on hit bonus" 3
+					//"mod rage on hit bonus" 3
 				}
 				
 				//SIG
@@ -7581,7 +7606,7 @@ WaveSchedule
 				NoPushaway 1
 				AimAt Head [$SIGSEGV]
 				//Action Mobber [$SIGSEGV]
-				//UseMeleeThreatPrioritization 1 [$SIGSEGV]
+				UseMeleeThreatPrioritization 1 [$SIGSEGV]
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED

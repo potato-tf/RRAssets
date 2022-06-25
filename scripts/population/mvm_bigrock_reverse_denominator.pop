@@ -30,6 +30,8 @@ WaveSchedule
 	BonusRatioHalf 2					[$SIGSEGV]
 	CustomNavFile mvm_bigrock_reverse	[$SIGSEGV]
 	DisplayRobotDeathNotice 1 			[$SIGSEGV]
+	EngineerPushRange 1				    [$SIGSEGV]
+	FlagEscortCountOffset 20			[$SIGSEGV]
 	HumansMustJoinTeam blue 			[$SIGSEGV]
 	ImprovedAirblast 1					[$SIGSEGV]
 	NoSapUnownedBuildings 1 			[$SIGSEGV]
@@ -49,7 +51,7 @@ WaveSchedule
 	SentryBusterFriendlyFire 0 			[$SIGSEGV]
 	StandableHeads 1 					[$SIGSEGV]
 	SetCreditTeam 3 					[$SIGSEGV]
-	SandmanStun 1 						[$SIGSEGV] 
+	//SandmanStun 1 					[$SIGSEGV] 
 	SniperAllowHeadshots 1 				[$SIGSEGV]
 	TextPrintTime 0 					[$SIGSEGV]
 	UpgradeStationKeepWeapons 1 		[$SIGSEGV]
@@ -70,19 +72,8 @@ WaveSchedule
 	
 	PrecacheModel "models\bots\demo\red_sentry_buster_v2.mdl"										[$SIGSEGV]
 	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"										[$SIGSEGV]
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"										[$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl"
-	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl"											[$SIGSEGV]
+	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"										[$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"											[$SIGSEGV]
 	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"										[$SIGSEGV]
 	PrecacheModel "models\weapons\c_models\c_chains_of_command\c_chains_of_command.mdl"			[$SIGSEGV]
 	PrecacheModel "models\workshop\weapons\c_models\c_winger_distol\c_winger_distol.mdl"		[$SIGSEGV]
@@ -765,12 +756,14 @@ WaveSchedule
 		Name "W+M1"
 		OriginalItemName "Upgradeable TF_WEAPON_FLAMETHROWER"
 		"special item description" "+30% damage bonus"
+		"special item description 2" "NOTE: You cannot carry the bomb with this item"
 		"paintkit_proto_def_index" 217
         "set_item_texture_wear" 0
 		"max health additive bonus" 125
 		"damage bonus hidden" 1.3
 		"firing forward pull" 520
 		"airblast dashes" 1
+		"cannot pick up intelligence" 1
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -784,6 +777,21 @@ WaveSchedule
 		"mult teleporter recharge rate" 0.25
 		"custom item model" "models/weapons/c_models/c_pickaxe/c_pickaxe.mdl"
 		"custom kill icon" "pickaxe"
+	}
+
+	CustomWeapon [$SIGSEGV]
+	{
+		Name "Rocket Sentry"
+		OriginalItemName "Upgradeable TF_WEAPON_WRENCH"
+		"special item description" "Enhanced rockets on level 3 sentry; weak lvl 1-2 sentry"
+		"paintkit_proto_def_index" 226
+        "set_item_texture_wear" 0
+		"rocket specialist" 4
+		"mult firerocket rate" 0.25
+		"engy sentry fire rate increased" 5
+		"engy sentry radius increased" 1.5
+		"rocket jump damage reduction" 0
+		"building color rgb" 255
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -862,6 +870,14 @@ WaveSchedule
 		"custom item model" "models/player/items/demo/demo_parrot.mdl"
 	}
 
+	CustomWeapon [$SIGSEGV]
+	{
+		Name "Bong! Atomic Punch"
+		OriginalItemName "Festive Bonk 2014"
+		"special item description" "Battalion's Backup effect"
+		"effect cond override" 26
+	}
+
 	ItemReplacement [$SIGSEGV]
 	{
 		"Robo Black Box"
@@ -875,6 +891,7 @@ WaveSchedule
 		Scout
 		{
 			Secondary "Dustbowl Eagle"
+			Secondary "Bong! Atomic Punch"
 			Secondary "The Mantreads"
 			//Melee "Golden Frying Pan"
 		}
@@ -913,6 +930,7 @@ WaveSchedule
 			Secondary "The Winger"
 			Secondary "Pretty Boy's Pocket Pistol"
 			Secondary "Budgie Booster"
+			Melee "Rocket Sentry"
 			Melee "PDQ"
 			//Melee "Golden Frying Pan"
 		}
@@ -1002,11 +1020,11 @@ WaveSchedule
 		"cannot be upgraded" 1
 	}
 
-	//ItemAttributes [$SIGSEGV] // too powerful for reverse
-	//{
-	//	ItemName "The Ubersaw"
-	//	"add uber charge on hit" 0.15
-	//}
+	ItemAttributes [$SIGSEGV] // rebuffed because valve is stupid
+	{
+		ItemName "The B.A.S.E. Jumper"
+		"parachute redeploy" 1
+	}
 		
 	ItemAttributes [$SIGSEGV] // make redtape a stock sapper to stop killing uber sentry
 	{
@@ -4320,7 +4338,7 @@ WaveSchedule
 			Where spawnbot
 			TotalCount 4
 			MaxActive 4
-			SpawnCount 4
+			SpawnCount 1
 			TotalCurrency 0
 			WaitForAllDead "part02"
 			Support 1
@@ -5826,7 +5844,7 @@ WaveSchedule
 				ItemAttributes
 				{
 					ItemName "The Huo Long Heatmaker"
-					"damage bonus" 1.4
+					"damage bonus" 1.2
 					"projectile penetration heavy" 3
 				}
 				CharacterAttributes
@@ -5880,7 +5898,7 @@ WaveSchedule
 				ItemAttributes
 				{
 					ItemName "The Huo Long Heatmaker"
-					"damage bonus" 1.4
+					"damage bonus" 1.2
 					"projectile penetration heavy" 3
 				}
 				CharacterAttributes
@@ -5931,7 +5949,7 @@ WaveSchedule
 				ItemAttributes
 				{
 					ItemName "The Huo Long Heatmaker"
-					"damage bonus" 1.4
+					"damage bonus" 1.2
 					"projectile penetration heavy" 3
 				}
 				CharacterAttributes
@@ -6300,7 +6318,7 @@ WaveSchedule
 				}
 				CharacterAttributes
 				{								
-					"no_jump" 1
+					//"no_jump" 1
 					"health from packs increased" 0.25
 				}
 			}
