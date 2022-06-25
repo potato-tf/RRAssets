@@ -588,7 +588,7 @@ WaveSchedule
     {
         ClassName "tf_weapon_cannon"
         "grenade explode on impact" 1
-        "fuse bonus" 0.75
+        "fuse bonus" 0.6
         "grenade launcher mortar mode" 0
         "faster reload rate" 2.5
         "fire rate bonus" 2
@@ -596,11 +596,12 @@ WaveSchedule
         "custom impact sound" "ambient\explosions\explode_4.wav"
         "Projectile speed increased" 0.8
         "projectile spread angle penalty" 5
-        "damage bonus" 7
+        "damage bonus" 2.5
         "slow enemy on hit" 1
-
+        "mult dmg vs tanks" 2
+        "mult dmg vs giants" 2.5
         "damage causes airblast" 1
-        "blast radius increased" 4
+        "blast radius increased" 2.5
         "use large smoke explosion" 1
     }
     ItemAttributes  
