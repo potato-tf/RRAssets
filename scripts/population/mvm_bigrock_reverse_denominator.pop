@@ -1190,6 +1190,7 @@ WaveSchedule
 				"targetname" "bomb_antigrief_on"
 				"ontrigger" "hudhintloop,trigger,,0,-1"
 				"ontrigger" "bombpickup_relay,enable,,0,-1"
+				"ontrigger" "antistupid,enable,,0,-1"
 				"ontrigger" "bombpickup_relay,trigger,,0.01,-1"
 			}
 			logic_relay
@@ -1197,6 +1198,7 @@ WaveSchedule
 				"targetname" "bomb_antigrief_off"
 				"ontrigger" "bombpickup_relay,disable,,0,-1"
 				"ontrigger" "bombpickup_relay,cancelpending,,0,-1"
+				"ontrigger" "antistupid,disable,,0,-1"
 				"ontrigger" "bombpickup,disable,,0,-1"
 			}
 			logic_relay
@@ -1493,6 +1495,21 @@ WaveSchedule
 				"AllowTeleporters" "0"
 				"AllowSentry" "0"
 				"AllowDispenser" "0"
+            }
+		}
+
+		Blocker3
+		{
+			NoFixup 1
+			trigger_multiple
+            {
+				"targetname" "antistupid"
+                "origin" "-64 -1984 566"
+				"mins" "-120 -120 -114"
+				"maxs" "120 120 114"
+				"startdisabled" "1"
+				"spawnflags" "1"
+				"onstarttouch" "!activator,$displaytextcenter,Only computer teammates can deploy the bomb! Press L to drop,0,-1"
             }
 		}
 
@@ -2865,6 +2882,8 @@ WaveSchedule
 	SpawnTemplate "Blocker1" [$SIGSEGV]
 	
 	SpawnTemplate "Blocker2" [$SIGSEGV]
+
+	SpawnTemplate "Blocker3" [$SIGSEGV]
 
 	SpawnTemplate "tutorial" [$SIGSEGV]
 
