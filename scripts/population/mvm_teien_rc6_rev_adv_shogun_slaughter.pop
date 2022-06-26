@@ -121,7 +121,7 @@ teien_is_very_cringe
             training_annotation
             {
                 "targetname" "hint_cap"
-                "display_text" "The hatch can be captured!"
+                "display_text" "The hatch shield has been disabled!"
                 "lifetime" "5"
                 "origin" "-704 2112 161"
             }
