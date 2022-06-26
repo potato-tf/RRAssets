@@ -24,7 +24,6 @@ teien_is_very_cringe
     NoBluHumanFootsteps 1
     SetCreditTeam 3	 	
 	RobotLimit 26  
-    //CustomUpgradesFile "mvm_upgrades_reverse_miko.txt" 
 	FlagCarrierMovementPenalty 1  
 	SniperAllowHeadshots 1  //sniper and amby don't work without this, use AimAt Body   if you don't want your snipers headshotting
 	NoRomevisionCosmetics 1   //romevision is ugly, just like your mom
@@ -78,26 +77,23 @@ teien_is_very_cringe
 		
 				"OnMapSpawn" "wave_start*,AddOutput,OnTrigger spawnbarrier*:Disable:0:-1,0,-1"
 				"OnMapSpawn" "wave_finished_relay*,AddOutput,OnTrigger spawnbarrier*:Enable:0:-1,0,-1"
-                "OnMapSpawn" "move_rope,Kill,,0,-1"
-				"OnMapSpawn" "keyframe_rope,Kill,,0,-1"
-                "OnMapSpawn" "spawnbot,Kill,,0,-1"
                 "OnMapSpawn" "wave_start*,AddOutput,OnTrigger func_capturezone:Disable:0:-1,0,-1"
-                "OnMapSpawn" "light_spot,Kill,,0,-1"
-                "OnMapSpawn" "spawnbot_mission*,Kill,,0,-1"
-                "OnMapSpawn" "bot_hint_engineer_nest,Kill,,0,-1"
-                "OnMapSpawn" "bot_hint_sentrygun,Kill,,0,-1"
-                "OnMapSpawn" "bot_hint_teleporter_exit,Kill,,0,-1"
-                "OnMapSpawn" "bombpath_arrow*,Kill,,0,-1"
 		
 			}
-			logic_relay //trigger this to kill all players and buildings
-			{
-				"targetname" "kill_relay"
-				"OnTrigger" "obj_dispenser,RemoveHealth,5000,0,-1"
-				"OnTrigger" "obj_sentrygun,RemoveHealth,5000,0,-1"
-				"OnTrigger" "obj_teleporter,RemoveHealth,5000,0,-1"
-				"OnTrigger" "player,SetHealth,-10000,0,-1"
-			}
+            logic_relay
+            {
+                "targetname" "mainlogic"
+                "OnSpawn" "light_spot,Kill,,0,-1"
+                "OnSpawn" "spawnbot_mission*,Kill,,0,-1"
+                "OnSpawn" "bot_hint_engineer_nest,Kill,,0,-1"
+                "OnSpawn" "bot_hint_sentrygun,Kill,,0,-1"
+                "OnSpawn" "bot_hint_teleporter_exit,Kill,,0,-1"
+                "OnSpawn" "bombpath_arrow*,Kill,,0,-1"
+                "OnSpawn" "move_rope,Kill,,0,-1"
+				"OnSpawn" "keyframe_rope,Kill,,0,-1"
+                "OnSpawn" "spawnbot,Kill,,0,-1"
+                "OnSpawn" "train_start,Kill,,0,-1"
+            }
 			logic_relay //trigger this to lose
 			{
 				"origin" "0 0 0"
@@ -105,12 +101,6 @@ teien_is_very_cringe
 				"OnTrigger" "bots_win_red,RoundWin,,0,-1"
 				"OnTrigger" "pit_explosion_wav,PlaySound,,0,-1" //map dependent
 			}	
-			logic_relay
-			{
-				"targetname" "red_tank_relay" //switches tank to red team
-				"OnTrigger" "tankboss,Setteam,2,0.25,-1"
-				"OnTrigger" "tankboss,AddCaptureDestroyPostfix,destroy_mvm_cactus_valley3,0,-1" //cool explodey effect, doesn't work :(
-			}
 			game_round_win //do not interact with this
 			{
 				"origin" "0 0 0"
@@ -120,6 +110,36 @@ teien_is_very_cringe
 				"force_map_reset" "1"
 				"classname" "game_round_win"
 			}
+            prop_dynamic
+            {
+                "targetname" "hatch_bubble"
+                "model" "models/props_mvm/hatch_shield.mdl"
+                "disableshadows" "1"
+                "solid" "0"
+                "origin" "-704 2112 161"
+            }
+            training_annotation
+            {
+                "targetname" "hint_cap"
+                "display_text" "The hatch can be captured!"
+                "lifetime" "5"
+                "origin" "-704 2112 161"
+            }
+            func_forcefield
+            {
+                "targetname" "hatch_block"
+                "origin" "-704 2112 161"
+                "mins" "-170 -150 0"
+				"maxs" "170 150 150"
+                "TeamNum" "2"
+            }
+            logic_relay
+            {
+                "targetname" "guard_stab"
+                "OnTrigger" "hatch_bubble,Kill,,5,-1"
+                "OnTrigger" "hatch_block,Kill,,5,-1"
+                "OnTrigger" "hint_cap,Show,,5,-1"
+            }
 		}
         station
 		{
@@ -229,8 +249,8 @@ teien_is_very_cringe
                 "rendermode" "10"
                 "TeamNum" "2"
                 "solid" "6"
-                "mins" "-224 -384 -160"
-                "maxs" "224 384 160"
+                "mins" "-324 -484 -160"
+                "maxs" "324 484 160"
 				"StartDisabled" "0"
             }
             func_forcefield
@@ -243,8 +263,8 @@ teien_is_very_cringe
                 "rendermode" "10"
                 "TeamNum" "2"
                 "solid" "6"
-                "mins" "-224 -384 -160"
-                "maxs" "224 384 160"
+                "mins" "-324 -484 -160"
+                "maxs" "324 484 160"
 				"StartDisabled" "0"
             }
         }
@@ -543,7 +563,7 @@ teien_is_very_cringe
 				"point_group" "0"
 				"point_index" "3"							//if you plan on having multiple control points at once, you must give each one a unique "point_index", spawning more than 8 control points on the map will crash the server
 				"point_printname" "hatch"			//this is the name of the control point that will show up in the kill feed
-				"point_start_locked" "0"
+				"point_start_locked" "1"
 				"point_warn_on_cap" "0"
 				"point_warn_sound" "ControlPoint.CaptureWarn"
 				"random_owner_on_restart" "0"
@@ -613,6 +633,11 @@ teien_is_very_cringe
 				Target cap_master 
 				Action RoundSpawn
 			}
+            logic_relay
+            {
+                "targetname" "unlock_last"
+                "OnTrigger" "cap_point4,SetLocked,0,0,-1"
+            }
 		}
         spawn_indicator
         {
@@ -760,10 +785,10 @@ teien_is_very_cringe
                 //"pitch" "-90"
                 "spawnflags" "0"
             }
-			logic_auto
+			logic_relay
 			{
 				"targetname" "let_there_be_light"
-				"OnMapSpawn" "light_cabinet,LightOn,,0,-1"
+				"OnSpawn" "light_cabinet,LightOn,,0,-1"
 			}
 		}
         no_stuck
@@ -1244,7 +1269,7 @@ teien_is_very_cringe
 			Name "Phlogistinator Pyro"
 			Skill Expert
 			Attributes SpawnWithFullCharge
-			ClassIcon pyro_phlog_ver2
+			ClassIcon pyro_phlog
 			ItemAttributes
 			{
 				ItemName "The Phlogistinator"
@@ -1312,7 +1337,7 @@ teien_is_very_cringe
             CharacterAttributes
             {
                 "move speed bonus" 0.5
-                "airblast vulnerability multiplier" 0.01
+                "damage force reduction" 0
             }
         }
         T_TFBot_Red_Burst_Stun
@@ -1678,6 +1703,7 @@ teien_is_very_cringe
             Line "{blue}Welcome to Reverse MvM!"
             Line "{blue}In this mission, your objective will be to capture all the points in time"
             Line "{blue}You will have 8 minutes to beat each wave, you will automatically lose at the end of the timer"
+            Line "{blue}Some bots power the hatch shield, they glow and will unlock the hatch when all of them are killed!"
             Line "------------------------------------------------------------------"
             Line "{red}INFO:"
             //Line "{red}-Engineer Bots will often spawn and build teleporters for you, protect them if they need to!"
@@ -1713,7 +1739,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -1846,7 +1872,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -1873,7 +1899,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -1896,7 +1922,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Sniper_Rapidfire
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -1924,7 +1950,7 @@ teien_is_very_cringe
                 CharacterAttributes
                 {
                     "move speed bonus" 0.00001
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "no_jump" 1
                     "voice pitch scale" 0
                 }
@@ -1953,7 +1979,7 @@ teien_is_very_cringe
                 CharacterAttributes
                 {
                     "move speed bonus" 0.00001
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "no_jump" 1
                     "voice pitch scale" 0
                 }
@@ -1982,7 +2008,7 @@ teien_is_very_cringe
                 CharacterAttributes
                 {
                     "move speed bonus" 0.00001
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "no_jump" 1
                     "voice pitch scale" 0
                 }
@@ -2011,7 +2037,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2060,7 +2086,7 @@ teien_is_very_cringe
 				}
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2083,7 +2109,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Sniper_Rapidfire
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2111,7 +2137,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2145,7 +2171,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2193,6 +2219,7 @@ teien_is_very_cringe
                 TFBot
                 { 
                     Template T_TFBot_Red_Giant_Sniper_Rapidfire
+                    AlwaysGlow 1
                     InterruptAction   
                     {
                         Delay 1 //Time before the first fire input starts (Default: 10)
@@ -2201,7 +2228,7 @@ teien_is_very_cringe
                     }
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                         
                     }
@@ -2255,20 +2282,21 @@ teien_is_very_cringe
             WaitBetweenSpawns 14
         
             TotalCurrency 100
-            //FirstSpawnOutput
-            //{
-            //    Target train_enable
-            //    Action Trigger
-            //}
+            DoneOutput
+            {
+                Target guard_stab
+                Action Trigger
+            }
         
             Squad
             {    
                 TFBot
                 { 
                     Template T_TFBot_Red_Giant_Sniper_Rapidfire
+                    AlwaysGlow 1
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -2350,9 +2378,8 @@ teien_is_very_cringe
             { 
                 Template T_TFBot_Red_Soldier
                 Attributes DisableDodge
-                ItemAttributes
+                CharacterAttributes
                 {
-                    ItemName TF_WEAPON_ROCKETLAUNCHER
                     "crit mod disabled" 0
                 }
             }
@@ -2386,7 +2413,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2414,7 +2441,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2563,7 +2590,7 @@ teien_is_very_cringe
                 {
                     "move speed bonus" 0.00001
                     "no_jump" 1
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2592,7 +2619,7 @@ teien_is_very_cringe
                 {
                     "move speed bonus" 0.00001
                     "no_jump" 1
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2621,7 +2648,7 @@ teien_is_very_cringe
                 {
                     "move speed bonus" 0.00001
                     "no_jump" 1
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2741,7 +2768,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2801,7 +2828,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2859,7 +2886,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2887,7 +2914,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -2939,7 +2966,7 @@ teien_is_very_cringe
                     Template T_TFBot_Giant_Red_Homing_Huntsman
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -2960,6 +2987,7 @@ teien_is_very_cringe
             TFBot
             { 
                 Template T_TFBot_Red_Giant_Demo_Burst
+                AlwaysGlow 1
                 InterruptAction   
                 {
                     Delay 1 //Time before the first fire input starts (Default: 10)
@@ -2973,7 +3001,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
             }
         }
@@ -2989,13 +3017,19 @@ teien_is_very_cringe
             WaitBetweenSpawns 16
         
             TotalCurrency 50
+            DoneOutput
+            {
+                Target guard_stab
+                Action Trigger
+            }
         
             TFBot
             { 
                 Template T_TFBot_Red_Giant_Demo_Burst
+                AlwaysGlow 1
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
                 ItemAttributes
                 {
@@ -3049,7 +3083,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Boxing_Heavy
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 ClassIcon Heavy_champ_red
@@ -3078,7 +3112,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Boxing_Heavy
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 ClassIcon Heavy_champ_red
@@ -3139,6 +3173,10 @@ teien_is_very_cringe
                     Repeats 0 //How many times should bot use the fire input in total (Default: 0 - Infinite)
                     Target "cap_base4"
                 }
+                CharacterAttributes
+                {
+                    "crit mod disabled" 0
+                }
                 Attributes DisableDodge
                 //Action  Mobber
                 Skill Expert
@@ -3191,7 +3229,7 @@ teien_is_very_cringe
                     "move speed bonus" 0.00001
                     "voice pitch scale" 0
                     "no_jump" 1
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
             }
         }
@@ -3220,7 +3258,7 @@ teien_is_very_cringe
                     "move speed bonus" 0.00001
                     "voice pitch scale" 0
                     "no_jump" 1
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
             }
         }
@@ -3249,7 +3287,7 @@ teien_is_very_cringe
                     "move speed bonus" 0.00001
                     "voice pitch scale" 0
                     "no_jump" 1
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
             }
         }
@@ -3275,7 +3313,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -3302,7 +3340,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -3405,7 +3443,7 @@ teien_is_very_cringe
                     Name "Giant Heater Heavy"
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -3504,7 +3542,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Heavyweapons_Heater
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                     ItemAttributes
@@ -3564,7 +3602,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Heavyweapons_Heater
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                     ItemAttributes
@@ -3670,6 +3708,7 @@ teien_is_very_cringe
             TFBot
             {
                 Template T_TFBot_Red_Giant_Demo_RapidFire
+                AlwaysGlow 1
                 ItemAttributes
                 {
                     ItemName TF_WEAPON_GRENADELAUNCHER
@@ -3677,7 +3716,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 InterruptAction   
@@ -3699,17 +3738,18 @@ teien_is_very_cringe
             SpawnCount 1
             WaitBeforeStarting 21
             WaitBetweenSpawns 14
-            //FirstSpawnOutput
-            //{
-            //    Target train_enable
-            //    Action Trigger
-            //}
+            DoneOutput
+            {
+                Target guard_stab
+                Action Trigger
+            }
         
             TotalCurrency 75
         
             TFBot
             {
                 Template T_TFBot_Red_Giant_Demo_RapidFire
+                AlwaysGlow 1
                 ItemAttributes
                 {
                     ItemName TF_WEAPON_GRENADELAUNCHER
@@ -3717,7 +3757,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 //Attributes AlwaysCrit
@@ -3924,7 +3964,7 @@ teien_is_very_cringe
                     "move speed bonus" 0.00001
                     "no_jump" 1
                     "voice pitch scale" 0
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
             }
         }
@@ -3949,7 +3989,7 @@ teien_is_very_cringe
                     "move speed bonus" 0.00001
                     "no_jump" 1
                     "voice pitch scale" 0
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
             }
         }
@@ -3974,7 +4014,7 @@ teien_is_very_cringe
                     "move speed bonus" 0.00001
                     "no_jump" 1
                     "voice pitch scale" 0
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
             }
         }
@@ -3996,7 +4036,7 @@ teien_is_very_cringe
                 Attributes AlwaysCrit
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -4019,7 +4059,7 @@ teien_is_very_cringe
                 Attributes AlwaysCrit
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -4041,6 +4081,10 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Scout_Shortstop
                 Attributes DisableDodge
                 AimTrackingInterval 1
+                CharacterAttributes
+                {
+                    "crit mod disabled" 0
+                }
             }
         }
         WaveSpawn
@@ -4061,8 +4105,9 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Heavyweapons_Deflector
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
+                    "crit mod disabled" 0
                 }
             }
         }
@@ -4084,8 +4129,9 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Heavyweapons_Deflector
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
+                    "crit mod disabled" 0
                 }
                 InterruptAction   
                 {
@@ -4113,7 +4159,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Heavyweapons_Deflector
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -4244,9 +4290,10 @@ teien_is_very_cringe
             TFBot
             {
                 Template T_TFBot_Red_Burst_Stun
+                AlwaysGlow 1
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 Attributes AlwaysCrit
@@ -4271,18 +4318,19 @@ teien_is_very_cringe
             WaitBetweenSpawns 12
         
             TotalCurrency 50
-            //FirstSpawnOutput
-            //{
-            //    Target train_enable
-            //    Action Trigger
-            //}
+            DoneOutput
+            {
+                Target guard_stab
+                Action Trigger
+            }
             TFBot
             {
                 Template T_TFBot_Red_Burst_Stun
+                AlwaysGlow 1
                 Attributes AlwaysCrit
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -4346,7 +4394,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Heavyweapons_Shotgun
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 Attributes AlwaysCrit
@@ -4376,7 +4424,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Giant_Heavyweapons_Shotgun
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 Attributes AlwaysCrit
@@ -4422,9 +4470,8 @@ teien_is_very_cringe
             { 
                 Template T_TFBot_Red_Soldier
                 Attributes DisableDodge
-                ItemAttributes
+                CharacterAttributes
                 {
-                    ItemName TF_WEAPON_ROCKETLAUNCHER
                     "crit mod disabled" 0
                 }
             }
@@ -4526,7 +4573,7 @@ teien_is_very_cringe
 				}
 				CharacterAttributes
 				{
-			    	"airblast vulnerability multiplier" 0.01
+			    	"damage force reduction" 0
                     "move speed bonus" 0.00001
                     "no_jump" 1		
                     "voice pitch scale" 0
@@ -4560,7 +4607,7 @@ teien_is_very_cringe
 				}
 				CharacterAttributes
 				{
-			    	"airblast vulnerability multiplier" 0.01
+			    	"damage force reduction" 0
                     "move speed bonus" 0.00001
                     "no_jump" 1	
                     "voice pitch scale" 0	
@@ -4595,7 +4642,7 @@ teien_is_very_cringe
 				}
 				CharacterAttributes
 				{
-			    	"airblast vulnerability multiplier" 0.01
+			    	"damage force reduction" 0
                     "move speed bonus" 0.00001
                     "no_jump" 1	
                     "voice pitch scale" 0	
@@ -4638,7 +4685,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                     "move speed bonus"	0.5 
                     "health from packs decreased" 0.01 
@@ -4684,7 +4731,7 @@ teien_is_very_cringe
                 }
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                     "move speed bonus"	0.5 
                     "health from packs decreased" 0.01 
@@ -4713,7 +4760,7 @@ teien_is_very_cringe
                 Attributes AlwaysCrit
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -4782,7 +4829,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Backup_Spammer
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -4805,7 +4852,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Backup_Spammer
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
                 InterruptAction   
@@ -4834,7 +4881,7 @@ teien_is_very_cringe
                 Template T_TFBot_Red_Backup_Spammer
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                     "voice pitch scale" 0
                 }
             }
@@ -4858,7 +4905,7 @@ teien_is_very_cringe
                     Attributes DisableDodge
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -4927,9 +4974,10 @@ teien_is_very_cringe
                 TFBot 
                 {
                     Template T_TFBot_Red_Giant_Soldier_Spammer_Conch
+                    AlwaysGlow 1
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                     InterruptAction   
@@ -4944,7 +4992,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Giant_Medic
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -4962,15 +5010,21 @@ teien_is_very_cringe
             WaitBetweenSpawns 23
         
             TotalCurrency 100
+            DoneOutput
+            {
+                Target guard_stab
+                Action Trigger
+            }
         
             Squad
             {
                 TFBot 
                 {
                     Template T_TFBot_Red_Giant_Soldier_Spammer_Conch
+                    AlwaysGlow 1
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -4979,7 +5033,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Giant_Medic
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -5043,7 +5097,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Giant_Sniper_Sydney
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -5068,7 +5122,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Giant_Soldier_Nuke
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                     Attributes AlwaysCrit
@@ -5078,7 +5132,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Giant_Medic
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -5087,7 +5141,7 @@ teien_is_very_cringe
                     Template T_TFBot_Red_Giant_Medic
                     CharacterAttributes
                     {
-                        "airblast vulnerability multiplier" 0.01
+                        "damage force reduction" 0
                         "voice pitch scale" 0
                     }
                 }
@@ -5193,7 +5247,7 @@ teien_is_very_cringe
                 Attributes AlwaysCrit
                 CharacterAttributes
                 {
-                    "airblast vulnerability multiplier" 0.01
+                    "damage force reduction" 0
                 }
                 InterruptAction   
                 {
