@@ -4435,6 +4435,8 @@ WaveSchedule
                 //"custom item model" "models\weapons\c_models\c_argent_shield\c_argent_shield.mdl"
                 "charge time increased" 3
                 "always crit" 1
+                "attack not cancel charge" 1
+                "charge recharge rate increased" 2
             }
             ItemAttributes
             {
@@ -4528,6 +4530,7 @@ WaveSchedule
                 "charge time decreased" 3
                 "attack not cancel charge" 1
                 "always crit" 1
+                "charge recharge rate increased" 2
             }
             CharacterAttributes
             {
