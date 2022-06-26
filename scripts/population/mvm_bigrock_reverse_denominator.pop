@@ -791,6 +791,7 @@ WaveSchedule
 		"engy sentry fire rate increased" 5
 		"engy sentry radius increased" 1.5
 		"rocket jump damage reduction" 0
+		//"disable wrangler shield" 1
 		"building color rgb" 255
 	}
 
@@ -876,6 +877,7 @@ WaveSchedule
 		OriginalItemName "Festive Bonk 2014"
 		"special item description" "Battalion's Backup effect"
 		"effect cond override" 26
+		"provide on active" 1
 	}
 
 	ItemReplacement [$SIGSEGV]
