@@ -6729,7 +6729,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_dh_nys
+					ClassIcon soldier_directhit_lite
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -6747,7 +6747,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_dh_nys
+					ClassIcon soldier_directhit_lite
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -6765,7 +6765,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_dh_nys
+					ClassIcon soldier_directhit_lite
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -6783,7 +6783,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				TFBot
 				{
 					Class Soldier
-					ClassIcon soldier_dh_nys
+					ClassIcon soldier_directhit_lite
 					Name "Direct Hit Soldier"
 					Skill Hard
 					Item "Tyrantium Helmet"
@@ -8896,7 +8896,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			TFBot
 			{
 				Class Soldier
-				ClassIcon soldier_dh_nys
+				ClassIcon soldier_directhit_lite
 				Name "Direct Hit Soldier"
 				Skill Expert
 				AimAt Feet [$SIGSEGV] // Vtubers simps be like
