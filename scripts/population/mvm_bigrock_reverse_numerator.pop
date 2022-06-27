@@ -66,7 +66,7 @@ WaveSchedule
 	
 	PrecacheModel "models/bots/boss_bot/tank_red_drill.mdl"				[$SIGSEGV]
 	PrecacheModel "models\props_frontline\tank_turret.mdl"				[$SIGSEGV]
-	PrecacheModel "models/buildables/skirmy1.mdl"						[$SIGSEGV]
+	PrecacheModel "models\buildables\skirmy1.mdl"						[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry1_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry2_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry3_uber.mdl"					[$SIGSEGV]
@@ -1706,6 +1706,7 @@ WaveSchedule
 		"engy sentry fire rate increased" 5
 		"engy sentry radius increased" 1.5
 		"rocket jump damage reduction" 0
+		//"disable wrangler shield" 1
 		"building color rgb" 255
 	}
 
@@ -3378,6 +3379,12 @@ WaveSchedule
 				"OnTrigger" "drill_end2,PlaySound,,14,-1"
 				"OnTrigger" "drill_end22,PlaySound,,14,-1"
 				"OnTrigger" "shakeit,StartShake,,14,-1"
+			}
+			func_respawnflag
+			{
+				"origin" "1688 5248 -200"
+				"mins" "-615 -2624 -488"
+				"maxs" "615 2624 488"
 			}
 		}
 
@@ -12231,7 +12238,7 @@ WaveSchedule
 			TotalCurrency 0
 			WaitForAllDead "endboss"
 			WaitBeforeStarting 15
-			WaitBetweenSpawns 99999
+			//WaitBetweenSpawns 99999
 			Support 1
 
 			RandomChoice

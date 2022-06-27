@@ -1151,6 +1151,12 @@ WaveSchedule
 				"targetname" "hudhintloop2"
 				"OnTrigger" "hudhintloop,Trigger,,0,-1"
 			}
+			func_respawnflag
+			{
+				"origin" "1688 5248 -200"
+				"mins" "-615 -2624 -488"
+				"maxs" "615 2624 488"
+			}
 		}
 
 		enemyspawner
