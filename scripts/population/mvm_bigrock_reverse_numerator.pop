@@ -66,7 +66,7 @@ WaveSchedule
 	
 	PrecacheModel "models/bots/boss_bot/tank_red_drill.mdl"				[$SIGSEGV]
 	PrecacheModel "models\props_frontline\tank_turret.mdl"				[$SIGSEGV]
-	PrecacheModel "models/buildables/skirmy1.mdl"						[$SIGSEGV]
+	PrecacheModel "models\buildables\skirmy1.mdl"						[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry1_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry2_uber.mdl"					[$SIGSEGV]
 	PrecacheModel "models\buildables\sentry3_uber.mdl"					[$SIGSEGV]
@@ -886,7 +886,7 @@ WaveSchedule
 		"projectile spread angle penalty" 4
 		"heal on hit for rapidfire" 150
 		"self dmg push force increased" 8
-		"no_jump" 1
+		//"no_jump" 1
 	}
 
 	CustomWeapon [$SIGSEGV] // Giant Black Box
@@ -900,7 +900,7 @@ WaveSchedule
 		"projectile spread angle penalty" 4
 		"heal on hit for rapidfire" 150
 		"self dmg push force increased" 8
-		"no_jump" 1
+		//"no_jump" 1
 	}
 
 	CustomWeapon [$SIGSEGV] // Parachute
@@ -13517,6 +13517,7 @@ WaveSchedule
 					"cannot be sapped" 1
 					"health regen" 9999
 					"parachute attribute" 1
+					"parachute redeploy" 1
 					"increased air control" 0
 					"dmg taken from fire increased" 1.5
 				}
