@@ -181,7 +181,7 @@ WaveSchedule
 
     DisallowUpgrade	"generate rage on heal" // fuck this thing too strong
     //DisallowUpgrade	"rocket specialist" 
-    DisallowUpgrade "falling_impact_radius_stun"
+    //DisallowUpgrade "falling_impact_radius_stun"
    // DisallowUpgrade "uber duration bonus"
     //DisallowUpgrade    "maxammo primary increased"     [$SIGSEGV] //players have infinite ammo
     //DisallowUpgrade    "maxammo secondary increased"     [$SIGSEGV] //players have infinite ammo
