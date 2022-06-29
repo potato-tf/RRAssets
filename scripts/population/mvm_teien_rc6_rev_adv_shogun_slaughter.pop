@@ -130,7 +130,7 @@ teien_is_very_cringe
                 "targetname" "hatch_block"
                 "origin" "-704 2112 161"
                 "mins" "-170 -150 0"
-				"maxs" "170 150 150"
+				"maxs" "170 150 450"
                 "TeamNum" "2"
             }
             logic_relay
