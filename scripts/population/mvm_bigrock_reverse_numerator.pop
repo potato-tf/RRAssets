@@ -12890,6 +12890,7 @@ WaveSchedule
 				}
 				CharacterAttributes
 				{
+					"move speed bonus" 0.5
 					"increase buff duration" 50
 					"damage force reduction" 0
 					"voice pitch scale" 0
@@ -12950,6 +12951,7 @@ WaveSchedule
 				}
 				CharacterAttributes
 				{
+					"move speed bonus" 0.5
 					"increase buff duration" 50
 					"damage force reduction" 0
 					"voice pitch scale" 0
@@ -13010,6 +13012,7 @@ WaveSchedule
 				}
 				CharacterAttributes
 				{
+					"move speed bonus" 0.5
 					"increase buff duration" 50
 					"damage force reduction" 0
 					"voice pitch scale" 0
