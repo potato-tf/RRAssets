@@ -7550,7 +7550,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Mobber 					[$SIGSEGV]
 				UseBestWeapon 1 				[$SIGSEGV]
@@ -7622,7 +7622,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Mobber 					[$SIGSEGV]
 				UseBestWeapon 1 				[$SIGSEGV]
@@ -7723,7 +7723,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Sniper					[$SIGSEGV]
 				//UseBestWeapon 1 				[$SIGSEGV]
@@ -7795,7 +7795,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Mobber 					[$SIGSEGV]
 				//UseBestWeapon 1 				[$SIGSEGV]
@@ -7888,7 +7888,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Mobber 					[$SIGSEGV]
 				UseBestWeapon 1 				[$SIGSEGV]
@@ -7965,7 +7965,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Mobber 					[$SIGSEGV]
 				UseBestWeapon 1 				[$SIGSEGV]
@@ -8042,7 +8042,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Mobber 					[$SIGSEGV]
 				UseBestWeapon 1 				[$SIGSEGV]
@@ -8102,7 +8102,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				Action Mobber 					[$SIGSEGV]
 				UseBestWeapon 1 				[$SIGSEGV]
@@ -8214,7 +8214,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				FireWeapon [$SIGSEGV]
 				{
@@ -8300,7 +8300,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				FireWeapon [$SIGSEGV]
 				{
@@ -8407,7 +8407,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				FireWeapon [$SIGSEGV]
 				{
@@ -8489,7 +8489,7 @@ WaveSchedule
 				//AlwaysGlow 1
 				WeaponResist [$SIGSEGV]
 				{
-					TF_WEAPON_KNIFE 0.25
+					TF_WEAPON_KNIFE 0.50
 				}
 				FireWeapon [$SIGSEGV]
 				{
