@@ -181,7 +181,7 @@ WaveSchedule
 
     DisallowUpgrade	"generate rage on heal" // fuck this thing too strong
     //DisallowUpgrade	"rocket specialist" 
-    //DisallowUpgrade "falling_impact_radius_stun"
+    DisallowUpgrade "falling_impact_radius_stun"
    // DisallowUpgrade "uber duration bonus"
     //DisallowUpgrade    "maxammo primary increased"     [$SIGSEGV] //players have infinite ammo
     //DisallowUpgrade    "maxammo secondary increased"     [$SIGSEGV] //players have infinite ammo
@@ -572,13 +572,13 @@ WaveSchedule
 		}
         AmmoRegen
 		{
-			Name "Ammo Regeneration"
+			Name "Ammo + Metal Regeneration"
 			Attribute "ammo regen"
-			Cap 0.05
-			Increment 0.05
+			Cap 0.20
+			Increment 0.10
             PlayerUpgrade 1
 			Cost 300
-			Description "Provides Ammo regeneration that occurs every 5 seconds. +5% total ammo regenerated, stacks with max ammo upgrades."
+			Description "Provides Ammo regeneration that occurs every 5 seconds. +10% total ammo regenerated, stacks with max ammo upgrades."
             AllowPlayerClass Scout
             AllowPlayerClass Soldier
             AllowPlayerClass Pyro
@@ -588,6 +588,10 @@ WaveSchedule
             AllowPlayerClass Sniper
             AllowPlayerClass Spy
             AllowPlayerClass Engineer
+            SecondaryAttributes
+			{
+				"metal regen" 50
+			}
 		}
         ConstructionRateincreased
         {
