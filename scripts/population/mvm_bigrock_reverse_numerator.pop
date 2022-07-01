@@ -12341,6 +12341,7 @@ WaveSchedule
 			MaxActive 12
 			SpawnCount 12
 			WaitForAllDead "part04"
+			WaitBeforeStarting 5
 			TotalCurrency 0
 			Support 1
 
@@ -12881,6 +12882,11 @@ WaveSchedule
 				//Attributes IgnoreFlag
 				Attributes SpawnWithFullCharge
 				Item "The Battalion's Backup"
+				ItemAttributes
+				{
+					ItemName "The Battalion's Backup"
+					"max health additive bonus" 0
+				}
 				Item "The Direct Hit"
 				ItemAttributes
 				{
@@ -13154,7 +13160,8 @@ WaveSchedule
 				ItemAttributes
 				{
 					ItemName "The Gas Passer"
-					"weapon burn dmg increased" 2.5
+					//"weapon burn dmg increased" 2.5
+					"explode_on_ignite" 1
 				}
 				CharacterAttributes
 				{
