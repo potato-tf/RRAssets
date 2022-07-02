@@ -72,13 +72,11 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 	PrecacheModel "models\weapons\c_models\c_gamma_gazer\c_gamma_gazer.mdl"
 	PrecacheModel "models\weapons\c_models\c_scrap_sentinel\c_spikewrench.mdl"
 	PrecacheModel "models/workshop/weapons/c_models/c_tokamak/c_tomislav.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
 	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
@@ -531,6 +529,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			"crits_become_minicrits" 1
 			"mult dmg vs tanks" 2
 			"projectile penetration heavy" -6
+			//"dmg penalty vs players" 0.75
 			//"minigun no spin sounds" 0
 			"custom kill icon" "firedeath"
 		}
@@ -3496,7 +3495,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		T_TFBot_Red_Persian_Knight
 		{
 			Class Demoman
-            ClassIcon demoknight_persian_nys
+            ClassIcon demo_persian
             Name "Persian Demoknight"
             Skill Expert
             Health 200
@@ -3668,7 +3667,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		T_TFBot_Red_Giant_Kritzkrieg_Medic
 		{
 			Class Medic
-			ClassIcon medic_kritz_red
+			ClassIcon medic_kritzkrieg
             Name "Giant Kritzkrieg Medic"
             WeaponRestrictions SecondaryOnly
             Skill Expert
@@ -4034,8 +4033,8 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			TFBot
 			{
 				Class Scout
-				ClassIcon scout_bat
-				Name "Bat Scout"
+				//ClassIcon scout_bat // I do not like Valve Bat icon, It's fucking Ugly
+				//Name "Bat Scout"
 				Skill Hard
 				WeaponRestrictions MeleeOnly
 				Item "The Track Terrorizer"
@@ -5302,7 +5301,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			TFBot
 			{
 				Class Scout
-				ClassIcon scout_popper2
+				ClassIcon scout_pop
 				Name "Soda Popper Scout"
 				Skill Normal
 				Item "The Soda Popper"
@@ -9039,7 +9038,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			FirstSpawnWarningSound "ambient_mp3/alarms/doomsday_lift_alarm.mp3"
 			Tank
 			{
-				ClassIcon blimp2_sticky_red_lite
+				ClassIcon blimp2_red_sticky_lite
 				Name "redstickyblimp"
 				Health 33333
 				Speed 75
@@ -9068,7 +9067,6 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			Name music_thingy
 			WaitForAllSpawned h2_1
 			//WaitBeforeStarting 10
-			FirstSpawnMessage "{2EFF00}â™« Now Playing â™« {FFFFFF} : {5100ff} Portal 2 - You Will Be Perfect {FFFFFF}"  
 			FirstSpawnOutput
 			{
 				Target "start_music"
@@ -9079,8 +9077,15 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		{
 			Name music_thingy
 			WaitForAllSpawned h2_1
+			WaitBeforeStarting 10
+			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {5100ff} Portal 2 - You Will Be Perfect {FFFFFF}"   
+		}
+		WaveSpawn // music i guess
+		{
+			Name music_thingy
+			WaitForAllSpawned h2_1
 			WaitBeforeStarting 172
-			FirstSpawnMessage "{2EFF00}â™« Now Playing â™« {FFFFFF} : {5100ff} Portal 2 - The Part Where He Kills You {FFFFFF}"  
+			FirstSpawnMessage "{2EFF00}♫ Now Playing ♫ {FFFFFF} : {5100ff} Portal 2 - The Part Where He Kills You {FFFFFF}"
 		}
 		WaveSpawn // Hello I'm a titan :)
 		{
@@ -9108,7 +9113,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		WaveSpawn // You win!
 		{
 			WaitForAllDead h3_1
-			WaitBeforeStarting 2 // Precaution
+			//WaitBeforeStarting 2 // Precaution
 			FirstSpawnOutput
 			{
 				Target "boss_deploy_relay"
