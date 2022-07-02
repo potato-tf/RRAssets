@@ -95,6 +95,7 @@ WaveSchedule
 	DisallowUpgrade "projectile penetration"		[$SIGSEGV] //overpowered for crossbow
 	DisallowUpgrade "uber duration bonus"			[$SIGSEGV] //overpowered for reverse
 	DisallowUpgrade	"overheal expert" 				[$SIGSEGV] //overpowered for giant reverse
+	DisallowUpgrade "canteen specialist"			[$SIGSEGV] //canteens are off
 
 	////////////////////////////////////////////////////////////
 

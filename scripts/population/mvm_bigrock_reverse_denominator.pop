@@ -89,6 +89,7 @@ WaveSchedule
 	DisallowUpgrade "maxammo metal increased"		[$SIGSEGV] //players have infinite ammo
 	DisallowUpgrade "metal regen"					[$SIGSEGV] //players have infinite ammo
 	DisallowUpgrade "uber duration bonus"			[$SIGSEGV] //overpowered for reverse
+	DisallowUpgrade "canteen specialist"			[$SIGSEGV] //canteens are off
 
 	////////////////////////////////////////////////////////////
 
