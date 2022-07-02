@@ -249,8 +249,8 @@ teien_is_very_cringe
                 "rendermode" "10"
                 "TeamNum" "2"
                 "solid" "6"
-                "mins" "-324 -484 -160"
-                "maxs" "324 484 160"
+                "mins" "-524 -684 -160"
+                "maxs" "524 684 160"
 				"StartDisabled" "0"
             }
             func_forcefield
@@ -263,8 +263,8 @@ teien_is_very_cringe
                 "rendermode" "10"
                 "TeamNum" "2"
                 "solid" "6"
-                "mins" "-324 -484 -160"
-                "maxs" "324 484 160"
+                "mins" "-524 -684 -160"
+                "maxs" "524 684 160"
 				"StartDisabled" "0"
             }
         }
