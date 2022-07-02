@@ -65,23 +65,23 @@ WaveSchedule
 	PrecacheSound "denominator/drill2.wav"								[$SIGSEGV]
 	
 	PrecacheModel "models/bots/boss_bot/tank_red_drill.mdl"				[$SIGSEGV]
-	PrecacheModel "models\props_frontline\tank_turret.mdl"				[$SIGSEGV]
-	PrecacheModel "models\buildables\skirmy1.mdl"						[$SIGSEGV]
-	PrecacheModel "models\buildables\sentry1_uber.mdl"					[$SIGSEGV]
-	PrecacheModel "models\buildables\sentry2_uber.mdl"					[$SIGSEGV]
-	PrecacheModel "models\buildables\sentry3_uber.mdl"					[$SIGSEGV]
+	PrecacheModel "models/props_frontline/tank_turret.mdl"				[$SIGSEGV]
+	PrecacheModel "models/buildables/skirmy1.mdl"						[$SIGSEGV]
+	PrecacheModel "models/buildables/sentry1_uber.mdl"					[$SIGSEGV]
+	PrecacheModel "models/buildables/sentry2_uber.mdl"					[$SIGSEGV]
+	PrecacheModel "models/buildables/sentry3_uber.mdl"					[$SIGSEGV]
 	
-	PrecacheModel "models\bots\demo\red_sentry_buster_v2.mdl"									[$SIGSEGV]
-	PrecacheModel "models\bots\soldier\goliatron2022_v3.mdl"									[$SIGSEGV]
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"										[$SIGSEGV]
-	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"										[$SIGSEGV]
+	PrecacheModel "models/bots/demo/red_sentry_buster_v2.mdl"									[$SIGSEGV]
+	PrecacheModel "models/bots/soldier/goliatron2022_v3.mdl"									[$SIGSEGV]
+	PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl"										[$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"										[$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"											[$SIGSEGV]
 	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"										[$SIGSEGV]
-	PrecacheModel "models\weapons\w_models\w_atomball.mdl"										[$SIGSEGV]
-	PrecacheModel "models\weapons\w_models\w_atomball_blu.mdl"									[$SIGSEGV]
-	PrecacheModel "models\weapons\c_models\c_chains_of_command\c_chains_of_command.mdl"			[$SIGSEGV]
-	PrecacheModel "models\workshop\weapons\c_models\c_winger_distol\c_winger_distol.mdl"		[$SIGSEGV]
-	PrecacheModel "models\weapons\c_models\c_scopelessrifle\c_scopelessrifle.mdl"				[$SIGSEGV]
+	PrecacheModel "models/weapons/w_models/w_atomball.mdl"										[$SIGSEGV]
+	PrecacheModel "models/weapons/w_models/w_atomball_blu.mdl"									[$SIGSEGV]
+	PrecacheModel "models/weapons/c_models/c_chains_of_command/c_chains_of_command.mdl"			[$SIGSEGV]
+	PrecacheModel "models/workshop/weapons/c_models/c_winger_distol/c_winger_distol.mdl"		[$SIGSEGV]
+	PrecacheModel "models/weapons/c_models/c_scopelessrifle/c_scopelessrifle.mdl"				[$SIGSEGV]
 	PrecacheModel "models/weapons/c_models/c_minigun/c_minigun_that_goes_on_the_bunker.mdl"		[$SIGSEGV]
 
 	DisableSound "Announcer.MVM_Game_Over_Loss" 	[$SIGSEGV]
@@ -173,7 +173,7 @@ WaveSchedule
 			CustomWeaponModel
 			{
 				Slot 2
-				Model "models\empty.mdl"
+				Model "models/empty.mdl"
 			}
 			AddCond
 			{
@@ -229,7 +229,7 @@ WaveSchedule
 
 	OverrideSounds [$SIGSEGV]
 	{
-		"MVM.BombWarning"			"ambient\alarms\klaxon1.wav"
+		"MVM.BombWarning"			"ambient/alarms/klaxon1.wav"
 		"MVM.GiantHeavyStep"		"common/null.wav"
 		"MVM.GiantScoutStep"		"common/null.wav"
 		"MVM.GiantSoldierStep"		"common/null.wav"
@@ -240,8 +240,8 @@ WaveSchedule
 		"MVM.GiantSoldierLoop"		"common/null.wav"
 		"MVM.GiantDemomanLoop"		"common/null.wav"
 		"MVM.GiantPyroLoop"			"common/null.wav"
-		"MVM.GiantHeavyExplodes"	"npc\env_headcrabcanister\explosion.wav"
-		"MVM.GiantCommonExplodes"	"npc\env_headcrabcanister\explosion.wav"
+		"MVM.GiantHeavyExplodes"	"npc/env_headcrabcanister/explosion.wav"
+		"MVM.GiantCommonExplodes"	"npc/env_headcrabcanister/explosion.wav"
 	}
 
 	ClassLimit [$SIGSEGV]
@@ -919,12 +919,12 @@ WaveSchedule
 		"mod projectile heat follow crosshair" 1
 		"mod projectile heat seek power" 360
 		"mod projectile heat aim time" 10
-		"custom projectile model" "models\buildables\sentry3_rockets.mdl"
+		"custom projectile model" "models/buildables/sentry3_rockets.mdl"
 		"paintkit_proto_def_index" 217
         "set_item_texture_wear" 0
-		"custom weapon fire sound" "=80|weapons\rpg\rocketfire1.wav"
-		"custom weapon reload sound" "items\ammo_pickup.wav"
-		"custom impact sound" "=80|weapons\explode5.wav"
+		"custom weapon fire sound" "=80|weapons/rpg/rocketfire1.wav"
+		"custom weapon reload sound" "items/ammo_pickup.wav"
+		"custom impact sound" "=80|weapons/explode5.wav"
 
 		//GIANT
 		"max health additive penalty" -500
@@ -1141,10 +1141,10 @@ WaveSchedule
 		"clip size penalty" 0.25
 		"blast radius increased" 3
 		"Reload time increased" 3
-		"custom impact sound" "ambient\explosions\explode_9.wav"
-		"custom weapon fire sound" "npc\attack_helicopter\aheli_mine_drop1.wav"
-		"custom weapon reload sound" "items\ammo_pickup.wav"
-		"projectile sound" "weapons\mortar\mortar_shell_incomming1.wav"
+		"custom impact sound" "ambient/explosions/explode_9.wav"
+		"custom weapon fire sound" "npc/attack_helicopter/aheli_mine_drop1.wav"
+		"custom weapon reload sound" "items/ammo_pickup.wav"
+		"projectile sound" "weapons/mortar/mortar_shell_incomming1.wav"
 		"override projectile type" 3
 		"damage causes airblast" 1
 		"dmg pierces resists absorbs" 1
@@ -1164,7 +1164,7 @@ WaveSchedule
 		"mult dmg vs tanks" 8
 		"mult dmg vs npc" 8
 		"fuse bonus" 5
-		"custom projectile model" "models\weapons\w_models\w_atomball_blu.mdl"
+		"custom projectile model" "models/weapons/w_models/w_atomball_blu.mdl"
 		"custom projectile size" 12
 		"dmg falloff decreased" 1.25
 	}
@@ -1535,7 +1535,7 @@ WaveSchedule
 	ItemAttributes [$SIGSEGV] // Giant Shotgun Heavy
 	{
 		ItemName "TF_WEAPON_SHOTGUN_HWG"
-		"custom weapon fire sound" "weapons\shotgun\shotgun_fire7.wav"
+		"custom weapon fire sound" "weapons/shotgun/shotgun_fire7.wav"
 		"provide on active" 1
 		"move speed bonus" 1.4
 		"fire rate bonus" 2.5
@@ -1550,7 +1550,7 @@ WaveSchedule
 	{
 		Name "Giant Shotgun"
 		OriginalItemName "TF_WEAPON_SHOTGUN_HWG"
-		"custom weapon fire sound" "weapons\shotgun\shotgun_fire7.wav"
+		"custom weapon fire sound" "weapons/shotgun/shotgun_fire7.wav"
 		"provide on active" 1
 		"move speed bonus" 1.4
 		"fire rate bonus" 2.5
@@ -1564,7 +1564,7 @@ WaveSchedule
 	ItemAttributes [$SIGSEGV] // Giant Shotgun Heavy
 	{
 		ItemName "The Family Business"
-		"custom weapon fire sound" "weapons\shotgun\shotgun_fire7.wav"
+		"custom weapon fire sound" "weapons/shotgun/shotgun_fire7.wav"
 		"provide on active" 1
 		"move speed bonus" 1.4
 		"fire rate bonus" 2.35
@@ -1579,7 +1579,7 @@ WaveSchedule
 	{
 		Name "Giant Family Business"
 		OriginalItemName "The Family Business"
-		"custom weapon fire sound" "weapons\shotgun\shotgun_fire7.wav"
+		"custom weapon fire sound" "weapons/shotgun/shotgun_fire7.wav"
 		"provide on active" 1
 		"move speed bonus" 1.4
 		"fire rate bonus" 2.35
@@ -1594,7 +1594,7 @@ WaveSchedule
 	{
 		Name "Giant Reserve Shooter"
 		OriginalItemName "The Reserve Shooter"
-		"custom weapon fire sound" "weapons\shotgun\shotgun_fire7.wav"
+		"custom weapon fire sound" "weapons/shotgun/shotgun_fire7.wav"
 		"provide on active" 1
 		"move speed bonus" 1.4
 		"fire rate bonus" 2.5
@@ -1609,7 +1609,7 @@ WaveSchedule
 	{
 		Name "Giant Panic Attack"
 		OriginalItemName "Panic Attack Shotgun"
-		"custom weapon fire sound" "weapons\shotgun\shotgun_fire7.wav"
+		"custom weapon fire sound" "weapons/shotgun/shotgun_fire7.wav"
 		"provide on active" 1
 		"move speed bonus" 1.4
 		"fire rate bonus" 2.5
@@ -1624,7 +1624,7 @@ WaveSchedule
 	{
 		Name "Giant Frontier Justice"
 		OriginalItemName "Upgradeable TF_WEAPON_SHOTGUN_PRIMARY"
-		"custom weapon fire sound" "weapons\shotgun\shotgun_fire7.wav"
+		"custom weapon fire sound" "weapons/shotgun/shotgun_fire7.wav"
 		"custom kill icon" "frontier_kill"
 		"custom item model" "models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl"
 		"provide on active" 1
@@ -1656,8 +1656,8 @@ WaveSchedule
 		"self dmg push force increased" 1.25
 		"explosive bullets" 74
 		"explosion particle" "3rd_trail" //"buildingdamage_spark1"
-		"custom weapon fire sound" "denominator/sg-1.wav" //"weapons\shotgun\shotgun_fire7.wav"
-		"custom item model" "models\weapons\c_models\c_chains_of_command\c_chains_of_command.mdl"
+		"custom weapon fire sound" "denominator/sg-1.wav" //"weapons/shotgun/shotgun_fire7.wav"
+		"custom item model" "models/weapons/c_models/c_chains_of_command/c_chains_of_command.mdl"
 		"max health additive penalty" -1000
 	}
 
@@ -1675,7 +1675,7 @@ WaveSchedule
 		"reload time increased" 1.25
 		"explosion particle" "rd_robot_explosion_smoke_linger"
 		"custom weapon fire sound" "=80|denominator/sg-1.wav"
-		"custom item model" "models\weapons\c_models\c_chains_of_command\c_chains_of_command.mdl"
+		"custom item model" "models/weapons/c_models/c_chains_of_command/c_chains_of_command.mdl"
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -1691,7 +1691,7 @@ WaveSchedule
 		"revolver use hit locations" 1
 		"custom weapon fire sound" "=80|denominator/de_shot1.wav"
 		"custom impact sound" "=65|denominator/hs.wav" 
-		"custom item model" "models\workshop\weapons\c_models\c_winger_distol\c_winger_distol.mdl"
+		"custom item model" "models/workshop/weapons/c_models/c_winger_distol/c_winger_distol.mdl"
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -1786,8 +1786,8 @@ WaveSchedule
 		"mark for death" 1
 		"minicrits become crits" 1
 		"mult crit dmg" 0.665
-		"custom weapon fire sound" "=80|npc\sniper\echo1.wav"
-		"custom item model" "models\weapons\c_models\c_scopelessrifle\c_scopelessrifle.mdl"
+		"custom weapon fire sound" "=80|npc/sniper/echo1.wav"
+		"custom item model" "models/weapons/c_models/c_scopelessrifle/c_scopelessrifle.mdl"
 		"custom kill icon" "sniperrifle"
 		"alt-fire disabled" 1
 	}
@@ -1805,8 +1805,8 @@ WaveSchedule
 		"mark for death" 1
 		"dmg penalty vs buildings" 0.5
 		"disable buildings on hit" 4
-		"custom weapon fire sound" "=80|weapons\pistol\pistol_fire2.wav"
-		"custom weapon reload sound" "items\ammo_pickup.wav"
+		"custom weapon fire sound" "=80|weapons/pistol/pistol_fire2.wav"
+		"custom weapon reload sound" "items/ammo_pickup.wav"
 		"custom kill icon" "syringegun_medic"
 	}
 
@@ -2080,11 +2080,11 @@ WaveSchedule
 	{
 		Name "Bunker Cannon"
 		OriginalItemName "The Cow Mangler 5000"
-		"custom weapon fire sound" "npc\strider\charging.wav"
-		"projectile sound" "npc\strider\fire.wav"
-		"custom weapon reload sound" "buttons\combine_button_locked.wav"
-		"custom impact sound" "weapons\mortar\mortar_explode1.wav"
-		"custom hit sound" "ambient\machines\thumper_shutdown1.wav"
+		"custom weapon fire sound" "npc/strider/charging.wav"
+		"projectile sound" "npc/strider/fire.wav"
+		"custom weapon reload sound" "buttons/combine_button_locked.wav"
+		"custom impact sound" "weapons/mortar/mortar_explode1.wav"
+		"custom hit sound" "ambient/machines/thumper_shutdown1.wav"
 		"projectile trail particle" "critical_rocket_red"
 		"centerfire projectile" 1
 		"mod weapon blocks healing" 1
@@ -2114,9 +2114,9 @@ WaveSchedule
 		"blast radius increased" 1.5
 		"projectile spread angle penalty" 30
 		"clip size upgrade atomic" 2	
-		"custom weapon fire sound" "weapons\stinger_fire1.wav"
-		"custom weapon reload sound" "items\ammo_pickup.wav"
-		"custom impact sound" "=80|weapons\physcannon\energy_sing_explosion2.wav"
+		"custom weapon fire sound" "weapons/stinger_fire1.wav"
+		"custom weapon reload sound" "items/ammo_pickup.wav"
+		"custom impact sound" "=80|weapons/physcannon/energy_sing_explosion2.wav"
 		"projectile no deflect" 1
 		"projectile trail particle" "rockettrail"
 		"mult dmg vs giants" 3
@@ -2198,7 +2198,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "finish2"
-				"message" "ambient\alarms\citadel_alert_loop2.wav"
+				"message" "ambient/alarms/citadel_alert_loop2.wav"
 				"health" "10"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2206,7 +2206,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "finish2"
-				"message" "ambient\alarms\citadel_alert_loop2.wav"
+				"message" "ambient/alarms/citadel_alert_loop2.wav"
 				"health" "10"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2214,7 +2214,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "finish2"
-				"message" "ambient\alarms\citadel_alert_loop2.wav"
+				"message" "ambient/alarms/citadel_alert_loop2.wav"
 				"health" "10"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2222,7 +2222,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "finish2"
-				"message" "ambient\alarms\citadel_alert_loop2.wav"
+				"message" "ambient/alarms/citadel_alert_loop2.wav"
 				"health" "10"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2627,7 +2627,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "voice1"
-				"message" "ambient\explosions\explode_1.wav"
+				"message" "ambient/explosions/explode_1.wav"
 				"health" "10"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2635,7 +2635,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "voice1"
-				"message" "ambient\explosions\explode_1.wav"
+				"message" "ambient/explosions/explode_1.wav"
 				"health" "7"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2643,7 +2643,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "voice2"
-				"message" "ambient\machines\wall_move2.wav"
+				"message" "ambient/machines/wall_move2.wav"
 				"health" "10"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2651,7 +2651,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "voice2"
-				"message" "ambient\machines\wall_move2.wav"
+				"message" "ambient/machines/wall_move2.wav"
 				"health" "7"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2659,7 +2659,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "voice2"
-				"message" "ambient\machines\wall_move2.wav"
+				"message" "ambient/machines/wall_move2.wav"
 				"health" "7"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -2675,7 +2675,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "voice3"
-				"message" "ambient\machines\wall_crash1.wav"
+				"message" "ambient/machines/wall_crash1.wav"
 				"health" "10"
 				"pitch" "100"
 				"spawnflags" "49"
@@ -3134,7 +3134,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill"
-				"message" "ambient\grinder\grinderbot_01.wav"
+				"message" "ambient/grinder/grinderbot_01.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -3146,7 +3146,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill2"
-				"message" "ambient\grinder\grinderbot_02.wav"
+				"message" "ambient/grinder/grinderbot_02.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -3158,7 +3158,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill3"
-				"message" "ambient\grinder\grinderbot_03.wav"
+				"message" "ambient/grinder/grinderbot_03.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -3170,7 +3170,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill4"
-				"message" "mvm\physics\robo_impact_hard_05.wav"
+				"message" "mvm/physics/robo_impact_hard_05.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -3269,7 +3269,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "misc\doomsday_cap_open.wav"
+                "message" "misc/doomsday_cap_open.wav"
                 "health" "10"
             }
 			ambient_generic
@@ -3281,7 +3281,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "misc\doomsday_cap_open.wav"
+                "message" "misc/doomsday_cap_open.wav"
                 "health" "5"
             }
 			ambient_generic
@@ -3341,7 +3341,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\machines\wall_crash1.wav"
+                "message" "ambient/machines/wall_crash1.wav"
                 "health" "10"
             }
 			ambient_generic
@@ -3353,7 +3353,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\machines\wall_crash1.wav"
+                "message" "ambient/machines/wall_crash1.wav"
                 "health" "5"
             }
 			logic_relay
@@ -3395,7 +3395,7 @@ WaveSchedule
 			{
 				"targetname" "redo"
 				"classname" "prop_dynamic"
-				"model" "models\bots\demo\red_sentry_buster_v2.mdl"
+				"model" "models/bots/demo/red_sentry_buster_v2.mdl"
 				"DefaultAnim" "airwalk_melee"
 				"disableshadows" "1"
 				"DisableBoneFollowers" "1"
@@ -3422,7 +3422,7 @@ WaveSchedule
 			{
 				"targetname" "spawnprop2"
 				"classname" "prop_dynamic"
-				"model" "models\buildables\teleporter_light.mdl"
+				"model" "models/buildables/teleporter_light.mdl"
 				"DefaultAnim" "running"
 				"rendercolor" "0 0 0"
 				"disableshadows" "1"
@@ -3722,7 +3722,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"targetname" "shield"
-				"model"      "models\buildables\sentry_shield.mdl"
+				"model"      "models/buildables/sentry_shield.mdl"
 				"rendercolor" "255 0 0"
 				"modelscale" "1"
 				"solid"      "0"
@@ -3747,7 +3747,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#ambient\atmosphere\tone_alley.wav"
+                "message" "#ambient/atmosphere/tone_alley.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -3769,7 +3769,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#ambient\atmosphere\tone_alley.wav"
+                "message" "#ambient/atmosphere/tone_alley.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -3791,7 +3791,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#music\mvm_lost_wave.wav"
+                "message" "#music/mvm_lost_wave.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -3818,7 +3818,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#ui\gamestartup16.mp3"
+                "message" "#ui/gamestartup16.mp3"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -3840,7 +3840,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#ui\gamestartup16.mp3"
+                "message" "#ui/gamestartup16.mp3"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -4060,7 +4060,7 @@ WaveSchedule
 				"OnTrigger" "music3,PlaySound,,0,-1"
 				"OnTrigger" "shakeit2,StartShake,,0,-1"
 				"OnTrigger" "idler,$removecond,43,0,-1"
-				"OnTrigger" "player,$PlaySoundToSelf,ambient\machines\thumper_shutdown1.wav,0,-1"
+				"OnTrigger" "player,$PlaySoundToSelf,ambient/machines/thumper_shutdown1.wav,0,-1"
 			}
 			logic_relay
 			{
@@ -4068,7 +4068,7 @@ WaveSchedule
 				"targetname" "gabe2_relay"
 				"OnTrigger" "gaben,$removecond,51,1,-1"
 				"OnTrigger" "shield,kill,,1,-1"
-				"OnTrigger" "player,$PlaySoundToSelf,vo\heavy_negativevocalization02.mp3,1,-1"
+				"OnTrigger" "player,$PlaySoundToSelf,vo/heavy_negativevocalization02.mp3,1,-1"
 			}
 		}
 
@@ -4702,7 +4702,7 @@ WaveSchedule
 			{
 				"targetname" "stop1"
 				"classname" "prop_dynamic"
-				"model" "models\props_vehicles\train_flatcar_container.mdl"
+				"model" "models/props_vehicles/train_flatcar_container.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -4725,7 +4725,7 @@ WaveSchedule
 			{
 				"targetname" "stop2"
 				"classname" "prop_dynamic"
-				"model" "models\props_vehicles\train_flatcar_container.mdl"
+				"model" "models/props_vehicles/train_flatcar_container.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -4747,7 +4747,7 @@ WaveSchedule
 				"DisableBoneFollowers" "1"
 				"disablereceiveshadows" "0"
 				"disableshadows" "1"
-				"model" "models\props_vehicles\train_flatcar_container.mdl"
+				"model" "models/props_vehicles/train_flatcar_container.mdl"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
 				"skin" "1"
@@ -4771,7 +4771,7 @@ WaveSchedule
 				"DisableBoneFollowers" "1"
 				"disablereceiveshadows" "0"
 				"disableshadows" "1"
-				"model" "models\props_vehicles\train_flatcar_container.mdl"
+				"model" "models/props_vehicles/train_flatcar_container.mdl"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
 				"skin" "1"
@@ -4806,7 +4806,7 @@ WaveSchedule
 				"angles" "0 0 0"
 				"DisableBoneFollowers" "1"
 				"disableshadows" "1"
-				"model" "models\props_mvm\mvm_upgrade_blu.mdl"
+				"model" "models/props_mvm/mvm_upgrade_blu.mdl"
 				"SetBodyGroup" "0"
 				"skin" "0"
 				"solid" "6"
@@ -4847,7 +4847,7 @@ WaveSchedule
 				"DisableBoneFollowers" "1"
 				"disablereceiveshadows" "0"
 				"disableshadows" "1"
-				"model" "models\props_medieval\tank_entrance_rottenburg.mdl"
+				"model" "models/props_medieval/tank_entrance_rottenburg.mdl"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
 				"skin" "1"
@@ -4877,7 +4877,7 @@ WaveSchedule
 				"DisableBoneFollowers" "1"
 				"disablereceiveshadows" "0"
 				"disableshadows" "1"
-				"model" "models\props_medieval\tank_entrance_rottenburg.mdl"
+				"model" "models/props_medieval/tank_entrance_rottenburg.mdl"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
 				"skin" "1"
@@ -5016,7 +5016,7 @@ WaveSchedule
 				"origin" "1411 -406 506"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5026,7 +5026,7 @@ WaveSchedule
 			{
 				Target "uber1"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5050,7 +5050,7 @@ WaveSchedule
 				"origin" "1008 -848 640"
 				"angles" "0 180 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5060,7 +5060,7 @@ WaveSchedule
 			{
 				Target "uber1a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5084,7 +5084,7 @@ WaveSchedule
 				"origin" "-608 480 576"
 				"angles" "0 285 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5094,7 +5094,7 @@ WaveSchedule
 			{
 				Target "uber2"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5118,7 +5118,7 @@ WaveSchedule
 				"origin" "-288 1784 320"
 				"angles" "0 233.5 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5128,7 +5128,7 @@ WaveSchedule
 			{
 				Target "uber3"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5152,7 +5152,7 @@ WaveSchedule
 				"origin" "224 1712 320"
 				"angles" "0 285 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5162,7 +5162,7 @@ WaveSchedule
 			{
 				Target "uber3a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5186,7 +5186,7 @@ WaveSchedule
 				"origin" "-1365 -264 384"
 				"angles" "0 0 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5196,7 +5196,7 @@ WaveSchedule
 			{
 				Target "uber4"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5220,7 +5220,7 @@ WaveSchedule
 				"origin" "-833 108 384"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5230,7 +5230,7 @@ WaveSchedule
 			{
 				Target "uber4a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5254,7 +5254,7 @@ WaveSchedule
 				"origin" "-288 896 368"
 				"angles" "0 180 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5264,7 +5264,7 @@ WaveSchedule
 			{
 				Target "uber5"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5288,7 +5288,7 @@ WaveSchedule
 				"origin" "-32 816 368"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5298,7 +5298,7 @@ WaveSchedule
 			{
 				Target "uber5a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5322,7 +5322,7 @@ WaveSchedule
 				"origin" "224 768 368"
 				"angles" "0 0 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5332,7 +5332,7 @@ WaveSchedule
 			{
 				Target "uber5b"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5356,7 +5356,7 @@ WaveSchedule
 				"origin" "-1504 -1600 512"
 				"angles" "0 0 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5366,7 +5366,7 @@ WaveSchedule
 			{
 				Target "uber6"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5390,7 +5390,7 @@ WaveSchedule
 				"origin" "584 408 576"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5400,7 +5400,7 @@ WaveSchedule
 			{
 				Target "uber7"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5424,7 +5424,7 @@ WaveSchedule
 				"origin" "-880 656 576"
 				"angles" "0 273 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5434,7 +5434,7 @@ WaveSchedule
 			{
 				Target "uber8"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5458,7 +5458,7 @@ WaveSchedule
 				"origin" "-1260 662 576"
 				"angles" "0 285 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5468,7 +5468,7 @@ WaveSchedule
 			{
 				Target "uber8a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5492,7 +5492,7 @@ WaveSchedule
 				"origin" "520 4178 322"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5502,7 +5502,7 @@ WaveSchedule
 			{
 				Target "uber9"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5526,7 +5526,7 @@ WaveSchedule
 				"origin" "608 4633 322"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5536,7 +5536,7 @@ WaveSchedule
 			{
 				Target "uber9a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5560,7 +5560,7 @@ WaveSchedule
 				"origin" "-324 3363 278"
 				"angles" "0 330 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5570,7 +5570,7 @@ WaveSchedule
 			{
 				Target "uber10"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5594,7 +5594,7 @@ WaveSchedule
 				"origin" "-616 4896 169"
 				"angles" "0 315 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5604,7 +5604,7 @@ WaveSchedule
 			{
 				Target "uber11"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5628,7 +5628,7 @@ WaveSchedule
 				"origin" "-819 4456 142"
 				"angles" "0 315 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5638,7 +5638,7 @@ WaveSchedule
 			{
 				Target "uber11a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5662,7 +5662,7 @@ WaveSchedule
 				"origin" "699 3752 322"
 				"angles" "0 229 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5672,7 +5672,7 @@ WaveSchedule
 			{
 				Target "uber12"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5696,7 +5696,7 @@ WaveSchedule
 				"origin" "686 1008 320"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5706,7 +5706,7 @@ WaveSchedule
 			{
 				Target "uber14"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5730,7 +5730,7 @@ WaveSchedule
 				"origin" "691 620 320"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5740,7 +5740,7 @@ WaveSchedule
 			{
 				Target "uber14a"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -5764,7 +5764,7 @@ WaveSchedule
 				"origin" "-1056 1456 416"
 				"angles" "0 270 0"
 				"teamnum" "2"
-				"model" "models\buildables\sentry1_uber.mdl"
+				"model" "models/buildables/sentry1_uber.mdl"
 				"defaultupgrade" "0"
 				"spawnflags" "8"
 				"modelscale" 0.75
@@ -5774,7 +5774,7 @@ WaveSchedule
 			{
 				Target "uber15"
 				Action "$setmodeloverride"
-				Param "models\buildables\sentry1_uber.mdl"
+				Param "models/buildables/sentry1_uber.mdl"
 			}
 			OnSpawnOutput
             {
@@ -6669,7 +6669,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\explosions\explode_9.wav"
+                "message" "ambient/explosions/explode_9.wav"
                 "health" "10"
             }
 			ambient_generic
@@ -6684,7 +6684,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\explosions\citadel_end_explosion1.wav"
+                "message" "ambient/explosions/citadel_end_explosion1.wav"
                 "health" "10"
             }
 			ambient_generic
@@ -6699,7 +6699,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\explosions\citadel_end_explosion1.wav"
+                "message" "ambient/explosions/citadel_end_explosion1.wav"
                 "health" "10"
             }
 			ambient_generic
@@ -6714,7 +6714,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "items\cart_explode.wav"
+                "message" "items/cart_explode.wav"
                 "health" "10"
             }
 			logic_relay
@@ -7341,7 +7341,7 @@ WaveSchedule
 		WaveSpawn
 		{
 			Name "failure"
-			FirstSpawnWarningSound npc\attack_helicopter\aheli_megabomb_siren1.wav
+			FirstSpawnWarningSound npc/attack_helicopter/aheli_megabomb_siren1.wav
 			WaitBeforeStarting 900
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -7361,7 +7361,7 @@ WaveSchedule
 			WaitBetweenSpawns 99999
 			Support 1
 
-			StartWaveWarningSound music\mvm_start_last_wave.wav
+			StartWaveWarningSound music/mvm_start_last_wave.wav
 
 			TFBot
 			{
@@ -7375,17 +7375,17 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 0
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CharacterAttributes
 				{
@@ -7493,7 +7493,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -7655,7 +7655,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -7771,7 +7771,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -7808,12 +7808,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -7854,12 +7854,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -7900,12 +7900,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -7927,7 +7927,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 8
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 		}
 
 		WaveSpawn
@@ -7935,7 +7935,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 8.25
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7943,7 +7943,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 8.50
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7951,7 +7951,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 8.75
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7959,7 +7959,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 9
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7967,7 +7967,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 9.25
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7975,7 +7975,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 9.50
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7983,7 +7983,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 9.75
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7991,7 +7991,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -7999,7 +7999,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 10.25
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -8007,7 +8007,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 10.50
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -8015,7 +8015,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 10.75
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -8023,7 +8023,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 11
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -8031,7 +8031,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 11.25
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -8039,7 +8039,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 11.50
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -8047,7 +8047,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 11.75
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -8067,7 +8067,7 @@ WaveSchedule
 			Name "cadekiller"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target prop2                           
@@ -8085,7 +8085,7 @@ WaveSchedule
 			Name "cadekiller"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 12
-			//FirstSpawnWarningSound npc\env_headcrabcanister\explosion.wav	
+			//FirstSpawnWarningSound npc/env_headcrabcanister/explosion.wav	
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target prop3                         
@@ -8131,12 +8131,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -8184,12 +8184,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -8384,7 +8384,7 @@ WaveSchedule
 			TotalCurrency 0
 			RandomSpawn 1
 
-			FirstSpawnWarningSound music\mvm_end_tank_wave.wav
+			FirstSpawnWarningSound music/mvm_end_tank_wave.wav
 
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -8690,7 +8690,7 @@ WaveSchedule
 		WaveSpawn
 		{
 			Name "failure"
-			FirstSpawnWarningSound npc\attack_helicopter\aheli_megabomb_siren1.wav
+			FirstSpawnWarningSound npc/attack_helicopter/aheli_megabomb_siren1.wav
 			WaitBeforeStarting 900
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -8721,7 +8721,7 @@ WaveSchedule
 			WaitBetweenSpawns 99999
 			Support 1
 
-			StartWaveWarningSound music\mvm_start_last_wave.wav
+			StartWaveWarningSound music/mvm_start_last_wave.wav
 
 			TFBot
 			{
@@ -8735,17 +8735,17 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 0
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CharacterAttributes
 				{
@@ -8822,17 +8822,17 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 3
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 5
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 6
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -8880,7 +8880,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -8926,12 +8926,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9000,7 +9000,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9053,7 +9053,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9112,12 +9112,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9185,7 +9185,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 0
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9237,12 +9237,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9315,7 +9315,7 @@ WaveSchedule
 			TotalCurrency 0
 			RandomSpawn 1
 
-			FirstSpawnWarningSound music\mvm_end_tank_wave.wav
+			FirstSpawnWarningSound music/mvm_end_tank_wave.wav
 
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -9619,7 +9619,7 @@ WaveSchedule
 			Name "tankhonk"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 56
-			FirstSpawnWarningSound ambient\alarms\train_horn2.wav
+			FirstSpawnWarningSound ambient/alarms/train_horn2.wav
 		}
 		WaveSpawn
 		{
@@ -9638,7 +9638,7 @@ WaveSchedule
 		WaveSpawn
 		{
 			Name "failure"
-			FirstSpawnWarningSound npc\attack_helicopter\aheli_megabomb_siren1.wav
+			FirstSpawnWarningSound npc/attack_helicopter/aheli_megabomb_siren1.wav
 			WaitBeforeStarting 900
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -9658,7 +9658,7 @@ WaveSchedule
 			WaitBetweenSpawns 99999
 			Support 1
 
-			StartWaveWarningSound music\mvm_end_wave.wav
+			StartWaveWarningSound music/mvm_end_wave.wav
 
 			TFBot
 			{
@@ -9672,17 +9672,17 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 0
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CharacterAttributes
 				{
@@ -9723,7 +9723,7 @@ WaveSchedule
 			TotalCurrency 1148
 			RandomSpawn 1
 
-			DoneWarningSound mvm\mvm_player_died.wav
+			DoneWarningSound mvm/mvm_player_died.wav
 
 			TFBot
 			{
@@ -9785,7 +9785,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				VoiceCommand [$SIGSEGV]
                 {
@@ -9877,12 +9877,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9984,12 +9984,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				InterruptAction [$SIGSEGV]
 				{
@@ -10070,7 +10070,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -10143,7 +10143,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -10205,12 +10205,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -10263,7 +10263,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -10299,7 +10299,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -10335,7 +10335,7 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -10495,7 +10495,7 @@ WaveSchedule
 			TotalCurrency 0
 			RandomSpawn 1
 
-			FirstSpawnWarningSound music\mvm_end_tank_wave.wav
+			FirstSpawnWarningSound music/mvm_end_tank_wave.wav
 
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -10834,7 +10834,7 @@ WaveSchedule
 		WaveSpawn
 		{
 			Name "failure"
-			FirstSpawnWarningSound npc\attack_helicopter\aheli_megabomb_siren1.wav
+			FirstSpawnWarningSound npc/attack_helicopter/aheli_megabomb_siren1.wav
 			WaitBeforeStarting 900
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -10854,7 +10854,7 @@ WaveSchedule
 			WaitBetweenSpawns 99999
 			Support 1
 
-			StartWaveWarningSound music\mvm_start_wave.wav
+			StartWaveWarningSound music/mvm_start_wave.wav
 
 			TFBot
 			{
@@ -10868,17 +10868,17 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 0
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CharacterAttributes
 				{
@@ -11044,7 +11044,7 @@ WaveSchedule
 				SpawnTemplate givename2
 				SpawnTemplate tankreddrill
 				Model "models/bots/boss_bot/boss_tankred.mdl" [$SIGSEGV]
-				PingSound "ambient\levels\citadel\zapper_warmup1.wav" [$SIGSEGV]
+				PingSound "ambient/levels/citadel/zapper_warmup1.wav" [$SIGSEGV]
 				StartingPathTrackNode "tank_tunnel_1"
 
 				OnKilledOutput                                  
@@ -11280,12 +11280,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -11595,12 +11595,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -11651,12 +11651,12 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -11734,7 +11734,7 @@ WaveSchedule
 			TotalCurrency 0
 			RandomSpawn 1
 
-			FirstSpawnWarningSound music\mvm_end_tank_wave.wav
+			FirstSpawnWarningSound music/mvm_end_tank_wave.wav
 
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -12219,7 +12219,7 @@ WaveSchedule
 		WaveSpawn
 		{
 			Name "failure"
-			FirstSpawnWarningSound npc\attack_helicopter\aheli_megabomb_siren1.wav
+			FirstSpawnWarningSound npc/attack_helicopter/aheli_megabomb_siren1.wav
 			WaitBeforeStarting 900
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -12258,17 +12258,17 @@ WaveSchedule
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 0
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 1
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CustomWeaponModel [$SIGSEGV]
 				{
 					Slot 2
-					Model "models\empty.mdl"
+					Model "models/empty.mdl"
 				}
 				CharacterAttributes
 				{
@@ -12542,7 +12542,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 16
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 		}
 
 		WaveSpawn
@@ -12550,7 +12550,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 16.25
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -12558,7 +12558,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 16.50
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -12566,7 +12566,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 16.75
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -12574,7 +12574,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 17
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -12582,7 +12582,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 17.25
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -12590,7 +12590,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 17.50
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -12598,7 +12598,7 @@ WaveSchedule
 			Name "sound"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 17.75
-			FirstSpawnWarningSound weapons\teleporter_send.wav
+			FirstSpawnWarningSound weapons/teleporter_send.wav
 		}
 
 		WaveSpawn
@@ -12618,7 +12618,7 @@ WaveSchedule
 			Name "cadekiller"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 18
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target prop2                           
@@ -12636,7 +12636,7 @@ WaveSchedule
 			Name "cadekiller"
 			WaitForAllDead "part01"
 			WaitBeforeStarting 18
-			//FirstSpawnWarningSound npc\env_headcrabcanister\explosion.wav	
+			//FirstSpawnWarningSound npc/env_headcrabcanister/explosion.wav	
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target prop3                         
@@ -12657,7 +12657,7 @@ WaveSchedule
 			TotalCurrency 0
 			RandomSpawn 1
 
-			FirstSpawnWarningSound vo\mvm\mght\scout_mvm_m_apexofjump02.mp3
+			FirstSpawnWarningSound vo/mvm/mght/scout_mvm_m_apexofjump02.mp3
 
 			FirstSpawnOutput
 			{
@@ -12740,7 +12740,7 @@ WaveSchedule
 			TotalCurrency 0
 			RandomSpawn 1
 
-			FirstSpawnWarningSound vo\mvm\mght\scout_mvm_m_laughlong02.mp3
+			FirstSpawnWarningSound vo/mvm/mght/scout_mvm_m_laughlong02.mp3
 
 			RandomChoice
 			{
@@ -13077,7 +13077,7 @@ WaveSchedule
 			TotalCurrency 0
 			RandomSpawn 1
 
-			DoneWarningSound player\invulnerable_off.wav
+			DoneWarningSound player/invulnerable_off.wav
 
 			DoneOutput
 			{
@@ -13283,8 +13283,8 @@ WaveSchedule
 				DisableSmokestack 1
 				DisableChildModels 1
 				Model "models/bots/boss_bot/boss_blimp.mdl"
-				PingSound "npc\combine_gunship\ping_search.wav"
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav"
+				PingSound "npc/combine_gunship/ping_search.wav"
+				EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav"
 				Name "blimp"
 				Classicon blimp2_sticky_red_lite
 				StartingPathTrackNode "blimp_1"
@@ -13312,9 +13312,9 @@ WaveSchedule
 			MaxActive 1
 			SpawnCount 1
 			TotalCurrency 0
-			StartWaveWarningSound music\mvm_end_tank_wave.wav
-			FirstSpawnWarningSound player\invulnerable_on.wav
-			DoneWarningSound vo\heavy_paincrticialdeath02.mp3
+			StartWaveWarningSound music/mvm_end_tank_wave.wav
+			FirstSpawnWarningSound player/invulnerable_on.wav
+			DoneWarningSound vo/heavy_paincrticialdeath02.mp3
 
 			DoneOutput
 			{
@@ -13563,7 +13563,7 @@ WaveSchedule
 						MaxVisionRange 5000
 					}
 				}
-				AdditionalStepSound =85|ambient\explosions\exp2.wav
+				AdditionalStepSound =85|ambient/explosions/exp2.wav
 				AimLeadProjectileSpeed 0
 				//AimOffset "0 0 500"
 				NoPushAway 1
@@ -13578,7 +13578,7 @@ WaveSchedule
 				SpawnTemplate goliathfeetl
 				SpawnTemplate goliathtorso
 				//UseMeleeThreatPrioritization 1
-				UseCustomModel "models\bots\soldier\goliatron2022_v3.mdl"
+				UseCustomModel "models/bots/soldier/goliatron2022_v3.mdl"
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED
@@ -13620,8 +13620,8 @@ WaveSchedule
 					"custom kill icon" "spellbook_boss"
 					"ragdolls become ash" 1
 					"fire input on hit" "minishake^startshake^0"
-					"custom weapon fire sound" "ambient\energy\weld1.wav" //"=95|ambient\energy\weld1.wav"
-					"custom weapon reload sound" "vehicles\tank_readyfire1.wav"
+					"custom weapon fire sound" "ambient/energy/weld1.wav" //"=95|ambient/energy/weld1.wav"
+					"custom weapon reload sound" "vehicles/tank_readyfire1.wav"
 					"damage bonus" 3
 					"mult dmg vs giants" 0.33
 					"sniper charge per sec" 10
@@ -13652,7 +13652,7 @@ WaveSchedule
 				AimAt Head
 				AimTrackingInterval 0
 				//UseMeleeThreatPrioritization 1 [$SIGSEGV]
-				UseCustomModel "models\empty.mdl"
+				UseCustomModel "models/empty.mdl"
 				FireWeapon [$SIGSEGV]
 				{
 					Delay 0
@@ -13746,7 +13746,7 @@ WaveSchedule
 				Action Idle
 				AimTrackingInterval 0
 				UseMeleeThreatPrioritization 1 [$SIGSEGV]
-				UseCustomModel "models\empty.mdl"
+				UseCustomModel "models/empty.mdl"
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED
@@ -13819,7 +13819,7 @@ WaveSchedule
 				Action Idle
 				AimTrackingInterval 0
 				UseMeleeThreatPrioritization 1 [$SIGSEGV]
-				UseCustomModel "models\empty.mdl"
+				UseCustomModel "models/empty.mdl"
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED
@@ -13973,7 +13973,7 @@ WaveSchedule
 				ItemModel [$SIGSEGV]
 				{
 					ItemName "War Head"
-					Model "models/workshop/player/items\heavy/tw_heavybot_armor/tw_heavybot_armor.mdl"
+					Model "models/workshop/player/items/heavy/tw_heavybot_armor/tw_heavybot_armor.mdl"
 				}
 				ItemAttributes
 				{
@@ -14035,7 +14035,7 @@ WaveSchedule
 				ItemModel [$SIGSEGV]
 				{
 					ItemName "War Head"
-					Model "models/workshop/player/items\heavy/tw_heavybot_armor/tw_heavybot_armor.mdl"
+					Model "models/workshop/player/items/heavy/tw_heavybot_armor/tw_heavybot_armor.mdl"
 				}
 				ItemAttributes
 				{
