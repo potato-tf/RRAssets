@@ -7589,15 +7589,23 @@ WaveSchedule
 			{				
 				Template T_TFBot_Giant_Soldier_Spammer
 				Health 4000
+				Classicon soldier_libertylauncher_giant
 				Attributes DisableDodge
 				Attributes IgnoreFlag
 				//Attributes AlwaysCrit
 				//Item "The Concheror"
+				Item "The Liberty Launcher"
+				ItemAttributes
+				{
+					ItemName "The Liberty Launcher"
+					"faster reload rate" -0.8
+					"fire rate bonus" 0.5
+					"damage causes airblast" 1
+					"apply look velocity on damage" 111
+				}
 				BehaviorModifiers Push
 				CharacterAttributes
 				{
-					"damage causes airblast" 1
-					"apply look velocity on damage" 111
 					"damage force reduction" 0
 					"voice pitch scale" 0
 					"crit mod disabled" 0
