@@ -7359,7 +7359,7 @@ WaveSchedule
 			MaxActive 1
 			SpawnCount 1
 			TotalCurrency 0
-			WaitBetweenSpawns 12
+			WaitBetweenSpawns 30
 			Support 1
 
 			StartWaveWarningSound music/mvm_start_last_wave.wav
@@ -8727,7 +8727,7 @@ WaveSchedule
 			MaxActive 1
 			SpawnCount 1
 			TotalCurrency 0
-			WaitBetweenSpawns 12
+			WaitBetweenSpawns 30
 			Support 1
 
 			StartWaveWarningSound music/mvm_start_last_wave.wav
@@ -9664,7 +9664,7 @@ WaveSchedule
 			MaxActive 1
 			SpawnCount 1
 			TotalCurrency 0
-			WaitBetweenSpawns 12
+			WaitBetweenSpawns 30
 			Support 1
 
 			StartWaveWarningSound music/mvm_end_wave.wav
@@ -10860,7 +10860,7 @@ WaveSchedule
 			MaxActive 1
 			SpawnCount 1
 			TotalCurrency 0
-			WaitBetweenSpawns 12
+			WaitBetweenSpawns 30
 			Support 1
 
 			StartWaveWarningSound music/mvm_start_wave.wav
