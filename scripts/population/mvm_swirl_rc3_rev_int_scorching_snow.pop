@@ -2301,14 +2301,6 @@ swirl2_reverse_boogaloo
 		Explanation 
 		{
 			Line "{blue}In this mission, you will have some ally bots to help, they are indicated in support. Some can pick up the bomb, some cannot, {red}If all of them die, you lose!"
-			//Line "{white}------------------------------------------------------------------"
-			//Line "{grey}Your VIPs this wave will be:"
-			//Line "{red}-1 Giant Demoknight"
-			//Line "{red}-2 Giant Homing Rocket Soldiers"
-			//Line "{red}-1 Giant Shotgun Heavy"
-			//Line "{red}Other Allies:"
-			//Line "{red}-2 Giant Bonk Scouts"
-			//Line "{white}------------------------------------------------------------------"
 			Line "{blue} INFO:"
 			Line "{blue}-The hatch is disabled until the infinite support bots arrive, you'll be alerted when the bomb can be deployed"
 			Line "{blue}-You have infinite ammo and metal"
@@ -2316,6 +2308,11 @@ swirl2_reverse_boogaloo
 			Line "{blue}-VIPs cannot be targeted by medi guns"
 			//Line "{red}-Robots drop red money" not anymore haha!
 			Line "{blue}-Bomb bots will periodically spawn to bring back the bomb after a reset, you can kill them if you want to pick up the bomb"
+			Line "-------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-2 Giant Conch Samurais"
+			Line "{blue}-3 Giant Soldiers"
+			Line "-------------------------"
 		}
 		SpawnTemplate "sentries_hatch1"
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2696,6 +2693,14 @@ swirl2_reverse_boogaloo
 			Target wave_init_lower_relay
 			Action Trigger
 		}
+		Explanation
+		{
+			Line "--------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-2 Giant Charged Soldiers"
+			Line "{blue}-3 Giant Knights"
+			Line "--------------------------------------------"
+		}
 		SpawnTemplate "sentries_hatch1"
 		WaveSpawn
 		{
@@ -3075,6 +3080,14 @@ swirl2_reverse_boogaloo
 		{
 			Target wave_init_upper_relay
 			Action Trigger
+		}
+		Explanation
+		{
+			Line "--------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-2 Giant Shotgun Heavies"
+			Line "{blue}-2 Giant Knights"
+			Line "--------------------------------------------"
 		}
 		SpawnTemplate "sentries_hatch2"
 		WaveSpawn
@@ -3555,6 +3568,14 @@ swirl2_reverse_boogaloo
 			Target wave_init_lower_relay
 			Action Trigger
 		}
+		Explanation
+		{
+			Line "--------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-3 Giant Conch Samurais"
+			Line "{blue}-2 Giant Buff Soldiers"
+			Line "--------------------------------------------"
+		}
 		SpawnTemplate "sentries_hatch2"
 		WaveSpawn
 		{
@@ -3985,6 +4006,14 @@ swirl2_reverse_boogaloo
 		{
 			Target wave_init_upper_relay
 			Action Trigger
+		}
+		Explanation
+		{
+			Line "--------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-2 Giant Shotgun Heavies"
+			Line "{blue}-3 Giant Rapid Homing Soldiers"
+			Line "--------------------------------------------"
 		}
 		SpawnTemplate "sentries_hatch3"
 		WaveSpawn
@@ -4469,6 +4498,15 @@ swirl2_reverse_boogaloo
 		{
 			Target wave_init_upper_relay
 			Action Trigger
+		}
+		Explanation
+		{
+			Line "--------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-2 Giant Shotgun Heavies"
+			Line "{blue}-2 Giant Knights"
+			Line "{blue}-2 Giant Burstfire Soldiers"
+			Line "--------------------------------------------"
 		}
 		SpawnTemplate "sentries_hatch3"
 		SpawnTemplate "sentry_hatch_health4"

@@ -3362,6 +3362,12 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Line "{blue}-VIPs cannot be targeted by medi guns"
 			//Line "{red}-Robots drop red money" not anymore haha!
 			Line "{blue}-Bomb bots will periodically spawn to bring back the bomb after a reset, you can kill them if you want to pick up the bomb"
+			Line "--------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-1 Giant Demoknight"
+			Line "{blue}-2 Giant Homing Soldiers"
+			Line "{blue}-1 Giant Shotgun Heavy"
+			Line "--------------------------------------------"
 		}
 		SpawnTemplate "sentries_mini"
 		//SpawnTemplate "set_health_minis"
@@ -4077,15 +4083,15 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Target wave_init_upper_relay
 			Action Trigger
 		}
-		//Explanation 
-		//{
-		//	Line "------------------------------------------------------------------"
-		//	Line "This wave you will have to defend:"
-		//	Line "{red}-2 Giant KGB Heavy"
-		//	Line "{red}-1 Giant Knight"
-		//	Line "{red}-1 Giant Concheror Soldier"
-		//	Line "------------------------------------------------------------------"
-		//}
+		Explanation 
+		{
+			Line "------------------------------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-2 Giant KGB Heavy"
+			Line "{blue}-1 Giant Knight"
+			Line "{blue}-1 Giant Concheror Soldier"
+			Line "------------------------------------------------------------------"
+		}
 		SpawnTemplate "sentries1"
 		SpawnTemplate "sentries_hatch"
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4718,14 +4724,14 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			Target wave_init_upper_relay
 			Action Trigger
 		}
-		//Explanation
-		//{
-		//	Line "{white}------------------------------------------------------------------"
-		//	Line "{red}6 Banner Soldiers will help you deliver the bomb!"
-		//	Line "{red}The last 2 of them cannot pick up the bomb!"
+		Explanation
+		{
+			Line "{white}------------------------------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-6 Giant Banner Soldiers"
 			//Line "{red}These gauntlets can quickly shred your soldiers so watch out for them!"
-		//	Line "{white}------------------------------------------------------------------"
-		//}
+			Line "{white}------------------------------------------------------------------"
+		}
 		SpawnTemplate "sentries2"
 		SpawnTemplate "sentries_hatch"
 		SpawnTemplate "sentry_hatch_health3"
@@ -6162,6 +6168,15 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 		{
 			Target wave_init_upper_relay
 			Action Trigger
+		}
+		Explanation
+		{
+			Line "--------------------------------------------"
+			Line "{green}Your VIPs this wave:"
+			Line "{blue}-2 Giant Brass Beast Heavies"
+			Line "{blue}-2 Giant Brustfire Demos"
+			Line "{blue}-1 Giant Rapidfire Soldier"
+			Line "--------------------------------------------"
 		}
 		SpawnTemplate "sentries3"
 		SpawnTemplate "sentries_hatch"
