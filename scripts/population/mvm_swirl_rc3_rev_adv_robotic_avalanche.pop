@@ -7181,6 +7181,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 				Template T_TFBot_Red_Soldier
 				Skill Hard
 				Attributes AlwaysCrit
+				UseBestWeapon 0
 				Attributes DisableDodge
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
@@ -7277,6 +7278,7 @@ eludehcSevaW //haha got it? it's WaveSchedule but reversed haha i'm so funny (ki
 			TFBot
 			{ 
 				Template T_TFBot_Red_Soldier
+				UseBestWeapon 0
 				Attributes AlwaysCrit
 				InterruptAction  // Stop current bot ai and force the bot to move to a location
 				{
