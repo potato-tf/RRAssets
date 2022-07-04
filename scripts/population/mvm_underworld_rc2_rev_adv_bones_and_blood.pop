@@ -90,7 +90,8 @@ WaveSchedule
     NoBluHumanFootsteps 1
     BluHumanSpawnNoShoot 0 [$SIGSEGV] // BLU players cannot shoot while in spawn (default: 1)
 	BluHumanSpawnProtection 1 [$SIGSEGV] // BLU players are invincible in spawn (default: 1)
-    
+    ForceRedMoney 1
+
 	FlagCarrierMovementPenalty 1  // IF JUDGES COMPLAIN UNCOMMENT THIS
     BluHumanFlagCapture 1
     BluHumanFlagPickup 1
@@ -206,6 +207,9 @@ WaveSchedule
 		Name "Zombie Medic"
 		Name "Zombie Spy"
 		Name "Zombie Sniper"
+        Name "Basic Spellbook"
+        Name "Halloween Spellbook"
+        Name "TF_WEAPON_SPELLBOOK"
 	}
 
     //Scout 
@@ -216,6 +220,7 @@ WaveSchedule
         "effect cond override" 26
         "special item description" "Replaced Bonk effect with battalion's backup effect."
     }
+
     //Engineer
 
     //Medic
@@ -326,6 +331,104 @@ WaveSchedule
                Itemname "tf_weapon_pda_engineer_build"
                Itemname "tf_weapon_builder" // sappers and engineer stuff
                Itemname "tf_wearable" // booties, mantreads, etc
+            }
+		}
+        Airblast_SpeedBoost
+		{
+			Name "Airblast gives Speed" 
+			Attribute "airblast_give_teammate_speed_boost" 
+			Cap 3 
+			Increment 1
+			Cost 200
+            Description "Flamethrowers will boost teammate and users speed, akin to the Disciplinary Action. +2 seconds per point."
+            AllowedWeapons 
+			{
+                Classname "TF_WEAPON_FLAMETHROWER"
+			}   
+            DisallowedWeapons
+            {
+               //Itemname "TF_WEAPON_SCATTERGUN"
+               //Itemname "TF_WEAPON_PISTOL"
+               Itemname "TF_WEAPON_BAT" 
+               Itemname "Baby Face's Blaster"
+               Itemname "The Back Scatter"
+
+               Itemname "TF_WEAPON_ROCKETLAUNCHER"
+               Itemname "TF_WEAPON_SHOVEL"
+
+               Itemname "TF_WEAPON_FLAMETHROWER"
+               Itemname "tf_weapon_flaregun"
+               Itemname "tf_weapon_flaregun_revenge"
+               //Itemname "tf_weapon_fireaxe"
+               Itemname "Festive Axtinguisher"
+               Itemname "The Axtinguisher"
+               Itemname "The Postal Pummeler"
+               Itemname "The powerjack"
+               Itemname "Sharpened Volcano Fragment"
+               Itemname "The back scratcher"
+               Itemname "The Hot Hand"
+               Itemname "The Neon Annihilator"
+               Itemname "The Phlogistinator"
+
+               Itemname "TF_WEAPON_GRENADELAUNCHER"
+               Itemname "TF_WEAPON_PIPEBOMBLAUNCHER"
+               Itemname "TF_WEAPON_BOTTLE"
+               Itemname "Nessie's Nine Iron"
+               Itemname "The Claidheamohmor"
+               Itemname "The Eyelander"
+               Itemname "Festive Eyelander"
+               Itemname "The Persian Persuader"
+               Itemname "The Scotsman's Skullcutter"
+               Itemname "The Horseless Headless Horseman's Headtaker"
+               Itemname "The Half-Zatoichi"
+
+               Itemname "tf_weapon_minigun"
+               Itemname "tf_weapon_fists"
+
+               Itemname "tf_weapon_wrench"
+               Itemname "tf_weapon_pistol"
+
+               Itemname "TF_WEAPON_MEDIGUN"
+               Itemname "tf_weapon_syringegun_medic"
+               Itemname "TF_WEAPON_BONESAW"
+
+               Itemname "tf_weapon_club"
+               Itemname "tf_weapon_sniperrifle"
+
+               Itemname "tf_weapon_knife"
+               Itemname "tf_weapon_revolver"
+
+               Itemname "tf_weapon_buff_item" // banners
+               Itemname "tf_weapon_jar"
+               Itemname "tf_weapon_laser_pointer"
+               Itemname "tf_weapon_soda_popper"
+                //Itemname "tf_weapon_cleaver"
+                Itemname "tf_weapon_stickbomb"
+                Itemname "tf_weapon_bat_wood"
+               Itemname "tf_weapon_lunchbox_drink"
+               Itemname "tf_weapon_handgun_scout_primary"
+               Itemname "tf_wearable_demoshield"
+               //Itemname "tf_weapon_raygun"
+               Itemname "tf_weapon_pda_engineer_build"
+               Itemname "tf_weapon_builder" // sappers and engineer stuff
+               Itemname "tf_wearable" // booties, mantreads, etc
+
+                ClassName tf_weapon_pistol
+				ClassName tf_weapon_handgun_scout_secondary 
+				ClassName TF_WEAPON_PISTOL_SCOUT
+                ItemName "The C.A.P.P.E.R"
+                Itemname "TTG Max Pistol - Poker Night"
+                Itemname "TTG Max Pistol"
+                Itemname "The Winger"
+                Itemname "Pretty Boy's Pocket Pistol"
+                Itemname "The Flying Guillotine"
+
+                Itemname "The Righteous Bison"
+
+                Itemname "TF_WEAPON_SMG"
+                Itemname "Upgradeable TF_WEAPON_SMG"
+
+                Itemname "The Third Degree"
             }
 		}
         MeleeDMGIncrease
@@ -484,6 +587,17 @@ WaveSchedule
             AllowPlayerClass Sniper
             AllowPlayerClass Spy
 		}
+        MMCHWS
+		{
+			Name "Can Holster while spinning"
+			Attribute "mod minigun can holster while spinning"
+			Cap 1
+			Increment 1
+            PlayerUpgrade 1
+			Cost 100
+			Description "Minigun's can holster while spinning."
+            AllowPlayerClass Heavyweapons
+		}
         Adrenaline
 		{
 			Name "Adrenaline"
@@ -570,15 +684,95 @@ WaveSchedule
                Itemname "tf_wearable" // booties, mantreads, etc
             }
 		}
+        Shield_ChargeDur
+		{
+			Name "Charging Time Increase"
+			Attribute "charge time increased"
+			Cap 4
+			Increment 1
+			Cost 100
+			Description "Grants +1 seconds charge duration and 100% turn control for shield's."
+			AllowedWeapons 
+			{
+				Classname "tf_wearable_demoshield"
+			}
+            SecondaryAttributes 
+			{
+				"mult charge turn control" 1
+			}
+            DisallowedWeapons
+            {
+                Itemname "TF_WEAPON_SCATTERGUN"
+                Itemname "TF_WEAPON_PISTOL"
+                Itemname "TF_WEAPON_BAT" 
+                Itemname "Baby Face's Blaster"
+                Itemname "The Back Scatter"
+
+                Itemname "TF_WEAPON_ROCKETLAUNCHER"
+                Itemname "TF_WEAPON_SHOVEL"
+
+                Itemname "TF_WEAPON_FLAMETHROWER"
+                Itemname "tf_weapon_flaregun"
+                Itemname "tf_weapon_flaregun_revenge"
+                Itemname "tf_weapon_fireaxe"
+
+                Itemname "TF_WEAPON_GRENADELAUNCHER"
+                Itemname "TF_WEAPON_PIPEBOMBLAUNCHER"
+                Itemname "TF_WEAPON_BOTTLE"
+                Itemname "Nessie's Nine Iron"
+                Itemname "The Claidheamohmor"
+                Itemname "The Eyelander"
+                Itemname "Festive Eyelander"
+                Itemname "The Persian Persuader"
+                Itemname "The Scotsman's Skullcutter"
+                Itemname "The Horseless Headless Horseman's Headtaker"
+                Itemname "The Half-Zatoichi"
+
+                Itemname "tf_weapon_minigun"
+                Itemname "tf_weapon_fists"
+
+                Itemname "tf_weapon_wrench"
+                Itemname "tf_weapon_pistol"
+
+                Itemname "TF_WEAPON_MEDIGUN"
+                Itemname "tf_weapon_syringegun_medic"
+                Itemname "TF_WEAPON_BONESAW"
+
+                Itemname "tf_weapon_club"
+                Itemname "TF_WEAPON_SMG"
+                Itemname "tf_weapon_sniperrifle"
+
+                Itemname "tf_weapon_knife"
+                itemname "tf_weapon_revolver" 
+                Itemname "upgradeable tf_weapon_revolver" 
+                Itemname "The Enforcer"
+                Itemname "L'Etranger"
+               //Itemname "tf_weapon_revolver"
+
+               Itemname "tf_weapon_buff_item" // banners
+               Itemname "tf_weapon_jar"
+               Itemname "tf_weapon_laser_pointer"
+               Itemname "tf_weapon_soda_popper"
+                Itemname "tf_weapon_cleaver"
+                Itemname "tf_weapon_stickbomb"
+                Itemname "tf_weapon_bat_wood"
+               Itemname "tf_weapon_lunchbox_drink"
+               Itemname "tf_weapon_handgun_scout_primary"
+               Itemname "tf_wearable_demoshield"
+               Itemname "tf_weapon_pda_engineer_build"
+               Itemname "tf_weapon_builder" // sappers and engineer stuff
+               Itemname "tf_wearable" // booties, mantreads, etc
+            }
+		}
         AmmoRegen
 		{
 			Name "Ammo + Metal Regeneration"
 			Attribute "ammo regen"
-			Cap 0.20
-			Increment 0.10
+			Cap 0.30
+			Increment 0.15
             PlayerUpgrade 1
 			Cost 300
-			Description "Provides Ammo regeneration that occurs every 5 seconds. +10% total ammo regenerated, stacks with max ammo upgrades."
+			Description "Provides Ammo regeneration that occurs every 5 seconds. +15% total ammo regenerated, stacks with max ammo upgrades."
             AllowPlayerClass Scout
             AllowPlayerClass Soldier
             AllowPlayerClass Pyro
@@ -1629,27 +1823,6 @@ WaveSchedule
         annotation
         {
             NoFixup 1
-            training_annotation // unusued annotation because its relatively useless and doesnt explain anything
-            {
-                "display_text" "These are fodder demons, they are easy to kill!"
-                "lifetime" "5"
-                "origin" "616.9 -792.9 240.0"
-                "targetname" "annotation_fodder"
-            }
-            training_annotation // unusued annotation because its relatively useless and doesnt explain anything
-            {
-                "display_text" "These are Heavy demons, the bigger they are, the tougher they are!"
-                "lifetime" "5"
-                "origin" "1904.8 -1021.9 331.0"
-                "targetname" "annotation_heavy"
-            }
-            training_annotation // unused annotation
-            {
-                "display_text" "Super Heavy Demon Spotted! These guys are rare, and are quite powerful!"
-                "lifetime" "5"
-                "origin" "664.8 3539.3 -181.1"
-                "targetname" "annotation_superheavy"
-            }
             training_annotation
             {
                 "display_text" "Destroy all remaining demons to enable the hatch!"
@@ -1694,24 +1867,10 @@ WaveSchedule
             }
             training_annotation
             {
-                "display_text" "Last BLU Tank!"
-                "lifetime" "5"
-                "origin" "767.3 -296.0 319.4"
-                "targetname" "annotation_finaltank_blu"
-            }
-            training_annotation
-            {
                 "display_text" "Last RED Tank!"
                 "lifetime" "5"
                 "origin" "767.3 -296.0 319.4"
                 "targetname" "annotation_finaltank_red"
-            }
-            training_annotation
-            {
-                "display_text" "The Blimp will make 3 laps before it deploys its bomb!"
-                "lifetime" "5"
-                "origin" "767.3 -296.0 319.4"
-                "targetname" "annotation_blimp"
             }
             training_annotation 
             {
@@ -1721,13 +1880,6 @@ WaveSchedule
                 "targetname" "annotation_tankbuff"
             }
             //590.3 1018.6 205.0
-            training_annotation 
-            {
-                "display_text" "The demons have taken the bomb!"
-                "lifetime" "5"
-                "origin" "655.5 3548.3 -79.4"
-                "targetname" "annotation_bombsgone"
-            }
         }
         VIP_DEATH
         {
@@ -2295,6 +2447,7 @@ WaveSchedule
 				"color" "65 155 255"
 				"holdtime" "1"
 				"spawnflags" "1"
+                "channel" "3"
 				"x" "-0.80" // left go down right go up
 				"y" "0.90"
 			}
@@ -2807,671 +2960,6 @@ WaveSchedule
                 "angles" "0 90 0"
             }
         }
-        tele_thingy // unused; is yuugi's not mine
-		{
-			NoFixup 1
-			logic_auto
-			{
-				"OnMapSpawn" "wave_start_relay,AddOutput,OnTrigger tele_thingy_enable:Trigger:0:-1"
-				"OnMapSpawn" "wave_finished_relay,AddOutput,OnTrigger tele_thingy_disable:Trigger:0:-1"
-			}
-			logic_relay // Start with this
-			{
-				"TargetName" "tele_thingy_enable"
-				"OnTrigger" "tele_ambient_thingy,StopSound,,0,-1"
-				"OnTrigger" "tele_thingy,Enable,,15,-1"
-				"OnTrigger" "tele_prop,SetAnimation,running,15,-1"
-				"OnTrigger" "tele_ambient_thingy,PlaySound,,15,-1"
-				"OnTrigger" "tele_active_thingy,PlaySound,,15,-1"
-				"OnTrigger" "tele_start_thingy,Start,,15,-1"
-				"OnTrigger" "hint_telethingy,Show,,0,-1"
-			}
-			logic_relay // Ends with this
-			{
-				"TargetName" "tele_thingy_disable"
-				"OnTrigger" "tele_thingy,Disable,,0,-1"
-				"OnTrigger" "tele_prop,SetAnimation,ref,0,-1"
-				"OnTrigger" "tele_ambient_thingy,StopSound,,0,-1"
-				"OnTrigger" "tele_start_thingy,Stop,,0,-1"
-			}
-			prop_dynamic // spawn
-			{
-				"targetname" "tele_prop"
-				"angles" "0 0 0"
-				"DefaultAnim" "ref"
-				"disableshadows" "1"
-				"model" "models/buildables/teleporter_light.mdl"
-				"modelscale" "1.0"
-				"skin" "1"
-				"solid" "0"
-				"origin" "3712 -4064 -93.1675"
-			}
-			prop_dynamic // main area
-			{
-				"targetname" "tele_prop"
-				"angles" "0 0 0"
-				"DefaultAnim" "ref"
-				"disableshadows" "1"
-				"model" "models/buildables/teleporter_light.mdl"
-				"modelscale" "1.0"
-				"skin" "1"
-				"solid" "0"
-				"origin" "3104 -2272 -365.477"
-			}
-			trigger_teleport
-			{
-				"targetname" "tele_thingy"
-				"target" "teleport_here_thingy"
-				"spawnflags" "1"
-				"StartDisabled" "1"
-				"mins" "-524 -582 -268"
-                "maxs" "524 582 268"
-				"origin" "-555.5 -2412.7 0.2"
-
-				"OnStartTouchAll" "tele_deliver_thingy,PlaySound,,0,-1"
-				"OnStartTouchAll" "tele_effect_thingy,Start,,0,-1"
-				"OnEndTouchAll" "tele_effect_thingy,Stop,,0.1,-1"
-                "OnStartTouch" "!activator,$AddCond,52,0,-1"
-                "OnStartTouch" "!activator,$RemoveCond,52,6,-1"
-				"OnStartTouch" "fade_thingy,Fade,,0,-1" // Causes the Fade effect on other players too
-			}
-			info_teleport_destination
-			{
-				"targetname" "teleport_here_thingy"
-				"angles" "0 90 0"
-				"origin" "658.9 2281.4 -31.0"
-			}
-			func_nobuild
-			{
-				"AllowDispenser" "0"
-				"AllowSentry" "0"
-				"AllowTeleporters" "0"
-				"StartDisabled" "0"
-				"targetname" "nobuildhere"
-				"TeamNum" "3"
-				"mins" "-160 -304 -512"
-				"maxs" "160 304 512"
-				"origin" "3104 -2304 -370.274" 
-			}
-			env_fade
-			{
-				"targetname" "fade_thingy"
-				"spawnflags" "5"
-				"rendercolor" "200 200 200"
-				"renderamt" "175"
-				"holdtime" "0.5"
-				"duration" "0.3"
-			}
-			// Entrance
-			info_particle_system
-			{
-				"targetname" "tele_effect_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleported_blue"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3712 -4064 -93.1675"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_effect_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleported_flash"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3712 -4064 -93.1675"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_start_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleporter_blue_entrance_level3"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3712 -4064 -93.1675"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_start_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleporter_blue_charged_level3"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3712 -4064 -93.1675"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_start_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleporter_blue_entrance_disc"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3712 -4064 -93.1675"
-			}
-			// Exit
-			info_particle_system
-			{
-				"targetname" "tele_effect_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleported_flash"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3104 -2272 -361.3"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_effect_thingy"
-				"angles" "0 0 0"
-				"effect_name" "powerup_supernova_explode_blue_spikes"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3104 -2272 -361.3"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_start_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleporter_blue_charged_level3"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3104 -2272 -365.477"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_start_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleporter_blue_exit_level3"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3104 -2272 -365.477"
-			}
-			info_particle_system
-			{
-				"targetname" "tele_start_thingy"
-				"angles" "0 0 0"
-				"effect_name" "teleporter_blue_entrance_disc"
-				"flag_as_weather" "0"
-				"start_active" "0"
-				"origin" "3104 -2272 -365.477"
-			}
-			// Sound
-			ambient_generic
-			{
-				"targetname" "tele_deliver_thingy"
-				"health" "10"
-				"message" "MVM.Robot_Teleporter_Deliver"
-				"pitch" "100"
-				"pitchstart" "100"
-				"radius" "1000"
-				"spawnflags" "48"
-				"origin" "3712 -4064 -32"
-			}
-			ambient_generic
-			{
-				"targetname" "tele_deliver_thingy"
-				"health" "10"
-				"message" "MVM.Robot_Teleporter_Deliver"
-				"pitch" "100"
-				"pitchstart" "100"
-				"radius" "1000"
-				"spawnflags" "48"
-				"origin" "3104 -2272 -333"
-			}
-			ambient_generic
-			{
-				"targetname" "tele_active_thingy"
-				"health" "10"
-				"message" "mvm/mvm_tele_activate.wav"
-				"pitch" "100"
-				"pitchstart" "100"
-				"radius" "99999"
-				"spawnflags" "48"
-				"origin" "3712 -4064 -64"
-			}
-			ambient_generic
-			{
-				"targetname" "tele_ambient_thingy"
-				"health" "10"
-				"message" "Building_Teleporter.SpinLevel3"
-				"pitch" "100"
-				"pitchstart" "100"
-				"radius" "1250"
-				"spawnflags" "16"
-				"origin" "3712 -4064 0"
-			}
-			ambient_generic
-			{
-				"targetname" "tele_ambient_thingy"
-				"health" "10"
-				"message" "Building_Teleporter.SpinLevel3"
-				"pitch" "100"
-				"pitchstart" "100"
-				"radius" "1250"
-				"spawnflags" "16"
-				"origin" "3104 -2272 -308"
-			}
-		}
-        miniguns_1
-        {
-            prop_dynamic
-            {
-                "angles" "50 254 0"
-                "model" "models/weapons/c_models/c_minigun/c_minigun.mdl"
-                "modelscale" "1.0"
-                "parentname" "rotate_minigun_1"
-                "skin" "7"
-                "solid" "0"
-                "spawnflags" "0"
-                "targetname" "minigun_mimic_1"
-                "origin" "394 3115 477"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "50 254 0"
-                "Crits" "0"
-                "Damage" "9"
-                "teamnum" "2"
-                "ModelScale" "1"
-                "parentname" "minigun_mimic_1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "25"
-                "SpreadAngle" "0.3"
-                "ParticleEffect" "utaunt_arcane_purple_parent"
-                "targetname" "bullets_1"
-                "WeaponType" "4"
-                "origin" "380 3068 409"
-                
-            }
-            info_particle_system
-            {
-                "angles" "50 254 0"
-                "effect_name" "utaunt_arcane_purple_parent"
-                "flag_as_weather" "0"
-                "parentname" "rotate_minigun_1"
-                "start_active" "1"
-                "targetname" "particle_minigun"
-                "origin" "395 3121 482"
-            }
-            logic_timer
-            {
-                "targetname" "guntimer"
-                "refiretime" "0.1"
-                "OnTimer" "bullets_2,fireonce,,0,-1"
-                "OnTimer" "bullets_1,fireonce,,0,-1"
-            }
-            func_rotating
-            {
-                "angles" "0 0 0"
-                "fanfriction" "100"
-                "maxspeed" "20"
-                "message" "Weapon_Minigun.Spin"
-                "origin" "400 3065 152.5"
-                "renderamt" "255"
-                "rendercolor" "255 255 255"
-                "renderfx" "0"
-                "rendermode" "0"
-                "solidbsp" "0"
-                "spawnflags" "65"
-                "targetname" "rotate_minigun_1"
-                "volume" "2"
-                "mins" "-8 -8 -8"
-                "maxs" "8 8 8"
-            }
-            //other minigun
-            prop_dynamic
-            {
-                "angles" "50 123 0"
-                "model" "models/weapons/c_models/c_minigun/c_minigun.mdl"
-                "modelscale" "1.0"
-                "skin" "7"
-                "parentname" "rotate_mgun_2"
-                "solid" "0"
-                "spawnflags" "0"
-                "targetname" "minigun_mimic_2"
-                "origin" "1000 3142 477"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "50 123 0"
-                "Crits" "0"
-                "Damage" "9"
-                "teamnum" "2"
-                "ModelScale" "1"
-                "parentname" "rotate_mgun_2"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "25"
-                "SpreadAngle" "0.3"
-                "ParticleEffect" "utaunt_arcane_purple_parent"
-                "targetname" "bullets_2"
-                "WeaponType" "4"
-                "origin" "985 3167 449"
-
-            }
-            info_particle_system
-            {
-                "angles" "50 254 0"
-                "effect_name" "utaunt_arcane_purple_parent"
-                "flag_as_weather" "0"
-                "parentname" "rotate_mgun_2"
-                "start_active" "1"
-                "targetname" "particle_minigun"
-                "origin" "994 3139 482"
-            }
-            func_rotating
-            {
-                "angles" "0 0 0"
-                "fanfriction" "100"
-                "maxspeed" "20"
-                "message" "Weapon_Minigun.Spin"
-                "origin" "1000 3142 477"
-                "renderamt" "255"
-                "rendercolor" "255 255 255"
-                "renderfx" "0"
-                "rendermode" "0"
-                "solidbsp" "0"
-                "spawnflags" "65"
-                "targetname" "rotate_mgun_2"
-                "volume" "2"
-                "mins" "-8 -8 -8"
-                "maxs" "8 8 8"
-            }
-        }
-        arrows
-        {
-            logic_timer
-            {
-                "targetname" "arrowtimer"
-                "refiretime" "10"
-                "OnTimer" "arrows2,fireonce,,0,-1"
-                "OnTimer" "arrows1,fireonce,,0,-1"
-                "OnTimer" "arrows3,fireonce,,0,-1"
-                "OnTimer" "arrows4,fireonce,,0,-1"
-                "OnTimer" "arrows5,fireonce,,0,-1"
-                "OnTimer" "arrows6,fireonce,,0,-1"
-                "OnTimer" "arrows7,fireonce,,0,-1"
-                "OnTimer" "arrows8,fireonce,,0,-1"
-            }
-            info_particle_system
-            {
-                "classname" "info_particle_system"
-                "angles" "0 0 0"
-
-                "effect_name" "projectile_fireball_ring_fire"
-                "flag_as_weather" "0"
-                "start_active" "1"
-                "targetname" "arrow_particle1"
-                "origin" "1108 2873 -70.8747"
-            }
-            info_particle_system
-            {
-                "classname" "info_particle_system"
-                "angles" "0 0 0"
-
-                "effect_name" "projectile_fireball_ring_fire"
-                "flag_as_weather" "0"
-                "start_active" "1"
-                "targetname" "arrow_particle2"
-                "origin" "-174.093 4018.71 -26.7241"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows8"
-                "teamnum" "2"
-                "WeaponType" "2"
-                "origin" "1107.11 2879.39 -89.175"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows3"
-                "WeaponType" "2"
-                "teamnum" "2"
-                "origin" "1100 2859 -71"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "teamnum" "2"
-                "targetname" "arrows4" 
-                "WeaponType" "2"
-                "origin" "1115 2907.01 -96"
-            }   
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "teamnum" "2"
-                "targetname" "arrows1"
-                "WeaponType" "2"
-                "origin" "1107 2880 -68"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows2"
-                "WeaponType" "2"
-                "origin" "1105 2880.01 -102"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows7"
-                "WeaponType" "2"
-	            "origin" "1111 2856 -87.9911"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows6"
-                "WeaponType" "2"
-                "origin" "1107.11 2885.42 -83.1471"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 176 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows5"
-                "WeaponType" "2"
-                "origin" "1109 2902 -78.1165"
-            }
-        }
-        arrows_2
-        {
-            logic_timer
-            {
-                "targetname" "arrowtimer"
-                "refiretime" "10"
-                "OnTimer" "arrows2,fireonce,,0,-1"
-                "OnTimer" "arrows1,fireonce,,0,-1"
-                "OnTimer" "arrow_crit,fireonce,,0,-1"
-                "OnTimer" "arrows4,fireonce,,0,-1"
-                "OnTimer" "arrows5,fireonce,,0,-1"
-                "OnTimer" "arrows6,fireonce,,0,-1"
-                "OnTimer" "arrows7,fireonce,,0,-1"
-                "OnTimer" "arrows8,fireonce,,0,-1"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows8"
-                "teamnum" "2"
-                "WeaponType" "2"
-                "origin" "-152 3997.26 -47"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "1"
-                "Damage" "150"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrow_crit"
-                "teamnum" "2"
-                "WeaponType" "2"
-                "origin" "-159 3956.01 128"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "teamnum" "2"
-                "targetname" "arrows4" 
-                "WeaponType" "2"
-                "origin" "-95 3959.01 -26"
-            }   
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "teamnum" "2"
-                "targetname" "arrows1"
-                "WeaponType" "2"
-                "origin" "-136 4002.01 -15"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows2"
-                "WeaponType" "2"
-                "origin" "-165 4046.06 -15"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows7"
-                "WeaponType" "2"
-	            "origin" "-170 3990.01 -7"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows6"
-                "WeaponType" "2"
-                "origin" "-134 4023.39 -35"
-            }
-            tf_point_weapon_mimic
-            {
-                "angles" "0 0 0"
-                "Crits" "0"
-                "Damage" "50"
-                "ModelScale" "1"
-                "SpeedMax" "9000"
-                "SpeedMin" "9000"
-                "teamnum" "2"
-                "SplashRadius" "0"
-                "SpreadAngle" "0"
-                "targetname" "arrows5"
-                "WeaponType" "2"
-                "origin" "-150 4020.01 12"
-            }
-        }
         hole_cover
         {
             prop_dynamic
@@ -3512,227 +3000,6 @@ WaveSchedule
                 "maxs" "414 260 15"
             }
         }
-        hurtbot
-        {
-            trigger_hurt
-            {
-                "damage" "999"
-                "damagecap" "20"
-                "damagemodel" "0"
-                "damagetype" "0"
-                "filtername" "filter_hurtbot"
-                "nodmgforce" "0"
-                "origin" "881.5 2907 957"
-                "spawnflags" "1"
-                "StartDisabled" "0"
-                "targetname" "hurtbot_mega"
-
-                "mins" "-4009 -1665 -893"
-                "maxs" "4009 1665 893"
-            }
-            filter_tf_bot_has_tag
-            {
-                "Negated" "Allow entities that match criteria"
-                "require_all_tags" "1"
-                "tags" "hurtbot"
-                "targetname" "filter_hurtbot"
-                "origin" "723 3295 65"
-            }
-            logic_timer
-            {
-                "targetname" "timer_kill"
-                "RefireTime" "0.1"
-                "spawnflags" "0"
-                "UseRandomTime" "0"
-                "OnTimer" "hurtbot_mega,Enable,,0,-1"
-                "OnTimer" "hurtbot_mega,Disable,,0.01,-1"
-            }
-        }
-        
-        //thunderbolts
-        //{
-        //    NoFixup 1
-            //TRIGGER HURT
-        //    trigger_hurt
-        //    {
-        //        "damage" "140"
-        //        "damagemodel" "0"
-        //        "damagetype" "0"
-        //        "nodmgforce" "0"
-        //        "origin" "1326.5 2810 221.5"
-        //        "spawnflags" "1"
-        //        "StartDisabled" "1"
-        //        "targetname" "thunderbolt_1"
-
-        //        "mins" "-131 -115 -119"
-        //        "maxs" "131 115 119"
-        //    }
-        //    trigger_hurt
-        //    {
-        //        "damage" "145"
-        //        "damagemodel" "0"
-        //        "damagetype" "0"
-        //        "nodmgforce" "0"
-        //        "origin" "845.5 2885 -164.5"
-        //        "spawnflags" "1"
-        //        "StartDisabled" "1"
-        //        "targetname" "thunderbolt_2"
-
-        //        "mins" "-131 -115 -119"
-        //        "maxs" "131 115 119"
-        //    }
-        //    trigger_hurt
-        //    {
-        //        "damage" "145"
-        //        "damagemodel" "0"
-        //        "damagetype" "0"
-        //        "nodmgforce" "0"
-        //        "origin" "66.5 3111 -84.5"
-         //       "spawnflags" "1"
-        //        "StartDisabled" "1"
-        //        "targetname" "thunderbolt_3"
-
-        //        "mins" "-131 -115 -119"
-        //        "maxs" "131 115 119"
-        //    }
-        ///    trigger_hurt
-        //    {
-        //        "damage" "145"
-        //        "damagemodel" "0"
-        //        "damagetype" "0"
-        //        "nodmgforce" "0"
-        //        "origin" "-507.5 2887 134.5"
-        //        "spawnflags" "1"
-        //        "StartDisabled" "1"
-        //        "targetname" "thunderbolt_4"
-
-         //       "mins" "-131 -115 -119"
-        //       "maxs" "131 115 119"
-        //    }
-
-            //SPECIAL BOLT
-         //   info_particle_system
-        //    {
-        //        "classname" "info_particle_system"
-        ///        "angles" "0 0 0"
-        //        "effect_name" "thunder_yellow_beam"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderparticle1"
-         //       "parentname" "thunderbolt_1"
-        //        "origin" "1326.5 2810 580.5"
-        //    }
-        //    info_particle_system
-        //    {
-        //        "classname" "info_particle_system"
-        //        "angles" "0 0 0"
-        //        "effect_name" "thunder_yellow_beam"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderparticle2"
-        //        "parentname" "thunderbolt_2"
-        //        "origin" "845.5 2885 580.9"
-        //    }
-        //    info_particle_system
-        //    {
-        //        "classname" "info_particle_system"
-        //        "angles" "0 0 0"
-        //        "effect_name" "utaunt_electricity_cloud_parent_WY"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderparticle1"
-        //        "parentname" "thunderbolt_3"
-        //        "origin" "1326.5 2810 580.5"
-        //    }
-        //    info_particle_system
-        //    {
-        //        "classname" "info_particle_system"
-        //        "angles" "0 0 0"
-        //        "effect_name" "utaunt_electricity_cloud_parent_WY"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderparticle2"
-        //        "parentname" "thunderbolt_4"
-        //        "origin" "-544.6 2854.4 580.9"
-        //    }
-
-            //PLACEHOLDERS
-        //    info_particle_system
-        //    {
-        //        "angles" "0 0 0"
-        //        "effect_name" "utaunt_electricity_cloud_parent_WY"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderbolt_placeholder_3"
-        //        "origin" "845.5 2885 -164.5"
-        //    }
-        //    info_particle_system
-        //    {
-        //        "angles" "0 0 0"
-        //        "effect_name" "utaunt_electricity_cloud_parent_WY"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderbolt_placeholder_1"
-        //       "origin" "1326.5 2810 221.5"
-        //    }
-        //    info_particle_system
-        //    {
-        //        "angles" "0 0 0"
-        //        "effect_name" "utaunt_electricity_cloud_parent_WY"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderbolt_placeholder_2"
-        //        "origin" "-474 2879 210"
-        //    }
-        //    info_particle_system
-        //    {
-        //        "angles" "0 0 0"
-        //        "effect_name" "utaunt_electricity_cloud_parent_WY"
-        //        "flag_as_weather" "0"
-        //        "start_active" "0"
-        //        "targetname" "thunderbolt_placeholder_4"
-        //        "origin" "78 3112 -6"
-        //    }
-
-            //timer
-        //    logic_timer
-        //    {
-        //        "RefireTime" "25"
-        //        "spawnflags" "0"
-        //        "targetname" "timer_thunder"
-
-        //        "OnTimer" "thunderbolt_1,Enable,,0.1,-1"
-        //        "OnTimer" "thunderbolt_2,Enable,,0.1,-1"
-        //        "OnTimer" "thunderbolt_1,Disable,,0.5,-1"
-        //        "OnTimer" "thunderbolt_2,Disable,,0.5,-1"
-
-        //        "OnTimer" "thunderbolt_4,Enable,,0.1,-1"
-        //        "OnTimer" "thunderbolt_3,Enable,,0.1,-1"
-        //        "OnTimer" "thunderbolt_4,Disable,,0.5,-1"
-        //        "OnTimer" "thunderbolt_3,Disable,,0.5,-1"
-
-                //"OnTimer" "thunderparticle2,Start,,5,-1"
-                //"OnTimer" "thunderparticle1,Start,,5,-1"
-                //"OnTimer" "thunderparticle2,Stop,,10,-1"
-                //"OnTimer" "thunderparticle1,Stop,,10,-1"
-                
-                //"OnTimer" "thunderparticle3,Start,,5,-1"
-                //"OnTimer" "thunderparticle4,Start,,5,-1"
-                //"OnTimer" "thunderparticle3,Stop,,10,-1"
-                //"OnTimer" "thunderparticle4,Stop,,10,-1"
-
-        //        "OnTimer" "thunderbolt_placeholder_4,Start,,1,-1"
-        //        "OnTimer" "thunderbolt_placeholder_3,Start,,1,-1"
-        //        "OnTimer" "thunderbolt_placeholder_1,Start,,1,-1"
-        //        "OnTimer" "thunderbolt_placeholder_2,Start,,1,-1"
-
-        //        "OnTimer" "thunderbolt_placeholder_4,Stop,,2.5,-1"
-        //        "OnTimer" "thunderbolt_placeholder_3,Stop,,2.5,-1"
-        //        "OnTimer" "thunderbolt_placeholder_1,Stop,,2.5,-1"
-        //        "OnTimer" "thunderbolt_placeholder_2,Stop,,2.5,-1"
-        //    
-        //    }
-        //}
     } 
 
     //SpawnTemplate thunderbolts
@@ -3748,7 +3015,7 @@ WaveSchedule
     SpawnTemplate annotation
     //SpawnTemplate marauder_anticheese
     SpawnTemplate forcefield_hatch
-    SpawnTemplate VIP_DEATH
+    //SpawnTemplate VIP_DEATH
     SpawnTemplate Decoration
     //SpawnTemplate bluspawn_push
     //SpawnTemplate blu_spawn_protect
@@ -3772,12 +3039,14 @@ WaveSchedule
     SpawnTemplate BLU_WIN
     SpawnTemplate teleport_sidespawn
     SpawnTemplate Spawn_Abuse_Fix
+    //"add cond when active" 56
     PlayerSpawnTemplate [$SIGSEGV] //Spawn custom player template
 	{
 		Name Spawn_Abuse_Fix 
 		Origin "0 0 0" 
 		Bone "bip_spine_2" 
 	}
+    
     //SpawnTemplate chem_breaker
 
     //spec_goto 664.8 3539.3 -121.1 -7.0 167.3 hatch: shield from capping
@@ -4048,15 +3317,44 @@ WaveSchedule
     ///////////////////////////////////////////////////////////MISC
     ///////////////////////////////////////////////////////////////
 
-    //CustomWeapon [$SIGSEGV] //Allows you to use an alias for items with custom attributes
-	//{
-    //    Name "The Chemical Breaker"
-	//	OriginalItemName "Gold Botkiller Scattergun Mk.I" // The item used as a base
-	//	"fire rate penalty" 1.2 
-    //    "reload full clip at once" 1
-    //    "Reload time increased" 2.8
-    //    "mod see enemy health" 1
-	//}
+    CustomWeapon [$SIGSEGV] //Allows you to use an alias for items with custom attributes
+	{
+        "Burst Fire Soldier"
+        {
+            OriginalItemName "Upgradeable TF_WEAPON_ROCKETLAUNCHER" 
+            "faster reload rate" 0.6
+			"fire rate bonus" 0.1
+			"clip size upgrade atomic" 2.0
+            "fire full clip at once" 1
+        
+            "cannot be upgraded" 1
+        }
+        "Black Box Soldier"
+        {
+            OriginalItemName "Festive Black Box"
+			"fire rate bonus" 0.001
+			"blast radius increased" 1.25
+			"heal on hit for rapidfire" 90
+            "add cond on hit" 28
+            "add cond on hit duration" 3
+
+			"projectile spread angle penalty" 2
+            "reload time increased" 1.25
+            "damage penalty" 0.85
+
+            "reload full clip at once" 1
+            "cannot be upgraded" 1
+            "custom item model" "models/workshop/weapons/c_models/c_blackbox/c_blackbox.mdl"
+        }
+        "Rapid Fire Soldier"
+        {
+            OriginalItemName "Upgradeable TF_WEAPON_ROCKETLAUNCHER" 
+            "fire rate bonus" 0.75
+            "damage penalty" 0.6
+            "maxammo primary increased" 2
+			"mod max primary clip override" -1
+        }
+	}
 
     //ExtraLoadoutItems [$SIGSEGV] // Extra loadout items available after typing !missionitems in chat
 	//{   
@@ -7667,7 +6965,7 @@ WaveSchedule
 			}
             TFBot
             {
-                Template T_TFBot_Scout_Melee_Fix
+                Template T_TFBot_Soldier_Extended_Battalion
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
@@ -8572,8 +7870,7 @@ WaveSchedule
 			}
             TFBot
             {
-                Template T_TFBot_Scout_Melee_Fix
-                Action Mobber
+                Template T_TFBot_Demoman_Stickybomb
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
