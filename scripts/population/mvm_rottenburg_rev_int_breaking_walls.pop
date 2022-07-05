@@ -38,16 +38,16 @@ WaveSchedule
 	DisallowUpgrade	"maxammo secondary increased"
 	DisallowUpgrade	"maxammo metal increased"
 	DisallowUpgrade	"metal regen"
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu"
-	PrecacheModel "models\props_mvm\robot_spawnpoint.mdl"
+	PrecacheModel "models/props_mvm/mvm_upgrade_blu"
+	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"
 	PrecacheModel "models/props_frontline/tank_cart.mdl"
-	PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
+	PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl"
 	DisableSound "Announcer.MVM_Game_Over_Loss" 	[$SIGSEGV]
 	DisableSound "Announcer.MVM_Wave_Lose" 			[$SIGSEGV]
 	DisableSound "music.mvm_lost_wave" 				[$SIGSEGV]
@@ -203,7 +203,7 @@ WaveSchedule
 				"maxdxlevel" "0"
 				"MinAnimTime" "5"
 				"mindxlevel" "0"
-				"model" "models\props_mvm\mvm_upgrade_blu.mdl"
+				"model" "models/props_mvm/mvm_upgrade_blu.mdl"
 				"modelscale" "1"
 				"PerformanceMode" "0"
 				"pressuredelay" "0"
@@ -302,7 +302,7 @@ WaveSchedule
                 "angles" "10 90 0"
                 "DisableBoneFollowers" "0"
                 "disablereceiveshadows" "0"
-                "model" "models\props_medieval\fort_wall_short.mdl"
+                "model" "models/props_medieval/fort_wall_short.mdl"
                 "disableshadows" "1"
                 "ExplodeDamage" "0"
                 "ExplodeRadius" "0"
@@ -398,7 +398,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -411,7 +411,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -424,7 +424,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -437,7 +437,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -450,7 +450,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -463,7 +463,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -476,7 +476,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -489,7 +489,7 @@ WaveSchedule
 		    prop_dynamic
 			{
 			    "angles" "0 90 0"
-				"model" "models\props_forest\cliff_wall_10.mdl"
+				"model" "models/props_forest/cliff_wall_10.mdl"
 				"modelscale" "1.0"
 				"rendercolor" "255 255 255"
 				"solid" 0

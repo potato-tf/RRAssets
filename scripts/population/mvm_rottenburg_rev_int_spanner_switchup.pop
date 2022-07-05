@@ -139,14 +139,14 @@ WaveSchedule
 	BluHumanTeleportOnSpawn 1
 	BotPushaway 0	// helpful for tele's but clumps squads into a ball
 	// Precache all custom models and sounds
-	PrecacheModel models\props_mvm\mvm_upgrade_blu.mdl
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
+	PrecacheModel models/props_mvm/mvm_upgrade_blu.mdl
+    PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl"
 	// Disable Sounds
 	DisableSound music.mvm_end_last_wave
 	DisableSound music.mvm_end_mid_wave
@@ -186,7 +186,7 @@ WaveSchedule
 	// override some sounds
 	OverrideSounds
 	{
-		MVM.GiantCommonExplodes ambient\explosions\explode_3.wav
+		MVM.GiantCommonExplodes ambient/explosions/explode_3.wav
 		Announcer.MVM_Spy_Alert empty.wav
 		Announcer.mvm_spybot_death empty.wav
 		Announcer.mvm_spybot_death_all empty.wav
@@ -408,7 +408,7 @@ WaveSchedule
 			{
 				targetname failuresound
 				health 10
-				message vo\announcer_failure.mp3
+				message vo/announcer_failure.mp3
 				pitch 100
 				pitchstart 100
 				radius 20000
@@ -701,7 +701,7 @@ WaveSchedule
 				maxdxlevel 0
 				MinAnimTime 5
 				mindxlevel 0
-				model models\props_mvm\mvm_upgrade_blu.mdl
+				model models/props_mvm/mvm_upgrade_blu.mdl
 				modelscale 1
 				PerformanceMode 0
 				pressuredelay 0
@@ -733,7 +733,7 @@ WaveSchedule
 				maxdxlevel 0
 				MinAnimTime 5
 				mindxlevel 0
-				model models\props_mvm\mvm_upgrade_blu.mdl
+				model models/props_mvm/mvm_upgrade_blu.mdl
 				modelscale 1
 				PerformanceMode 0
 				pressuredelay 0
@@ -845,7 +845,7 @@ WaveSchedule
 				maxdxlevel 0
 				MinAnimTime 5
 				mindxlevel 0
-				model models\props_buildings\building_002a.mdl
+				model models/props_buildings/building_002a.mdl
 				modelscale 1
 				PerformanceMode 0
 				pressuredelay 0
@@ -1370,7 +1370,7 @@ WaveSchedule
 			Support Limited
 			MaxActive 1
 			WaitBeforeStarting 300	// 5 minutes
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 
 			Tank
 			{
@@ -1882,7 +1882,7 @@ WaveSchedule
 			MaxActive 2
 			WaitBeforeStarting 300	// 5 minutes
 			WaitBetweenSpawns 30
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 
 			Tank
 			{
@@ -2248,7 +2248,7 @@ WaveSchedule
 			MaxActive 3
 			WaitBeforeStarting 300	// 5 minutes
 			WaitBetweenSpawns 30
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 
 			Tank
 			{
@@ -2479,7 +2479,7 @@ WaveSchedule
 			SpawnCount 1
 			TotalCurrency 250
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 
 			Tank
 			{
@@ -2771,7 +2771,7 @@ WaveSchedule
 			MaxActive 4
 			WaitBeforeStarting 300	// 5 minutes
 			WaitBetweenSpawns 30
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 
 			Tank
 			{
@@ -3205,7 +3205,7 @@ WaveSchedule
 			MaxActive 5
 			WaitBeforeStarting 300	// 5 minutes
 			WaitBetweenSpawns 30
-			FirstSpawnWarningSound mvm\mvm_tele_deliver.wav
+			FirstSpawnWarningSound mvm/mvm_tele_deliver.wav
 
 			Tank
 			{

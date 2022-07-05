@@ -48,25 +48,25 @@ WaveSchedule
 	//SniperHideLasers 1 [$SIGSEGV]
 	
 //	Precache all custom models and sounds
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl" [$SIGSEGV]	
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl" [$SIGSEGV]
-	PrecacheModel "models\props_skybox\fogbox_cyberia.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl" [$SIGSEGV]	
+    PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_skybox/fogbox_cyberia.mdl" [$SIGSEGV]
 	//arms
-	// PrecacheModel "models\weapons\c_models\c_scout_bot_arms.mdl"	 [$SIGSEGV]	 
-	// PrecacheModel "models\weapons\c_models\c_soldier_bot_arms.mdl" [$SIGSEGV]		 
-	// PrecacheModel "models\weapons\c_models\c_pyro_bot_arms.mdl" [$SIGSEGV]			 
-	// PrecacheModel "models\weapons\c_models\c_demo_bot_arms.mdl" [$SIGSEGV]			 
-	// PrecacheModel "models\weapons\c_models\c_engineer_bot_arms.mdl" [$SIGSEGV]		 
-	// PrecacheModel "models\weapons\c_models\c_heavy_bot_arms.mdl" [$SIGSEGV]		 
-	// PrecacheModel "models\weapons\c_models\c_sniper_bot_arms.mdl" [$SIGSEGV]		 
-	// PrecacheModel "models\weapons\c_models\c_medic_bot_arms.mdl" [$SIGSEGV]		 
-    // PrecacheModel "models\weapons\c_models\c_spy_bot_arms.mdl" [$SIGSEGV]		
+	// PrecacheModel "models/weapons/c_models/c_scout_bot_arms.mdl"	 [$SIGSEGV]	 
+	// PrecacheModel "models/weapons/c_models/c_soldier_bot_arms.mdl" [$SIGSEGV]		 
+	// PrecacheModel "models/weapons/c_models/c_pyro_bot_arms.mdl" [$SIGSEGV]			 
+	// PrecacheModel "models/weapons/c_models/c_demo_bot_arms.mdl" [$SIGSEGV]			 
+	// PrecacheModel "models/weapons/c_models/c_engineer_bot_arms.mdl" [$SIGSEGV]		 
+	// PrecacheModel "models/weapons/c_models/c_heavy_bot_arms.mdl" [$SIGSEGV]		 
+	// PrecacheModel "models/weapons/c_models/c_sniper_bot_arms.mdl" [$SIGSEGV]		 
+	// PrecacheModel "models/weapons/c_models/c_medic_bot_arms.mdl" [$SIGSEGV]		 
+    // PrecacheModel "models/weapons/c_models/c_spy_bot_arms.mdl" [$SIGSEGV]		
 	
 	PrecacheSound "combine_bank_alarm.mp3" [$SIGSEGV]
 	
@@ -108,11 +108,11 @@ WaveSchedule
 	OverrideSounds [$SIGSEGV]
 	{
 		"MVM.BombWarning"			"combine_bank_alarm.mp3"
-		// "MVM.GiantHeavyStep"		"#mvm\giant_heavy\giant_heavy_step02.wav"
-		// "MVM.GiantScoutStep"		"#mvm\giant_scout\giant_scout_step_01.wav"
-		// "MVM.GiantSoldierStep"		"#mvm\giant_soldier\giant_soldier_step03.wav"
-		// "MVM.GiantDemomanStep"		"#mvm\giant_demoman\giant_demoman_step_03.wav"
-		// "MVM.GiantPyroStep"			"#mvm\giant_pyro\giant_pyro_step_04.wav"
+		// "MVM.GiantHeavyStep"		"#mvm/giant_heavy/giant_heavy_step02.wav"
+		// "MVM.GiantScoutStep"		"#mvm/giant_scout/giant_scout_step_01.wav"
+		// "MVM.GiantSoldierStep"		"#mvm/giant_soldier/giant_soldier_step03.wav"
+		// "MVM.GiantDemomanStep"		"#mvm/giant_demoman/giant_demoman_step_03.wav"
+		// "MVM.GiantPyroStep"			"#mvm/giant_pyro/giant_pyro_step_04.wav"
 		"MVM.GiantHeavyLoop"		"empty.wav"
 		"MVM.GiantScoutLoop"		"empty.wav"
 		"MVM.GiantSoldierLoop"		"empty.wav"
@@ -499,7 +499,7 @@ WaveSchedule
 		"clip size penalty HIDDEN" 1
 		
 		// new stats
-		"custom weapon fire sound" "=40|mvm\giant_soldier\giant_soldier_rocket_shoot.wav"
+		"custom weapon fire sound" "=40|mvm/giant_soldier/giant_soldier_rocket_shoot.wav"
 		"faster reload rate" 0.5
 		"fire rate bonus" 0.1
 		"clip size upgrade atomic" 5.0
@@ -2357,7 +2357,7 @@ WaveSchedule
 				StartSound "ambient/machines/thumper_startup1.wav" [$SIGSEGV] //Tank spawn sound
 				DeploySound "misc/null.wav" [$SIGSEGV] //Tank deploy sound
 				EngineLoopSound "ambient/machines/lab_loop1.wav" [$SIGSEGV] //Tank engine sound override, will only loop if the sound was made to be looping.
-				Model "models\props_spytech\control_room_console03.mdl" 
+				Model "models/props_spytech/control_room_console03.mdl" 
 				OnKilledOutput                                  
 				{
 					Target autogun_relay
@@ -2385,7 +2385,7 @@ WaveSchedule
 				StartSound "ambient/machines/thumper_startup1.wav" [$SIGSEGV] //Tank spawn sound
 				DeploySound "misc/null.wav" [$SIGSEGV] //Tank deploy sound
 				EngineLoopSound "ambient/machines/lab_loop1.wav" [$SIGSEGV] //Tank engine sound override, will only loop if the sound was made to be looping.
-				Model "models\props_spytech\control_room_console04.mdl"
+				Model "models/props_spytech/control_room_console04.mdl"
 				OnKilledOutput                                  
 				{
 					Target autogun_relay
@@ -2418,7 +2418,7 @@ WaveSchedule
 					ItemName "TF_WEAPON_SMG"
 					"voice pitch scale" 0
 					"custom kill icon" "pomson"
-					"custom weapon fire sound" "npc\sniper\echo1.wav"
+					"custom weapon fire sound" "npc/sniper/echo1.wav"
 					"no_jump" 1
 					"move speed bonus" 0.000001
 					"dmg taken increased" 0 //no damage from anything

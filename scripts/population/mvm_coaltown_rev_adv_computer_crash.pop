@@ -37,14 +37,14 @@ WaveSchedule
 	BluHumanFlagCapture 1  	 				 
 	BluHumanFlagPickup 1
 	BotsRandomCrit 0
-    PrecacheModel "models\props_mvm\hatch_shield.mdl" [$SIGSEGV]
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"
+    PrecacheModel "models/props_mvm/hatch_shield.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl"
 	RespawnWaveTimeBlue 1  
 	FixedRespawnWaveTimeBlue 1  	
 	FlagEscortCountOffset 14   // Allow for this many additional flag escorts (default: 0)
-	PrecacheModel "models\bots\soldier_boss\bot_soldier_boss_gibby.mdl"
-	PrecacheModel "models\bots\soldier\bot_soldier_gibby.mdl"
-	PrecacheModel "models\bots\heavy\bot_heavy_gibby.mdl"
+	PrecacheModel "models/bots/soldier_boss/bot_soldier_boss_gibby.mdl"
+	PrecacheModel "models/bots/soldier/bot_soldier_gibby.mdl"
+	PrecacheModel "models/bots/heavy/bot_heavy_gibby.mdl"
 	DisableSound "music.mvm_start_last_wave"
 	PrecacheSound "Howl_Hush_Antibirth.mp3"		
 
@@ -128,7 +128,7 @@ WaveSchedule
 			{
 				"targetname" "failuresound"
 				"health" "10"
-				"message" "vo\announcer_failure.mp3"
+				"message" "vo/announcer_failure.mp3"
 				"pitch" "100"
 				"pitchstart" "100"
 				"radius" "20000"
@@ -238,7 +238,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\hatch_shield.mdl"
+                "model" "models/props_mvm/hatch_shield.mdl"
 	            "modelscale" "1"
                 "skin" "0"
                 "solid" "6"
@@ -279,7 +279,7 @@ WaveSchedule
 				"maxdxlevel" "0"
 				"MinAnimTime" "5"
 				"mindxlevel" "0"
-				"model" "models\props_mvm\mvm_upgrade_blu.mdl"
+				"model" "models/props_mvm/mvm_upgrade_blu.mdl"
 				"modelscale" "1"
 				"PerformanceMode" "0"
 				"pressuredelay" "0"
@@ -382,7 +382,7 @@ WaveSchedule
 			NoFixup 1
 			prop_dynamic
 			{
-				"model" "models\props_coalmines\wood_fence_256.mdl"
+				"model" "models/props_coalmines/wood_fence_256.mdl"
 				"solid" "6"
 			}
 			
@@ -404,7 +404,7 @@ WaveSchedule
 			NoFixup 1
 			prop_dynamic
 			{
-				"model" "models\props_farm\concrete_block001.mdl"
+				"model" "models/props_farm/concrete_block001.mdl"
 				"solid" "6"
 			}
 			

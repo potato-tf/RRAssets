@@ -8,7 +8,7 @@
 
 WaveSchedule
 {
-	PrecacheModel "models\bots\demo\red_sentry_buster.mdl"			 
+	PrecacheModel "models/bots/demo/red_sentry_buster.mdl"			 
 	Templates
 	{
 		// Standard Classes ////////////////////////////////////////////////////////////////////////////////////////

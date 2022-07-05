@@ -33,10 +33,10 @@ WaveSchedule
 	DisallowUpgrade	"maxammo secondary increased"
 	DisallowUpgrade	"maxammo metal increased"
 	DisallowUpgrade	"metal regen"
-	PrecacheModel "models\props_mvm\mvm_upgrade_blu"
-	PrecacheModel "models\props_mvm\robot_spawnpoint.mdl"
+	PrecacheModel "models/props_mvm/mvm_upgrade_blu"
+	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"
 	PrecacheModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
-	PrecacheModel "models\props_mvm\reversemvm_redwall.mdl"
+	PrecacheModel "models/props_mvm/reversemvm_redwall.mdl"
 	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
@@ -528,7 +528,7 @@ WaveSchedule
 		    prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\reversemvm_redwall.mdl"
+                "model" "models/props_mvm/reversemvm_redwall.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -546,7 +546,7 @@ WaveSchedule
 		    prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\reversemvm_redwall.mdl"
+                "model" "models/props_mvm/reversemvm_redwall.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -564,7 +564,7 @@ WaveSchedule
 		    prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\reversemvm_redwall.mdl"
+                "model" "models/props_mvm/reversemvm_redwall.mdl"
                 "modelscale" "1"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -582,7 +582,7 @@ WaveSchedule
 		    prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\reversemvm_redwall.mdl"
+                "model" "models/props_mvm/reversemvm_redwall.mdl"
                 "modelscale" "1"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -600,7 +600,7 @@ WaveSchedule
 		    prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\reversemvm_redwall.mdl"
+                "model" "models/props_mvm/reversemvm_redwall.mdl"
                 "modelscale" "1.4"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -781,7 +781,7 @@ WaveSchedule
 				"maxdxlevel" "0"
 				"MinAnimTime" "5"
 				"mindxlevel" "0"
-				"model" "models\props_mvm\mvm_upgrade_blu.mdl" // "models\props_mvm\reversemvm_redwall.mdl"
+				"model" "models/props_mvm/mvm_upgrade_blu.mdl" // "models/props_mvm/reversemvm_redwall.mdl"
 				"modelscale" "1"
 				"PerformanceMode" "0"
 				"pressuredelay" "0"
@@ -853,7 +853,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -866,7 +866,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -879,7 +879,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -892,7 +892,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -905,7 +905,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -918,7 +918,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -931,7 +931,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -944,7 +944,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -957,7 +957,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -970,7 +970,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -983,7 +983,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -996,7 +996,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1009,7 +1009,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -3673,8 +3673,8 @@ WaveSchedule
 				DisableSmokestack 1
 				DisableChildModels 1
 				Model "models/bots/boss_bot/boss_blimp.mdl"
-				PingSound "npc\combine_gunship\ping_search.wav"
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav"
+				PingSound "npc/combine_gunship/ping_search.wav"
+				EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav"
 				Name "blimp"
 				Classicon blimp2_sticky_red_lite
 				StartingPathTrackNode "ballon1_1"
