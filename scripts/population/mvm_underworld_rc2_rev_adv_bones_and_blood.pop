@@ -4305,7 +4305,7 @@ WaveSchedule
             Action Trigger
         }
 
-        BlueTeamWipeCausesWaveLoss 1
+        
 
         Explanation
         {
@@ -6913,7 +6913,7 @@ WaveSchedule
             Action Trigger
         }
 
-        BlueTeamWipeCausesWaveLoss 1
+        
 
         SpawnTemplate sentry_blu
 
@@ -7819,7 +7819,7 @@ WaveSchedule
 
         //SpawnTemplate sentries_stage1
         //SpawnTemplate sentries_stage2
-        BlueTeamWipeCausesWaveLoss 1
+        
         SpawnTemplate sentry_blu
 
         WaveSpawn
@@ -8791,7 +8791,7 @@ WaveSchedule
             Action Trigger
         }
 
-        BlueTeamWipeCausesWaveLoss 1
+        
         SpawnTemplate engineer_hints
 
         WaveSpawn
