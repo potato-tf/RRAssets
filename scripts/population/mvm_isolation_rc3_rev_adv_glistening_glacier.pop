@@ -23,7 +23,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 	AddSentryBusterWhenKillCountExceeds 100000
 
     // Essential Stuff
-    RobotLimit 24                       [$SIGSEGV] 
+    RobotLimit 26                       [$SIGSEGV] 
     ReverseWinConditions 1              [$SIGSEGV] 			 
 	AllowJoinTeamBlueMax 6              [$SIGSEGV] 			 
 	AllowJoinTeamBlue 1                 [$SIGSEGV] 				 
@@ -55,7 +55,6 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 	UpgradeStationKeepWeapons 1 		[$SIGSEGV] 
 	BotsUsePlayerTeleporters 1 			[$SIGSEGV]
 	BluHumanSpawnNoShoot 0 				[$SIGSEGV] 
-	MaxSpectators 2 
     // PrecacheModels
 	PrecacheModel "models/props_mining/support_wall001a.mdl"
 	PrecacheModel "models/props_mvm/reversemvm_redwall_112x152.mdl"

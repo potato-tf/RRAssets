@@ -32,7 +32,6 @@ WaveSchedule
 	BluHumanTeleportOnSpawn 1    
 	TextPrintTime 0
 	NoRomevisionCosmetics 1
-	MaxSpectators 2 
 	CustomNavFile "mvm_hideout_b3_rev" // should make bots avoid window
 	
 	PrecacheSound "galois/cheshyre_whistler.mp3"

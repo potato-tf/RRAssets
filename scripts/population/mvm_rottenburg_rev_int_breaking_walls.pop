@@ -24,7 +24,6 @@ WaveSchedule
 	BluHumanFlagPickup 1 [$SIGSEGV]	 			 
 	BluPlayersAreRobots 1 [$SIGSEGV]
 	AllowJoinTeamBlueMax 6 [$SIGSEGV]
-	MaxSpectators 2 
     ItemBlacklist 
 	{
 	    ItemName "The Short Circuit"
