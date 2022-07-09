@@ -108,25 +108,25 @@ WaveSchedule
     //CustomUpgradesFile "mvm_upgrades_doom3.txt" not needed
     CustomNavFile "mvm_underworld_rc2_customnav_v2_alt"
 
-    PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"
-    PrecacheModel "models\props_mvm\robot_spawnpoint.mdl"
-    PrecacheModel "models\props_mvm\hatch_shield.mdl" [$SIGSEGV]
-    PrecacheModel "models\weapons\c_models\c_argent_axe\c_argent_axe.mdl"
-    //PrecacheModel "models\weapons\c_models\c_argent_shield\c_argent_shield.mdl"
-    //PrecacheModel "models\workshop\player\items\demo\jul13_pillagers_barrel\marauder_head.mdl"
-    //PrecacheModel "models\workshop\player\items\demo\sbox2014_juggernaut_jacket\marauder_armor.mdl"
-    //PrecacheModel "models\bots\demo\marauder.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
-	PrecacheModel "models\bots\boss_bot\bombblue_mechanism.mdl"
-    PrecacheModel "models\workshop\weapons\c_models\c_stormbow\c_stormbow.mdl"
+    PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl"
+    PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"
+    PrecacheModel "models/props_mvm/hatch_shield.mdl" [$SIGSEGV]
+    PrecacheModel "models/weapons/c_models/c_argent_axe/c_argent_axe.mdl"
+    //PrecacheModel "models/weapons/c_models/c_argent_shield/c_argent_shield.mdl"
+    //PrecacheModel "models/workshop/player/items/demo/jul13_pillagers_barrel/marauder_head.mdl"
+    //PrecacheModel "models/workshop/player/items/demo/sbox2014_juggernaut_jacket/marauder_armor.mdl"
+    //PrecacheModel "models/bots/demo/marauder.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl"
+	PrecacheModel "models/bots/boss_bot/bombblue_mechanism.mdl"
+    PrecacheModel "models/workshop/weapons/c_models/c_stormbow/c_stormbow.mdl"
     //PrecacheModel "models/props_urban/empty.mdl"
-    PrecacheModel "models\bots\demo\red_sentry_buster.mdl"   
+    PrecacheModel "models/bots/demo/red_sentry_buster.mdl"   
     //PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"	
 	//PrecacheModel "models/bots/boss_bot/boss_blimpred_damage1.mdl"	
 	//PrecacheModel "models/bots/boss_bot/boss_blimpred_damage2.mdl"	
@@ -1120,7 +1120,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 140 0"
-                "model" "models\props_mvm\mvm_upgrade_blu.mdl"
+                "model" "models/props_mvm/mvm_upgrade_blu.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "2"
@@ -1140,7 +1140,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 312 0"
-                "model" "models\props_mvm\mvm_upgrade_blu.mdl"
+                "model" "models/props_mvm/mvm_upgrade_blu.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1691,7 +1691,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\hatch_shield.mdl"
+                "model" "models/props_mvm/hatch_shield.mdl"
 	            "modelscale" "1.2"
                 "skin" "0"
                 "solid" "6"
@@ -1712,7 +1712,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1722,7 +1722,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1732,7 +1732,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1742,7 +1742,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1752,7 +1752,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1762,7 +1762,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1772,7 +1772,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1782,7 +1782,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1792,7 +1792,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1802,7 +1802,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -1812,7 +1812,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\robot_spawnpoint.mdl"
+                "model" "models/props_mvm/robot_spawnpoint.mdl"
                 "modelscale" "1.0"
                 "rendercolor" "255 255 255"
                 "solid" "0"
@@ -3525,7 +3525,7 @@ WaveSchedule
                 "mod projectile heat aim error" 70
                 "mod projectile heat aim time" 0.6
                 "clip size penalty" 0.25
-                "custom projectile model" "models\buildables\sentry3_rockets.mdl"
+                "custom projectile model" "models/buildables/sentry3_rockets.mdl"
 
                 "reload time increased" 2.6
                 "damage penalty" 0.8
@@ -3692,7 +3692,7 @@ WaveSchedule
             Attributes AlwaysCrit
             Skill Expert
             SpawnTemplate "marauder_bot_fight"
-            //UseCustomModel "models\bots\demo\marauder.mdl"
+            //UseCustomModel "models/bots/demo/marauder.mdl"
             
             Item "Spine-Chilling Skull"
             Item "Forgotten King's Pauldrons"
@@ -3723,7 +3723,7 @@ WaveSchedule
             ItemAttributes
             {
                 ItemName "The Horseless Headless Horseman's Headtaker"
-                "custom item model" "models\weapons\c_models\c_argent_axe\c_argent_axe.mdl"
+                "custom item model" "models/weapons/c_models/c_argent_axe/c_argent_axe.mdl"
                 "hand scale" 1.8 
                 "melee cleave attack" 1
                 //"damage bonus" 2
@@ -3734,7 +3734,7 @@ WaveSchedule
             ItemAttributes
             {
                 Itemname "The Chargin' Targe"
-                //"custom item model" "models\weapons\c_models\c_argent_shield\c_argent_shield.mdl"
+                //"custom item model" "models/weapons/c_models/c_argent_shield/c_argent_shield.mdl"
                 "charge time increased" 3
                 "always crit" 1
                 "attack not cancel charge" 1
@@ -3776,7 +3776,7 @@ WaveSchedule
             Skill Expert
             WeaponRestrictions MeleeOnly
             SpawnTemplate "marauder_bot_fight_2"
-            //UseCustomModel "models\bots\demo\marauder.mdl"
+            //UseCustomModel "models/bots/demo/marauder.mdl"
             Item "Spine-Chilling Skull"
             Item "Forgotten King's Pauldrons"
             Item "Shin Shredders"
@@ -3807,7 +3807,7 @@ WaveSchedule
             ItemAttributes
             {
                 ItemName "The Horseless Headless Horseman's Headtaker"
-                "custom item model" "models\weapons\c_models\c_argent_axe\c_argent_axe.mdl"
+                "custom item model" "models/weapons/c_models/c_argent_axe/c_argent_axe.mdl"
                 "hand scale" 1.8
                 "melee cleave attack" 1
                 //"damage bonus" 2
@@ -3828,7 +3828,7 @@ WaveSchedule
             ItemAttributes
             {
                 Itemname "The Chargin' Targe"
-                //"custom item model" "models\weapons\c_models\c_argent_shield\c_argent_shield.mdl"
+                //"custom item model" "models/weapons/c_models/c_argent_shield/c_argent_shield.mdl"
                 "charge time decreased" 3
                 "attack not cancel charge" 1
                 "always crit" 1
@@ -4273,7 +4273,7 @@ WaveSchedule
             {
                 ItemName "The Huntsman"
                 "fire rate penalty" 3
-                "custom item model" "models\workshop\weapons\c_models\c_stormbow\c_stormbow.mdl"
+                "custom item model" "models/workshop/weapons/c_models/c_stormbow/c_stormbow.mdl"
             }
             CharacterAttributes
             {

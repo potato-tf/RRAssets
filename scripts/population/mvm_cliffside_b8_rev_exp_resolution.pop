@@ -52,13 +52,13 @@ WaveSchedule
 	PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl"	 
 	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"
 	PrecacheModel "models/props_mvm/no_entry.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl"
 	// PrecacheModel "models/bots/boss_bot/boss_blimpred.mdl"	//This is the older blimp model using it because why not.
 	// PrecacheModel "models/bots/boss_bot/boss_blimpred_damage1.mdl"	
 	// PrecacheModel "models/bots/boss_bot/boss_blimpred_damage2.mdl"	
@@ -621,7 +621,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -632,7 +632,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -643,7 +643,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -654,7 +654,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -665,7 +665,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -676,7 +676,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -687,7 +687,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -698,7 +698,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -709,7 +709,7 @@ WaveSchedule
 				"targetname" "nukeprops"
 				"angles" "0 0 0"
 				"disableshadows" "1"
-				"model" "models\props_mvm\oildrum.mdl"
+				"model" "models/props_mvm/oildrum.mdl"
 				"modelscale" "1"
 				"skin" "0"
 				"solid" "6"
@@ -1779,7 +1779,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill"
-				"message" "ambient\grinder\grinderbot_01.wav"
+				"message" "ambient/grinder/grinderbot_01.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -1791,7 +1791,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill2"
-				"message" "ambient\grinder\grinderbot_02.wav"
+				"message" "ambient/grinder/grinderbot_02.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -1803,7 +1803,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill3"
-				"message" "ambient\grinder\grinderbot_03.wav"
+				"message" "ambient/grinder/grinderbot_03.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -1815,7 +1815,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "drill4"
-				"message" "mvm\physics\robo_impact_hard_05.wav"
+				"message" "mvm/physics/robo_impact_hard_05.wav"
 				"health" "10"
 				"pitch" "100"
 				"pitchstart" "100"
@@ -5037,8 +5037,8 @@ WaveSchedule
 				Gravity 0
 				DisableTracks 1
 				DisableChildModels 1 
-                		EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
-                		PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
+                		EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav" [$SIGSEGV]
+                		PingSound "npc/combine_gunship/ping_search.wav" [$SIGSEGV]
 				StartingPathTrackNode "blimp_red_left_1"
 				OnKilledOutput
 				{
@@ -5090,8 +5090,8 @@ WaveSchedule
 				}
 				Gravity 0
 				DisableTracks 1
-                		EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
-                		PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
+                		EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav" [$SIGSEGV]
+                		PingSound "npc/combine_gunship/ping_search.wav" [$SIGSEGV]
 				StartingPathTrackNode "blimp_red_right_1"
 				OnKilledOutput
 				{

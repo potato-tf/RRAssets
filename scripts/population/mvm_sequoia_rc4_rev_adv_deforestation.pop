@@ -61,9 +61,9 @@ WaveSchedule
     PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
     PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl"
     PrecacheModel "models/bots/boss_bot/bombblue_mechanism.mdl"
-    PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\props_mvm\robot_spawnpoint.mdl"
+    PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"
 
     DisallowUpgrade "critboost"  
     DisallowUpgrade "ubercharge"  
@@ -593,7 +593,7 @@ WaveSchedule
         "faster reload rate" 2.5
         "fire rate bonus" 2
         "clip size penalty" 0.2
-        "custom impact sound" "ambient\explosions\explode_4.wav"
+        "custom impact sound" "ambient/explosions/explode_4.wav"
         "Projectile speed increased" 0.8
         "projectile spread angle penalty" 5
         "damage bonus" 2.5
@@ -1521,7 +1521,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 179 0"
-                "model" "models\props_mvm\mvm_upgrade_blu.mdl"
+                "model" "models/props_mvm/mvm_upgrade_blu.mdl"
                 "modelscale" "1.0"
                 "skin" "0"
                 "solid" "2"
@@ -1532,7 +1532,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "-10 0 2"
-                "model" "models\props_mvm\mvm_upgrade_blu.mdl"
+                "model" "models/props_mvm/mvm_upgrade_blu.mdl"
                 "modelscale" "1.0"
                 "solid" "2"
                 "spawnflags" "0"

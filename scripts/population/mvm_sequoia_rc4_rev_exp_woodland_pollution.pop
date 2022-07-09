@@ -65,9 +65,9 @@ WaveSchedule
     PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
     PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl"
     PrecacheModel "models/bots/boss_bot/bombblue_mechanism.mdl"
-    PrecacheModel "models\props_mvm\mvm_upgrade_blu.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\props_mvm\robot_spawnpoint.mdl"
+    PrecacheModel "models/props_mvm/mvm_upgrade_blu.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/props_mvm/robot_spawnpoint.mdl"
 
     DisallowUpgrade "critboost"  
     DisallowUpgrade "ubercharge"  
@@ -649,7 +649,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 0 0"
-                "model" "models\props_mvm\hatch_shield.mdl"
+                "model" "models/props_mvm/hatch_shield.mdl"
                 "modelscale" "1.2"
                 "skin" "0"
                 "rendermode" "1"
@@ -994,7 +994,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "0 179 0"
-                "model" "models\props_mvm\mvm_upgrade_blu.mdl"
+                "model" "models/props_mvm/mvm_upgrade_blu.mdl"
                 "modelscale" "1.0"
                 "skin" "0"
                 "solid" "2"
@@ -1005,7 +1005,7 @@ WaveSchedule
             prop_dynamic
             {
                 "angles" "-10 0 2"
-                "model" "models\props_mvm\mvm_upgrade_blu.mdl"
+                "model" "models/props_mvm/mvm_upgrade_blu.mdl"
                 "modelscale" "1.0"
                 "solid" "2"
                 "spawnflags" "0"
@@ -6812,7 +6812,7 @@ WaveSchedule
             TotalCurrency 150
             WaitBeforeStarting 4
             WaitForAllDead "done2"
-            FirstSpawnWarningSound "vo\mvm\mght\soldier_mvm_m_laughlong01.mp3"
+            FirstSpawnWarningSound "vo/mvm/mght/soldier_mvm_m_laughlong01.mp3"
             TFBot
             {
                 

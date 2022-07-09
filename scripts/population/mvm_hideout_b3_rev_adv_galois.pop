@@ -35,17 +35,17 @@ WaveSchedule
 	
 	CustomNavFile "mvm_hideout_b3_rev" // should make bots avoid window
 	
-	PrecacheSound "galois\cheshyre_whistler.mp3"
-	PrecacheSound "galois\cheshyre_the_pied_piper.mp3"
-	PrecacheSound "galois\locknar_brimstone.mp3"
+	PrecacheSound "galois/cheshyre_whistler.mp3"
+	PrecacheSound "galois/cheshyre_the_pied_piper.mp3"
+	PrecacheSound "galois/locknar_brimstone.mp3"
 	
-    PrecacheModel "models\bots\boss_bot\boss_tankred.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage1.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage2.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_damage3.mdl"
-    PrecacheModel "models\bots\boss_bot\boss_tankred_part1_destruction.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_l.mdl"
-	PrecacheModel "models\bots\boss_bot\tankred_track_r.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage1.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage2.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_damage3.mdl"
+    PrecacheModel "models/bots/boss_bot/boss_tankred_part1_destruction.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_l.mdl"
+	PrecacheModel "models/bots/boss_bot/tankred_track_r.mdl"
 	PrecacheModel "models/weapons/c_models/c_fists_of_steel_gray/c_fists_of_steel_gray.mdl"
 	
     DisableSound "music.mvm_end_last_wave"   						   
@@ -339,8 +339,8 @@ WaveSchedule
 	{
 		"Regenerate.Touch" "misc/null.wav"
         "Announcer.MVM_All_Dead" "misc/null.wav"
-		"MVM.GiantCommonExplodes" "ambient\explosions\explode_3.wav"
-		"music.mvm_lost_wave" "#music\radio01.mp3"
+		"MVM.GiantCommonExplodes" "ambient/explosions/explode_3.wav"
+		"music.mvm_lost_wave" "#music/radio01.mp3"
 	}		
 	
 	Templates
@@ -840,7 +840,7 @@ WaveSchedule
 				DisableBoneFollowers 0
 				disablereceiveshadows 0
 				disableshadows 1
-				model models\props_mvm\mvm_upgrade_blu.mdl
+				model models/props_mvm/mvm_upgrade_blu.mdl
 				solid 0
 				origin "0 0 0"
 			}
@@ -967,7 +967,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "explosions_sounds1"
-				"message" "misc\doomsday_missile_explosion.wav"
+				"message" "misc/doomsday_missile_explosion.wav"
 				"health" "10"
 				"radius" "69420"
 				"spawnflags" "49"
@@ -975,7 +975,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "explosions_sounds1"
-				"message" "misc\doomsday_missile_explosion.wav"
+				"message" "misc/doomsday_missile_explosion.wav"
 				"health" "10"
 				"radius" "69420"
 				"spawnflags" "49"
@@ -1225,7 +1225,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "w3_music"
-				"message" "#galois\cheshyre_whistler.mp3"
+				"message" "#galois/cheshyre_whistler.mp3"
 				"health" "10"
 				"radius" "69420"
 				"spawnflags" "49"
@@ -1233,7 +1233,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "w4_music"
-				"message" "#galois\cheshyre_the_pied_piper.mp3"
+				"message" "#galois/cheshyre_the_pied_piper.mp3"
 				"health" "10"
 				"radius" "69420"
 				"spawnflags" "17"
@@ -1241,7 +1241,7 @@ WaveSchedule
 			ambient_generic
 			{
 				"targetname" "w5_music"
-				"message" "#galois\locknar_brimstone.mp3"
+				"message" "#galois/locknar_brimstone.mp3"
 				"health" "10"
 				"radius" "69420"
 				"spawnflags" "49"
@@ -2099,7 +2099,7 @@ WaveSchedule
 				Action StartShake
 			}
 			
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 		}
 		
 		WaveSpawn
@@ -2398,7 +2398,7 @@ WaveSchedule
 				Action StartShake
 			}
 			
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 			
 			Where mid1
 			Where mid2
@@ -2779,7 +2779,7 @@ WaveSchedule
 				Action StartShake
 			}
 			
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 		}
 		
 		WaveSpawn
@@ -3439,7 +3439,7 @@ WaveSchedule
 				Action StartShake
 			}
 			
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 		}
 		
 		WaveSpawn
@@ -4337,7 +4337,7 @@ WaveSchedule
 				Action StartShake
 			}
 			
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 		}
 		
 		WaveSpawn
@@ -4921,7 +4921,7 @@ WaveSchedule
 				Action StartShake
 			}
 			
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 		}
 		
 		WaveSpawn
@@ -4970,7 +4970,7 @@ WaveSchedule
 				Action Trigger
 			}
 			WaitBeforeStarting 27.5
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 		}
 		
         WaveSpawn
@@ -4981,7 +4981,7 @@ WaveSchedule
 				Action Trigger
 			}
 			WaitBeforeStarting 27.5
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 		}
 		
 		WaveSpawn
