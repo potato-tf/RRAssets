@@ -520,7 +520,7 @@ WaveSchedule
 		}
 		Medic
 		{
-		"uber duration bonus" -3
+		//"uber duration bonus" -3
 		}
 	}
 
@@ -543,7 +543,7 @@ WaveSchedule
 		"custom kill icon" "saw_kill"
 		"override projectile type" 2
 		"projectile no deflect" 1
-		"custom projectile size" 12
+		//"custom projectile size" 12
 		"projectile lifetime" 0.035
 		//"Projectile speed increased" 0.25
 		"blast radius decreased" 0.25
@@ -1021,6 +1021,12 @@ WaveSchedule
 		Itemname "The Short Circuit"
 		"fire rate penalty" 3
 		"cannot be upgraded" 1
+	}
+
+	ItemAttributes [$SIGSEGV] // too powerful for reverse
+	{
+		ItemName "The Ubersaw"
+		"add uber charge on hit" 0.15
 	}
 
 	ItemAttributes [$SIGSEGV] // rebuffed because valve is stupid
