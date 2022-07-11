@@ -46,7 +46,7 @@ WaveSchedule {
 		SendBotsToSpectatorImmediately 1 							[$SIGSEGV]
 		FlagCarrierMovementPenalty 1 								[$SIGSEGV]
 		BluHumanFlagCapture 1 										[$SIGSEGV]
-		BluHumanFlagPickup 1 										[$SIGSEGV]
+		BluHumanFlagPickup 0 										[$SIGSEGV]
 		//team/player keyvalues
 		NoRedBotsRandomCrit 1 										[$SIGSEGV]
 		NoRedSniperBotHeadshots 1 									[$SIGSEGV]
@@ -137,6 +137,7 @@ WaveSchedule {
 
 		//bad upgrades to remove
 		DisallowUpgrade	"engy disposable sentries" [$SIGSEGV] //breaks mini drone template
+		DisallowUpgrade	"recall" [$SIGSEGV] //breaks res system
 	PlayerAttributes [$SIGSEGV]
 	{
 		"min respawn time" 9999
