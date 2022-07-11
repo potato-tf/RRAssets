@@ -3666,7 +3666,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 		T_TFBot_Red_Giant_Kritzkrieg_Medic
 		{
 			Class Medic
-			ClassIcon medic_kritzkrieg
+			ClassIcon medic_kritz_red
             Name "Giant Kritzkrieg Medic"
             WeaponRestrictions SecondaryOnly
             Skill Expert
@@ -9037,7 +9037,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			FirstSpawnWarningSound "ambient_mp3/alarms/doomsday_lift_alarm.mp3"
 			Tank
 			{
-				ClassIcon blimp2_red_sticky_lite
+				ClassIcon blimp2_sticky_red_lite
 				Name "redstickyblimp"
 				Health 33333
 				Speed 75

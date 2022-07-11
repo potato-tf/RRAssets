@@ -5465,7 +5465,7 @@ ExtendedUpgrades // upgrades designed by Skin King and PDA Expert.
 				TFBot
 				{
 					Class Demoman
-					ClassIcon	demo_crit
+					//ClassIcon	demo_crit
 					Skill Easy
 					Attributes	AlwaysCrit
 					Attributes	IgnoreFlag
