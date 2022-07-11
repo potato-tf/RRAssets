@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "hud/leaderboard_class_soldier_burstfire_homing_nys_giant"
+	"$basetexture" "hud/leaderboard_class_soldier_burstfire_homing_nys"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1
