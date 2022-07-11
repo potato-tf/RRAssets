@@ -1855,7 +1855,7 @@ ExtendedUpgrades // upgrades designed by Skin King and PDA Expert.
 			prop_dynamic
             {
                 "targetname" "spawnwalls"
-                "model" "models/props_mvm/downtown_spawnwall1.mdl"
+                "model" "models/props_mvm/downtown_spawnwall1_fix.mdl"
                 "origin" "3302 56 588"
                 "angles" "0 -90 0"
                 "disableshadows" "1"
