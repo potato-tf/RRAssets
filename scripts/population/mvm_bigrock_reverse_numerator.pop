@@ -7369,6 +7369,7 @@ WaveSchedule
 				Class Scout
 				Classicon teleporterfix
 				Name "Don't forget the bomb!"
+				Scale 0.01
 				NoGlow 1
 				Health 1
 				Attributes IgnoreEnemies
@@ -7393,10 +7394,7 @@ WaveSchedule
 					"voice pitch scale" 0
 					"health regen" -1
 					"not solid to players" 1
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_REPROGRAMMED
+					"is suicide counter" 1
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -8737,6 +8735,7 @@ WaveSchedule
 				Class Scout
 				Classicon sentry_gun_lvl3_red_lite
 				Name "Don't forget the bomb!"
+				Scale 0.01
 				NoGlow 1
 				Health 1
 				Attributes IgnoreEnemies
@@ -8761,10 +8760,7 @@ WaveSchedule
 					"voice pitch scale" 0
 					"health regen" -1
 					"not solid to players" 1
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_REPROGRAMMED
+					"is suicide counter" 1
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -9674,6 +9670,7 @@ WaveSchedule
 				Class Scout
 				Classicon teleporterfix
 				Name "Don't forget the bomb!"
+				Scale 0.01
 				NoGlow 1
 				Health 1
 				Attributes IgnoreEnemies
@@ -9698,10 +9695,7 @@ WaveSchedule
 					"voice pitch scale" 0
 					"health regen" -1
 					"not solid to players" 1
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_REPROGRAMMED
+					"is suicide counter" 1
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -10870,6 +10864,7 @@ WaveSchedule
 				Class Scout
 				Classicon teleporterfix
 				Name "Don't forget the bomb!"
+				Scale 0.01
 				NoGlow 1
 				Health 1
 				Attributes IgnoreEnemies
@@ -10894,10 +10889,7 @@ WaveSchedule
 					"voice pitch scale" 0
 					"health regen" -1
 					"not solid to players" 1
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_REPROGRAMMED
+					"is suicide counter" 1
 				}
 				AddCond [$SIGSEGV]
 				{
@@ -12260,6 +12252,7 @@ WaveSchedule
 				Class Scout
 				Classicon teleporterfix
 				Name "Don't forget the bomb!"
+				Scale 0.01
 				NoGlow 1
 				Health 1
 				Attributes IgnoreEnemies
@@ -12284,10 +12277,7 @@ WaveSchedule
 					"voice pitch scale" 0
 					"health regen" -1
 					"not solid to players" 1
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_REPROGRAMMED
+					"is suicide counter" 1
 				}
 				AddCond [$SIGSEGV]
 				{
