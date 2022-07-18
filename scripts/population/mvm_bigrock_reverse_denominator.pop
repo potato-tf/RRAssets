@@ -803,7 +803,7 @@ WaveSchedule
 		"special item description" "Ubercharge: Increase move, weapon and reload speed"
 		"paintkit_proto_def_index" 217 //214
         "set_item_texture_wear" 0
-		//"ubercharge rate bonus" 2
+		"ubercharge rate penalty" 1.25 //bonus because of code change
 		"provide on active" 1
 		"effect cond override" 2106481
 	}
@@ -816,6 +816,7 @@ WaveSchedule
 		"special item description 2" "Ubercharge: 100% minicrits + 35% damage resistance"
 		"paintkit_proto_def_index" 214
         "set_item_texture_wear" 0
+		"ubercharge rate penalty" 1.25 //bonus because of code change
 		"provide on active" 1
 		"mult medigun range" 2
 		"medic machinery beam" 4
