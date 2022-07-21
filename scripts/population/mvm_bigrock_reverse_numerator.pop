@@ -92,10 +92,21 @@ WaveSchedule
 	DisallowUpgrade	"maxammo secondary increased" 	[$SIGSEGV] //players have infinite ammo
 	DisallowUpgrade "maxammo metal increased"		[$SIGSEGV] //players have infinite ammo
 	DisallowUpgrade "metal regen"					[$SIGSEGV] //players have infinite ammo
-	DisallowUpgrade "projectile penetration"		[$SIGSEGV] //overpowered for crossbow
 	DisallowUpgrade "uber duration bonus"			[$SIGSEGV] //overpowered for reverse
 	DisallowUpgrade	"overheal expert" 				[$SIGSEGV] //overpowered for giant reverse
 	DisallowUpgrade "canteen specialist"			[$SIGSEGV] //canteens are off
+	DisallowUpgrade 								[$SIGSEGV]
+    {
+		Upgrade		"projectile penetration"
+		MaxLevel	"-1"
+		ItemName	"The Crusader's Crossbow"
+    }
+	DisallowUpgrade 								[$SIGSEGV]
+    {
+		Upgrade		"projectile penetration"
+		MaxLevel	"-1"
+		ItemName	"Festive Crusader's Crossbow"
+    }
 
 	////////////////////////////////////////////////////////////
 
@@ -8432,6 +8443,7 @@ WaveSchedule
 				Action Mobber [$SIGSEGV]
 				StripItemSlot 1
 				StripItemSlot 2
+				AimTrackingInterval 1 [$SIGSEGV]
 				//UseMeleeThreatPrioritization 1	[$SIGSEGV]
 				AddCond [$SIGSEGV]
 				{
@@ -13643,6 +13655,7 @@ WaveSchedule
 					"no_duck" 1
 					"cannot be sapped" 1
 					"cannot taunt" 1
+					"ignored by enemy sentries" 1
 				}
 
 				SpawnTemplate givename5
@@ -13677,10 +13690,6 @@ WaveSchedule
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_DISGUISED_AS_DISPENSER
 				}
 			}
 
@@ -13738,6 +13747,7 @@ WaveSchedule
 					"no_duck" 1
 					"cannot taunt" 1
 					"cannot be sapped" 1
+					"ignored by enemy sentries" 1
 				}
 
 				SpawnTemplate givename6
@@ -13750,10 +13760,6 @@ WaveSchedule
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_DISGUISED_AS_DISPENSER
 				}
 			}
 
@@ -13811,6 +13817,7 @@ WaveSchedule
 					"no_duck" 1
 					"cannot taunt" 1
 					"cannot be sapped" 1
+					"ignored by enemy sentries" 1
 				}
 
 				SpawnTemplate givename7
@@ -13823,10 +13830,6 @@ WaveSchedule
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_DISGUISED_AS_DISPENSER
 				}
 			}
 
@@ -13886,6 +13889,7 @@ WaveSchedule
 					"no_duck" 1
 					"cannot taunt" 1
 					"cannot be sapped" 1
+					"ignored by enemy sentries" 1
 				}
 
 				SpawnTemplate givename8
@@ -13906,10 +13910,6 @@ WaveSchedule
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_REPROGRAMMED
-				}
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_DISGUISED_AS_DISPENSER
 				}
 			}
 

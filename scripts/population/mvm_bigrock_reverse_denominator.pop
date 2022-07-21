@@ -90,6 +90,12 @@ WaveSchedule
 	DisallowUpgrade "metal regen"					[$SIGSEGV] //players have infinite ammo
 	DisallowUpgrade "uber duration bonus"			[$SIGSEGV] //overpowered for reverse
 	DisallowUpgrade "canteen specialist"			[$SIGSEGV] //canteens are off
+	DisallowUpgrade 								[$SIGSEGV]
+    {
+		Upgrade		"projectile penetration heavy"
+		MaxLevel	"-1"
+		ItemName	"Chainsaw"
+    }
 
 	////////////////////////////////////////////////////////////
 
