@@ -2402,7 +2402,7 @@ WaveSchedule
 			{
 				Target "goliplayer"
 				Action SetLightingOrigin
-				Param  "spawnbot_gabe"
+				Param  "boss_path_11"
 				Delay 0.1
 			}
 			OnParentKilledOutput
@@ -2469,7 +2469,7 @@ WaveSchedule
 				"rendermode" "10"
 				"disablebonefollowers" "1"
 				"disableshadows" "1"
-				"lightingorigin" "spawnbot_gabe"
+				"lightingorigin" "boss_path_11"
 				"onanimationdone" "shakeit2,StartShake,,0,-1"
 				//"onanimationdone" "bunkerdie,Trigger,,0,-1"
 				"onanimationbegun" "!self,setplaybackrate,0.45,0,-1"
@@ -2489,7 +2489,7 @@ WaveSchedule
 				"solid" "0"
 				"disablebonefollowers" "1"
 				"disableshadows" "1"
-				"lightingorigin" "spawnbot_gabe"
+				"lightingorigin" "boss_path_11"
 				"initialowner" "soldiermdl1"
 			}
 
