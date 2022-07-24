@@ -5051,7 +5051,7 @@ WaveSchedule
 			MaxActive 6
 			SpawnCount 2
 			WaitForAllDead "part03"
-			WaitBetweenSpawns 9
+			WaitBetweenSpawns 12
 			TotalCurrency 0
 			RandomSpawn 1
 
