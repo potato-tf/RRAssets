@@ -1758,7 +1758,7 @@ WaveSchedule
 
 	CustomWeapon [$SIGSEGV]
 	{
-		Name "Mecha-Mender"
+		Name "Mechamender"
 		OriginalItemName "Upgradeable TF_WEAPON_MEDIGUN"
 		"special item description" "Can repair buildings, doubled beam range"
 		"special item description 2" "Ubercharge: 100% minicrits + 35% damage resistance"
@@ -2051,7 +2051,7 @@ WaveSchedule
 			Primary "Rescue Ranger for Medic"
 			Primary "Budgie Booster"
 			Secondary "Rüstung"
-			Secondary "Mecha-Mender"
+			Secondary "Mechamender"
 		}
 		Sniper
 		{

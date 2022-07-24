@@ -549,6 +549,7 @@ WaveSchedule
 		"custom kill icon" "saw_kill"
 		"override projectile type" 2
 		"projectile no deflect" 1
+		"stay after regenerate" 1
 		//"custom projectile size" 12
 		"projectile lifetime" 0.035
 		//"Projectile speed increased" 0.25
@@ -816,7 +817,7 @@ WaveSchedule
 
 	CustomWeapon [$SIGSEGV]
 	{
-		Name "Mecha-Mender"
+		Name "Mechamender"
 		OriginalItemName "Upgradeable TF_WEAPON_MEDIGUN"
 		"special item description" "Can repair buildings, doubled beam range"
 		"special item description 2" "Ubercharge: 100% minicrits + 35% damage resistance"
@@ -962,7 +963,7 @@ WaveSchedule
 			Primary "Rescue Ranger for Medic"
 			Primary "Budgie Booster"
 			Secondary "Rüstung"
-			Secondary "Mecha-Mender"
+			Secondary "Mechamender"
 			//Melee "Golden Frying Pan"
 		}
 		Sniper
@@ -6342,7 +6343,7 @@ WaveSchedule
 			MaxActive 1
 			SpawnCount 1
 			TotalCurrency 0
-			WaitBetweenSpawnsAfterDeath 35
+			WaitBetweenSpawnsAfterDeath 30
 			Support 1
 			
 			TFBot
