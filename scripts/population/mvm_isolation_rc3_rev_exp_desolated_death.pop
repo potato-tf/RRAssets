@@ -76,6 +76,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 	RemoveBluVelocityLimit 1			[$SIGSEGV] // Remove 1000 hu velocity limit for BLU team
 	UpgradeStationKeepWeapons 1 		[$SIGSEGV] // Prevent upgrading from changing weapons to current loadout items
 	BluHumanSpawnNoShoot 0 				[$SIGSEGV]
+	BluHumanSpawnProtection 0 			[$SIGSEGV] // Actually able to shoot in spawn comes with a tradeoff ;)
 	ForceRedMoney 1						[$SIGSEGV]
 	AutoWeaponStrip 1					[$SIGSEGV] // AAAAA
 	//MaxSpeedLimit 99999
@@ -4640,7 +4641,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 	ItemAttributes 
 	{
 		ItemName "The Phlogistinator"
-		"lunchbox adds minicrits" 1
+		"lunchbox adds minicrits" 2
 		"always allow taunt" 1 // Haha, no taunt cancel for you!
 	}
 	ItemAttributes 
@@ -8030,7 +8031,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			TFBot
 			{
 				Template T_TFBot_Red_Demo_Burst
-				Skill Hard
+				Skill Expert
 				Item "The Black Watch"
 				//Item "The Gaelic Golf Bag"
 				Item "The Gaelic Garb"
@@ -8042,7 +8043,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
             	{
 					"cannot pick up intelligence" 1
                 	"crit mod disabled" 0
-					
+					"clip size upgrade atomic" 4
             	}
 			}
 		}
@@ -9904,7 +9905,8 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				Name "Burst Mortar Demoman"
 				//Attributes IgnoreFlag
 				Attributes DisableDodge
-				AimLeadProjectileSpeed 1513 [$SIGSEGV]
+				Attributes HoldFireUntilFullReload
+				AimLeadProjectileSpeed 1 [$SIGSEGV]
 				AimAt Body [$SIGSEGV]
 				Item "Tartan Tyrolean"
 				Item "The Juggernaut Jacket"
@@ -10467,7 +10469,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			WaitForAllSpawned e3_2
 			TotalCurrency 0
 			TotalCount 9999
-			MaxActive 9
+			MaxActive 12
 			SpawnCount 3
 			Support 1
 			Where mainspawn_middle
@@ -10649,6 +10651,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				Item "The Heavy Artillery Officer's Cap"
 				Item "The Mann of the House"
 				Attributes DisableDodge
+				ExtAttr IgnoreNPC // Keep
 				AddCond [$SIGSEGV] { Index 52 Duration 3 }
 				CharacterAttributes
             	{
@@ -11176,11 +11179,15 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			WaitBetweenSpawns 16
 			TFBot
 			{
-				Template T_TFBot_Red_Giant_Heavyweapons_HealOnKill
+				//Template T_TFBot_Red_Giant_Heavyweapons_HealOnKill // this bot is broken >:(
+				Template T_TFBot_Red_Giant_Heavyweapons_Deflector
+				Health 5500
+				//Item "The Tungsten Toque"
 				//Item "The Sandvich Safe"
+				Item "The Mann of the House"
 				Attributes DisableDodge
 				ExtAttr IgnoreNPC
-				ExtAttr IgnoreBuildings
+				//ExtAttr IgnoreBuildings
 				AddCond [$SIGSEGV] { Index 52 Duration 2 }
 				ItemAttributes
 				{
@@ -11280,6 +11287,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 					//Item "The Man in Slacks"
 					Tag bot_giant
 					Attributes DisableDodge
+					ExtAttr IgnoreNPC // Keep
 					Action Mobber [$SIGSEGV]
 					Addcond [$SIGSEGV] { Index 43 } 
 					AddCond [$SIGSEGV] { Index 52 Duration 2 }
@@ -11350,6 +11358,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				{
 					Template T_TFBot_Red_Giant_Heavyweapons_BrassBeast
 					ClassIcon heavy_brass_nys
+					Name "Giant Brass Heavy"
 					Attributes DisableDodge
 					ExtAttr IgnoreNPC // Keep
 					Item "The Eliminators Safeguard"
@@ -11411,6 +11420,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				//Item "Commissar's Coat"
 				Item "Deflector"
 				Attributes DisableDodge
+				ExtAttr IgnoreNPC // Keep
 				MaxVisionRange 1200
 				Action Mobber [$SIGSEGV]
 				AddCond [$SIGSEGV] { Index 43 }
@@ -11446,6 +11456,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				SpawnTemplate "powerup_logic_target"
 				Template T_TFBot_Red_Bison_Soldier_v2
 				Skill Expert
+				ExtAttr IgnoreNPC // Keep
 				AddCond [$SIGSEGV] { Index 52 Duration 2 }
 				CharacterAttributes
            		{

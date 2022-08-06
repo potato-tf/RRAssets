@@ -6855,7 +6855,7 @@ hello_im_making_templates_and_shit
 			{
 				"origin" "1984 1984 99999"
 				"targetname" "middle_text"
-				"message" "OVERCHARGED PLASMATIC TECHNICIAN"
+				"message" "OVERCHARGED PLASMATIC VOLTAGE"
 				"x" "-1"
 				"y" "0.45"
 				"channel" "0"
@@ -9985,7 +9985,7 @@ hello_im_making_templates_and_shit
 			SpawnTemplate "Yakuza_Title_Card_Plasma"
 			Class Engineer
 			ClassIcon engineer_pomson_giant
-			Name "Overcharged Plasmatic Technician"
+			Name "Overcharged Plasmatic Voltage"
 			Skill Expert
 			Health 40000
             WeaponRestrictions PrimaryOnly
@@ -10040,7 +10040,7 @@ hello_im_making_templates_and_shit
             		{
                 		ItemName "The Pomson 6000"
 						"attach particle effect" 69
-						//"dmg penalty vs players" 1.5
+						"dmg penalty vs players" 1.5
 						"mark for death" 1
 						"minicrits become crits" 1
 						"override projectile type" 1
@@ -10489,9 +10489,9 @@ hello_im_making_templates_and_shit
 			CharacterAttributes
 			{
 				"deploy time decreased" 0.001
-				"dmg taken from fire reduced" 0.5
-				"dmg taken from bullets reduced" 0.5
-				"dmg taken from blast reduced" 0.5
+				"dmg taken from fire reduced" 0.25
+				"dmg taken from bullets reduced" 0.25
+				"dmg taken from blast reduced" 0.25
 				//"mult dmgtaken from melee" 0.25 // Uh oh
 				"dmg taken from crit reduced" 0.4
 				"health regen" 10
@@ -11069,6 +11069,7 @@ hello_im_making_templates_and_shit
 				"regenerate stickbomb" 1
 				"damage bonus" 1.5
 				"mult dmg vs giants" 2
+				"dmg bonus vs buildings" 2
 			}
 		}
 		T_TFBot_Red_Fake_Crits
@@ -11220,7 +11221,7 @@ hello_im_making_templates_and_shit
 				"damage bonus" 5
 				"mult dmg vs giants" 2
 				"melee cleave attack" 1
-				//"fire rate bonus" 0.6
+				"fire rate bonus" 0.8
 				"crit kill will gib" 1
 				"melee range multiplier" 1.5
 				//"custom impact sound" "=80|physics\metal\metal_sheet_impact_hard7.wav"
@@ -11294,8 +11295,8 @@ hello_im_making_templates_and_shit
 			{
 				Target "pick_a_weapon"
 				Action "PickRandom"
-				Delay 7
-				Cooldown 14
+				Delay 6
+				Cooldown 12
 				Repeats 0
 			}
 			FireInput
