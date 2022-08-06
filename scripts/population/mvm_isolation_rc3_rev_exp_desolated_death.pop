@@ -11181,6 +11181,7 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 			{
 				//Template T_TFBot_Red_Giant_Heavyweapons_HealOnKill // this bot is broken >:(
 				Template T_TFBot_Red_Giant_Heavyweapons_Deflector
+				ClassIcon heavy_deflector_healonkill
 				Health 5500
 				//Item "The Tungsten Toque"
 				//Item "The Sandvich Safe"
