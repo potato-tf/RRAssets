@@ -3146,6 +3146,8 @@ I_Have_No_Idea_How_To_Do_A_Reverse_Mission_Help
 				"add cond on hit" 50
 				"add cond on hit duration" 3
 				"damage all connected" 1
+				"reveal cloaked victim on hit" 1
+				"reveal disguised victim on hit" 1
 			}
 			AllowedWeapons 
 			{
